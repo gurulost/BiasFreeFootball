@@ -64,14 +64,15 @@ class GraphBuilder:
                 games_played.get(loser, 1)
             )
             
-            # Calculate all weights for this game
-            game_weights = self.weight_calc.calculate_game_weights(
-                game.to_dict(), current_week, winner_rating, loser_rating
+            # Calculate all weights for this game using exact blueprint formulas
+            game_weights = self.weight_calc.calculate_edge_weights(
+                game.to_dict(), winner_rating, loser_rating, current_week,
+                games_played.get(winner, 1), games_played.get(loser, 1)
             )
             
             # Add team graph edges (both directions)
-            credit_weight = game_weights['final_credit']
-            penalty_weight = game_weights['final_penalty']
+            credit_weight = game_weights['credit_weight']
+            penalty_weight = game_weights['penalty_weight']
             
             # Loser -> Winner (credit edge)
             if G_team.has_edge(loser, winner):
