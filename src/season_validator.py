@@ -113,8 +113,8 @@ class SeasonValidator:
         # Filter out games with invalid teams (non-FBS)
         initial_count = len(games_df)
         games_df = games_df[
-            games_df['home_team'].isin(fbs_team_names) & 
-            games_df['away_team'].isin(fbs_team_names)
+            games_df['winner'].isin(fbs_team_names) & 
+            games_df['loser'].isin(fbs_team_names)
         ].copy()
         
         filtered_count = initial_count - len(games_df)

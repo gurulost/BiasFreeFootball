@@ -95,15 +95,19 @@ class FBSEnforcer:
         team_name_failures = 0
         
         for game in games:
-            # Method 1: Check team classifications
-            home_class = game.get('homeClassification', '').lower()
-            away_class = game.get('awayClassification', '').lower()
+            # Method 1: Check team classifications (handle null values)
+            home_class = game.get('homeClassification') or ''
+            away_class = game.get('awayClassification') or ''
+            
+            # Convert to lowercase safely
+            home_class = str(home_class).lower() if home_class else ''
+            away_class = str(away_class).lower() if away_class else ''
             
             classification_valid = (home_class == 'fbs' and away_class == 'fbs')
             
             # Method 2: Check against FBS team names (if cached)
-            home_team = game.get('homeTeam', '')
-            away_team = game.get('awayTeam', '')
+            home_team = game.get('homeTeam') or ''
+            away_team = game.get('awayTeam') or ''
             
             if fbs_team_names:
                 team_names_valid = (home_team in fbs_team_names and away_team in fbs_team_names)
