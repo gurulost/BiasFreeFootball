@@ -382,6 +382,8 @@ class DataValidator:
                 venue = 'neutral'
             
             # Apply canonical team mapping
+            home_canonical = canonical_teams.get(game.home_team, {'name': game.home_team, 'conf': None})
+            away_canonical = canonical_teams.get(game.away_team, {'name': game.away_team, 'conf': None})
             winner_canonical = canonical_teams.get(winner, {'name': winner, 'conf': None})
             loser_canonical = canonical_teams.get(loser, {'name': loser, 'conf': None})
             
@@ -390,8 +392,8 @@ class DataValidator:
                 'week': game.week,
                 'home_team': home_canonical['name'],
                 'away_team': away_canonical['name'],
-                'home_points': home_score,
-                'away_points': away_score,
+                'home_points': game.home_points,
+                'away_points': game.away_points,
                 'home_conference': home_canonical['conf'],
                 'away_conference': away_canonical['conf'],
                 'winner': winner_canonical['name'],
