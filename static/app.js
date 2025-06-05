@@ -5,6 +5,47 @@ let currentFilter = 'all';
 let currentPage = 1;
 const itemsPerPage = 25;
 
+// Simple pipeline functions for main buttons
+function runPipeline() {
+    fetch('/api/run-pipeline', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'auto' })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Pipeline completed successfully!');
+            window.location.reload();
+        } else {
+            alert('Pipeline failed: ' + data.error);
+        }
+    })
+    .catch(error => {
+        alert('Error: ' + error.message);
+    });
+}
+
+function runRetroPipeline() {
+    fetch('/api/run-pipeline', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'retro', season: 2024 })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('RETRO pipeline completed successfully!');
+            window.location.reload();
+        } else {
+            alert('Pipeline failed: ' + data.error);
+        }
+    })
+    .catch(error => {
+        alert('Error: ' + error.message);
+    });
+}
+
 // Initialize application
 document.addEventListener('DOMContentLoaded', function() {
     initializeEventListeners();
