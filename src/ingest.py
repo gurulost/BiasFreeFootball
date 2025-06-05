@@ -130,10 +130,12 @@ class CFBDataIngester:
             if not game.get('completed', False):
                 continue
                 
-            home_team = game.get('home_team')
-            away_team = game.get('away_team')
-            home_score = game.get('home_points', 0)
-            away_score = game.get('away_points', 0)
+            home_team = game.get('homeTeam')
+            away_team = game.get('awayTeam')
+            home_score = game.get('homePoints', 0)
+            away_score = game.get('awayPoints', 0)
+            home_conf = game.get('homeConference')
+            away_conf = game.get('awayConference')
             
             if not all([home_team, away_team, home_score is not None, away_score is not None]):
                 continue
@@ -142,11 +144,13 @@ class CFBDataIngester:
             if home_score > away_score:
                 winner, loser = home_team, away_team
                 winner_score, loser_score = home_score, away_score
-                venue = 'home'
+                winner_conf, loser_conf = home_conf, away_conf
+                winner_home = True
             else:
                 winner, loser = away_team, home_team
                 winner_score, loser_score = away_score, home_score
-                venue = 'road'
+                winner_conf, loser_conf = away_conf, home_conf
+                winner_home = False
                 
             # Handle neutral site games
             if game.get('neutral_site', False):
