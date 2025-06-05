@@ -247,13 +247,22 @@ def current_rankings():
         metadata['auto_updated'] = True
         metadata['next_update'] = "Every Monday at 3:30 AM ET"
         
-        return render_template('rankings.html', rankings=rankings, metadata=metadata)
+        # Format data for template compatibility
+        ratings_data = {
+            'team_ratings': rankings,
+            'metadata': metadata
+        }
+        return render_template('rankings.html', 
+                             rankings=rankings, 
+                             metadata=metadata,
+                             ratings_data=ratings_data)
                              
     except Exception as e:
         logging.error(f"Current rankings error: {e}")
         return render_template('rankings.html', 
                              rankings=[], 
                              metadata={'title': 'Current Rankings', 'auto_updated': True},
+                             ratings_data=None,
                              error=f"Error loading current rankings: {e}")
 
 @app.route('/final')
@@ -280,13 +289,22 @@ def final_rankings(season=None):
         metadata['season'] = season
         metadata['is_final'] = True
         
-        return render_template('rankings.html', rankings=rankings, metadata=metadata)
+        # Format data for template compatibility
+        ratings_data = {
+            'team_ratings': rankings,
+            'metadata': metadata
+        }
+        return render_template('rankings.html', 
+                             rankings=rankings, 
+                             metadata=metadata,
+                             ratings_data=ratings_data)
                              
     except Exception as e:
         logging.error(f"Final rankings error: {e}")
         return render_template('rankings.html', 
                              rankings=[], 
                              metadata={'title': f'{season} Final Rankings', 'season': season or 'Unknown'},
+                             ratings_data=None,
                              error=f"Error loading final rankings: {e}")
 
 @app.route('/api/current')
