@@ -133,6 +133,16 @@ def run_authentic_pipeline(season=2024):
         team_ratings = ranker.pagerank(team_graph)
         conf_ratings = ranker.pagerank(conf_graph)
         
+        # Validate rating scale with FBS enforcer
+        from src.fbs_enforcer import create_fbs_enforcer
+        fbs_enforcer = create_fbs_enforcer(config)
+        scale_report = fbs_enforcer.validate_rating_scale(team_ratings)
+        
+        if scale_report['validation_passed']:
+            logger.info(f"✓ Rating scale validation passed: top={scale_report['top_rating']:.6f}, teams={scale_report['total_teams']}")
+        else:
+            logger.warning(f"Rating scale validation concerns: {scale_report}")
+        
         # Build final rankings structure
         rankings_data = {
             'metadata': {

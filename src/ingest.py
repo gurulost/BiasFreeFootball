@@ -23,6 +23,10 @@ class CFBDataIngester:
         
         self.logger = logging.getLogger(__name__)
         
+        # Initialize FBS enforcer for strict data integrity
+        from src.fbs_enforcer import create_fbs_enforcer
+        self.fbs_enforcer = create_fbs_enforcer(config)
+        
         # Load canonical team mapping for data validation
         self.canonical_teams = self._load_canonical_teams()
         self.conference_cache = {}  # Cache for conference ID to name mapping
@@ -78,18 +82,25 @@ class CFBDataIngester:
             raise
             
     def fetch_teams(self, season: int, division: str = 'fbs') -> List[Dict]:
-        """Fetch team information for a given season - FBS only"""
+        """Fetch team information for a given season - FBS only with enforced validation"""
+        # Enforce FBS-only parameters
         params = {
             'year': season,
             'division': division
         }
+        enforced_params = self.fbs_enforcer.enforce_fbs_teams_request(params, season)
         
-        teams = self._make_request('teams', params)
+        # Make API request
+        teams = self._make_request('teams', enforced_params)
         
-        # Filter for authentic FBS teams only based on classification
-        fbs_teams = [team for team in teams if team.get('classification') == 'fbs']
+        # Validate response with FBS enforcer
+        fbs_teams, validation_report = self.fbs_enforcer.validate_teams_response(teams, season)
         
-        self.logger.info(f"Filtered {len(fbs_teams)} FBS teams from {len(teams)} total teams")
+        # Log validation results
+        if validation_report['validation_passed']:
+            self.logger.info(f"✓ FBS teams validation passed: {len(fbs_teams)} teams")
+        else:
+            self.logger.warning(f"FBS teams validation concerns: {validation_report}")
         
         # Save raw data
         raw_path = f"{self.config['paths']['data_raw']}/teams_{season}_fbs.json"
@@ -122,27 +133,32 @@ class CFBDataIngester:
     
     def fetch_games(self, season: int, week: Optional[int] = None, 
                    season_type: str = 'regular') -> List[Dict]:
-        """Fetch game results with FBS-only filtering (Games endpoint ignores division parameter)"""
+        """Fetch game results with enforced FBS-only filtering"""
+        # Enforce FBS-only parameters (though API ignores division for games)
         params = {
             'year': season,
             'seasonType': season_type
-            # NOTE: division parameter doesn't work on games endpoint, filter manually
         }
         
         if week:
             params['week'] = week
             
-        games = self._make_request('games', params)
+        enforced_params, needs_manual_filtering = self.fbs_enforcer.enforce_games_request(params, season)
+        
+        # Make API request
+        games = self._make_request('games', enforced_params)
         
         # Filter only completed games
         completed_games = [g for g in games if g.get('completed', False)]
         
-        # Critical fix: Games endpoint ignores division=fbs, so filter manually using classifications
-        fbs_games = [g for g in completed_games 
-                    if (g.get('homeClassification') == 'fbs' and 
-                        g.get('awayClassification') == 'fbs')]
+        # Validate response with FBS enforcer (handles manual filtering)
+        fbs_games, validation_report = self.fbs_enforcer.validate_games_response(completed_games, season)
         
-        self.logger.info(f"Manual FBS filtering: {len(fbs_games)}/{len(completed_games)} games (filtered out {len(completed_games) - len(fbs_games)} non-FBS)")
+        # Log validation results
+        if validation_report['filtering_effective']:
+            self.logger.info(f"FBS games filtering: {len(fbs_games)}/{len(completed_games)} games kept")
+        else:
+            self.logger.info(f"✓ All {len(completed_games)} games were already FBS-only")
         
         # Save raw data
         week_str = f"_week{week}" if week else ""
