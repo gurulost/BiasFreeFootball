@@ -1,0 +1,367 @@
+/* CFB Bias-Free Rankings - Custom Styles */
+
+:root {
+    --primary-color: 210 50% 50%; /* #4080BF */
+    --success-color: 120 60% 50%; /* #5CB85C */
+    --warning-color: 45 90% 55%; /* #F0AD4E */
+    --danger-color: 0 70% 55%; /* #D9534F */
+    --info-color: 200 60% 60%; /* #5BC0DE */
+    --secondary-color: 210 20% 50%; /* #6C757D */
+    
+    --background-primary: 210 11% 15%; /* #1F1F23 */
+    --background-secondary: 210 11% 18%; /* #25252A */
+    --background-tertiary: 210 11% 21%; /* #2B2B31 */
+    
+    --text-primary: 210 15% 90%; /* #E1E5E9 */
+    --text-secondary: 210 15% 70%; /* #A8B2BC */
+    --text-muted: 210 15% 50%; /* #6F7C89 */
+    
+    --border-color: 210 15% 25%; /* #353A42 */
+    --shadow-color: 210 50% 3%; /* #040609 */
+}
+
+/* Utility Classes */
+.text-primary-custom {
+    color: hsl(var(--primary-color)) !important;
+}
+
+.bg-primary-custom {
+    background-color: hsl(var(--primary-color)) !important;
+}
+
+/* Metric Display Components */
+.metric-card {
+    text-align: center;
+    padding: 1rem;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(var(--primary-color));
+    line-height: 1;
+}
+
+.metric-value.large {
+    font-size: 3rem;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: hsl(var(--text-secondary));
+    margin-top: 0.25rem;
+}
+
+.metric-status {
+    margin-top: 0.5rem;
+}
+
+.metric-display {
+    padding: 1rem;
+}
+
+.metric-threshold {
+    margin-top: 0.5rem;
+}
+
+/* Chart Containers */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin: 1rem 0;
+}
+
+.chart-container canvas {
+    max-height: 100%;
+}
+
+/* Trend Indicators */
+.trend-indicator {
+    text-align: center;
+    padding: 1rem;
+}
+
+.trend-indicator i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Rankings Table Enhancements */
+#rankings-table {
+    font-size: 0.9rem;
+}
+
+#rankings-table .team-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.rank-change {
+    font-weight: 600;
+}
+
+.rank-change.positive {
+    color: hsl(var(--success-color));
+}
+
+.rank-change.negative {
+    color: hsl(var(--danger-color));
+}
+
+.rank-change.neutral {
+    color: hsl(var(--text-muted));
+}
+
+.conference-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.quality-wins {
+    font-size: 0.8rem;
+}
+
+.quality-wins .team {
+    margin-right: 0.5rem;
+    padding: 0.125rem 0.25rem;
+    background-color: hsl(var(--background-tertiary));
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+/* Alert Customizations */
+.alert-sm {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* Navigation Enhancements */
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-brand i {
+    color: hsl(var(--primary-color));
+}
+
+/* Card Enhancements */
+.card {
+    border: 1px solid hsl(var(--border-color));
+    background-color: hsl(var(--background-secondary));
+}
+
+.card-header {
+    background-color: hsl(var(--background-tertiary));
+    border-bottom: 1px solid hsl(var(--border-color));
+}
+
+/* Button Customizations */
+.btn-primary {
+    background-color: hsl(var(--primary-color));
+    border-color: hsl(var(--primary-color));
+}
+
+.btn-primary:hover {
+    background-color: hsl(var(--primary-color) / 0.8);
+    border-color: hsl(var(--primary-color) / 0.8);
+}
+
+.btn-outline-primary {
+    color: hsl(var(--primary-color));
+    border-color: hsl(var(--primary-color));
+}
+
+.btn-outline-primary:hover {
+    background-color: hsl(var(--primary-color));
+    border-color: hsl(var(--primary-color));
+}
+
+/* Pipeline Status */
+.pipeline-status {
+    border-left: 4px solid hsl(var(--primary-color));
+    padding-left: 1rem;
+}
+
+.pipeline-status.success {
+    border-left-color: hsl(var(--success-color));
+}
+
+.pipeline-status.error {
+    border-left-color: hsl(var(--danger-color));
+}
+
+.pipeline-status.warning {
+    border-left-color: hsl(var(--warning-color));
+}
+
+/* Loading States */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Conference Color Coding */
+.conf-sec { background-color: hsl(0 60% 50% / 0.1); border-left: 3px solid hsl(0 60% 50%); }
+.conf-big-ten { background-color: hsl(240 60% 50% / 0.1); border-left: 3px solid hsl(240 60% 50%); }
+.conf-big-12 { background-color: hsl(30 80% 50% / 0.1); border-left: 3px solid hsl(30 80% 50%); }
+.conf-acc { background-color: hsl(270 60% 50% / 0.1); border-left: 3px solid hsl(270 60% 50%); }
+.conf-pac-12 { background-color: hsl(120 60% 50% / 0.1); border-left: 3px solid hsl(120 60% 50%); }
+.conf-independent { background-color: hsl(var(--text-muted) / 0.1); border-left: 3px solid hsl(var(--text-muted)); }
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .metric-value {
+        font-size: 1.5rem;
+    }
+    
+    .metric-value.large {
+        font-size: 2rem;
+    }
+    
+    .chart-container {
+        height: 250px;
+    }
+    
+    #rankings-table {
+        font-size: 0.8rem;
+    }
+    
+    .quality-wins {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-group {
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        flex: 1;
+    }
+    
+    .metric-card {
+        padding: 0.5rem;
+    }
+    
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+/* Table Hover Effects */
+.table-hover tbody tr:hover {
+    background-color: hsl(var(--background-tertiary) / 0.5);
+}
+
+/* Badge Customizations */
+.badge {
+    font-weight: 500;
+}
+
+.badge.bg-success {
+    background-color: hsl(var(--success-color)) !important;
+}
+
+.badge.bg-warning {
+    background-color: hsl(var(--warning-color)) !important;
+}
+
+.badge.bg-danger {
+    background-color: hsl(var(--danger-color)) !important;
+}
+
+.badge.bg-info {
+    background-color: hsl(var(--info-color)) !important;
+}
+
+.badge.bg-secondary {
+    background-color: hsl(var(--secondary-color)) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(var(--background-primary));
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(var(--text-muted));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--text-secondary));
+}
+
+/* Focus States */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 0.2rem hsl(var(--primary-color) / 0.25);
+    border-color: hsl(var(--primary-color));
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-in-up {
+    animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .btn,
+    .btn-group,
+    .pagination {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        page-break-inside: avoid;
+    }
+    
+    .table {
+        color: #000 !important;
+    }
+    
+    .table thead th {
+        background-color: #f8f9fa !important;
+        color: #000 !important;
+    }
+}

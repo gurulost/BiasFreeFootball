@@ -1,0 +1,71 @@
+# CFB Rating Engine Configuration
+# All parameters with sensible defaults as specified in the blueprint
+
+# Core mathematical parameters
+margin:
+  cap: 5  # Maximum margin factor (log base 2)
+  
+venue:
+  home_factor: 1.1
+  neutral_factor: 1.0
+  road_factor: 0.9
+
+recency:
+  lambda: 0.05  # Exponential decay rate per week
+
+shrinkage:
+  k: 4  # Games parameter for shrinkage weight
+
+win_probability:
+  C: 0.40  # Scaling constant for win probability calculation
+
+risk:
+  B: 1  # Risk elasticity parameter
+
+surprise:
+  gamma: 0.75  # Surprise multiplier base
+  cap: 3  # Maximum surprise multiplier
+
+bowl:
+  weight_bump: 1.10  # Multiplier for bowl game edges
+
+pagerank:
+  damping: 0.85  # Damping factor
+  tolerance: 1e-9  # Convergence tolerance
+  max_iterations: 1000
+
+# Bias audit thresholds
+bias_audit:
+  threshold: 0.06  # 6% maximum bias
+  auto_tune_threshold: 0.06
+
+# Data source configuration
+api:
+  base_url: "https://api.collegefootballdata.com"
+  key: ""  # Will be loaded from environment variable CFB_API_KEY
+  
+# Pipeline configuration
+pipeline:
+  live:
+    cron: "0 3 * * SUN"  # 3 AM ET Sunday
+  retro:
+    max_outer_iterations: 6
+    convergence_threshold: 1e-6
+
+# Output configuration
+output:
+  csv_format: true
+  json_format: true
+  include_deltas: true
+  include_quality_wins: true
+
+# File paths
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  exports: "exports"
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFB Rankings - Bias-Free College Football</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-football-ball me-2"></i>
+                CFB Bias-Free Rankings
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/rankings">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bias-audit">Bias Audit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Rankings Header -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h4 class="card-title mb-0">
+                                    <i class="fas fa-list-ol me-2"></i>
+                                    College Football Rankings
+                                </h4>
+                                <p class="text-muted mb-0">
+                                    {% if ratings_data %}
+                                        {{ ratings_data.type|upper }} Rankings - 
+                                        {% if ratings_data.week == 'final' %}
+                                            Final {{ ratings_data.season }}
+                                        {% else %}
+                                            Week {{ ratings_data.week }}, {{ ratings_data.season }}
+                                        {% endif %}
+                                    {% else %}
+                                        No Data Available
+                                    {% endif %}
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown">
+                                        <i class="fas fa-filter me-1"></i>Filter
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#" data-filter="all">All Teams</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="top25">Top 25</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="power5">Power 5</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="sec">SEC</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="big-ten">Big Ten</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="big-12">Big 12</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="acc">ACC</a></li>
+                                        <li><a class="dropdown-item" href="#" data-filter="pac-12">Pac-12</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group ms-2" role="group">
+                                    <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown">
+                                        <i class="fas fa-download me-1"></i>Export
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="/api/export/csv?week={{ week }}&season={{ season }}" target="_blank">
+                                            <i class="fas fa-file-csv me-2"></i>CSV Format
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="/api/export/json?week={{ week }}&season={{ season }}" target="_blank">
+                                            <i class="fas fa-file-code me-2"></i>JSON Format
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rankings Table -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body p-0">
+                        {% if ratings_data and ratings_data.team_ratings %}
+                            <div class="table-responsive">
+                                <table class="table table-hover mb-0" id="rankings-table">
+                                    <thead class="table-dark sticky-top">
+                                        <tr>
+                                            <th style="width: 60px;">Rank</th>
+                                            <th>Team</th>
+                                            <th style="width: 120px;">Conference</th>
+                                            <th style="width: 100px;">Rating</th>
+                                            <th style="width: 80px;">Δ Rank</th>
+                                            <th style="width: 100px;">Conf Weight</th>
+                                            <th>Quality Wins</th>
+                                            <th style="width: 80px;">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rankings-tbody">
+                                        <!-- Populated by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        {% else %}
+                            <div class="text-center py-5">
+                                <i class="fas fa-exclamation-triangle fa-3x text-muted mb-3"></i>
+                                <h5>No Rankings Data Available</h5>
+                                <p class="text-muted">
+                                    No ranking data found for the specified week and season.<br>
+                                    Try running the pipeline to generate rankings.
+                                </p>
+                                <a href="/" class="btn btn-primary">
+                                    <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        {% if ratings_data and ratings_data.team_ratings %}
+        <div class="row mt-4">
+            <div class="col-12">
+                <nav aria-label="Rankings pagination">
+                    <ul class="pagination justify-content-center" id="rankings-pagination">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Team Details Modal -->
+        <div class="modal fade" id="teamDetailsModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span id="modal-team-name">Team Details</span>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Current Rankings</h6>
+                                <ul class="list-unstyled">
+                                    <li><strong>Rank:</strong> <span id="modal-rank">-</span></li>
+                                    <li><strong>Rating:</strong> <span id="modal-rating">-</span></li>
+                                    <li><strong>Conference:</strong> <span id="modal-conference">-</span></li>
+                                    <li><strong>Conference Weight:</strong> <span id="modal-conf-weight">-</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Movement</h6>
+                                <ul class="list-unstyled">
+                                    <li><strong>Rank Change:</strong> <span id="modal-rank-change">-</span></li>
+                                    <li><strong>Previous Rank:</strong> <span id="modal-prev-rank">-</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-12">
+                                <h6>Quality Wins</h6>
+                                <div id="modal-quality-wins">
+                                    <p class="text-muted">No quality wins data available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/static/app.js"></script>
+    
+    <script>
+        // Pass data from Flask to JavaScript
+        window.ratingsData = {{ ratings_data | tojsonfilter | safe }};
+        window.currentWeek = "{{ week }}";
+        window.currentSeason = "{{ season }}";
+        
+        // Initialize rankings page when DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.ratingsData && window.ratingsData.team_ratings) {
+                populateRankingsTable(window.ratingsData.team_ratings, window.ratingsData.conference_ratings);
+                initializeRankingsFilters();
+                initializeRankingsPagination();
+            }
+        });
+    </script>
+</body>
+</html>
