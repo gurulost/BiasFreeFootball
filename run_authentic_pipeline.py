@@ -109,15 +109,15 @@ def run_authentic_pipeline(season=2024):
         # Import and run the ranking algorithm components
         from src.graph import GraphBuilder
         from src.pagerank import PageRankCalculator
-        from src.weights import EdgeWeightCalculator
         
         # Build graphs
         graph_builder = GraphBuilder(config)
         conf_graph, team_graph = graph_builder.build_graphs(games_df)
         
         # Run PageRank
-        ranker = PageRankRanker(config)
-        team_ratings, conf_ratings = ranker.rank_teams(team_graph, conf_graph)
+        ranker = PageRankCalculator(config)
+        team_ratings = ranker.pagerank(team_graph)
+        conf_ratings = ranker.pagerank(conf_graph)
         
         # Build final rankings structure
         rankings_data = {
