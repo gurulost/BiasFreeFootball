@@ -90,13 +90,27 @@ def run_authentic_pipeline(season=2024):
         
         logger.info(f"Retrieved {len(games)} completed games")
         
-        # Step 4: Process games into proper format
-        logger.info("Step 4: Processing game data")
-        games_df = ingester.process_game_data(games)
+        # Step 4: Season-specific validation and cross-verification
+        logger.info("Step 4: Season-specific validation and cross-verification")
+        from src.season_validator import validate_season_data
         
-        logger.info(f"Processed {len(games_df)} game records")
+        # Process games into initial DataFrame
+        initial_games_df = ingester.process_game_data(games)
         
-        # Step 5: Build team-to-conference mapping from authentic data
+        # Cross-verify games against authoritative team data
+        games_df, validation_report = validate_season_data(teams, initial_games_df, season, config)
+        
+        logger.info(f"Validation results: {validation_report['teams']['total_fbs']} teams, {validation_report['games']['total']} games")
+        
+        if validation_report['validation_passed']:
+            logger.info("✓ Season validation passed - data integrity confirmed")
+        else:
+            logger.warning("⚠ Season validation concerns detected")
+        
+        if season == 2024 and validation_report['realignment_valid']:
+            logger.info("✓ 2024 conference realignment validation passed")
+        
+        # Build team-to-conference mapping from validated data
         team_conf_mapping = {}
         for team_data in teams:
             team_name = team_data.get('school')
