@@ -1,0 +1,75 @@
+The checklist you posted will catch — and surface early — almost every class of data problem that can distort the rankings.  In practice, shops that run similar guard-rails (e.g., FiveThirtyEight’s CFB model, Ken-Pom for basketball) go years without a single silent‐data bug.  That said, a few **edge conditions** are worth adding so the net is truly watertight:
+
+---
+
+### 1. Season-specific canonical map
+
+Realignment now happens yearly.  Keep one YAML per season (`canonical_2024.yaml`, `canonical_2025.yaml`, …) so you never overwrite last season’s truth when a team moves leagues.
+
+---
+
+### 2. FBS/FCS guard
+
+The API occasionally tags a November “buy” game as FBS when it’s really FCS (and vice-versa after reclassifications).
+Add a rule:
+
+```python
+assert (team in FBS_MASTER_LIST) == row['is_fbs'], "level mismatch"
+```
+
+Maintain `FBS_MASTER_LIST` by season so James Madison 2022 is handled correctly.
+
+---
+
+### 3. Cancellation / forfeit logic
+
+COVID seasons taught us: games can vanish or be ruled “no-contest.”
+Require every game row to have either `status="completed"` or be excluded from the official count check; otherwise you’ll chase ghosts.
+
+---
+
+### 4. Clock-time offset check
+
+Edge-weight decay uses week numbers.  Make sure bowl games dated Jan 1 still count as season N, not season N+1.  Assert:
+
+```python
+assert row['season'] == SEASON_BEING_INGESTED
+```
+
+for every row pulled by that season’s ingest job.
+
+---
+
+### 5. API-rate/timeout fallback
+
+Wrap the CFBD call in exponential back-off and fail explicitly if you don’t get a 200 within N retries; otherwise CI may pass with an empty payload.
+
+---
+
+### 6. Parallel run diff
+
+Have a separate nightly workflow that rebuilds the last five seasons from scratch and compares the new hashes to stored canonical exports.  If the vendor revises old box scores you’ll see it immediately.
+
+---
+
+### 7. End-to-end smoke test after data patch
+
+Whenever `canonical_*` changes, CI should automatically replay the most recent week and assert BYU-style metrics:
+
+* no team missing games
+* conference strength vector sums to \~number\_of\_confs
+* bias metric **B** < 10 % (loose)
+
+This prevents an alias patch from breaking something upstream.
+
+---
+
+### 8. Metrics on the GitHub Pages site
+
+Expose the ingest checksum and last-successful date right under the rankings so users see “data build: 2025-08-31 09:04 UTC, checksum 3bf2…”.  You’ll get instant bug reports if something looks stale.
+
+---
+
+### Bottom line
+
+With your original ten layers **plus** these season-specific and reclassification checks, you have an industry-grade data integrity wall.  After that, any weird ranking is a model-logic discussion, not a data-quality mystery.

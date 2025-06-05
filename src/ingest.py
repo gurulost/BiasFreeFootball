@@ -187,7 +187,27 @@ class CFBDataIngester:
         return all_games
     
     def process_game_data(self, games: List[Dict]) -> pd.DataFrame:
-        """Process raw game data into standardized format with validation"""
+        """Process raw game data with production-grade validation"""
+        from src.validation import DataValidator
+        
+        # Run comprehensive validation suite
+        validator = DataValidator(self.config)
+        
+        # First pass: strict schema and outlier validation
+        if self.config.get('validation', {}).get('enable_hardening', True):
+            season = games[0].get('season', 2024) if games else 2024
+            games_df = validator.validate_complete_dataset(
+                games, self.canonical_teams, season
+            )
+            
+            # Canonical mapping already applied in validation
+            return games_df
+        
+        # Fallback to legacy validation for development
+        return self._legacy_process_game_data(games)
+    
+    def _legacy_process_game_data(self, games: List[Dict]) -> pd.DataFrame:
+        """Legacy processing with basic validation (for development)"""
         processed_games = []
         bad_rows = []
         validation_warnings = []

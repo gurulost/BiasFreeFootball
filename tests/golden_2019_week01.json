@@ -1,0 +1,57 @@
+[
+  {
+    "season": 2019,
+    "week": 1,
+    "homeTeam": "Ohio State", 
+    "awayTeam": "Florida Atlantic",
+    "homePoints": 45,
+    "awayPoints": 21,
+    "neutralSite": false,
+    "season_type": "regular",
+    "completed": true
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "homeTeam": "Alabama",
+    "awayTeam": "Duke", 
+    "homePoints": 42,
+    "awayPoints": 3,
+    "neutralSite": true,
+    "season_type": "regular",
+    "completed": true
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "homeTeam": "Georgia",
+    "awayTeam": "Vanderbilt",
+    "homePoints": 30,
+    "awayPoints": 6,
+    "neutralSite": false,
+    "season_type": "regular", 
+    "completed": true
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "homeTeam": "Michigan",
+    "awayTeam": "Middle Tennessee",
+    "homePoints": 40,
+    "awayPoints": 21,
+    "neutralSite": false,
+    "season_type": "regular",
+    "completed": true
+  },
+  {
+    "season": 2019,
+    "week": 1,
+    "homeTeam": "Texas",
+    "awayTeam": "Louisiana Tech",
+    "homePoints": 45,
+    "awayPoints": 14,
+    "neutralSite": false,
+    "season_type": "regular",
+    "completed": true
+  }
+]
