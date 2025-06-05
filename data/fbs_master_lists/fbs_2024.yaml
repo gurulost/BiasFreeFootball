@@ -1,0 +1,162 @@
+# FBS Master List for 2024 Season
+# Authoritative list for FBS/FCS classification validation
+# Updated for 2024 realignment and reclassifications
+
+fbs_teams:
+  # ACC
+  - Boston College
+  - Clemson
+  - Duke
+  - Florida State
+  - Georgia Tech
+  - Louisville
+  - Miami (FL)
+  - North Carolina
+  - NC State
+  - Pittsburgh
+  - Syracuse
+  - Virginia
+  - Virginia Tech
+  - Wake Forest
+  - SMU  # New 2024
+  - Cal  # New 2024
+  - Stanford  # New 2024
+
+  # Big 12
+  - Arizona  # New 2024
+  - Arizona State  # New 2024
+  - Baylor
+  - BYU
+  - Cincinnati
+  - Colorado  # New 2024
+  - Houston
+  - Iowa State
+  - Kansas
+  - Kansas State
+  - Oklahoma State
+  - TCU
+  - Texas Tech
+  - UCF
+  - Utah  # New 2024
+  - West Virginia
+
+  # Big Ten
+  - Illinois
+  - Indiana
+  - Iowa
+  - Maryland
+  - Michigan
+  - Michigan State
+  - Minnesota
+  - Nebraska
+  - Northwestern
+  - Ohio State
+  - Penn State
+  - Purdue
+  - Rutgers
+  - Wisconsin
+  - Oregon  # New 2024
+  - UCLA  # New 2024
+  - USC  # New 2024
+  - Washington  # New 2024
+
+  # SEC
+  - Alabama
+  - Arkansas
+  - Auburn
+  - Florida
+  - Georgia
+  - Kentucky
+  - LSU
+  - Mississippi State
+  - Missouri
+  - Ole Miss
+  - South Carolina
+  - Tennessee
+  - Texas A&M
+  - Vanderbilt
+  - Oklahoma  # New 2024
+  - Texas  # New 2024
+
+  # American Athletic Conference
+  - Army
+  - Charlotte
+  - East Carolina
+  - Florida Atlantic
+  - Memphis
+  - Navy
+  - North Texas
+  - Rice
+  - South Florida
+  - Temple
+  - Tulane
+  - Tulsa
+  - UAB
+  - UTSA
+
+  # Conference USA
+  - Florida International
+  - Jacksonville State
+  - Kennesaw State
+  - Liberty
+  - Louisiana Tech
+  - Middle Tennessee
+  - New Mexico State
+  - Sam Houston
+  - UTEP
+  - Western Kentucky
+
+  # Mountain West
+  - Air Force
+  - Boise State
+  - Colorado State
+  - Fresno State
+  - Hawaii
+  - Nevada
+  - New Mexico
+  - San Diego State
+  - San Jose State
+  - UNLV
+  - Utah State
+  - Wyoming
+
+  # Pac-12 (Remaining members)
+  - Oregon State
+  - Washington State
+
+  # Sun Belt
+  - Appalachian State
+  - Arkansas State
+  - Coastal Carolina
+  - Georgia Southern
+  - Georgia State
+  - James Madison
+  - Louisiana
+  - Marshall
+  - Old Dominion
+  - South Alabama
+  - Southern Miss
+  - Texas State
+  - Troy
+  - UL Monroe
+
+  # MAC
+  - Akron
+  - Ball State
+  - Bowling Green
+  - Buffalo
+  - Central Michigan
+  - Eastern Michigan
+  - Kent State
+  - Miami (OH)
+  - Northern Illinois
+  - Ohio
+  - Toledo
+  - Western Michigan
+
+  # Independents
+  - Connecticut
+  - Massachusetts
+  - Notre Dame
+
+total_fbs_teams: 134

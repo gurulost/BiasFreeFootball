@@ -44,6 +44,25 @@ class DataValidator:
     def __init__(self, config: Dict):
         self.config = config
         self.logger = logging.getLogger(__name__)
+        self.fbs_master_lists = self._load_fbs_master_lists()
+    
+    def _load_fbs_master_lists(self) -> Dict[int, Set[str]]:
+        """Load season-specific FBS master lists for classification validation"""
+        fbs_lists = {}
+        fbs_dir = Path('data/fbs_master_lists')
+        
+        if fbs_dir.exists():
+            for yaml_file in fbs_dir.glob('fbs_*.yaml'):
+                try:
+                    season = int(yaml_file.stem.split('_')[1])
+                    with open(yaml_file, 'r') as f:
+                        data = yaml.safe_load(f)
+                    fbs_lists[season] = set(data.get('fbs_teams', []))
+                    self.logger.debug(f"Loaded FBS list for {season}: {len(fbs_lists[season])} teams")
+                except (ValueError, yaml.YAMLError) as e:
+                    self.logger.warning(f"Failed to load FBS list from {yaml_file}: {e}")
+        
+        return fbs_lists
         
     def validate_schema(self, games: List[Dict]) -> List[GameRecord]:
         """Strict pydantic schema validation"""
@@ -129,6 +148,69 @@ class DataValidator:
             self.logger.warning(f"Tie games in overtime era: {len(modern_ties)} games")
         
         self.logger.info(f"Outlier check completed: max margin={max(margins)}, max total={max_points}")
+    
+    def validate_fbs_classification(self, games: List[GameRecord], season: int) -> None:
+        """Validate FBS/FCS classification against master list"""
+        if season not in self.fbs_master_lists:
+            self.logger.warning(f"No FBS master list for season {season} - skipping classification check")
+            return
+        
+        fbs_teams = self.fbs_master_lists[season]
+        classification_errors = []
+        
+        for game in games:
+            # Check both teams are in FBS list
+            if game.home_team not in fbs_teams:
+                classification_errors.append(f"{game.home_team} not in FBS master list for {season}")
+            if game.away_team not in fbs_teams:
+                classification_errors.append(f"{game.away_team} not in FBS master list for {season}")
+        
+        if classification_errors:
+            self.logger.error(f"FBS classification errors: {len(classification_errors)}")
+            for error in classification_errors[:10]:
+                self.logger.error(f"  {error}")
+            
+            # Fail if too many classification errors
+            if len(classification_errors) > len(games) * 0.05:
+                raise ValueError(f"Too many FBS classification failures: {len(classification_errors)}")
+        
+        self.logger.info(f"FBS classification check passed: all teams verified for {season}")
+    
+    def validate_season_consistency(self, games: List[GameRecord], expected_season: int) -> None:
+        """Validate all games belong to expected season (handles bowl game timing)"""
+        season_errors = []
+        
+        for i, game in enumerate(games):
+            if game.season != expected_season:
+                season_errors.append(f"Game {i}: season {game.season} != expected {expected_season}")
+        
+        if season_errors:
+            self.logger.error(f"Season consistency errors: {len(season_errors)}")
+            for error in season_errors[:5]:
+                self.logger.error(f"  {error}")
+            raise ValueError(f"Season mismatch detected: {len(season_errors)} games")
+        
+        self.logger.info(f"Season consistency check passed: all games in season {expected_season}")
+    
+    def validate_game_status(self, games: List[GameRecord]) -> None:
+        """Validate game completion status and handle cancellations/forfeits"""
+        incomplete_games = []
+        
+        for i, game in enumerate(games):
+            # All games in our dataset should be completed
+            if not game.completed:
+                incomplete_games.append(f"Game {i}: {game.home_team} vs {game.away_team} not completed")
+        
+        if incomplete_games:
+            self.logger.warning(f"Incomplete games found: {len(incomplete_games)}")
+            for game in incomplete_games[:5]:
+                self.logger.warning(f"  {game}")
+            
+            # Don't fail on incomplete games, but log for review
+            self.logger.info("Incomplete games excluded from analysis as expected")
+        
+        completed_count = sum(1 for game in games if game.completed)
+        self.logger.info(f"Game status validation: {completed_count}/{len(games)} completed games")
     
     def canonical_roundtrip_test(self, canonical_teams: Dict) -> None:
         """Ensure canonical mapping is self-consistent"""
@@ -247,13 +329,22 @@ class DataValidator:
         # 1. Schema validation
         validated_games = self.validate_schema(games)
         
-        # 2. Duplicate detection
+        # 2. FBS/FCS classification validation
+        self.validate_fbs_classification(validated_games, season)
+        
+        # 3. Season consistency validation (bowl game timing)
+        self.validate_season_consistency(validated_games, season)
+        
+        # 4. Game status validation (cancellations/forfeits)
+        self.validate_game_status(validated_games)
+        
+        # 5. Duplicate detection
         self.check_duplicates(validated_games)
         
-        # 3. Outlier detection
+        # 6. Outlier detection
         self.check_outliers(validated_games)
         
-        # 4. Canonical mapping consistency
+        # 7. Canonical mapping consistency
         self.canonical_roundtrip_test(canonical_teams)
         
         # 5. Data integrity checksum

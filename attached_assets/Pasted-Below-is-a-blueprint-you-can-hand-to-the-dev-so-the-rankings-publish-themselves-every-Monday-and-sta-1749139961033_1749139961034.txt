@@ -1,0 +1,111 @@
+Below is a blueprint you can hand to the dev so the rankings publish themselves every Monday and stay frozen after the CFP title until Week 0 of the next season.  It requires **no new servers**—just GitHub Actions + GitHub Pages (or Netlify if you prefer) and a few lines of shell.
+
+---
+
+### 1 — Create an **`/site`** folder in the repo
+
+* `site/index.html` → landing page explaining the model
+* `site/current.json` → latest Monday export (`YYYY_WkXX_live.json`)
+* `site/current.html` → pretty table built from that JSON
+* `site/final.json` / `site/final.html` → appears once retro pipeline runs
+  You can commit a minimal skeleton first (empty JSON, “rankings coming” placeholder).
+
+---
+
+### 2 — Add a GitHub Action that runs every Monday 03:30 ET
+
+```
+.github/workflows/update-rankings.yml
+```
+
+```yaml
+name: weekly-rankings
+on:
+  schedule:
+    - cron:  '30 7 * * 1'   # 07:30 UTC = 03:30 ET Monday
+  workflow_dispatch:        # allow manual trigger
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install deps
+      run: pip install -r requirements.txt
+    - name: Run live pipeline
+      run: python src/live_pipeline.py --auto-week  # auto-detect latest week
+    - name: Copy export into site
+      run: |
+        cp exports/latest_live.json site/current.json
+        python tools/make_html_table.py exports/latest_live.json > site/current.html
+    - name: Commit & push
+      run: |
+        git config --global user.name 'grid-bot'
+        git config --global user.email 'grid-bot@users.noreply.github.com'
+        git add site/current.json site/current.html
+        git commit -m "auto: weekly rankings update $(date -u +%F)" || echo "no changes"
+        git push
+```
+
+*The `--auto-week` flag should infer the most recent completed week based on today’s date.*
+
+---
+
+### 3 — Hook a **post-season job** (once)
+
+Add another workflow triggered manually (or on a tag like `vYYYY-final`) that runs `python src/retro_pipeline.py` and then copies `exports/final_retro.json → site/final.json` and generates `site/final.html` the same way.  After that, disable the Monday cron until next season (or make the cron skip if `season_over=true` in config).
+
+---
+
+### 4 — Turn on GitHub Pages
+
+1. In repo settings → Pages → “Deploy from branch”
+2. Source: branch `main`, folder `/site`
+3. Save and note the public URL, e.g. `https://gurulost.github.io/BiasFreeFootball`.
+
+Every successful Action push updates the `/site` folder, so the web page always shows the fresh Monday table.  During the off-season, `current.html` still shows the final retro rankings; nothing changes until Week 0 triggers the new season’s live pipeline.
+
+---
+
+### 5 — Lightweight front-end
+
+`tools/make_html_table.py` can be a 30-line script that
+
+* reads the JSON
+* writes an `<html>` page with a sortable `<table>` (use a CDN copy of DataTables or vanilla JS)
+  A CSS file in `/site/style.css` keeps it clean; no build system needed.
+
+---
+
+### 6 — API-style access
+
+Because `current.json` and `final.json` are static files under GitHub Pages, anyone can `curl` them (or fetch in JavaScript) with no tokens and no extra API calls to CollegeFootballData—the Action already cached the data.  Example:
+
+```
+curl https://gurulost.github.io/BiasFreeFootball/current.json
+```
+
+---
+
+### 7 — Netlify alternative (optional)
+
+If you prefer Netlify:
+
+* Push the same `/site` folder;
+* Add a Netlify scheduled function (`netlify.toml` cron) that runs the pipeline and deploys;
+* Netlify will auto-redeploy the static site.  The GitHub Actions route keeps everything in one place, so stick with that unless you need Netlify’s analytics.
+
+---
+
+### 8 — Edge cases
+
+* **Data delay:** CollegeFootballData sometimes posts late-night box scores after 03:00 ET.  Set the cron to 07:30 UTC (03:30 ET) or even 09:00 UTC to be safe.
+* **Bye weeks:** `--auto-week` should simply detect “no new games” and exit without committing changes.
+* **Season turnover:** At Week 0 of a new season, live pipeline will reset priors; Monday cron continues as usual because the ingest util sees the new `season=YYYY+1`.
+
+---
+
+Hand the dev these eight steps; they’ll have an auto-updating rankings page in one afternoon.
