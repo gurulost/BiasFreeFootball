@@ -160,26 +160,26 @@ class WeightCalculator:
 
 def margin_factor(game_data: Dict, config: Dict = None) -> float:
     """Convenience function for margin factor calculation"""
-    calc = WeightCalculator(config or {})
+    calc = WeightCalculator(config if config is not None else {})
     return calc.margin_factor(game_data)
 
 
 def venue_factor(game_data: Dict, config: Dict = None) -> float:
     """Convenience function for venue factor calculation"""
-    calc = WeightCalculator(config or {})
+    calc = WeightCalculator(config if config is not None else {})
     return calc.venue_factor(game_data)
 
 
 def decay_factor(game_data: Dict, current_week: int, config: Dict = None) -> float:
     """Convenience function for decay factor calculation"""
-    calc = WeightCalculator(config or {})
+    calc = WeightCalculator(config if config is not None else {})
     return calc.decay_factor(game_data, current_week)
 
 
 def risk_edges(base_weight: float, game_data: Dict, p_exp: float, 
                config: Dict = None) -> tuple:
     """Convenience function for risk multiplier calculation"""
-    calc = WeightCalculator(config or {})
+    calc = WeightCalculator(config if config is not None else {})
     return calc.risk_multipliers(base_weight, game_data, p_exp)
 
 
@@ -194,6 +194,6 @@ def calculate_all_weights(game_data: Dict, rating_winner: float, rating_loser: f
                          current_week: int, games_winner: int, games_loser: int,
                          config: Dict = None) -> Dict:
     """Convenience function for complete weight calculation"""
-    calc = WeightCalculator(config or {})
+    calc = WeightCalculator(config if config is not None else {})
     return calc.calculate_edge_weights(game_data, rating_winner, rating_loser,
                                      current_week, games_winner, games_loser)
