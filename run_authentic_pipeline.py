@@ -179,22 +179,12 @@ def run_authentic_pipeline(season=2024):
         # Sort teams by rating
         sorted_teams = sorted(team_ratings.items(), key=lambda x: x[1], reverse=True)
         
-        # Calculate quality wins for each team using the team graph
-        logger.info("Calculating quality wins from team graph...")
-        
+        # Build rankings using calculated quality wins
         for rank, (team, rating) in enumerate(sorted_teams, 1):
             conference = team_conf_mapping.get(team, 'Unknown')
             
-            # Calculate quality wins (top 3 opponents defeated by edge weight)
-            quality_wins = []
-            if team in team_graph:
-                # Get all teams this team defeated (incoming edges represent wins)
-                wins = [(data.get('weight', 0), opponent) 
-                       for opponent, _, data in team_graph.in_edges(team, data=True)]
-                
-                # Sort by edge weight (strength of win) and take top 3
-                top_wins = sorted(wins, reverse=True)[:3]
-                quality_wins = [opponent for _, opponent in top_wins]
+            # Get real quality wins from dedicated calculator
+            team_quality_wins = quality_wins.get(team, [])
             
             rankings_data['rankings'].append({
                 'rank': rank,
@@ -203,7 +193,7 @@ def run_authentic_pipeline(season=2024):
                 'rating': rating,
                 'rating_retro': rating,
                 'rank_retro': rank,
-                'quality_wins': quality_wins
+                'quality_wins': team_quality_wins
             })
         
         # Step 6: Save authentic rankings

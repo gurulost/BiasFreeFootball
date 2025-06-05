@@ -30,11 +30,11 @@ class QualityWinsCalculator:
         quality_wins = {}
         
         for team in team_graph.nodes():
-            # Get all wins for this team (incoming edges where team is winner)
+            # Get all wins for this team (outgoing edges where team defeated opponent)
             wins = []
             
-            # Iterate through all incoming edges to find wins
-            for loser, winner, edge_data in team_graph.in_edges(team, data=True):
+            # Iterate through all outgoing edges to find wins
+            for winner, loser, edge_data in team_graph.out_edges(team, data=True):
                 if winner == team:  # Confirm this team won
                     edge_weight = edge_data.get('weight', 0.0)
                     opponent_rating = team_ratings.get(loser, 0.0)
@@ -85,8 +85,8 @@ class QualityWinsCalculator:
         for team in team_graph.nodes():
             wins = []
             
-            # Get all wins for this team
-            for loser, winner, edge_data in team_graph.in_edges(team, data=True):
+            # Get all wins for this team (outgoing edges where team defeated opponent)
+            for winner, loser, edge_data in team_graph.out_edges(team, data=True):
                 if winner == team:
                     edge_weight = edge_data.get('weight', 0.0)
                     opponent_rating = team_ratings.get(loser, 0.0)
