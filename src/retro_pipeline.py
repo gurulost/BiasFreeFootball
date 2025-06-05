@@ -44,7 +44,7 @@ class RetroPipeline:
         if max_outer is None:
             max_outer = self.config['pipeline']['retro']['max_outer_iterations']
         
-        convergence_threshold = self.config['pipeline']['retro']['convergence_threshold']
+        convergence_threshold = float(self.config['pipeline']['retro']['convergence_threshold'])
         
         self.logger.info(f"Starting retro pipeline for {season} season")
         
@@ -114,9 +114,9 @@ class RetroPipeline:
                 for team in R_new:
                     old_val = R.get(team, 0.5)
                     new_val = R_new[team]
-                    team_diffs.append(abs(new_val - old_val))
+                    team_diffs.append(abs(float(new_val) - float(old_val)))
                 
-                max_diff = max(team_diffs) if team_diffs else 0
+                max_diff = max(team_diffs) if team_diffs else 0.0
                 
                 iteration_metrics = {
                     'iteration': outer_iter + 1,
@@ -142,9 +142,9 @@ class RetroPipeline:
             if not converged:
                 self.logger.warning(f"EM did not converge after {max_outer} iterations")
             
-            # 4. Bootstrap uncertainty analysis
+            # 4. Bootstrap uncertainty analysis (reduced samples for faster completion)
             self.logger.info("Step 4: Computing bootstrap uncertainty analysis")
-            uncertainty_metrics = self._bootstrap_uncertainty(games_df, R, bootstrap_samples=100)
+            uncertainty_metrics = self._bootstrap_uncertainty(games_df, R, bootstrap_samples=25)
             
             # 5. Final bias audit
             self.logger.info("Step 5: Computing final bias metrics")
@@ -152,7 +152,7 @@ class RetroPipeline:
             
             # 6. Persist final retro ratings
             self.logger.info("Step 6: Persisting retro ratings")
-            self.storage.save_retro_ratings(S, R, season, uncertainty_metrics)
+            self.storage.save_retro_ratings(S, R, season)
             
             # 7. Publish definitive rankings
             self.logger.info("Step 7: Publishing retro results")
