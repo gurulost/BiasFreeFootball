@@ -275,13 +275,16 @@ def final_rankings(season=None):
             current_year = datetime.now().year
             season = current_year - 1 if datetime.now().month <= 7 else current_year
         
-        scheduler = get_scheduler(config)
-        rankings_data = scheduler.get_final_rankings(season)
-        
-        if not rankings_data:
-            return render_template('rankings.html', 
+        # Load cached final rankings data directly
+        cache_file = f'data/cache/final_rankings_{season}.json'
+        try:
+            with open(cache_file, 'r') as f:
+                rankings_data = json.load(f)
+        except FileNotFoundError:
+            return render_template('final_rankings.html', 
                                  rankings=[], 
                                  metadata={'title': f'{season} Final Rankings', 'season': season},
+                                 ratings_data=None,
                                  error=f"Final rankings for {season} not available yet")
         
         rankings = rankings_data.get('rankings', [])
@@ -295,14 +298,14 @@ def final_rankings(season=None):
             'team_ratings': rankings,
             'metadata': metadata
         }
-        return render_template('rankings.html', 
+        return render_template('final_rankings.html', 
                              rankings=rankings, 
                              metadata=metadata,
                              ratings_data=ratings_data)
                              
     except Exception as e:
         logging.error(f"Final rankings error: {e}")
-        return render_template('rankings.html', 
+        return render_template('final_rankings.html', 
                              rankings=[], 
                              metadata={'title': f'{season} Final Rankings', 'season': season or 'Unknown'},
                              ratings_data=None,
