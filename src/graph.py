@@ -72,22 +72,15 @@ class GraphBuilder:
                 games_played.get(winner, 0), games_played.get(loser, 0)
             )
             
-            # Team graph edges (both directions as per blueprint)
-            credit_weight = weights['credit_weight']
-            penalty_weight = weights['penalty_weight']
+            # Team graph edge - single direction from loser to winner
+            # This represents PageRank flow from losing team to winning team
+            edge_weight = weights['credit_weight']
             
-            # Blueprint exact implementation: loser -> winner (credit), winner -> loser (penalty)
-            # Credit edge: loser points to winner (creates incoming edges to winners)
+            # Single edge: loser -> winner (PageRank flows from loser to winner)
             if G_team.has_edge(loser, winner):
-                G_team[loser][winner]['weight'] += credit_weight
+                G_team[loser][winner]['weight'] += edge_weight
             else:
-                G_team.add_edge(loser, winner, weight=credit_weight)
-                
-            # Penalty edge: winner points to loser (penalty for expected wins)
-            if G_team.has_edge(winner, loser):
-                G_team[winner][loser]['weight'] += penalty_weight
-            else:
-                G_team.add_edge(winner, loser, weight=penalty_weight)
+                G_team.add_edge(loser, winner, weight=edge_weight)
             
             # Conference graph edge (cross-conference only, loser -> winner)
             if (weights['is_cross_conf'] and winner_conf and loser_conf):
