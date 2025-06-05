@@ -237,7 +237,7 @@ class SeasonValidator:
             'validation_passed': (
                 len(team_to_conference) == 134 and
                 total_games >= 790 and
-                'Unknown' not in conf_counts or conf_counts['Unknown'] < 5
+                conf_counts.get('Unknown', 0) < 5
             )
         }
         
