@@ -86,8 +86,12 @@ class WeightCalculator:
         # Credit for winner (upset factor)
         credit = (1 - p_exp) / (0.5**self.risk_b)
         
-        # Penalty for loser (expected loss factor)
-        penalty = (p_exp / 0.5)**self.risk_b
+        # Penalty for loser - reduced to prevent bias against teams with losses
+        # Only apply significant penalty for major upsets (p_exp > 0.65)
+        if p_exp > 0.65:
+            penalty = 0.25 * (p_exp / 0.5)**self.risk_b  # Reduced penalty weight
+        else:
+            penalty = 0.05  # Minimal penalty for close games
         
         return credit, penalty
 
