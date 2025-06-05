@@ -112,8 +112,8 @@ class CFBDataIngester:
                 week_games = self.fetch_games(season, w, 'regular')
                 # Filter for FBS-only games (both teams must be FBS)
                 fbs_week_games = [g for g in week_games 
-                                 if g.get('home_team') in fbs_team_names and 
-                                    g.get('away_team') in fbs_team_names]
+                                 if (g.get('homeClassification') == 'fbs' and 
+                                     g.get('awayClassification') == 'fbs')]
                 all_games.extend(fbs_week_games)
                 self.logger.info(f"Week {w}: {len(fbs_week_games)} FBS-only games from {len(week_games)} total")
             except Exception as e:
@@ -135,15 +135,15 @@ class CFBDataIngester:
         # Regular season games with FBS-only filtering
         regular_games = self.fetch_games(season, season_type='regular')
         fbs_regular_games = [g for g in regular_games 
-                            if g.get('home_team') in fbs_team_names and 
-                               g.get('away_team') in fbs_team_names]
+                            if (g.get('homeClassification') == 'fbs' and 
+                                g.get('awayClassification') == 'fbs')]
         all_games.extend(fbs_regular_games)
         
         # Postseason games with FBS-only filtering
         bowl_games = self.fetch_games(season, season_type='postseason')
         fbs_bowl_games = [g for g in bowl_games 
-                         if g.get('home_team') in fbs_team_names and 
-                            g.get('away_team') in fbs_team_names]
+                         if (g.get('homeClassification') == 'fbs' and 
+                             g.get('awayClassification') == 'fbs')]
         all_games.extend(fbs_bowl_games)
         
         self.logger.info(f"FBS-only games: {len(all_games)} (regular: {len(fbs_regular_games)}, bowls: {len(fbs_bowl_games)})")

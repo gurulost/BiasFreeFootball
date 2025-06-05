@@ -1,712 +1,139 @@
 # CFB Rankings Export
-# Generated: 2025-06-05T06:22:46.777444
+# Generated: 2025-06-05T06:31:47.229335
 # Season: 2024
 #
 rank_retro,team,conference,rating_retro,conf_weight,quality_wins,uncertainty
-1,Defiance College,Independent,0.0023937687693682506,0.5,"['Lincoln (CA)', 'Valdosta State', 'North Central College']",0.0
-2,Lincoln (CA),Independent,0.00225626504166133,0.5,"['Defiance College', 'Valdosta State', 'North Central College']",0.0
-3,Valdosta State,Independent,0.002067498625299406,0.5,"['Defiance College', 'Lincoln (CA)', 'North Central College']",0.0
-4,North Central College,Independent,0.002059240659553943,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-5,Notre Dame,Independent,0.0020571405089307355,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-6,Ferris State,Independent,0.0020440577338100355,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-7,Mary Hardin-Baylor,Independent,0.0019849762864737304,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-8,Whitworth,Independent,0.0019750065166042126,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-9,University of Mount Union,Independent,0.0019749771865328054,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-10,Texas,Big 12,0.001965791978070727,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-11,Adrian,Independent,0.0019529922355241785,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-12,Virginia Union,Independent,0.0019214204184857748,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-13,Bethel (MN),Independent,0.0019204321144671362,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-14,Nebraska Wesleyan,Independent,0.0019060383044468621,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-15,Montana State,Independent,0.0018956244325792728,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-16,Johns Hopkins University,Independent,0.0018904072097178893,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-17,Linfield College,Independent,0.0018858081241117824,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-18,North Dakota State,Independent,0.0018805881209506083,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-19,South Dakota State,Independent,0.0018787539691841615,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-20,Jackson State,Independent,0.0018758178644715333,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-21,Central Oklahoma,Independent,0.0018667083643292975,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-22,Mercer,Independent,0.0018576500729638162,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-23,Springfield,Independent,0.0018429609014341444,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-24,Susquehanna,Independent,0.0018387809375405996,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-25,Alabama A&M,Independent,0.0018248346371229018,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-26,Incarnate Word,Independent,0.001819081307528739,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-27,Minnesota State Mankato,Independent,0.0018008636300489767,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-28,Harding University,Independent,0.0017980055487097383,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-29,Salisbury,Independent,0.0017933599617727676,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-30,Stetson,Independent,0.0017909328683002493,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-31,South Dakota,Independent,0.0017896342189226472,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-32,Arkansas-Pine Bluff,Independent,0.0017849687073302578,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-33,SMU,Independent,0.0017839822488917522,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-34,Hope College,Independent,0.0017839483882004551,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-35,Miami (OH),Independent,0.001773762457139125,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-36,Villanova,Independent,0.0017724892373026067,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-37,Ohio,Independent,0.0017711726763958654,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-38,Hardin-Simmons,Independent,0.0017679567564384165,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-39,Wartburg,Independent,0.0017646750410752294,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-40,Lenoir-Rhyne,Independent,0.001763860836255506,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-41,Morehead State,Independent,0.001760314560740268,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-42,Grand Valley State University,Independent,0.0017602299823652372,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-43,UConn,Independent,0.001758753093816079,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-44,Boise State,Independent,0.0017532065862962652,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-45,Army,Independent,0.0017518942774218409,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-46,Depauw,Independent,0.0017512521207443399,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-47,Endicott College,Independent,0.0017508184868761645,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-48,Northern Arizona,Independent,0.0017441835124581873,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-49,Fort Lewis,Independent,0.001739090930201622,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-50,Slippery Rock,Independent,0.001738534760287382,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-51,Tulane,Independent,0.0017366164207229795,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-52,Miles College,Independent,0.0017346727070698552,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-53,Lewis & Clark College,Independent,0.0017346584027720735,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-54,Eastern Kentucky,Independent,0.001728871598890375,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-55,Illinois State,Independent,0.0017237470332421099,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-56,Montana,Independent,0.0017232013377213155,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-57,John Carroll University,Independent,0.0017216748558587644,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-58,Idaho,Independent,0.0017214097909672883,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-59,Memphis,Independent,0.0017157295666365233,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-60,Rhode Island,Independent,0.001715444770761888,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-61,Saint John's (MN),Independent,0.0017127000137935606,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-62,Western Colorado,Independent,0.0017077695269443027,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-63,Missouri S&T,Independent,0.0017021793213177314,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-64,Colorado State,Independent,0.0016994994938012234,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-65,Bemidji State,Independent,0.0016972974751647352,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-66,Southern,Independent,0.0016941234831179572,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-67,Westminster College (MO),Independent,0.0016925887052763803,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-68,Carson-Newman College,Independent,0.0016911664688043931,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-69,Sul Ross State,Independent,0.0016803343654187613,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-70,Western Kentucky,Independent,0.0016776095809413725,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-71,Wisconsin-Platteville,Independent,0.0016721121088739252,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-72,Butler,Independent,0.0016691557519105673,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-73,Northwestern (MN),Independent,0.0016668947503949525,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-74,Jacksonville State,Independent,0.0016662201964465129,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-75,Western Michigan,Independent,0.001664285821349115,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-76,Simpson College (IA),Independent,0.001663964897659159,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-77,UNLV,Independent,0.0016552509249878318,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-78,Houston Christian,Independent,0.0016532149090359607,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-79,Texas Lutheran,Independent,0.0016495871207698502,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-80,Coastal Carolina,Independent,0.0016494989441877307,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-81,St. Thomas (MN),Independent,0.0016490635183017417,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-82,Emory & Henry College,Independent,0.0016488784910402153,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-83,Tarleton State,Independent,0.0016485597736333399,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-84,Valparaiso,Independent,0.0016483267865466398,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-85,Buffalo,Independent,0.001648318834397565,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-86,UTSA,Independent,0.0016461327199369582,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-87,Rose-Hulman,Independent,0.0016461110862220612,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-88,Kings College (PA),Independent,0.0016458817164920407,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-89,UT Martin,Independent,0.0016440600974890458,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-90,Indianapolis,Independent,0.0016438024272464177,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-91,Louisiana,Independent,0.0016431883896201763,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-92,Southeast Missouri State,Independent,0.0016367033749112372,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-93,Carnegie Mellon,Independent,0.001635979363722109,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-94,Newberry,Independent,0.0016350915225163104,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-95,Louisiana Tech,Independent,0.001632725360115178,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-96,Lincoln (MO),Independent,0.0016302819155050996,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-97,Willamette,Independent,0.0016299135183922664,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-98,Arizona State,Pac-12,0.0016295814666005516,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-99,Lehigh,Independent,0.0016239887848533425,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-100,South Florida,Independent,0.001622398117919967,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-101,Pacific Lutheran,Independent,0.0016215488883637782,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-102,Roosevelt,Independent,0.0016206072610422952,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-103,Pomona Pitzer,Independent,0.0016193318646162674,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-104,Maryville College (TN),Independent,0.0016192068273779786,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-105,Akron,Independent,0.0016166212272660937,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-106,East Carolina,Independent,0.0016146472744643506,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-107,Tennessee State,Independent,0.0016142385733961895,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-108,Fresno State,Independent,0.0016126751068839486,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-109,Bowling Green,Independent,0.0016115132903072825,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-110,Northeastern State,Independent,0.0016113807543058614,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-111,Wingate,Independent,0.0016106385022691056,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-112,Albion,Independent,0.0016088371083076113,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-113,Oklahoma,Big 12,0.0016055603690411189,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-114,Western Illinois,Independent,0.0016051393568341401,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-115,Arkansas State,Independent,0.0016048504651405711,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-116,Anderson (Sc),Independent,0.0016043844559528735,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-117,Stephen F. Austin,Independent,0.0016042728048486724,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-118,Hanover College,Independent,0.0016034410458719128,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-119,Minot State,Independent,0.001602839121816501,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-120,Angelo State,Independent,0.0016019665952490588,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-121,Wilson,Independent,0.0016014991283296203,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-122,Randolph-Macon,Independent,0.001601226584376203,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-123,Presbyterian,Independent,0.001600743081689851,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-124,Aurora,Independent,0.0016006255441420921,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-125,Marshall,Independent,0.0015998433234129482,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-126,Centre College Kentucky,Independent,0.0015978410317971645,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-127,UMass Dartmouth,Independent,0.0015940205025737556,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-128,North Greenville,Independent,0.0015918668163694258,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-129,Alcorn State,Independent,0.0015905795182945364,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-130,Houston,Independent,0.001589041346878597,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-131,William & Mary,Independent,0.0015885754472777039,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-132,Pacific (OR),Independent,0.0015883561807274909,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-133,Southwest Baptist,Independent,0.0015870680989227435,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-134,James Madison,Independent,0.0015869912405416312,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-135,Mount St. Joseph,Independent,0.0015862226280608908,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-136,Puget Sound,Independent,0.001584357944869457,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-137,Dayton,Independent,0.0015825039522817143,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-138,University Of Charleston (WV),Independent,0.001580377898371627,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-139,BYU,Independent,0.0015801114565940294,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-140,Howard Payne,Independent,0.0015799688129623827,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-141,Manchester,Independent,0.0015798948988650842,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-142,Cortland,Independent,0.0015796147950102406,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-143,PennWest California,Independent,0.0015787338837645465,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-144,Wagner,Independent,0.0015784214552297278,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-145,Olivet College,Independent,0.0015782859711468112,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-146,Indiana State,Independent,0.0015775989738185448,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-147,Bluffton,Independent,0.0015774046051203736,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-148,North Texas,Independent,0.0015771031777198732,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-149,Alfred State,Independent,0.0015767597148567264,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-150,Missouri Southern State,Independent,0.0015760076622316473,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-151,Davidson,Independent,0.0015754011213798076,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-152,North Carolina A&T,Independent,0.0015750260721686172,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-153,Midwestern State,Independent,0.0015745784372845845,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-154,Lake Forest College,Independent,0.0015745511042879283,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-155,Nicholls,Independent,0.0015743310860061525,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-156,CSU Pueblo,Independent,0.0015742030886600677,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-157,Truman State,Independent,0.0015729277363025933,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-158,Northwestern State,Independent,0.0015719346409037653,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-159,Toledo,Independent,0.001571207307715342,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-160,Wisconsin-Lacrosse,Independent,0.0015697792358068462,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-161,Wayne State (MI),Independent,0.0015684897987464197,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-162,Black Hills State,Independent,0.0015682231483335823,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-163,Fort Hays State,Independent,0.0015677822731083894,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-164,Central Connecticut,Independent,0.001566628555818937,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-165,Richmond,Independent,0.0015650010397247752,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-166,Abilene Christian,Independent,0.0015646205536364438,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-167,Trinity University TX,Independent,0.0015634774240026483,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-168,Nichols College,Independent,0.0015631835292974617,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-169,Ashland,Independent,0.0015631336618442872,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-170,UC Davis,Independent,0.0015626844902845217,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-171,Chadron St,Independent,0.001562387650199734,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-172,Tiffin,Independent,0.0015613372410252875,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-173,Northern Illinois,Independent,0.0015609927830039262,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-174,NEWBERG,Independent,0.0015585216577894427,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-175,Lindenwood,Independent,0.0015565753710529001,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-176,VMI,Independent,0.0015562661861234885,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-177,Navy,Independent,0.001556132444462882,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-178,Robert Morris,Independent,0.0015542212432557122,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-179,Kutztown University,Independent,0.0015540899600048935,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-180,Hobart College,Independent,0.0015536463824194066,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-181,Northern Michigan,Independent,0.0015532846601722563,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-182,Eastern Illinois,Independent,0.0015530562446067107,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-183,Southern Miss,Independent,0.0015517439402463816,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-184,Coe College,Independent,0.0015504036605014924,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-185,Adams State,Independent,0.0015501091957817819,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-186,Northwest Missouri St,Independent,0.0015499655556065173,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-187,San Diego,Independent,0.001549921697212328,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-188,UNC Pembroke,Independent,0.0015486966989254588,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-189,California,Pac-12,0.0015482463189804222,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-190,Tuskegee,Independent,0.001547832413195281,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-191,Martin Luther,Independent,0.0015478162002013863,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-192,Middle Tennessee,Independent,0.001547455211725243,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-193,UAB,Independent,0.0015472804120318386,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-194,Utah State,Independent,0.0015472262785499482,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-195,Temple,Independent,0.0015471492347072452,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-196,UL Monroe,Independent,0.0015466996026770282,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-197,San José State,Independent,0.0015454416612704764,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-198,UTEP,Independent,0.0015449948450662282,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-199,Western Carolina,Independent,0.001544595609991474,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-200,Worcester Polytechnic Institute,Independent,0.0015444976514798442,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-201,South Alabama,Independent,0.0015434830022497301,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-202,West Alabama,Independent,0.0015427199573081626,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-203,Nevada,Independent,0.0015422639991377236,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-204,Augustana University (SD),Independent,0.0015417714689978119,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-205,Georgia State,Independent,0.0015409122065892145,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-206,Kent State,Independent,0.0015407540797456132,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-207,Eastern New Mexico,Independent,0.0015398083567891338,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-208,Georgia Southern,Independent,0.0015387027963935152,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-209,New Mexico Highlands,Independent,0.0015386438814182339,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-210,Colgate,Independent,0.0015377413190793862,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-211,Maine,Independent,0.001537392658334539,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-212,New Haven,Independent,0.0015369868266568135,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-213,Limestone,Independent,0.0015359684429086856,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-214,Wisconsin-River Falls,Independent,0.0015356903761395663,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-215,Franklin,Independent,0.001533333694249518,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-216,UAlbany,Independent,0.0015332559811589562,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-217,Central Washington,Independent,0.0015331149297848285,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-218,Sewanee,Independent,0.0015325693505463794,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-219,North Alabama,Independent,0.0015321073885928215,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-220,Florida A&M,Independent,0.0015314122950516166,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-221,Greenville,Independent,0.0015288825512560173,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-222,Air Force,Independent,0.0015281063658421803,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-223,Luther,Independent,0.0015274533031492856,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-224,Missouri State,Independent,0.001527439803841526,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-225,West Texas A&M,Independent,0.001525850217455235,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-226,University of Mary,Independent,0.0015255444617264023,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-227,McKendree,Independent,0.001525119543543625,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-228,Northern Iowa,Independent,0.0015248864648513781,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-229,Thomas More College,Independent,0.0015245786825608886,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-230,Long Island University,Independent,0.0015237688668703275,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-231,Lafayette,Independent,0.0015230918945868656,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-232,West Virginia State,Independent,0.0015227159163923767,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-233,Western New Mexico,Independent,0.0015226005280358926,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-234,Cincinnati,Independent,0.001522287661164508,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-235,New Hampshire,Independent,0.0015213996828026743,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-236,Emporia State University,Independent,0.0015208179416530431,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-237,Chattanooga,Independent,0.0015202703815459988,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-238,Grove City College,Independent,0.0015202327071048125,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-239,Southwest Minnesota State,Independent,0.0015201582386353794,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-240,Florida Atlantic,Independent,0.0015200793550090232,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-241,Trine University,Independent,0.0015200406256508142,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-242,Berry College,Independent,0.001519949171534016,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-243,St. Norbert,Independent,0.0015185062525649082,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-244,Alabama State,Independent,0.0015184670959648655,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-245,Penn State,Big Ten,0.0015177236381813044,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-246,Fordham,Independent,0.0015174194584425928,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-247,Ohio Dominican,Independent,0.0015171967214018035,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-248,Dubuque,Independent,0.0015164019662558246,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-249,McNeese,Independent,0.0015156534697976678,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-250,Mississippi Valley State,Independent,0.001514230157262384,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-251,Murray State,Independent,0.0015140221348139114,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-252,East Stroudsburg University,Independent,0.0015138418071390266,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-253,Biddeford,Independent,0.0015133446429742936,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-254,UCF,Independent,0.0015133075923714852,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-255,Anderson (IN),Independent,0.0015131512282766213,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-256,Southern Illinois,Independent,0.0015120438402168154,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-257,Hilbert College,Independent,0.001510705378137143,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-258,Western Connecticut St,Independent,0.0015100814832867539,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-259,Calvin University,Independent,0.0015090397680669262,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-260,Illinois College,Independent,0.00150849780924437,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-261,Augsburg,Independent,0.0015079070877830805,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-262,Findlay,Independent,0.0015078987592638702,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-263,Loras College,Independent,0.0015072183393728539,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-264,Central Arkansas,Independent,0.0015063525227176427,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-265,Sam Houston,Independent,0.0015062249578901591,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-266,Massachusetts,Independent,0.0015060449622657992,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-267,Carleton,Independent,0.0015056951936591725,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-268,LYONCOLL,Independent,0.0015053369565114173,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-269,Monmouth,Independent,0.0015045897646290486,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-270,Troy,Independent,0.0015032776192430283,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-271,New Mexico State,Independent,0.001502800696763545,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-272,Colorado,Pac-12,0.0015022328472180174,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-273,Bridgewater State,Independent,0.0015020725074708777,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-274,McMurry,Independent,0.0015020222089847702,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-275,University of Rochester (NY),Independent,0.0015016301989849094,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-276,Wisconsin-Stevens Pt,Independent,0.0015013443726553779,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-277,Central College,Independent,0.0015010272914098384,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-278,Howard,Independent,0.0015004845745575654,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-279,North Dakota,Independent,0.0014999407754342393,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-280,South Carolina State,Independent,0.0014997639580983488,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-281,ERSKINE,Independent,0.0014997379582451038,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-282,Winona State,Independent,0.0014986706067438597,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-283,Hartwick,Independent,0.0014985455078557828,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-284,Allen,Independent,0.0014984699314593932,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-285,Campbell,Independent,0.001498320363751188,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-286,Amherst,Independent,0.0014970829256149725,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-287,Edward Waters,Independent,0.0014962351637316507,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-288,Rice,Independent,0.001496039897923213,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-289,Lagrange College,Independent,0.0014953582055185247,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-290,Stanford,Pac-12,0.0014949636707836773,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-291,Morgan State,Independent,0.0014948361900999122,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-292,Samford,Independent,0.0014946861255458032,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-293,Utah Tech,Independent,0.001494533016007918,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-294,Towson,Independent,0.0014944602597174899,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-295,New Mexico,Independent,0.0014942324598934556,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-296,CENTENARY,Independent,0.0014942052483877001,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-297,Duquesne,Independent,0.001494203069169018,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-298,East Texas A&M,Independent,0.0014936931827514014,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-299,Elon,Independent,0.0014935489638814626,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-300,Wayne State (NE),Independent,0.0014935338898808442,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-301,La Verne,Independent,0.0014925203007958127,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-302,Minnesota Morris,Independent,0.001491859922159849,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-303,Marist,Independent,0.001491193882097085,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-304,Delta State,Independent,0.00149108549315781,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-305,Rhodes College,Independent,0.0014899762702624054,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-306,Averett,Independent,0.0014896104245497417,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-307,Kalamazoo,Independent,0.0014895715430970587,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-308,Trinity (CT),Independent,0.0014894011194447445,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-309,Hamilton,Independent,0.0014889252949988195,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-310,Michigan Tech,Independent,0.0014886702218250853,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-311,Shepherd,Independent,0.0014873496806037632,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-312,Texas A&M-Kingsville,Independent,0.0014868840974936151,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-313,Texas State,Independent,0.0014868425760014273,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-314,Southern Virginia,Independent,0.0014861670235202773,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-315,Kentucky Wesleyan,Independent,0.0014861427663919492,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-316,Elmhurst,Independent,0.0014852493694840038,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-317,Oregon,Pac-12,0.0014850626403245552,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-318,USC,Pac-12,0.0014848886260416404,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-319,Wisconsin-Whitewater,Independent,0.001484878137234555,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-320,Upper Iowa University,Independent,0.0014838238805198324,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-321,Shippensburg,Independent,0.00148353085239812,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-322,Washington & Jefferson,Independent,0.001482112380880666,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-323,Delaware State,Independent,0.0014809409566592135,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-324,Rowan,Independent,0.00148041168482429,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-325,Tennessee Tech,Independent,0.0014788064128461354,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-326,Western Oregon,Independent,0.0014785675457386809,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-327,West Liberty,Independent,0.0014778162187310815,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-328,East Texas Baptist University,Independent,0.0014770174746881548,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-329,Grambling,Independent,0.0014764768725130488,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-330,Idaho State,Independent,0.0014751254895798015,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-331,Sacred Heart,Independent,0.001474903676623526,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-332,Moravian,Independent,0.001474341152703179,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-333,West Virginia Wesleyan,Independent,0.0014735405935301612,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-334,North Carolina Central,Independent,0.0014733480135615228,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-335,Delaware,Independent,0.001469948177880106,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-336,Bryant,Independent,0.0014687533587194259,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-337,Ouachita Baptist,Independent,0.001468468382686129,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-338,Old Dominion,Independent,0.001468460418945665,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-339,UVA Wise,Independent,0.001468125216787791,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-340,Mississippi College,Independent,0.0014658566741532367,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-341,Ursinus,Independent,0.0014655122468787629,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-342,Belhaven,Independent,0.0014650730060930535,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-343,Chicago,Independent,0.001464822757381781,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-344,Western New England,Independent,0.001464735148960532,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-345,Stonehill,Independent,0.0014643843952846921,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-346,App State,Independent,0.0014639190026264092,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-347,Chowan,Independent,0.0014623745795127247,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-348,Buffalo State,Independent,0.0014623495846435327,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-349,Oberlin,Independent,0.0014618466498789707,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-350,Glenville State,Independent,0.0014614966147245292,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-351,Crown College,Independent,0.0014614484948539503,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-352,Monmouth (IL),Independent,0.0014608002300692895,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-353,Rensselaer,Independent,0.0014607640423342167,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-354,Northern Colorado,Independent,0.0014600487755408009,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-355,Alma,Independent,0.0014599055660880237,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-356,Cornell College (IA),Independent,0.0014588231213539934,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-357,Austin,Independent,0.001458699855510653,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-358,Claremont-Mudd-Scripps College,Independent,0.0014584617733856818,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-359,Augustana (IL),Independent,0.0014584184542561576,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-360,Wisconsin-Eau Claire,Independent,0.0014555849843832858,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-361,Youngstown State,Independent,0.0014550640029705809,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-362,Gustavus Adolphus,Independent,0.0014547563517009739,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-363,Southwestern University,Independent,0.0014536358707907772,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-364,Prairie View A&M,Independent,0.0014534469629644867,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-365,Eastern Washington,Independent,0.0014529988577995185,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-366,Virginia St,Independent,0.001452665477960207,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-367,Walsh,Independent,0.0014525009201625573,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-368,Sacramento State,Independent,0.0014520298101404392,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-369,St. Olaf,Independent,0.0014510263152844355,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-370,Framingham State,Independent,0.0014508554390514977,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-371,South Dakota Mines,Independent,0.0014505527659891423,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-372,Catawba,Independent,0.001449974543603129,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-373,West Florida,Independent,0.0014498804249832757,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-374,Southwestern Oklahoma State,Independent,0.0014486159778265052,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-375,Henderson State,Independent,0.0014474987125938305,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-376,Eastern Michigan,Independent,0.001447218278177476,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-377,Wheaton,Independent,0.0014451710112907527,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-378,Carroll University (WI),Independent,0.0014449513001100916,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-379,Kennesaw State,Independent,0.0014440863316989311,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-380,Wisconsin-Stout,Independent,0.0014438635567560498,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-381,Buena Vista,Independent,0.001443851571824281,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-382,William Jewell,Independent,0.0014417706780818211,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-383,Otterbein,Independent,0.0014414595291462376,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-384,Albright,Independent,0.0014413998262763014,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-385,Wilmington (OH),Independent,0.0014405919031136149,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-386,Shorter,Independent,0.0014404409809908789,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-387,Florida International,Independent,0.0014403943788432944,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-388,Washington University (St. Louis),Independent,0.0014396314398851975,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-389,West Georgia,Independent,0.001439106041340795,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-390,Ohio Wesleyan,Independent,0.0014383652567186201,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-391,California Lutheran University,Independent,0.0014377233981331984,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-392,Marietta,Independent,0.0014374237960041488,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-393,Davenport,Independent,0.0014373653734978847,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-394,East Tennessee State,Independent,0.0014361110557164162,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-395,Colorado Mesa,Independent,0.001435430074720344,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-396,Ball State,Independent,0.0014353837746063423,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-397,Guilford College,Independent,0.001435040572102309,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-398,Tufts,Independent,0.0014339518730171219,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-399,Colby College,Independent,0.0014338150161518105,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-400,Illinois Wesleyan,Independent,0.0014330229470642343,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-401,Wofford,Independent,0.0014324084124469323,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-402,Fort Valley State,Independent,0.0014322035775818495,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-403,Washington and Lee,Independent,0.0014320487693537194,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-404,Fitchburg State,Independent,0.001431214636811039,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-405,Greeneville,Independent,0.0014306829027839938,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-406,Ripon,Independent,0.0014305117309909028,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-407,Hawai'i,Independent,0.0014302671490927941,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-408,Arkansas-Monticello,Independent,0.0014301256158656646,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-409,Brevard College,Independent,0.0014301160305025052,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-410,Worcester St,Independent,0.001429885564275459,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-411,Tulsa,Independent,0.0014298500095592432,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-412,Saginaw Valley State,Independent,0.0014295075319845525,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-413,Wooster,Independent,0.0014290938975248144,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-414,Albany State GA,Independent,0.0014281277393973534,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-415,Kenyon,Independent,0.0014272936411197372,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-416,Central State (OH),Independent,0.001426869310952353,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-417,Beloit,Independent,0.001425613156112618,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-418,Southeastern Oklahoma State,Independent,0.0014255026412698265,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-419,Hampton,Independent,0.0014252330715946277,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-420,Texas Southern,Independent,0.0014248083597410968,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-421,Concord University,Independent,0.0014243911323465553,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-422,Redlands,Independent,0.0014241474077875793,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-423,American International,Independent,0.0014239629582883028,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-424,Benedictine University,Independent,0.001422001748441185,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-425,Thiel,Independent,0.001421218116614358,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-426,Central Michigan,Independent,0.0014208816219084118,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-427,Ithaca College,Independent,0.001420625711309074,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-428,Hamline University,Independent,0.0014203104412369666,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-429,Johnson C Smith,Independent,0.0014199477008923678,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-430,Union (NY),Independent,0.001419065954734185,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-431,Bluefield State,Independent,0.0014190649869685015,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-432,Lebanon Valley,Independent,0.0014189134811468948,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-433,McDaniel College,Independent,0.0014188048035234158,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-434,Millikin,Independent,0.0014177670537294416,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-435,Hampden-Sydney,Independent,0.0014177503043835045,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-436,Drake,Independent,0.0014169959133217653,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-437,Shaw,Independent,0.0014147111801269758,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-438,Ferrum,Independent,0.001414135250207082,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-439,Sioux Falls,Independent,0.0014140571598506694,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-440,Bowie State,Independent,0.0014140037361137757,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-441,Chapman,Independent,0.0014133258290993476,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-442,Princeton,Independent,0.0014128442061212927,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-443,Alfred University,Independent,0.001412448657722665,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-444,Greensboro College,Independent,0.0014122529541908697,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-445,Dickinson (PA),Independent,0.0014116220146495819,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-446,Wabash College,Independent,0.001411603579338618,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-447,Westfield State,Independent,0.0014109555571254636,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-448,Cal Poly,Independent,0.0014093038452831445,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-449,College Of New Jersey,Independent,0.001408870691813555,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-450,San Diego State,Independent,0.0014087957000739522,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-451,Husson,Independent,0.0014080689748714975,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-452,Concordia Moorhead,Independent,0.0014069970631913468,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-453,Liberty,Independent,0.0014065297564199836,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-454,Bowdoin,Independent,0.00140447602727539,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-455,Charleston Southern,Independent,0.0014044194238389046,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-456,Austin Peay,Independent,0.0014037290333807912,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-457,Concordia University Chicago,Independent,0.001403358274987605,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-458,Wisconsin-Oshkosh,Independent,0.0014032548004451026,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-459,Southern Arkansas,Independent,0.001403085373905115,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-460,The Citadel,Independent,0.0014024403486378623,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-461,Delaware Valley,Independent,0.0014015601610289632,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-462,Lycoming,Independent,0.00140150196638723,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-463,Brockport,Independent,0.0014007824172911827,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-464,Wittenberg,Independent,0.0014007737413360862,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-465,Wilkes,Independent,0.001400346397559074,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-466,Weber State,Independent,0.0014003033195280133,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-467,Northwestern Oklahoma State,Independent,0.0013996548545225401,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-468,Colorado School Of Mines,Independent,0.0013984891636602327,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-469,Lamar,Independent,0.0013975943375318662,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-470,Concordia University St Paul,Independent,0.001397483079742906,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-471,Eureka College,Independent,0.0013971994412775562,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-472,Arkansas Tech,Independent,0.001396923430415148,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-473,Central Missouri,Independent,0.0013962633333485166,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-474,Eastern University,Independent,0.0013960875215362357,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-475,Geneva,Independent,0.0013957127271394467,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-476,Muskingum University,Independent,0.0013947578763191624,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-477,Rockford,Independent,0.0013945272380070383,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-478,Bethune-Cookman,Independent,0.0013944119304069606,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-479,Reading,Independent,0.0013943086706582515,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-480,Oregon State,Pac-12,0.0013942176845952107,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-481,Benedict College,Independent,0.0013940950779224462,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-482,Denison University,Independent,0.0013930190198001805,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-483,Huntingdon College (AL),Independent,0.001392344787612829,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-484,St. Francis (PA),Independent,0.001392322058272996,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-485,Bucknell,Independent,0.0013902539024857983,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-486,Kean,Independent,0.0013892306319797407,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-487,William Paterson,Independent,0.00138916272964837,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-488,Castleton,Independent,0.0013879116537027433,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-489,Bloomsburg,Independent,0.0013877604405128918,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-490,Missouri Western,Independent,0.0013876320958785282,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-491,UT Permian Basin,Independent,0.0013872664619558933,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-492,Stony Brook,Independent,0.001387139244550133,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-493,Kentucky State,Independent,0.0013869100065630941,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-494,East Central (OK),Independent,0.0013853069999006742,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-495,SUNY Maritime,Independent,0.0013851919476462894,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-496,Lake Erie,Independent,0.0013845016039829695,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-497,Charlotte,Independent,0.0013844266608807946,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-498,Merrimack,Independent,0.0013840660831128493,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-499,Juniata College,Independent,0.0013839521822093125,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-500,Southern Utah,Independent,0.00138379694670185,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-501,Furman,Independent,0.001383082910272692,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-502,Northwood (MI),Independent,0.0013830714673693084,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-503,Middlebury,Independent,0.0013828542436270957,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-504,Williams,Independent,0.0013823221747693538,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-505,Oklahoma Baptist,Independent,0.0013820416997373788,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-506,Mass Maritime,Independent,0.0013820412983230192,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-507,Georgetown,Independent,0.0013815973018979117,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-508,Franklin & Marshall,Independent,0.001381362234236611,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-509,Heidelberg,Independent,0.0013806781111717393,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-510,Clark Atlanta,Independent,0.0013798643381775604,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-511,Norfolk State,Independent,0.0013795257712170474,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-512,Morehouse College,Independent,0.0013785825421882808,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-513,Salve Regina,Independent,0.001377970651744809,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-514,Portland State,Independent,0.001376952429147734,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-515,Misericordia,Independent,0.0013759808456737055,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-516,Pittsburg St,Independent,0.001374607249185496,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-517,Bridgewater (VA),Independent,0.001373760720571204,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-518,Concordia-Wisconsin,Independent,0.001372995048990659,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-519,Bethany (WV),Independent,0.0013726623460945202,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-520,Fairmont State,Independent,0.0013726582877198513,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-521,Waynesburg,Independent,0.0013722741554859426,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-522,Lock Haven University,Independent,0.0013719291572822816,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-523,Millersville,Independent,0.0013718820467209642,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-524,Keystone,Independent,0.0013713605192611693,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-525,St. Scholastica,Independent,0.001371137719670636,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-526,FDU-Florham,Independent,0.0013709929579716119,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-527,Hendrix College,Independent,0.0013709493743862867,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-528,Clarion,Independent,0.0013707112001988754,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-529,SE Louisiana,Independent,0.001370432407041557,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-530,Grinnell,Independent,0.0013702446397418843,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-531,Curry College,Independent,0.0013694964795213306,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-532,St. Anselm,Independent,0.0013691823043107767,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-533,Capital,Independent,0.0013691543727749785,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-534,Seton Hill,Independent,0.0013676112384296132,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-535,Hiram College,Independent,0.0013671954290184556,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-536,Carthage,Independent,0.0013671533571523516,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-537,Case Western Reserve,Independent,0.0013671204400065855,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-538,Minnesota Duluth,Independent,0.001366779414464095,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-539,St John Fisher University,Independent,0.001363141849080424,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-540,Methodist,Independent,0.0013627371187068277,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-541,Livingstone,Independent,0.0013616927647112018,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-542,Winston-Salem,Independent,0.0013595086750545098,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-543,Stevenson,Independent,0.001359360134931722,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-544,Southern Connecticut State,Independent,0.0013592321518638342,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-545,Utica,Independent,0.0013581717679156235,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-546,Christopher Newport,Independent,0.001353789835712995,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-547,Mercyhurst,Independent,0.0013517925838227138,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-548,Widener,Independent,0.0013510429697689583,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-549,Washington,Pac-12,0.0013504541446887656,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-550,Coast Guard,Independent,0.0013496865074164313,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-551,Saint Vincent,Independent,0.0013487869796556331,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-552,Washington State,Pac-12,0.0013485661521214572,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-553,North Carolina Wesleyan,Independent,0.0013484578844741818,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-554,West Chester,Independent,0.0013483949457639352,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-555,Allegheny,Independent,0.0013478014267567656,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-556,Frostburg State,Independent,0.0013476948093596518,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-557,SUNY Morrisville,Independent,0.0013471829677614757,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-558,Assumption,Independent,0.0013470855444773487,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-559,Wyoming,Independent,0.0013469311319949592,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-560,Gannon,Independent,0.0013449172061692281,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-561,Savannah St,Independent,0.0013448259914480086,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-562,Westminster (PA),Independent,0.0013430094507096168,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-563,Lawrence University,Independent,0.0013422960682026677,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-564,Ohio State,Big Ten,0.0013422105889758357,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-565,Franklin Pierce,Independent,0.0013412523443808962,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-566,Arizona,Pac-12,0.001340250648368111,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-567,Pace,Independent,0.00134008689976296,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-568,Gardner-Webb,Independent,0.0013396903314989077,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-569,Wesleyan University (CT),Independent,0.0013391018610713163,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-570,Bentley,Independent,0.0013372992753361889,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-571,Baldwin Wallace,Independent,0.0013361844478820852,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-572,Minnesota State Moorhead,Independent,0.0013360411595258433,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-573,Gettysburg,Independent,0.0013330061334825242,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-574,Washburn,Independent,0.0013326535098614847,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-575,Montclair State,Independent,0.0013284849717932355,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-576,Elizabeth City State,Independent,0.0013282265790348269,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-577,Cornell,Independent,0.0013257399098504416,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-578,Wisconsin-Lutheran,Independent,0.0013244851133026247,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-579,Brown,Independent,0.001319258146465005,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-580,Columbia,Independent,0.0013185815378971048,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-581,Mars Hill,Independent,0.0013173531419540972,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-582,Lane College,Independent,0.0013162383367489947,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-583,Northern State,Independent,0.0013146469145703297,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-584,Muhlenberg,Independent,0.001310220830688954,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-585,Catholic,Independent,0.00130927118730078,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-586,Quincy,Independent,0.0013076697000737555,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-587,Shenandoah,Independent,0.001306994995468225,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-588,Norwich,Independent,0.0013041497301258017,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-589,Lakeland,Independent,0.0012982292262447843,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-590,St. Lawrence,Independent,0.0012979329756892752,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-591,Lincoln (PA),Independent,0.001294699255126224,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-592,North Park,Independent,0.001292990730252992,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-593,Bates,Independent,0.0012923410340435256,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-594,Fayetteville State,Independent,0.0012922633271189843,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-595,Pennsylvania,Independent,0.0012893158403879342,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-596,Hillsdale,Independent,0.0012890063330763765,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-597,MIT,Independent,0.0012882556336486408,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-598,Plymouth State,Independent,0.0012861106691103511,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-599,Kansas State,Big 12,0.001283023561972031,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-600,Holy Cross,Independent,0.0012829273464674295,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-601,Nebraska-Kearney,Independent,0.00128191147676392,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-602,Harvard,Independent,0.0012727364315976905,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-603,Southern Nazarene,Independent,0.0012723620919555378,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-604,Knox College,Independent,0.001269019187456894,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-605,Anna Maria College,Independent,0.0012687113669648184,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-606,Edinboro University,Independent,0.001268232853205826,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-607,Merchant Marine Academy,Independent,0.0012614997440808606,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-608,Virginia University Of Lynchburg,Independent,0.0012572400555846451,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-609,Wheeling,Independent,0.001255188538191707,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-610,Indiana-Pennsylvania,Independent,0.001251183361274087,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-611,Ohio Northern,Independent,0.0012486643804400016,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-612,Post University,Independent,0.0012471474731093612,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-613,Macalester,Independent,0.0012470484305337909,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-614,UCLA,Pac-12,0.0012313343550257713,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-615,Yale,Independent,0.0012265772256502606,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-616,TCU,Big 12,0.0012239222197072612,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-617,Dean College,Independent,0.001219719030156635,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-618,Michigan,Big Ten,0.0012019930119496777,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-619,Clemson,ACC,0.0011959499290694737,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-620,Dartmouth,Independent,0.0011898373356299093,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-621,Georgia,SEC,0.0011786200030836776,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-622,Indiana,Big Ten,0.0011732637353711226,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-623,Nebraska,Big Ten,0.0011647134150901955,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-624,Tennessee,SEC,0.001163849535851174,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-625,LSU,SEC,0.0011634756143290156,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-626,Baylor,Big 12,0.0011617259413153219,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-627,Iowa State,Big 12,0.0011589753580920354,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-628,Ole Miss,SEC,0.0011558484053155252,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-629,Alabama,SEC,0.0011540198607860614,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-630,Millsaps,Independent,0.00114951623257151,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-631,Florida,SEC,0.0011430060809401235,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-632,Rutgers,Big Ten,0.001140241111850145,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-633,Missouri,SEC,0.001139223130009424,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-634,Arkansas,SEC,0.001138186549655233,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-635,Texas Tech,Big 12,0.0011276657784747251,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-636,Vanderbilt,SEC,0.001126441970635672,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-637,Utah,Pac-12,0.0011228627326868496,0.01670237479167008,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-638,West Virginia,Big 12,0.0011156555382741574,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-639,NC State,ACC,0.001110331245839664,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-640,Syracuse,ACC,0.001109217686629613,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-641,Boston College,ACC,0.0011014553891877978,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-642,Louisville,ACC,0.0010995306228389497,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-643,Gallaudet,Independent,0.0010981728612198159,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-644,Texas A&M,SEC,0.001094983394095246,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-645,Virginia Tech,ACC,0.0010925001497148394,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-646,Florida State,ACC,0.0010810665063473153,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-647,Kansas,Big 12,0.001073820517022253,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-648,Oklahoma State,Big 12,0.0010731268341470325,0.030627131058874307,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-649,Minnesota,Big Ten,0.0010706891090211937,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-650,Illinois,Big Ten,0.0010641397923112268,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-651,South Carolina,SEC,0.0010626995852669136,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-652,Pittsburgh,ACC,0.001054771385378543,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-653,Iowa,Big Ten,0.001045952174950734,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-654,Duke,ACC,0.001031537271833375,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-655,Mississippi State,SEC,0.0010168688741414896,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-656,Auburn,SEC,0.0010047762106734754,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-657,Wisconsin,Big Ten,0.0009934668567361962,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-658,Kentucky,SEC,0.000993062380631374,0.0669787396450705,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-659,Georgia Tech,ACC,0.0009841806427080282,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-660,Miami,ACC,0.0009627347567632875,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-661,Maryland,Big Ten,0.0009588564134051823,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-662,Michigan State,Big Ten,0.0009581092212959061,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-663,Virginia,ACC,0.000952152926794546,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-664,North Carolina,ACC,0.0009438480016622507,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-665,Northwestern,Big Ten,0.0009390014490174629,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-666,Wake Forest,ACC,0.0009296805571402043,0.0521284484899414,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-667,Purdue,Big Ten,0.000898136843913351,0.06211703197312172,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-668,Apprentice School,Independent,0.0008307569775286906,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-669,Maine Maritime,Independent,0.0006589516994260674,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-670,Kentucky Christian,Independent,0.0005950372716270196,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-671,Florida Memorial University,Independent,0.0005583251707320504,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-672,Point University,Independent,0.00049760605246583,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-673,Warner University,Independent,0.0004935584505399463,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-674,Laurinburg,Independent,0.0004934592499399617,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-675,North American University,Independent,0.0004928885764688723,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-676,Ave Maria University,Independent,0.0004902855200513457,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-677,Jamestown College,Independent,0.0004897149181088395,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-678,Simpson University (Ca),Independent,0.0004868316597191404,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-679,Elgin,Independent,0.00047167603851787333,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-680,Valley City State,Independent,0.0004671173465313616,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-681,Concordia-Michigan,Independent,0.00044809989894442723,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-682,University Of St Francis IN,Independent,0.0004480998989415668,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-683,St. Xavier IL,Independent,0.0004480998989285811,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-684,Webber International,Independent,0.0004250852239018813,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-685,College of Idaho,Independent,0.0003764506441076783,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-686,Southern Oregon,Independent,0.0003764506441070203,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-687,Madonna University (Mich.),Independent,0.00037146708834860274,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-688,Dakota State University,Independent,0.00037143608951335945,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-689,Mayville State,Independent,0.00037143608951277637,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-690,Eastern Oregon,Independent,0.000366565239698472,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-691,Reinhardt University,Independent,0.0003650691189543569,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-692,Oklahoma Panhandle St,Independent,0.0003650364180647158,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-693,Phoenix,Independent,0.00035909619621592886,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-694,Bethel University Tennessee,Independent,0.00035553739396697326,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-695,Langston University,Independent,0.00035398598468851694,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-696,Georgetown College Kentucky,Independent,0.00035017387457712124,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-697,Little Rock,Independent,0.00034841095700575357,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-698,Campbellsville University,Independent,0.00034765435073472867,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-699,Louisiana College,Independent,0.00034733610201417246,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-700,Montana-Western,Independent,0.000346029246218498,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-701,William Woods,Independent,0.0003420503698301118,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-702,Keiser (Fl),Independent,0.0003383142838045048,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-703,Indiana Wesleyan,Independent,0.0003258762881020113,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-704,Keiser University,Independent,0.0003121026432971668,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-705,Southwestern Assemblies Of God,Independent,0.00030701222959107674,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-706,Dickinson State University,Independent,0.00030326707882870086,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
-707,Wayland Baptist,Independent,0.00026850186796474043,0.5,"['Defiance College', 'Lincoln (CA)', 'Valdosta State']",0.0
+1,Notre Dame,Independent,0.011493352700624451,0.5,"['Texas', 'Miami (OH)', 'Jacksonville State']",0.0
+2,Texas,Big 12,0.011016113210572115,0.0793148558931967,"['Notre Dame', 'Miami (OH)', 'Jacksonville State']",0.0
+3,Miami (OH),Independent,0.009991773768303451,0.5,"['Notre Dame', 'Texas', 'Jacksonville State']",0.0
+4,Jacksonville State,Independent,0.009377208060149985,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+5,Arizona State,Pac-12,0.009373463538695802,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+6,SMU,Independent,0.009333033440855868,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+7,Ohio,Independent,0.009278923856666699,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+8,Boise State,Independent,0.009274852444885788,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+9,UConn,Independent,0.009232490253773453,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+10,Army,Independent,0.009147517626770862,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+11,Penn State,Big Ten,0.00910670638665628,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+12,Tulane,Independent,0.009067919420229878,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+13,Houston,Independent,0.00905140853081444,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+14,Memphis,Independent,0.00898191374388107,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+15,Colorado State,Independent,0.008942226339306112,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+16,Western Kentucky,Independent,0.008760847334733096,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+17,UNLV,Independent,0.008734271010325022,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+18,Temple,Independent,0.0086935963429816,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+19,Western Michigan,Independent,0.008660009837486245,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+20,Buffalo,Independent,0.008623306516177603,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+21,Coastal Carolina,Independent,0.008588159485304392,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+22,Louisiana,Independent,0.008556588132285704,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+23,Sam Houston,Independent,0.008504964157911233,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+24,Louisiana Tech,Independent,0.008493046435144345,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+25,Arkansas State,Independent,0.008491449858449945,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+26,UTSA,Independent,0.008473837959446855,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+27,USC,Pac-12,0.008449229613857412,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+28,Fresno State,Independent,0.0084379761910916,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+29,South Florida,Independent,0.008417976809304993,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+30,Akron,Independent,0.008402551419651835,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+31,Oklahoma,Big 12,0.008388667168081353,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+32,Ohio State,Big Ten,0.00837259944866643,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+33,Bowling Green,Independent,0.008370770598642923,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+34,East Carolina,Independent,0.008370220207683006,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+35,BYU,Independent,0.008322520641046645,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+36,Marshall,Independent,0.008269782283830449,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+37,UTEP,Independent,0.00825897059055542,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+38,James Madison,Independent,0.008246772275792829,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+39,Old Dominion,Independent,0.008232258281492407,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+40,Toledo,Independent,0.008178993557947604,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+41,North Texas,Independent,0.008152701707779824,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+42,Northern Illinois,Independent,0.008148059962065303,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+43,Georgia State,Independent,0.00812282887452302,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+44,California,Pac-12,0.008114134961019745,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+45,San José State,Independent,0.008096709321774812,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+46,Utah State,Independent,0.008095243495150893,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+47,Kent State,Independent,0.008094648076668563,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+48,Nevada,Independent,0.008081191449847416,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+49,Southern Miss,Independent,0.008041391643039644,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+50,Colorado,Pac-12,0.008038385434780465,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+51,Middle Tennessee,Independent,0.008032613670741755,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+52,Navy,Independent,0.008027572690743948,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+53,New Mexico,Independent,0.008014356659585177,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+54,South Alabama,Independent,0.008003000622559183,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+55,UL Monroe,Independent,0.007989263078815912,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+56,UAB,Independent,0.007981179194135093,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+57,Air Force,Independent,0.007976166611278172,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+58,Cincinnati,Independent,0.007964617386245773,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+59,Georgia Southern,Independent,0.007961479615929546,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+60,UCF,Independent,0.00791815486721666,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+61,Florida Atlantic,Independent,0.007847824900384843,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+62,Oregon,Pac-12,0.007841520218527971,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+63,New Mexico State,Independent,0.007801922322955596,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+64,Troy,Independent,0.0077651113112635764,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+65,Stanford,Pac-12,0.007746119104721593,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+66,Rice,Independent,0.0076945242956572985,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+67,Texas State,Independent,0.0076589183247025095,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+68,Florida International,Independent,0.007640111618120211,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+69,Kennesaw State,Independent,0.00758551941133982,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+70,App State,Independent,0.007532654231554478,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+71,Charlotte,Independent,0.007520266252333315,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+72,Eastern Michigan,Independent,0.0074654571774920835,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+73,Ball State,Independent,0.0074207101850086235,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+74,Michigan,Big Ten,0.00740217488556759,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+75,Tulsa,Independent,0.007362212129999152,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+76,Oregon State,Pac-12,0.007350783751606112,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+77,San Diego State,Independent,0.007336624080409223,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+78,Central Michigan,Independent,0.007332046685857174,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+79,Liberty,Independent,0.007249397198217044,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+80,Massachusetts,Independent,0.007194482101859146,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+81,Washington,Pac-12,0.007165010108931073,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+82,Wyoming,Independent,0.007151625767874535,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+83,Arizona,Pac-12,0.007121320193067701,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+84,UCLA,Pac-12,0.007120066355015318,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+85,Washington State,Pac-12,0.007108863004589519,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+86,Kansas State,Big 12,0.006895410548248023,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+87,Virginia Tech,ACC,0.006875390405736348,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+88,Hawai'i,Independent,0.006729701090598453,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+89,Indiana,Big Ten,0.006722374734984095,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+90,Georgia,SEC,0.006706175535985135,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+91,Tennessee,SEC,0.006692062710268374,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+92,Clemson,ACC,0.006684896275958351,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+93,Nebraska,Big Ten,0.006625034211335568,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+94,Alabama,SEC,0.006603190337964144,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+95,LSU,SEC,0.0065968047091099135,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+96,Ole Miss,SEC,0.006567688486715325,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+97,Florida,SEC,0.006549926202104671,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+98,Missouri,SEC,0.006540501126898129,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+99,TCU,Big 12,0.006517892508859126,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+100,Arkansas,SEC,0.006465422786070513,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+101,Texas Tech,Big 12,0.006390340155046382,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+102,Vanderbilt,SEC,0.006353028277028104,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+103,Baylor,Big 12,0.006352582736256506,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+104,Rutgers,Big Ten,0.006349694002811047,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+105,Boston College,ACC,0.006231806457447397,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+106,Iowa State,Big 12,0.006212364103075643,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+107,Texas A&M,SEC,0.006193219528524803,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+108,Syracuse,ACC,0.00617616537970459,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+109,Illinois,Big Ten,0.00613969650187533,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+110,NC State,ACC,0.006099239312520742,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+111,Louisville,ACC,0.006058694389667933,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+112,West Virginia,Big 12,0.006058223981015778,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+113,Iowa,Big Ten,0.0060129657581003025,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+114,Minnesota,Big Ten,0.006000691810382947,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+115,Florida State,ACC,0.005984477938081828,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+116,South Carolina,SEC,0.005971135138315981,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+117,Utah,Pac-12,0.005894788430425753,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+118,Pittsburgh,ACC,0.005880795568104896,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+119,Mississippi State,SEC,0.005821995065391945,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+120,Kansas,Big 12,0.005811907780535425,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+121,Oklahoma State,Big 12,0.005792541271781763,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+122,Duke,ACC,0.005774025099760616,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+123,Wisconsin,Big Ten,0.005691345557027806,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+124,Auburn,SEC,0.005632406593056565,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+125,Georgia Tech,ACC,0.005574863044567237,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+126,Kentucky,SEC,0.005563831223270703,0.1807663883012698,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+127,Northwestern,Big Ten,0.005544962797878003,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+128,Michigan State,Big Ten,0.005540401866149664,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+129,Maryland,Big Ten,0.005477122902776632,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+130,Miami,ACC,0.005470998663443318,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+131,North Carolina,ACC,0.005352927249865013,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+132,Virginia,ACC,0.005304404381097357,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+133,Purdue,Big Ten,0.005183980014117428,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+134,Wake Forest,ACC,0.005092670929024641,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
