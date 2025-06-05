@@ -1,139 +1,139 @@
 # CFB Rankings Export
-# Generated: 2025-06-05T16:01:34.380570
+# Generated: 2025-06-05T16:05:59.871707
 # Season: 2024
 #
 rank_retro,team,conference,rating_retro,conf_weight,quality_wins,uncertainty
-1,Ohio State,Big Ten,0.01026175830958632,0.16646236584012988,"['Penn State', 'Notre Dame', 'Texas']",0.0
-2,Penn State,Big Ten,0.009782812100333915,0.16646236584012988,"['Ohio State', 'Notre Dame', 'Texas']",0.0
-3,Notre Dame,Independent,0.009082420893562522,0.5,"['Ohio State', 'Penn State', 'Texas']",0.0
-4,Texas,Big 12,0.009049375654961927,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-5,Tennessee,SEC,0.008993396654996284,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-6,Indiana,Big Ten,0.00883069920717816,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-7,Florida,SEC,0.008721732892143053,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-8,Alabama,SEC,0.008694529074907855,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-9,Michigan,Big Ten,0.008664973786826463,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-10,Georgia,SEC,0.008630770542059232,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+1,Ohio State,Big Ten,0.01026175830958632,0.16646236584012986,"['Penn State', 'Notre Dame', 'Texas']",0.0
+2,Penn State,Big Ten,0.009782812100333913,0.16646236584012986,"['Ohio State', 'Notre Dame', 'Texas']",0.0
+3,Notre Dame,Independent,0.00908242089356252,0.5,"['Ohio State', 'Penn State', 'Texas']",0.0
+4,Texas,Big 12,0.009049375654961925,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+5,Tennessee,SEC,0.008993396654996284,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+6,Indiana,Big Ten,0.00883069920717816,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+7,Florida,SEC,0.008721732892143052,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+8,Alabama,SEC,0.008694529074907855,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+9,Michigan,Big Ten,0.008664973786826461,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+10,Georgia,SEC,0.00863077054205923,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 11,Virginia Tech,ACC,0.008622531335244932,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-12,Missouri,SEC,0.008595342583408043,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-13,Miami (OH),Independent,0.008579671682814921,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-14,Arkansas,SEC,0.008560203890296002,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-15,LSU,SEC,0.008533860282998452,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-16,Arizona State,Pac-12,0.008525089128178896,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-17,Ole Miss,SEC,0.008498373281131715,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-18,Nebraska,Big Ten,0.008494632267378644,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-19,Clemson,ACC,0.008365453697444018,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-20,Illinois,Big Ten,0.008331823047527902,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-21,Jacksonville State,Independent,0.008304276046438802,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-22,Texas A&M,SEC,0.00829753540191711,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-23,Vanderbilt,SEC,0.008286511544256803,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+12,Missouri,SEC,0.008595342583408043,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+13,Miami (OH),Independent,0.00857967168281492,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+14,Arkansas,SEC,0.008560203890296002,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+15,LSU,SEC,0.00853386028299845,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+16,Arizona State,Pac-12,0.008525089128178892,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+17,Ole Miss,SEC,0.008498373281131713,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+18,Nebraska,Big Ten,0.008494632267378644,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+19,Clemson,ACC,0.008365453697444014,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+20,Illinois,Big Ten,0.008331823047527904,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+21,Jacksonville State,Independent,0.0083042760464388,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+22,Texas A&M,SEC,0.008297535401917109,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+23,Vanderbilt,SEC,0.008286511544256803,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 24,Army,Independent,0.008199801886717113,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-25,Boise State,Independent,0.008157930071760845,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-26,Mississippi State,SEC,0.008100216830503656,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+25,Boise State,Independent,0.008157930071760843,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+26,Mississippi State,SEC,0.008100216830503656,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 27,Boston College,ACC,0.008074358312162844,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-28,Northwestern,Big Ten,0.008070709621553693,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-29,Iowa,Big Ten,0.00803531796465969,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-30,Michigan State,Big Ten,0.008000666935523681,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+28,Northwestern,Big Ten,0.008070709621553693,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+29,Iowa,Big Ten,0.008035317964659689,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+30,Michigan State,Big Ten,0.008000666935523681,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 31,Ohio,Independent,0.007969541294904327,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 32,Tulane,Independent,0.007945059734118727,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 33,Memphis,Independent,0.007914722839971047,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-34,Colorado State,Independent,0.007912670417817663,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-35,Syracuse,ACC,0.007861583643270666,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-36,Auburn,SEC,0.007838344878588512,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-37,South Carolina,SEC,0.007787528306355031,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-38,Wisconsin,Big Ten,0.00777735045348147,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-39,Rutgers,Big Ten,0.007773842926048279,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-40,Temple,Independent,0.007750062602397478,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+34,Colorado State,Independent,0.007912670417817664,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+35,Syracuse,ACC,0.007861583643270668,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+36,Auburn,SEC,0.007838344878588512,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+37,South Carolina,SEC,0.007787528306355029,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+38,Wisconsin,Big Ten,0.00777735045348147,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+39,Rutgers,Big Ten,0.007773842926048279,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+40,Temple,Independent,0.007750062602397477,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 41,Georgia Tech,ACC,0.007741468293930988,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-42,Houston,Independent,0.007740604252601711,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+42,Houston,Independent,0.0077406042526017085,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 43,Miami,ACC,0.00772495976485399,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-44,Western Kentucky,Independent,0.007696014972259182,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-45,UNLV,Independent,0.007671821800302017,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+44,Western Kentucky,Independent,0.007696014972259181,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+45,UNLV,Independent,0.007671821800302016,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 46,UConn,Independent,0.007658312157152918,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 47,Sam Houston,Independent,0.0076442976109475725,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-48,Purdue,Big Ten,0.007639754456431658,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-49,Minnesota,Big Ten,0.007628540198947056,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-50,North Carolina,ACC,0.007616946791699768,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+48,Purdue,Big Ten,0.007639754456431657,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+49,Minnesota,Big Ten,0.007628540198947056,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+50,North Carolina,ACC,0.007616946791699769,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 51,UTSA,Independent,0.007607152312343104,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-52,Coastal Carolina,Independent,0.007581453126899771,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-53,Baylor,Big 12,0.00757715105182528,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+52,Coastal Carolina,Independent,0.0075814531268997695,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+53,Baylor,Big 12,0.00757715105182528,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 54,Louisiana,Independent,0.0075614986753453,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 55,Pittsburgh,ACC,0.0075053964833605765,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-56,East Carolina,Independent,0.007475870719325522,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-57,SMU,Independent,0.007475864838652197,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+56,East Carolina,Independent,0.007475870719325521,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+57,SMU,Independent,0.007475864838652196,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 58,Duke,ACC,0.007469062855154856,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-59,Maryland,Big Ten,0.007462011710109253,0.16646236584012988,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-60,Louisiana Tech,Independent,0.007458007432386735,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-61,Arkansas State,Independent,0.007442159505677523,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-62,Kentucky,SEC,0.007437266949371923,0.18000760422857487,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+59,Maryland,Big Ten,0.007462011710109253,0.16646236584012986,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+60,Louisiana Tech,Independent,0.007458007432386733,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+61,Arkansas State,Independent,0.007442159505677522,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+62,Kentucky,SEC,0.007437266949371923,0.18000760422857492,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 63,Buffalo,Independent,0.007436611437879374,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-64,Louisville,ACC,0.007431020104739645,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+64,Louisville,ACC,0.007431020104739642,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 65,Western Michigan,Independent,0.007395376743915918,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 66,Florida State,ACC,0.007391146911432141,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 67,Fresno State,Independent,0.007383655941948183,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-68,Colorado,Pac-12,0.007371570381239586,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-69,NC State,ACC,0.007367088285796573,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+68,Colorado,Pac-12,0.007371570381239585,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+69,NC State,ACC,0.007367088285796574,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 70,South Florida,Independent,0.0073381904696281225,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-71,North Texas,Independent,0.0073268347208324015,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-72,Kansas State,Big 12,0.0072816676163698245,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-73,James Madison,Independent,0.007242132152834329,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+71,North Texas,Independent,0.007326834720832401,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+72,Kansas State,Big 12,0.0072816676163698245,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+73,James Madison,Independent,0.007242132152834328,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 74,San José State,Independent,0.007230064586909833,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-75,West Virginia,Big 12,0.0072066378858361415,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-76,UTEP,Independent,0.0071970359647123994,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+75,West Virginia,Big 12,0.0072066378858361415,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+76,UTEP,Independent,0.007197035964712399,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 77,Bowling Green,Independent,0.007189674010116671,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 78,Utah State,Independent,0.0071694874171983536,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 79,Marshall,Independent,0.007163385920871333,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 80,Old Dominion,Independent,0.007162159222646678,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 81,Navy,Independent,0.007152218672224366,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 82,BYU,Independent,0.007118262058833723,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-83,Air Force,Independent,0.0071158518694769786,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-84,USC,Pac-12,0.007097271826569239,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-85,Southern Miss,Independent,0.007086781152034368,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+83,Air Force,Independent,0.007115851869476978,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+84,USC,Pac-12,0.007097271826569238,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+85,Southern Miss,Independent,0.007086781152034369,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 86,Akron,Independent,0.0070762634784516665,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 87,Virginia,ACC,0.007075440763801771,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-88,Nevada,Independent,0.007069421533852061,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+88,Nevada,Independent,0.007069421533852059,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 89,New Mexico,Independent,0.00706822946143149,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 90,Northern Illinois,Independent,0.007060260997358474,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 91,Toledo,Independent,0.007051983414237699,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 92,South Alabama,Independent,0.007045932852233429,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-93,UAB,Independent,0.007042041753344439,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-94,Oklahoma,Big 12,0.007016583109647834,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-95,Georgia Southern,Independent,0.007009450861347116,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-96,Middle Tennessee,Independent,0.007004602024693608,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+93,UAB,Independent,0.007042041753344438,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+94,Oklahoma,Big 12,0.007016583109647834,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+95,Georgia Southern,Independent,0.0070094508613471156,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+96,Middle Tennessee,Independent,0.007004602024693607,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 97,Georgia State,Independent,0.006992899049008546,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-98,UL Monroe,Independent,0.0069835708134835675,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-99,Arizona,Pac-12,0.006945467374915457,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-100,Iowa State,Big 12,0.006930688005892308,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-101,New Mexico State,Independent,0.0069051278314107255,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+98,UL Monroe,Independent,0.006983570813483567,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+99,Arizona,Pac-12,0.006945467374915455,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+100,Iowa State,Big 12,0.0069306880058923066,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+101,New Mexico State,Independent,0.006905127831410724,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 102,Oregon State,Pac-12,0.006889494336565834,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-103,Florida Atlantic,Independent,0.006886064884093591,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-104,Rice,Independent,0.006882234316487864,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-105,Texas State,Independent,0.006860356965241741,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-106,Kent State,Independent,0.006846826850910297,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-107,TCU,Big 12,0.006844708591496327,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+103,Florida Atlantic,Independent,0.00688606488409359,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+104,Rice,Independent,0.006882234316487863,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+105,Texas State,Independent,0.006860356965241743,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+106,Kent State,Independent,0.0068468268509102965,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+107,TCU,Big 12,0.006844708591496327,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 108,Kennesaw State,Independent,0.006843605677796222,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-109,Troy,Independent,0.006829815403978418,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-110,Texas Tech,Big 12,0.006825523500948624,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+109,Troy,Independent,0.006829815403978416,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+110,Texas Tech,Big 12,0.006825523500948622,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 111,Oregon,Pac-12,0.006810656232775572,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-112,Oklahoma State,Big 12,0.006797700535082679,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-113,Cincinnati,Independent,0.006792988477882217,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-114,Washington,Pac-12,0.006791666375649016,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-115,Washington State,Pac-12,0.006783032355838652,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+112,Oklahoma State,Big 12,0.006797700535082678,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+113,Cincinnati,Independent,0.006792988477882215,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+114,Washington,Pac-12,0.0067916663756490145,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+115,Washington State,Pac-12,0.0067830323558386516,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 116,Florida International,Independent,0.00674976012378054,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 117,UCF,Independent,0.006731431446732381,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-118,Kansas,Big 12,0.006660968405679327,0.07918604180754839,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-119,California,Pac-12,0.006655870279523222,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-120,Appalachian State,Independent,0.006639857250350191,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-121,Tulsa,Independent,0.0065929445022890895,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+118,Kansas,Big 12,0.006660968405679325,0.0791860418075484,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+119,California,Pac-12,0.006655870279523221,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+120,Appalachian State,Independent,0.006639857250350189,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+121,Tulsa,Independent,0.006592944502289089,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 122,San Diego State,Independent,0.006550497845117107,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-123,Liberty,Independent,0.00651964539221222,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-124,Wake Forest,ACC,0.006518401516529063,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-125,Charlotte,Independent,0.006513919569766682,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-126,Eastern Michigan,Independent,0.006487170689411442,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-127,UCLA,Pac-12,0.006424870026296181,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-128,Wyoming,Independent,0.006422591859575058,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+123,Liberty,Independent,0.006519645392212219,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+124,Wake Forest,ACC,0.006518401516529064,0.1393198684934217,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+125,Charlotte,Independent,0.00651391956976668,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+126,Eastern Michigan,Independent,0.0064871706894114416,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+127,UCLA,Pac-12,0.00642487002629618,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+128,Wyoming,Independent,0.006422591859575057,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 129,Central Michigan,Independent,0.006359090083530838,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
 130,Ball State,Independent,0.0063205846561921585,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-131,Stanford,Pac-12,0.00629953318601321,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-132,Massachusetts,Independent,0.006037676345441634,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-133,Hawaii,Independent,0.0060124914251084285,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
-134,Utah,Pac-12,0.005992834227542107,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+131,Stanford,Pac-12,0.0062995331860132096,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+132,Massachusetts,Independent,0.006037676345441633,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+133,Hawaii,Independent,0.006012491425108428,0.5,"['Ohio State', 'Penn State', 'Notre Dame']",0.0
+134,Utah,Pac-12,0.005992834227542106,0.05184525642102294,"['Ohio State', 'Penn State', 'Notre Dame']",0.0

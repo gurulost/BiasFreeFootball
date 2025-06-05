@@ -236,3 +236,5 @@ FIU: {name: "Florida International", conf: "Conference USA"}
 "EMU": {name: "Eastern Michigan", conf: "MAC"}
 "CMU": {name: "Central Michigan", conf: "MAC"}
 "NIU": {name: "Northern Illinois", conf: "MAC"}
+# Auto-generated placeholders - REQUIRES MANUAL CONFERENCE ASSIGNMENT
+New Unknown Team 2025: {name: "New Unknown Team 2025", conf: null}

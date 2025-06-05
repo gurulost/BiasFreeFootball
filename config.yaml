@@ -65,6 +65,10 @@ paths:
   data_processed: "data/processed"
   exports: "exports"
 
+# Data validation settings
+validation:
+  strict_mode: false  # Set to true in CI to block execution with missing aliases
+
 # Logging
 logging:
   level: "INFO"
