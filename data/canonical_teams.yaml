@@ -1,0 +1,191 @@
+# Canonical team name mapping for 2024 season
+# Maps all possible team name variations to official names and conferences
+
+# Power 5 Conferences
+Alabama: {name: "Alabama", conf: "SEC"}
+Auburn: {name: "Auburn", conf: "SEC"}
+Arkansas: {name: "Arkansas", conf: "SEC"}
+Florida: {name: "Florida", conf: "SEC"}
+Georgia: {name: "Georgia", conf: "SEC"}
+Kentucky: {name: "Kentucky", conf: "SEC"}
+LSU: {name: "LSU", conf: "SEC"}
+Mississippi State: {name: "Mississippi State", conf: "SEC"}
+Missouri: {name: "Missouri", conf: "SEC"}
+Ole Miss: {name: "Ole Miss", conf: "SEC"}
+South Carolina: {name: "South Carolina", conf: "SEC"}
+Tennessee: {name: "Tennessee", conf: "SEC"}
+Texas: {name: "Texas", conf: "SEC"}
+Texas A&M: {name: "Texas A&M", conf: "SEC"}
+Vanderbilt: {name: "Vanderbilt", conf: "SEC"}
+
+# Big Ten
+Illinois: {name: "Illinois", conf: "Big Ten"}
+Indiana: {name: "Indiana", conf: "Big Ten"}
+Iowa: {name: "Iowa", conf: "Big Ten"}
+Maryland: {name: "Maryland", conf: "Big Ten"}
+Michigan: {name: "Michigan", conf: "Big Ten"}
+Michigan State: {name: "Michigan State", conf: "Big Ten"}
+Minnesota: {name: "Minnesota", conf: "Big Ten"}
+Nebraska: {name: "Nebraska", conf: "Big Ten"}
+Northwestern: {name: "Northwestern", conf: "Big Ten"}
+Ohio State: {name: "Ohio State", conf: "Big Ten"}
+Oregon: {name: "Oregon", conf: "Big Ten"}
+Penn State: {name: "Penn State", conf: "Big Ten"}
+Purdue: {name: "Purdue", conf: "Big Ten"}
+Rutgers: {name: "Rutgers", conf: "Big Ten"}
+UCLA: {name: "UCLA", conf: "Big Ten"}
+USC: {name: "USC", conf: "Big Ten"}
+Washington: {name: "Washington", conf: "Big Ten"}
+Wisconsin: {name: "Wisconsin", conf: "Big Ten"}
+
+# Big 12
+Arizona State: {name: "Arizona State", conf: "Big 12"}
+Baylor: {name: "Baylor", conf: "Big 12"}
+BYU: {name: "BYU", conf: "Big 12"}
+"Brigham Young": {name: "BYU", conf: "Big 12"}
+Cincinnati: {name: "Cincinnati", conf: "Big 12"}
+Colorado: {name: "Colorado", conf: "Big 12"}
+Houston: {name: "Houston", conf: "Big 12"}
+Iowa State: {name: "Iowa State", conf: "Big 12"}
+Kansas: {name: "Kansas", conf: "Big 12"}
+Kansas State: {name: "Kansas State", conf: "Big 12"}
+Oklahoma State: {name: "Oklahoma State", conf: "Big 12"}
+TCU: {name: "TCU", conf: "Big 12"}
+Texas Tech: {name: "Texas Tech", conf: "Big 12"}
+UCF: {name: "UCF", conf: "Big 12"}
+Utah: {name: "Utah", conf: "Big 12"}
+West Virginia: {name: "West Virginia", conf: "Big 12"}
+
+# ACC
+Boston College: {name: "Boston College", conf: "ACC"}
+Clemson: {name: "Clemson", conf: "ACC"}
+Duke: {name: "Duke", conf: "ACC"}
+Florida State: {name: "Florida State", conf: "ACC"}
+Georgia Tech: {name: "Georgia Tech", conf: "ACC"}
+Louisville: {name: "Louisville", conf: "ACC"}
+Miami: {name: "Miami", conf: "ACC"}
+"Miami (FL)": {name: "Miami", conf: "ACC"}
+NC State: {name: "NC State", conf: "ACC"}
+North Carolina: {name: "North Carolina", conf: "ACC"}
+Notre Dame: {name: "Notre Dame", conf: "ACC"}
+Pittsburgh: {name: "Pittsburgh", conf: "ACC"}
+Syracuse: {name: "Syracuse", conf: "ACC"}
+Virginia: {name: "Virginia", conf: "ACC"}
+Virginia Tech: {name: "Virginia Tech", conf: "ACC"}
+Wake Forest: {name: "Wake Forest", conf: "ACC"}
+
+# Pac-12 (remaining)
+Arizona: {name: "Arizona", conf: "Pac-12"}
+California: {name: "California", conf: "Pac-12"}
+Oregon State: {name: "Oregon State", conf: "Pac-12"}
+Stanford: {name: "Stanford", conf: "Pac-12"}
+Washington State: {name: "Washington State", conf: "Pac-12"}
+
+# Group of 5 - American
+Army: {name: "Army", conf: "American"}
+East Carolina: {name: "East Carolina", conf: "American"}
+Memphis: {name: "Memphis", conf: "American"}
+Navy: {name: "Navy", conf: "American"}
+North Texas: {name: "North Texas", conf: "American"}
+Rice: {name: "Rice", conf: "American"}
+South Florida: {name: "South Florida", conf: "American"}
+Temple: {name: "Temple", conf: "American"}
+Tulane: {name: "Tulane", conf: "American"}
+Tulsa: {name: "Tulsa", conf: "American"}
+UTSA: {name: "UTSA", conf: "American"}
+
+# Mountain West
+Air Force: {name: "Air Force", conf: "Mountain West"}
+Boise State: {name: "Boise State", conf: "Mountain West"}
+Colorado State: {name: "Colorado State", conf: "Mountain West"}
+Fresno State: {name: "Fresno State", conf: "Mountain West"}
+Hawaii: {name: "Hawaii", conf: "Mountain West"}
+Nevada: {name: "Nevada", conf: "Mountain West"}
+New Mexico: {name: "New Mexico", conf: "Mountain West"}
+San Diego State: {name: "San Diego State", conf: "Mountain West"}
+San José State: {name: "San José State", conf: "Mountain West"}
+"San Jose State": {name: "San José State", conf: "Mountain West"}
+UNLV: {name: "UNLV", conf: "Mountain West"}
+Utah State: {name: "Utah State", conf: "Mountain West"}
+Wyoming: {name: "Wyoming", conf: "Mountain West"}
+
+# MAC
+Akron: {name: "Akron", conf: "MAC"}
+Ball State: {name: "Ball State", conf: "MAC"}
+Bowling Green: {name: "Bowling Green", conf: "MAC"}
+Buffalo: {name: "Buffalo", conf: "MAC"}
+Central Michigan: {name: "Central Michigan", conf: "MAC"}
+Eastern Michigan: {name: "Eastern Michigan", conf: "MAC"}
+Kent State: {name: "Kent State", conf: "MAC"}
+Miami (OH): {name: "Miami (OH)", conf: "MAC"}
+"Miami RedHawks": {name: "Miami (OH)", conf: "MAC"}
+Northern Illinois: {name: "Northern Illinois", conf: "MAC"}
+Ohio: {name: "Ohio", conf: "MAC"}
+Toledo: {name: "Toledo", conf: "MAC"}
+Western Michigan: {name: "Western Michigan", conf: "MAC"}
+
+# Conference USA
+Florida International: {name: "Florida International", conf: "Conference USA"}
+Jacksonville State: {name: "Jacksonville State", conf: "Conference USA"}
+Kennesaw State: {name: "Kennesaw State", conf: "Conference USA"}
+Liberty: {name: "Liberty", conf: "Conference USA"}
+Louisiana Tech: {name: "Louisiana Tech", conf: "Conference USA"}
+Middle Tennessee: {name: "Middle Tennessee", conf: "Conference USA"}
+New Mexico State: {name: "New Mexico State", conf: "Conference USA"}
+Sam Houston: {name: "Sam Houston", conf: "Conference USA"}
+UTEP: {name: "UTEP", conf: "Conference USA"}
+Western Kentucky: {name: "Western Kentucky", conf: "Conference USA"}
+
+# Sun Belt
+Appalachian State: {name: "Appalachian State", conf: "Sun Belt"}
+Arkansas State: {name: "Arkansas State", conf: "Sun Belt"}
+Coastal Carolina: {name: "Coastal Carolina", conf: "Sun Belt"}
+Georgia Southern: {name: "Georgia Southern", conf: "Sun Belt"}
+Georgia State: {name: "Georgia State", conf: "Sun Belt"}
+James Madison: {name: "James Madison", conf: "Sun Belt"}
+Louisiana: {name: "Louisiana", conf: "Sun Belt"}
+Marshall: {name: "Marshall", conf: "Sun Belt"}
+Old Dominion: {name: "Old Dominion", conf: "Sun Belt"}
+South Alabama: {name: "South Alabama", conf: "Sun Belt"}
+Southern Miss: {name: "Southern Miss", conf: "Sun Belt"}
+Texas State: {name: "Texas State", conf: "Sun Belt"}
+Troy: {name: "Troy", conf: "Sun Belt"}
+
+# Independents
+Connecticut: {name: "UConn", conf: "Independent"}
+UConn: {name: "UConn", conf: "Independent"}
+Massachusetts: {name: "Massachusetts", conf: "Independent"}
+UMass: {name: "Massachusetts", conf: "Independent"}
+
+# Common aliases and variations
+"Ohio St.": {name: "Ohio State", conf: "Big Ten"}
+"Penn St.": {name: "Penn State", conf: "Big Ten"}
+"Michigan St.": {name: "Michigan State", conf: "Big Ten"}
+"Iowa St.": {name: "Iowa State", conf: "Big 12"}
+"Kansas St.": {name: "Kansas State", conf: "Big 12"}
+"Oklahoma St.": {name: "Oklahoma State", conf: "Big 12"}
+"Texas A&M": {name: "Texas A&M", conf: "SEC"}
+"Miss. State": {name: "Mississippi State", conf: "SEC"}
+"Mississippi St.": {name: "Mississippi State", conf: "SEC"}
+"Florida St.": {name: "Florida State", conf: "ACC"}
+"Georgia Tech": {name: "Georgia Tech", conf: "ACC"}
+"Virginia Tech": {name: "Virginia Tech", conf: "ACC"}
+"Fresno St.": {name: "Fresno State", conf: "Mountain West"}
+"San Diego St.": {name: "San Diego State", conf: "Mountain West"}
+"Colorado St.": {name: "Colorado State", conf: "Mountain West"}
+"Utah St.": {name: "Utah State", conf: "Mountain West"}
+"Boise St.": {name: "Boise State", conf: "Mountain West"}
+"Air Force Academy": {name: "Air Force", conf: "Mountain West"}
+"Oregon St.": {name: "Oregon State", conf: "Pac-12"}
+"Washington St.": {name: "Washington State", conf: "Pac-12"}
+"Arizona St.": {name: "Arizona State", conf: "Big 12"}
+"App State": {name: "Appalachian State", conf: "Sun Belt"}
+"Appalachian St.": {name: "Appalachian State", conf: "Sun Belt"}
+"Arkansas St.": {name: "Arkansas State", conf: "Sun Belt"}
+"Georgia So.": {name: "Georgia Southern", conf: "Sun Belt"}
+"South Ala.": {name: "South Alabama", conf: "Sun Belt"}
+"WKU": {name: "Western Kentucky", conf: "Conference USA"}
+"WMU": {name: "Western Michigan", conf: "MAC"}
+"EMU": {name: "Eastern Michigan", conf: "MAC"}
+"CMU": {name: "Central Michigan", conf: "MAC"}
+"NIU": {name: "Northern Illinois", conf: "MAC"}
