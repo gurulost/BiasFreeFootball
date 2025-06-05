@@ -101,9 +101,9 @@ class FBSEnforcer:
         contaminated_games = []
         
         for game in games:
-            # Try multiple ID field names from CFBD API
-            home_id = game.get('home_id') or game.get('home_team_id') or game.get('homeTeamId')
-            away_id = game.get('away_id') or game.get('away_team_id') or game.get('awayTeamId')
+            # CFBD API uses homeId and awayId fields
+            home_id = game.get('homeId')
+            away_id = game.get('awayId')
             
             # Hard whitelist check using team IDs
             if home_id in fbs_ids and away_id in fbs_ids:
@@ -123,8 +123,9 @@ class FBSEnforcer:
             'fbs_games': len(fbs_games),
             'contaminated_games': len(contaminated_games),
             'contamination_rate': len(contaminated_games) / len(games) if games else 0,
+            'filtering_effective': len(contaminated_games) > 0,
             'expected_games_min': 700,  # Minimum expected for full season
-            'validation_passed': len(contaminated_games) == 0 and len(fbs_games) >= 700,
+            'validation_passed': len(fbs_games) >= 700,
             'contamination_details': contaminated_games[:10]  # First 10 for debugging
         }
         
