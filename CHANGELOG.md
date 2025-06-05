@@ -5,6 +5,7 @@ All notable changes to the CFB Rating Engine project will be documented in this 
 ## [v1.0.0] - 2025-06-05
 
 ### Fixed
+- **CRITICAL:** Fixed conference strength scaling from absolute √S_conf to relative √(S_conf / mean S) scaling
 - **CRITICAL:** Removed legacy 0.2 dampening on penalty edges; model is now mass-conserving per game as per original design spec
 - Corrected edge directions in team graph construction to follow blueprint exactly (loser → winner for credit edges)
 - Fixed FBS-only filtering to properly identify 134 authentic Division I teams from mixed API results

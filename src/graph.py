@@ -107,7 +107,7 @@ class GraphBuilder:
                            prev_conf_ratings: Dict = None) -> None:
         """
         Inject conference strength into intra-conference team edges
-        Multiplies intra-conference edge weights by sqrt(conference_strength)
+        Uses relative scaling: sqrt(S_conf / mean(S_all)) for balanced adjustment
         """
         if prev_conf_ratings is None:
             prev_conf_ratings = conf_ratings
@@ -115,7 +115,10 @@ class GraphBuilder:
         # Get team-to-conference mapping
         team_to_conf = self._get_team_conference_mapping(G_team)
         
-        # Multiply intra-conference edges by sqrt(conf_strength)
+        # Calculate mean conference strength for relative scaling
+        mean_S = sum(conf_ratings.values()) / len(conf_ratings) if conf_ratings else 1.0
+        
+        # Apply relative scaling to intra-conference edges
         edges_modified = 0
         for u, v, data in G_team.edges(data=True):
             if u in team_to_conf and v in team_to_conf:
@@ -125,11 +128,12 @@ class GraphBuilder:
                 # Only modify intra-conference edges
                 if conf_u == conf_v and conf_u in conf_ratings:
                     conf_strength = conf_ratings[conf_u]
-                    multiplier = np.sqrt(conf_strength)
+                    # Relative scaling: sqrt(S_conf / mean_S)
+                    multiplier = np.sqrt(conf_strength / mean_S)
                     data['weight'] *= multiplier
                     edges_modified += 1
         
-        logger.info(f"Applied conference strength to {edges_modified} intra-conference edges")
+        logger.info(f"Applied relative conference strength to {edges_modified} intra-conference edges")
 
     def _get_team_conference_mapping(self, G_team: nx.DiGraph) -> Dict[str, str]:
         """

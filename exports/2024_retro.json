@@ -1,7 +1,7 @@
 {
   "metadata": {
     "season": 2024,
-    "timestamp": "2025-06-05T15:30:28.830111",
+    "timestamp": "2025-06-05T15:45:10.375000",
     "total_teams": 134,
     "total_conferences": 11,
     "pipeline_type": "retro"
@@ -9,1758 +9,1758 @@
   "rankings": [
     {
       "rank_retro": 1,
-      "team": "Notre Dame",
-      "conference": "Independent",
-      "rating_retro": 0.011493352700624451,
-      "conf_weight": 0.5,
+      "team": "Ohio State",
+      "conference": "Big Ten",
+      "rating_retro": 0.010261755939901864,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Texas",
-        "Miami (OH)",
-        "Jacksonville State"
+        "Penn State",
+        "Notre Dame",
+        "Texas"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 2,
-      "team": "Texas",
-      "conference": "Big 12",
-      "rating_retro": 0.011016113210572115,
-      "conf_weight": 0.0793148558931967,
+      "team": "Penn State",
+      "conference": "Big Ten",
+      "rating_retro": 0.009782811200677007,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
+        "Ohio State",
         "Notre Dame",
-        "Miami (OH)",
-        "Jacksonville State"
+        "Texas"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 3,
-      "team": "Miami (OH)",
+      "team": "Notre Dame",
       "conference": "Independent",
-      "rating_retro": 0.009991773768303451,
+      "rating_retro": 0.009082420420403591,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Jacksonville State"
+        "Ohio State",
+        "Penn State",
+        "Texas"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 4,
-      "team": "Jacksonville State",
-      "conference": "Independent",
-      "rating_retro": 0.009377208060149985,
-      "conf_weight": 0.5,
+      "team": "Texas",
+      "conference": "Big 12",
+      "rating_retro": 0.009049374996406758,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 5,
-      "team": "Arizona State",
-      "conference": "Pac-12",
-      "rating_retro": 0.0093734635386958,
-      "conf_weight": 0.05191671043751009,
+      "team": "Tennessee",
+      "conference": "SEC",
+      "rating_retro": 0.008993395361389033,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 6,
-      "team": "SMU",
-      "conference": "Independent",
-      "rating_retro": 0.009333033440855868,
-      "conf_weight": 0.5,
+      "team": "Indiana",
+      "conference": "Big Ten",
+      "rating_retro": 0.008830698251744463,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 7,
-      "team": "Ohio",
-      "conference": "Independent",
-      "rating_retro": 0.009278923856666699,
-      "conf_weight": 0.5,
+      "team": "Florida",
+      "conference": "SEC",
+      "rating_retro": 0.008721731896009477,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 8,
-      "team": "Boise State",
-      "conference": "Independent",
-      "rating_retro": 0.009274852444885788,
-      "conf_weight": 0.5,
+      "team": "Alabama",
+      "conference": "SEC",
+      "rating_retro": 0.008694528188510018,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 9,
-      "team": "UConn",
-      "conference": "Independent",
-      "rating_retro": 0.009232490253773453,
-      "conf_weight": 0.5,
+      "team": "Michigan",
+      "conference": "Big Ten",
+      "rating_retro": 0.008664973051177964,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 10,
-      "team": "Army",
-      "conference": "Independent",
-      "rating_retro": 0.009147517626770862,
-      "conf_weight": 0.5,
+      "team": "Georgia",
+      "conference": "SEC",
+      "rating_retro": 0.008630769593553826,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 11,
-      "team": "Penn State",
-      "conference": "Big Ten",
-      "rating_retro": 0.00910670638665628,
-      "conf_weight": 0.16728416799379037,
+      "team": "Virginia Tech",
+      "conference": "ACC",
+      "rating_retro": 0.008622531255915753,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 12,
-      "team": "Tulane",
-      "conference": "Independent",
-      "rating_retro": 0.009067919420229878,
-      "conf_weight": 0.5,
+      "team": "Missouri",
+      "conference": "SEC",
+      "rating_retro": 0.008595341898880584,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 13,
-      "team": "Houston",
+      "team": "Miami (OH)",
       "conference": "Independent",
-      "rating_retro": 0.00905140853081444,
+      "rating_retro": 0.00857967201060721,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 14,
-      "team": "Memphis",
-      "conference": "Independent",
-      "rating_retro": 0.00898191374388107,
-      "conf_weight": 0.5,
+      "team": "Arkansas",
+      "conference": "SEC",
+      "rating_retro": 0.008560203010718626,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 15,
-      "team": "Colorado State",
-      "conference": "Independent",
-      "rating_retro": 0.008942226339306112,
-      "conf_weight": 0.5,
+      "team": "LSU",
+      "conference": "SEC",
+      "rating_retro": 0.008533859669642643,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 16,
-      "team": "Western Kentucky",
-      "conference": "Independent",
-      "rating_retro": 0.008760847334733096,
-      "conf_weight": 0.5,
+      "team": "Arizona State",
+      "conference": "Pac-12",
+      "rating_retro": 0.008525089119562896,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 17,
-      "team": "UNLV",
-      "conference": "Independent",
-      "rating_retro": 0.00873427101032502,
-      "conf_weight": 0.5,
+      "team": "Ole Miss",
+      "conference": "SEC",
+      "rating_retro": 0.008498372610894745,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 18,
-      "team": "Temple",
-      "conference": "Independent",
-      "rating_retro": 0.0086935963429816,
-      "conf_weight": 0.5,
+      "team": "Nebraska",
+      "conference": "Big Ten",
+      "rating_retro": 0.008494631567647874,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 19,
-      "team": "Western Michigan",
-      "conference": "Independent",
-      "rating_retro": 0.008660009837486245,
-      "conf_weight": 0.5,
+      "team": "Clemson",
+      "conference": "ACC",
+      "rating_retro": 0.008365453998894674,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 20,
-      "team": "Buffalo",
-      "conference": "Independent",
-      "rating_retro": 0.008623306516177601,
-      "conf_weight": 0.5,
+      "team": "Illinois",
+      "conference": "Big Ten",
+      "rating_retro": 0.008331822424822753,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 21,
-      "team": "Coastal Carolina",
+      "team": "Jacksonville State",
       "conference": "Independent",
-      "rating_retro": 0.008588159485304392,
+      "rating_retro": 0.00830427623642152,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 22,
-      "team": "Louisiana",
-      "conference": "Independent",
-      "rating_retro": 0.008556588132285705,
-      "conf_weight": 0.5,
+      "team": "Texas A&M",
+      "conference": "SEC",
+      "rating_retro": 0.00829753474309255,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 23,
-      "team": "Sam Houston",
-      "conference": "Independent",
-      "rating_retro": 0.008504964157911233,
-      "conf_weight": 0.5,
+      "team": "Vanderbilt",
+      "conference": "SEC",
+      "rating_retro": 0.008286510838274953,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 24,
-      "team": "Louisiana Tech",
+      "team": "Army",
       "conference": "Independent",
-      "rating_retro": 0.008493046435144347,
+      "rating_retro": 0.008199801901614696,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 25,
-      "team": "Arkansas State",
+      "team": "Boise State",
       "conference": "Independent",
-      "rating_retro": 0.008491449858449945,
+      "rating_retro": 0.008157930353209171,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 26,
-      "team": "UTSA",
-      "conference": "Independent",
-      "rating_retro": 0.008473837959446857,
-      "conf_weight": 0.5,
+      "team": "Mississippi State",
+      "conference": "SEC",
+      "rating_retro": 0.00810021601421907,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 27,
-      "team": "USC",
-      "conference": "Pac-12",
-      "rating_retro": 0.00844922961385741,
-      "conf_weight": 0.05191671043751009,
+      "team": "Boston College",
+      "conference": "ACC",
+      "rating_retro": 0.008074358271832036,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 28,
-      "team": "Fresno State",
-      "conference": "Independent",
-      "rating_retro": 0.0084379761910916,
-      "conf_weight": 0.5,
+      "team": "Northwestern",
+      "conference": "Big Ten",
+      "rating_retro": 0.008070708840649062,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 29,
-      "team": "South Florida",
-      "conference": "Independent",
-      "rating_retro": 0.008417976809304993,
-      "conf_weight": 0.5,
+      "team": "Iowa",
+      "conference": "Big Ten",
+      "rating_retro": 0.008035317403123224,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 30,
-      "team": "Akron",
-      "conference": "Independent",
-      "rating_retro": 0.008402551419651835,
-      "conf_weight": 0.5,
+      "team": "Michigan State",
+      "conference": "Big Ten",
+      "rating_retro": 0.008000666225541393,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 31,
-      "team": "Oklahoma",
-      "conference": "Big 12",
-      "rating_retro": 0.008388667168081355,
-      "conf_weight": 0.0793148558931967,
+      "team": "Ohio",
+      "conference": "Independent",
+      "rating_retro": 0.007969541673059164,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 32,
-      "team": "Ohio State",
-      "conference": "Big Ten",
-      "rating_retro": 0.008372599448666432,
-      "conf_weight": 0.16728416799379037,
+      "team": "Tulane",
+      "conference": "Independent",
+      "rating_retro": 0.007945059841420493,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 33,
-      "team": "Bowling Green",
+      "team": "Memphis",
       "conference": "Independent",
-      "rating_retro": 0.008370770598642923,
+      "rating_retro": 0.00791472299358117,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 34,
-      "team": "East Carolina",
+      "team": "Colorado State",
       "conference": "Independent",
-      "rating_retro": 0.008370220207683006,
+      "rating_retro": 0.007912670529162886,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 35,
-      "team": "BYU",
-      "conference": "Independent",
-      "rating_retro": 0.008322520641046645,
-      "conf_weight": 0.5,
+      "team": "Syracuse",
+      "conference": "ACC",
+      "rating_retro": 0.007861583718954207,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 36,
-      "team": "Marshall",
-      "conference": "Independent",
-      "rating_retro": 0.008269782283830449,
-      "conf_weight": 0.5,
+      "team": "Auburn",
+      "conference": "SEC",
+      "rating_retro": 0.007838344390060122,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 37,
-      "team": "UTEP",
-      "conference": "Independent",
-      "rating_retro": 0.008258970590555418,
-      "conf_weight": 0.5,
+      "team": "South Carolina",
+      "conference": "SEC",
+      "rating_retro": 0.007787527918234332,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 38,
-      "team": "James Madison",
-      "conference": "Independent",
-      "rating_retro": 0.00824677227579283,
-      "conf_weight": 0.5,
+      "team": "Wisconsin",
+      "conference": "Big Ten",
+      "rating_retro": 0.007777350090128877,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 39,
-      "team": "Old Dominion",
-      "conference": "Independent",
-      "rating_retro": 0.008232258281492407,
-      "conf_weight": 0.5,
+      "team": "Rutgers",
+      "conference": "Big Ten",
+      "rating_retro": 0.007773842855269517,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 40,
-      "team": "Toledo",
+      "team": "Temple",
       "conference": "Independent",
-      "rating_retro": 0.008178993557947604,
+      "rating_retro": 0.007750062781077564,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 41,
-      "team": "North Texas",
-      "conference": "Independent",
-      "rating_retro": 0.008152701707779824,
-      "conf_weight": 0.5,
+      "team": "Georgia Tech",
+      "conference": "ACC",
+      "rating_retro": 0.007741468264491179,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 42,
-      "team": "Northern Illinois",
+      "team": "Houston",
       "conference": "Independent",
-      "rating_retro": 0.008148059962065303,
+      "rating_retro": 0.007740604431794446,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 43,
-      "team": "Georgia State",
-      "conference": "Independent",
-      "rating_retro": 0.00812282887452302,
-      "conf_weight": 0.5,
+      "team": "Miami",
+      "conference": "ACC",
+      "rating_retro": 0.007724959854178268,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 44,
-      "team": "California",
-      "conference": "Pac-12",
-      "rating_retro": 0.008114134961019745,
-      "conf_weight": 0.05191671043751009,
+      "team": "Western Kentucky",
+      "conference": "Independent",
+      "rating_retro": 0.0076960151248021995,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 45,
-      "team": "San José State",
+      "team": "UNLV",
       "conference": "Independent",
-      "rating_retro": 0.008096709321774812,
+      "rating_retro": 0.007671822059782448,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 46,
-      "team": "Utah State",
+      "team": "UConn",
       "conference": "Independent",
-      "rating_retro": 0.008095243495150893,
+      "rating_retro": 0.007658312454635769,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 47,
-      "team": "Kent State",
+      "team": "Sam Houston",
       "conference": "Independent",
-      "rating_retro": 0.008094648076668563,
+      "rating_retro": 0.007644297952301405,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 48,
-      "team": "Nevada",
-      "conference": "Independent",
-      "rating_retro": 0.008081191449847418,
-      "conf_weight": 0.5,
+      "team": "Purdue",
+      "conference": "Big Ten",
+      "rating_retro": 0.007639753633534762,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 49,
-      "team": "Southern Miss",
-      "conference": "Independent",
-      "rating_retro": 0.008041391643039644,
-      "conf_weight": 0.5,
+      "team": "Minnesota",
+      "conference": "Big Ten",
+      "rating_retro": 0.00762854000393681,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 50,
-      "team": "Colorado",
-      "conference": "Pac-12",
-      "rating_retro": 0.008038385434780465,
-      "conf_weight": 0.05191671043751009,
+      "team": "North Carolina",
+      "conference": "ACC",
+      "rating_retro": 0.007616947004417103,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 51,
-      "team": "Middle Tennessee",
+      "team": "UTSA",
       "conference": "Independent",
-      "rating_retro": 0.008032613670741756,
+      "rating_retro": 0.007607152358660351,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 52,
-      "team": "Navy",
+      "team": "Coastal Carolina",
       "conference": "Independent",
-      "rating_retro": 0.008027572690743948,
+      "rating_retro": 0.0075814535259271,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 53,
-      "team": "New Mexico",
-      "conference": "Independent",
-      "rating_retro": 0.008014356659585177,
-      "conf_weight": 0.5,
+      "team": "Baylor",
+      "conference": "Big 12",
+      "rating_retro": 0.007577151263310962,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 54,
-      "team": "South Alabama",
+      "team": "Louisiana",
       "conference": "Independent",
-      "rating_retro": 0.008003000622559181,
+      "rating_retro": 0.0075614990692274425,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 55,
-      "team": "UL Monroe",
-      "conference": "Independent",
-      "rating_retro": 0.007989263078815912,
-      "conf_weight": 0.5,
+      "team": "Pittsburgh",
+      "conference": "ACC",
+      "rating_retro": 0.007505396709981167,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 56,
-      "team": "UAB",
+      "team": "East Carolina",
       "conference": "Independent",
-      "rating_retro": 0.007981179194135093,
+      "rating_retro": 0.00747587096064033,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 57,
-      "team": "Air Force",
+      "team": "SMU",
       "conference": "Independent",
-      "rating_retro": 0.007976166611278172,
+      "rating_retro": 0.007475865021691161,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 58,
-      "team": "Cincinnati",
-      "conference": "Independent",
-      "rating_retro": 0.007964617386245773,
-      "conf_weight": 0.5,
+      "team": "Duke",
+      "conference": "ACC",
+      "rating_retro": 0.007469062951521906,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 59,
-      "team": "Georgia Southern",
-      "conference": "Independent",
-      "rating_retro": 0.007961479615929546,
-      "conf_weight": 0.5,
+      "team": "Maryland",
+      "conference": "Big Ten",
+      "rating_retro": 0.007462011387952001,
+      "conf_weight": 0.16646235294925837,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 60,
-      "team": "UCF",
+      "team": "Louisiana Tech",
       "conference": "Independent",
-      "rating_retro": 0.00791815486721666,
+      "rating_retro": 0.007458007551126224,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 61,
-      "team": "Florida Atlantic",
+      "team": "Arkansas State",
       "conference": "Independent",
-      "rating_retro": 0.007847824900384845,
+      "rating_retro": 0.007442159720968996,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 62,
-      "team": "Oregon",
-      "conference": "Pac-12",
-      "rating_retro": 0.007841520218527971,
-      "conf_weight": 0.05191671043751009,
+      "team": "Kentucky",
+      "conference": "SEC",
+      "rating_retro": 0.007437266470768815,
+      "conf_weight": 0.1800075927495417,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 63,
-      "team": "New Mexico State",
+      "team": "Buffalo",
       "conference": "Independent",
-      "rating_retro": 0.007801922322955596,
+      "rating_retro": 0.0074366118891268885,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 64,
-      "team": "Troy",
-      "conference": "Independent",
-      "rating_retro": 0.007765111311263575,
-      "conf_weight": 0.5,
+      "team": "Louisville",
+      "conference": "ACC",
+      "rating_retro": 0.007431020268160648,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 65,
-      "team": "Stanford",
-      "conference": "Pac-12",
-      "rating_retro": 0.007746119104721593,
-      "conf_weight": 0.05191671043751009,
+      "team": "Western Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.007395377034182321,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 66,
-      "team": "Rice",
-      "conference": "Independent",
-      "rating_retro": 0.0076945242956572985,
-      "conf_weight": 0.5,
+      "team": "Florida State",
+      "conference": "ACC",
+      "rating_retro": 0.007391147017843123,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 67,
-      "team": "Texas State",
+      "team": "Fresno State",
       "conference": "Independent",
-      "rating_retro": 0.0076589183247025095,
+      "rating_retro": 0.0073836562115908045,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 68,
-      "team": "Florida International",
-      "conference": "Independent",
-      "rating_retro": 0.007640111618120211,
-      "conf_weight": 0.5,
+      "team": "Colorado",
+      "conference": "Pac-12",
+      "rating_retro": 0.007371570514179427,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 69,
-      "team": "Kennesaw State",
-      "conference": "Independent",
-      "rating_retro": 0.00758551941133982,
-      "conf_weight": 0.5,
+      "team": "NC State",
+      "conference": "ACC",
+      "rating_retro": 0.007367088456608392,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 70,
-      "team": "App State",
+      "team": "South Florida",
       "conference": "Independent",
-      "rating_retro": 0.0075326542315544785,
+      "rating_retro": 0.00733819061371338,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 71,
-      "team": "Charlotte",
+      "team": "North Texas",
       "conference": "Independent",
-      "rating_retro": 0.007520266252333314,
+      "rating_retro": 0.007326834817193778,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 72,
-      "team": "Eastern Michigan",
-      "conference": "Independent",
-      "rating_retro": 0.007465457177492083,
-      "conf_weight": 0.5,
+      "team": "Kansas State",
+      "conference": "Big 12",
+      "rating_retro": 0.007281667828781903,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 73,
-      "team": "Ball State",
+      "team": "James Madison",
       "conference": "Independent",
-      "rating_retro": 0.0074207101850086235,
+      "rating_retro": 0.007242132599951898,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 74,
-      "team": "Michigan",
-      "conference": "Big Ten",
-      "rating_retro": 0.007402174885567591,
-      "conf_weight": 0.16728416799379037,
+      "team": "San José State",
+      "conference": "Independent",
+      "rating_retro": 0.007230064745775641,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 75,
-      "team": "Tulsa",
-      "conference": "Independent",
-      "rating_retro": 0.007362212129999152,
-      "conf_weight": 0.5,
+      "team": "West Virginia",
+      "conference": "Big 12",
+      "rating_retro": 0.007206638078251708,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 76,
-      "team": "Oregon State",
-      "conference": "Pac-12",
-      "rating_retro": 0.007350783751606112,
-      "conf_weight": 0.05191671043751009,
+      "team": "UTEP",
+      "conference": "Independent",
+      "rating_retro": 0.0071970360620407636,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 77,
-      "team": "San Diego State",
+      "team": "Bowling Green",
       "conference": "Independent",
-      "rating_retro": 0.007336624080409222,
+      "rating_retro": 0.007189674286374456,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 78,
-      "team": "Central Michigan",
+      "team": "Utah State",
       "conference": "Independent",
-      "rating_retro": 0.007332046685857174,
+      "rating_retro": 0.007169487775828922,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 79,
-      "team": "Liberty",
+      "team": "Marshall",
       "conference": "Independent",
-      "rating_retro": 0.0072493971982170455,
+      "rating_retro": 0.0071633861476587506,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 80,
-      "team": "Massachusetts",
+      "team": "Old Dominion",
       "conference": "Independent",
-      "rating_retro": 0.007194482101859146,
+      "rating_retro": 0.0071621595947021464,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 81,
-      "team": "Washington",
-      "conference": "Pac-12",
-      "rating_retro": 0.007165010108931073,
-      "conf_weight": 0.05191671043751009,
+      "team": "Navy",
+      "conference": "Independent",
+      "rating_retro": 0.007152218784456702,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 82,
-      "team": "Wyoming",
+      "team": "BYU",
       "conference": "Independent",
-      "rating_retro": 0.007151625767874535,
+      "rating_retro": 0.00711826217865614,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 83,
-      "team": "Arizona",
-      "conference": "Pac-12",
-      "rating_retro": 0.007121320193067701,
-      "conf_weight": 0.05191671043751009,
+      "team": "Air Force",
+      "conference": "Independent",
+      "rating_retro": 0.007115851997460437,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 84,
-      "team": "UCLA",
+      "team": "USC",
       "conference": "Pac-12",
-      "rating_retro": 0.007120066355015318,
-      "conf_weight": 0.05191671043751009,
+      "rating_retro": 0.007097272036013196,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 85,
-      "team": "Washington State",
-      "conference": "Pac-12",
-      "rating_retro": 0.007108863004589519,
-      "conf_weight": 0.05191671043751009,
+      "team": "Southern Miss",
+      "conference": "Independent",
+      "rating_retro": 0.0070867813716932425,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 86,
-      "team": "Kansas State",
-      "conference": "Big 12",
-      "rating_retro": 0.006895410548248022,
-      "conf_weight": 0.0793148558931967,
+      "team": "Akron",
+      "conference": "Independent",
+      "rating_retro": 0.007076263730202691,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 87,
-      "team": "Virginia Tech",
+      "team": "Virginia",
       "conference": "ACC",
-      "rating_retro": 0.006875390405736347,
-      "conf_weight": 0.1397727412739303,
+      "rating_retro": 0.007075440910966311,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 88,
-      "team": "Hawai'i",
+      "team": "Nevada",
       "conference": "Independent",
-      "rating_retro": 0.006729701090598452,
+      "rating_retro": 0.007069421834158018,
       "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 89,
-      "team": "Indiana",
-      "conference": "Big Ten",
-      "rating_retro": 0.006722374734984096,
-      "conf_weight": 0.16728416799379037,
+      "team": "New Mexico",
+      "conference": "Independent",
+      "rating_retro": 0.007068229757263618,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 90,
-      "team": "Georgia",
-      "conference": "SEC",
-      "rating_retro": 0.006706175535985135,
-      "conf_weight": 0.1807663883012698,
+      "team": "Northern Illinois",
+      "conference": "Independent",
+      "rating_retro": 0.007060261406052441,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 91,
-      "team": "Tennessee",
-      "conference": "SEC",
-      "rating_retro": 0.006692062710268374,
-      "conf_weight": 0.1807663883012698,
+      "team": "Toledo",
+      "conference": "Independent",
+      "rating_retro": 0.007051983793359546,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 92,
-      "team": "Clemson",
-      "conference": "ACC",
-      "rating_retro": 0.006684896275958351,
-      "conf_weight": 0.1397727412739303,
+      "team": "South Alabama",
+      "conference": "Independent",
+      "rating_retro": 0.00704593316517163,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 93,
-      "team": "Nebraska",
-      "conference": "Big Ten",
-      "rating_retro": 0.006625034211335568,
-      "conf_weight": 0.16728416799379037,
+      "team": "UAB",
+      "conference": "Independent",
+      "rating_retro": 0.007042041884088503,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 94,
-      "team": "Alabama",
-      "conference": "SEC",
-      "rating_retro": 0.006603190337964144,
-      "conf_weight": 0.1807663883012698,
+      "team": "Oklahoma",
+      "conference": "Big 12",
+      "rating_retro": 0.007016583061767034,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 95,
-      "team": "LSU",
-      "conference": "SEC",
-      "rating_retro": 0.006596804709109914,
-      "conf_weight": 0.1807663883012698,
+      "team": "Georgia Southern",
+      "conference": "Independent",
+      "rating_retro": 0.0070094512423423795,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 96,
-      "team": "Ole Miss",
-      "conference": "SEC",
-      "rating_retro": 0.006567688486715325,
-      "conf_weight": 0.1807663883012698,
+      "team": "Middle Tennessee",
+      "conference": "Independent",
+      "rating_retro": 0.00700460216720115,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 97,
-      "team": "Florida",
-      "conference": "SEC",
-      "rating_retro": 0.006549926202104671,
-      "conf_weight": 0.1807663883012698,
+      "team": "Georgia State",
+      "conference": "Independent",
+      "rating_retro": 0.006992899410889639,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 98,
-      "team": "Missouri",
-      "conference": "SEC",
-      "rating_retro": 0.006540501126898129,
-      "conf_weight": 0.1807663883012698,
+      "team": "UL Monroe",
+      "conference": "Independent",
+      "rating_retro": 0.0069835710089642495,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 99,
-      "team": "TCU",
-      "conference": "Big 12",
-      "rating_retro": 0.006517892508859127,
-      "conf_weight": 0.0793148558931967,
+      "team": "Arizona",
+      "conference": "Pac-12",
+      "rating_retro": 0.006945467565167794,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 100,
-      "team": "Arkansas",
-      "conference": "SEC",
-      "rating_retro": 0.006465422786070513,
-      "conf_weight": 0.1807663883012698,
+      "team": "Iowa State",
+      "conference": "Big 12",
+      "rating_retro": 0.006930688217514981,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 101,
-      "team": "Texas Tech",
-      "conference": "Big 12",
-      "rating_retro": 0.0063903401550463815,
-      "conf_weight": 0.0793148558931967,
+      "team": "New Mexico State",
+      "conference": "Independent",
+      "rating_retro": 0.006905128022883104,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 102,
-      "team": "Vanderbilt",
-      "conference": "SEC",
-      "rating_retro": 0.006353028277028104,
-      "conf_weight": 0.1807663883012698,
+      "team": "Oregon State",
+      "conference": "Pac-12",
+      "rating_retro": 0.006889494557222209,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 103,
-      "team": "Baylor",
-      "conference": "Big 12",
-      "rating_retro": 0.006352582736256506,
-      "conf_weight": 0.0793148558931967,
+      "team": "Florida Atlantic",
+      "conference": "Independent",
+      "rating_retro": 0.006886065053672399,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 104,
-      "team": "Rutgers",
-      "conference": "Big Ten",
-      "rating_retro": 0.006349694002811048,
-      "conf_weight": 0.16728416799379037,
+      "team": "Rice",
+      "conference": "Independent",
+      "rating_retro": 0.006882234469936973,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 105,
-      "team": "Boston College",
-      "conference": "ACC",
-      "rating_retro": 0.006231806457447399,
-      "conf_weight": 0.1397727412739303,
+      "team": "Texas State",
+      "conference": "Independent",
+      "rating_retro": 0.006860357151812403,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 106,
-      "team": "Iowa State",
-      "conference": "Big 12",
-      "rating_retro": 0.006212364103075643,
-      "conf_weight": 0.0793148558931967,
+      "team": "Kent State",
+      "conference": "Independent",
+      "rating_retro": 0.0068468270559707235,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 107,
-      "team": "Texas A&M",
-      "conference": "SEC",
-      "rating_retro": 0.006193219528524803,
-      "conf_weight": 0.1807663883012698,
+      "team": "TCU",
+      "conference": "Big 12",
+      "rating_retro": 0.006844708868581171,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 108,
-      "team": "Syracuse",
-      "conference": "ACC",
-      "rating_retro": 0.006176165379704589,
-      "conf_weight": 0.1397727412739303,
+      "team": "Kennesaw State",
+      "conference": "Independent",
+      "rating_retro": 0.006843605839539928,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 109,
-      "team": "Illinois",
-      "conference": "Big Ten",
-      "rating_retro": 0.006139696501875331,
-      "conf_weight": 0.16728416799379037,
+      "team": "Troy",
+      "conference": "Independent",
+      "rating_retro": 0.006829815612817717,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 110,
-      "team": "NC State",
-      "conference": "ACC",
-      "rating_retro": 0.006099239312520742,
-      "conf_weight": 0.1397727412739303,
+      "team": "Texas Tech",
+      "conference": "Big 12",
+      "rating_retro": 0.006825523637529892,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 111,
-      "team": "Louisville",
-      "conference": "ACC",
-      "rating_retro": 0.006058694389667933,
-      "conf_weight": 0.1397727412739303,
+      "team": "Oregon",
+      "conference": "Pac-12",
+      "rating_retro": 0.006810656230947997,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 112,
-      "team": "West Virginia",
+      "team": "Oklahoma State",
       "conference": "Big 12",
-      "rating_retro": 0.006058223981015777,
-      "conf_weight": 0.0793148558931967,
+      "rating_retro": 0.0067977007118754105,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 113,
-      "team": "Iowa",
-      "conference": "Big Ten",
-      "rating_retro": 0.0060129657581003025,
-      "conf_weight": 0.16728416799379037,
+      "team": "Cincinnati",
+      "conference": "Independent",
+      "rating_retro": 0.0067929886149871235,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 114,
-      "team": "Minnesota",
-      "conference": "Big Ten",
-      "rating_retro": 0.006000691810382947,
-      "conf_weight": 0.16728416799379037,
+      "team": "Washington",
+      "conference": "Pac-12",
+      "rating_retro": 0.006791666666521122,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 115,
-      "team": "Florida State",
-      "conference": "ACC",
-      "rating_retro": 0.005984477938081827,
-      "conf_weight": 0.1397727412739303,
+      "team": "Washington State",
+      "conference": "Pac-12",
+      "rating_retro": 0.006783032702493709,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 116,
-      "team": "South Carolina",
-      "conference": "SEC",
-      "rating_retro": 0.005971135138315981,
-      "conf_weight": 0.1807663883012698,
+      "team": "Florida International",
+      "conference": "Independent",
+      "rating_retro": 0.006749760319311841,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 117,
-      "team": "Utah",
-      "conference": "Pac-12",
-      "rating_retro": 0.005894788430425754,
-      "conf_weight": 0.05191671043751009,
+      "team": "UCF",
+      "conference": "Independent",
+      "rating_retro": 0.006731431544073509,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 118,
-      "team": "Pittsburgh",
-      "conference": "ACC",
-      "rating_retro": 0.005880795568104895,
-      "conf_weight": 0.1397727412739303,
+      "team": "Kansas",
+      "conference": "Big 12",
+      "rating_retro": 0.006660968588316039,
+      "conf_weight": 0.07918604538002996,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 119,
-      "team": "Mississippi State",
-      "conference": "SEC",
-      "rating_retro": 0.005821995065391944,
-      "conf_weight": 0.1807663883012698,
+      "team": "California",
+      "conference": "Pac-12",
+      "rating_retro": 0.00665587049619604,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 120,
-      "team": "Kansas",
-      "conference": "Big 12",
-      "rating_retro": 0.005811907780535425,
-      "conf_weight": 0.0793148558931967,
+      "team": "App State",
+      "conference": "Independent",
+      "rating_retro": 0.006639857872818312,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 121,
-      "team": "Oklahoma State",
-      "conference": "Big 12",
-      "rating_retro": 0.005792541271781763,
-      "conf_weight": 0.0793148558931967,
+      "team": "Tulsa",
+      "conference": "Independent",
+      "rating_retro": 0.0065929446453297045,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 122,
-      "team": "Duke",
-      "conference": "ACC",
-      "rating_retro": 0.005774025099760616,
-      "conf_weight": 0.1397727412739303,
+      "team": "San Diego State",
+      "conference": "Independent",
+      "rating_retro": 0.0065504981353007655,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 123,
-      "team": "Wisconsin",
-      "conference": "Big Ten",
-      "rating_retro": 0.005691345557027806,
-      "conf_weight": 0.16728416799379037,
+      "team": "Liberty",
+      "conference": "Independent",
+      "rating_retro": 0.00651964561863488,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 124,
-      "team": "Auburn",
-      "conference": "SEC",
-      "rating_retro": 0.005632406593056565,
-      "conf_weight": 0.1807663883012698,
+      "team": "Wake Forest",
+      "conference": "ACC",
+      "rating_retro": 0.006518401741114787,
+      "conf_weight": 0.1393198716291027,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 125,
-      "team": "Georgia Tech",
-      "conference": "ACC",
-      "rating_retro": 0.005574863044567237,
-      "conf_weight": 0.1397727412739303,
+      "team": "Charlotte",
+      "conference": "Independent",
+      "rating_retro": 0.006513919713520104,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 126,
-      "team": "Kentucky",
-      "conference": "SEC",
-      "rating_retro": 0.005563831223270704,
-      "conf_weight": 0.1807663883012698,
+      "team": "Eastern Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.006487171108380241,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 127,
-      "team": "Northwestern",
-      "conference": "Big Ten",
-      "rating_retro": 0.005544962797878003,
-      "conf_weight": 0.16728416799379037,
+      "team": "UCLA",
+      "conference": "Pac-12",
+      "rating_retro": 0.0064248702997510496,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 128,
-      "team": "Michigan State",
-      "conference": "Big Ten",
-      "rating_retro": 0.0055404018661496645,
-      "conf_weight": 0.16728416799379037,
+      "team": "Wyoming",
+      "conference": "Independent",
+      "rating_retro": 0.006422591940396456,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 129,
-      "team": "Maryland",
-      "conference": "Big Ten",
-      "rating_retro": 0.005477122902776631,
-      "conf_weight": 0.16728416799379037,
+      "team": "Central Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.006359090402811293,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 130,
-      "team": "Miami",
-      "conference": "ACC",
-      "rating_retro": 0.005470998663443318,
-      "conf_weight": 0.1397727412739303,
+      "team": "Ball State",
+      "conference": "Independent",
+      "rating_retro": 0.006320584928797215,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 131,
-      "team": "North Carolina",
-      "conference": "ACC",
-      "rating_retro": 0.005352927249865013,
-      "conf_weight": 0.1397727412739303,
+      "team": "Stanford",
+      "conference": "Pac-12",
+      "rating_retro": 0.006299533334361855,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 132,
-      "team": "Virginia",
-      "conference": "ACC",
-      "rating_retro": 0.005304404381097357,
-      "conf_weight": 0.1397727412739303,
+      "team": "Massachusetts",
+      "conference": "Independent",
+      "rating_retro": 0.006037676546213808,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 133,
-      "team": "Purdue",
-      "conference": "Big Ten",
-      "rating_retro": 0.005183980014117428,
-      "conf_weight": 0.16728416799379037,
+      "team": "Hawai'i",
+      "conference": "Independent",
+      "rating_retro": 0.006012491853383185,
+      "conf_weight": 0.5,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     },
     {
       "rank_retro": 134,
-      "team": "Wake Forest",
-      "conference": "ACC",
-      "rating_retro": 0.00509267092902464,
-      "conf_weight": 0.1397727412739303,
+      "team": "Utah",
+      "conference": "Pac-12",
+      "rating_retro": 0.005992834387203741,
+      "conf_weight": 0.05184525819155042,
       "quality_wins": [
-        "Notre Dame",
-        "Texas",
-        "Miami (OH)"
+        "Ohio State",
+        "Penn State",
+        "Notre Dame"
       ],
       "uncertainty": 0.0
     }
   ],
   "conference_ratings": {
-    "ACC": 0.1397727412739303,
-    "Mountain West": 0.06624483360611241,
-    "Pac-12": 0.05191671043751009,
-    "American Athletic": 0.05117763131661711,
-    "SEC": 0.1807663883012698,
-    "Sun Belt": 0.05254483488248261,
-    "Big 12": 0.0793148558931967,
-    "Mid-American": 0.07086423152710113,
-    "Conference USA": 0.028598172898112832,
-    "Big Ten": 0.16728416799379037,
-    "FBS Independents": 0.11151543186987686
+    "Pac-12": 0.05184525819155042,
+    "ACC": 0.1393198716291027,
+    "FBS Independents": 0.11231403155144687,
+    "Conference USA": 0.028782713035481914,
+    "SEC": 0.1800075927495417,
+    "Mountain West": 0.06625462686171191,
+    "American Athletic": 0.051373761800387,
+    "Big 12": 0.07918604538002996,
+    "Sun Belt": 0.052875362449205744,
+    "Big Ten": 0.16646235294925837,
+    "Mid-American": 0.07157838340228374
   }
 }
