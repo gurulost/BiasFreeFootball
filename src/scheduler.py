@@ -181,10 +181,29 @@ class RankingScheduler:
     def get_current_rankings(self) -> Optional[Dict]:
         """Get current rankings from cache"""
         try:
+            # Try live export files first
+            exports_dir = Path('exports')
+            live_files = list(exports_dir.glob('*_live.json'))
+            
+            if live_files:
+                # Get the most recent live file
+                latest_file = max(live_files, key=lambda p: p.stat().st_mtime)
+                with open(latest_file, 'r') as f:
+                    return json.load(f)
+            
+            # Try authentic export
+            auth_files = list(exports_dir.glob('*_authentic.json'))
+            if auth_files:
+                latest_auth = max(auth_files, key=lambda p: p.stat().st_mtime)
+                with open(latest_auth, 'r') as f:
+                    return json.load(f)
+            
+            # Fall back to cache
             cache_file = Path('data/cache/current_rankings.json')
             if cache_file.exists():
                 with open(cache_file, 'r') as f:
                     return json.load(f)
+                    
         except Exception as e:
             self.logger.error(f"Failed to load current rankings: {e}")
         return None
@@ -192,10 +211,24 @@ class RankingScheduler:
     def get_final_rankings(self, season: int) -> Optional[Dict]:
         """Get final rankings for a specific season"""
         try:
+            # Try authentic export file first
+            export_file = Path(f'exports/{season}_authentic.json')
+            if export_file.exists():
+                with open(export_file, 'r') as f:
+                    return json.load(f)
+            
+            # Try authentic cache file
+            auth_cache_file = Path(f'data/cache/final_rankings_{season}_authentic.json')
+            if auth_cache_file.exists():
+                with open(auth_cache_file, 'r') as f:
+                    return json.load(f)
+            
+            # Try legacy cache file as fallback
             cache_file = Path(f'data/cache/final_rankings_{season}.json')
             if cache_file.exists():
                 with open(cache_file, 'r') as f:
                     return json.load(f)
+                    
         except Exception as e:
             self.logger.error(f"Failed to load final rankings for {season}: {e}")
         return None
