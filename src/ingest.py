@@ -52,13 +52,18 @@ class CFBDataIngester:
         
         return None
     
-    def get_conference_name(self, conference_id: int, season: int) -> str:
-        """Get conference name from ID using cached mapping"""
-        if season not in self.conference_cache:
-            # Fetch conferences if not cached
-            self.fetch_conferences(season)
-        
-        return self.conference_cache.get(season, {}).get(conference_id, 'Unknown')
+    def get_conference_name(self, conference_data, season: int) -> str:
+        """Get conference name from API data"""
+        # Handle both direct string and ID-based conference data
+        if isinstance(conference_data, str):
+            return conference_data
+        elif isinstance(conference_data, int):
+            # Fallback to ID mapping if needed
+            if season not in self.conference_cache:
+                self.fetch_conferences(season)
+            return self.conference_cache.get(season, {}).get(conference_data, 'Unknown')
+        else:
+            return 'Unknown'
         
     def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
         """Make API request with error handling"""

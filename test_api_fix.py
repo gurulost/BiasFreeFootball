@@ -51,11 +51,11 @@ def test_api_fix():
         validation_results = {}
         for team_data in teams:
             team_name = team_data.get('school')
-            conference_id = team_data.get('conference')
+            conference_data = team_data.get('conference')
             
             if team_name in key_teams_2024:
                 expected_conf = key_teams_2024[team_name]
-                actual_conf = ingester.get_conference_name(conference_id, season)
+                actual_conf = ingester.get_conference_name(conference_data, season)
                 
                 validation_results[team_name] = {
                     'expected': expected_conf,
@@ -70,8 +70,8 @@ def test_api_fix():
         print(f"\n4. Conference distribution analysis...")
         conf_counts = {}
         for team_data in teams:
-            conf_id = team_data.get('conference')
-            conf_name = ingester.get_conference_name(conf_id, season)
+            conf_data = team_data.get('conference')
+            conf_name = ingester.get_conference_name(conf_data, season)
             conf_counts[conf_name] = conf_counts.get(conf_name, 0) + 1
         
         for conf, count in sorted(conf_counts.items()):
@@ -86,8 +86,8 @@ def test_api_fix():
         
         for team_data in teams:
             team_name = team_data.get('school')
-            conf_id = team_data.get('conference')
-            conf_name = ingester.get_conference_name(conf_id, season)
+            conf_data = team_data.get('conference')
+            conf_name = ingester.get_conference_name(conf_data, season)
             
             if team_name == 'BYU':
                 byu_conf = conf_name

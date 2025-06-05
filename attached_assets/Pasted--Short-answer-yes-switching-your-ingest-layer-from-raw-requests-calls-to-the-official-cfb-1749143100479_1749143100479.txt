@@ -1,0 +1,91 @@
+**Short answer:** yes — switching your ingest layer from raw `requests` calls to the official **`cfbd-python`** client will cure most of the schema-drift headaches you’ve been fighting.  The package is an OpenAPI-generated wrapper that **pins the contract**, validates types, and lets you request season-specific data with one argument instead of hand-built URLs.
+
+---
+
+## Why the client helps
+
+1. **Version pinning**
+   The client is generated from a fixed OpenAPI spec.  When CFBD changes or adds
+   fields the client bumps its pypi version; your `requirements.txt` lockfile
+   protects you from silent schema drift.
+
+2. **Season-aware helpers**
+   `TeamsApi().get_fbs_teams(year=2024)` returns the 2024 alignment
+   regardless of what year the server is currently on.  That eliminates the
+   BYU‐independent / Texas-Big-12 mix-ups.
+
+3. **Type validation out of the box**
+   Each row is an instantiated model (`cfbd.models.Game`): if a field is
+   missing you get an exception immediately, satisfying your “schema and type
+   validation” checkpoint with zero extra code.
+
+4. **Built-in paging / retries**
+   The client transparently handles pagination and HTTP 429 back-offs; you
+   won’t half-download a schedule.
+
+5. **Single source for conference names**
+   `ConferencesApi().get_conferences()` returns id + name in one call.  You no
+   longer need to scrape IDs or maintain a YAML.
+
+---
+
+## Quick migration sketch
+
+```bash
+pip install cfbd-python==4.0.0   # pin the latest tested version
+```
+
+```python
+from cfbd import ApiClient, Configuration
+from cfbd.apis import TeamsApi, GamesApi, ConferencesApi
+
+cfg = Configuration()
+cfg.api_key['Authorization'] = os.getenv("CFBD_API_KEY")
+cfg.api_key_prefix['Authorization'] = "Bearer"
+
+with ApiClient(cfg) as api:
+    teams   = {t.school: t for t in TeamsApi(api).get_fbs_teams(year=2024)}
+    conf_id = {c.id: c.name for c in ConferencesApi(api).get_conferences()}
+
+    games_raw = GamesApi(api).get_games(year=2024, season_type='both')
+```
+
+*Canonicalise*:
+
+```python
+def canonical_team(row_team):
+    return teams[row_team].school      # already canonical
+
+def team_conf(team):
+    cid = teams[team].conference_id
+    return conf_id.get(cid, "Independent")
+```
+
+After this, your ingest pipeline just iterates over `games_raw`, plugs in
+`canonical_team` and `team_conf`, and writes to your cleaned CSV.  All earlier
+validation code still runs, but missing-alias warnings should drop to zero.
+
+---
+
+## Things you still keep
+
+* The checksum file and golden-file tests (client can still mis-serve data).
+* The game-count and duplicate assertions.
+* The canonical YAML **for historical seasons** prior to 2018 (CFBD data begin
+  in earnest at 2014 but some early seasons lack conf\_id; keep the map for
+  those).
+
+---
+
+## One-time tasks for the dev
+
+1. **Add `cfbd-python` to `requirements.txt` / `poetry add cfbd-python`.**
+2. **Replace raw `requests` calls with the client** in `src/ingest.py`.
+3. **Update GitHub Action secret**: add `CFBD_API_KEY`.
+4. **Delete manual alias placeholders** that are now redundant.
+5. **Run full season replays** (2020-2024) to confirm BYU, Texas, Oklahoma,
+   etc. all appear in their correct conferences and ranking anomalies vanish.
+
+Once merged, the ingest layer will be future-proofed against endpoint changes
+and conference realignment quirks, and your ranking math will only ever see
+validated, season-correct rows.
