@@ -133,15 +133,35 @@ def run_authentic_pipeline(season=2024):
         team_ratings = ranker.pagerank(team_graph)
         conf_ratings = ranker.pagerank(conf_graph)
         
-        # Validate rating scale with FBS enforcer
-        from src.fbs_enforcer import create_fbs_enforcer
-        fbs_enforcer = create_fbs_enforcer(config)
-        scale_report = fbs_enforcer.validate_rating_scale(team_ratings)
+        # Comprehensive data quality validation
+        from src.data_quality_validator import create_data_quality_validator
+        quality_validator = create_data_quality_validator(config)
         
-        if scale_report['validation_passed']:
-            logger.info(f"✓ Rating scale validation passed: top={scale_report['top_rating']:.6f}, teams={scale_report['total_teams']}")
-        else:
-            logger.warning(f"Rating scale validation concerns: {scale_report}")
+        validation_report = quality_validator.run_comprehensive_validation(
+            teams, games_df, team_ratings, season
+        )
+        
+        # Fail fast on critical data quality issues
+        if not validation_report['overall_validation_passed']:
+            critical_issues = validation_report['critical_issues']
+            logger.error(f"Pipeline FAILED due to critical data quality issues: {critical_issues}")
+            raise ValueError(f"Data quality validation failed: {critical_issues}")
+        
+        # Log warnings for non-critical issues
+        if validation_report['warning_issues']:
+            logger.warning(f"Data quality warnings detected: {validation_report['warning_issues']}")
+        
+        logger.info(f"✓ Comprehensive data quality validation passed: {validation_report['validation_summary']}")
+        
+        # Calculate real quality wins based on actual game results
+        from src.quality_wins import QualityWinsCalculator
+        quality_calculator = QualityWinsCalculator(config)
+        
+        quality_wins = quality_calculator.calculate_quality_wins(team_graph, team_ratings, max_wins=3)
+        quality_validation = quality_calculator.validate_quality_wins(quality_wins, team_ratings)
+        
+        logger.info(f"✓ Quality wins calculated: {quality_validation['teams_with_quality_wins']} teams with wins, "
+                   f"avg = {quality_validation['average_quality_wins']:.2f}")
         
         # Build final rankings structure
         rankings_data = {
