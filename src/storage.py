@@ -7,6 +7,7 @@ import os
 import json
 import pickle
 import pandas as pd
+import numpy as np
 from datetime import datetime
 from typing import Dict, Tuple, Optional, Any
 import logging
@@ -223,8 +224,27 @@ class Storage:
         filename = f"bias_metrics_{season}_week{week:02d}.json"
         filepath = os.path.join(self.processed_dir, filename)
         
+        # Convert any numpy/pandas types to native Python types for JSON serialization
+        def convert_to_serializable(obj):
+            if hasattr(obj, 'item'):
+                return obj.item()
+            elif isinstance(obj, (np.bool_, bool)):
+                return bool(obj)
+            elif isinstance(obj, (np.integer, int)):
+                return int(obj)
+            elif isinstance(obj, (np.floating, float)):
+                return float(obj)
+            elif isinstance(obj, dict):
+                return {k: convert_to_serializable(v) for k, v in obj.items()}
+            elif isinstance(obj, list):
+                return [convert_to_serializable(v) for v in obj]
+            else:
+                return obj
+        
+        serializable_metrics = convert_to_serializable(metrics)
+        
         with open(filepath, 'w') as f:
-            json.dump(metrics, f, indent=2)
+            json.dump(serializable_metrics, f, indent=2)
         
         self.logger.debug(f"Saved bias metrics to {filepath}")
         return filepath
