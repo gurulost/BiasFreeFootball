@@ -236,9 +236,10 @@ def current_rankings():
             rankings_data = storage.get_latest_ratings()
         
         if not rankings_data:
-            return render_template('rankings.html', 
+            return render_template('current_rankings.html', 
                                  rankings=[], 
                                  metadata={'title': 'Current Rankings', 'auto_updated': True},
+                                 ratings_data=None,
                                  error="No current rankings available")
         
         rankings = rankings_data.get('rankings', [])
@@ -252,14 +253,14 @@ def current_rankings():
             'team_ratings': rankings,
             'metadata': metadata
         }
-        return render_template('rankings.html', 
+        return render_template('current_rankings.html', 
                              rankings=rankings, 
                              metadata=metadata,
                              ratings_data=ratings_data)
                              
     except Exception as e:
         logging.error(f"Current rankings error: {e}")
-        return render_template('rankings.html', 
+        return render_template('current_rankings.html', 
                              rankings=[], 
                              metadata={'title': 'Current Rankings', 'auto_updated': True},
                              ratings_data=None,
