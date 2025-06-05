@@ -191,6 +191,7 @@ class CFBDataIngester:
         processed_games = []
         bad_rows = []
         validation_warnings = []
+        missing_aliases = set()
         
         for game in games:
             if not game.get('completed', False):
@@ -210,11 +211,13 @@ class CFBDataIngester:
             home_canonical = self.canonicalize_team(home_team) if home_team else None
             away_canonical = self.canonicalize_team(away_team) if away_team else None
             
-            # Check for missing team canonicalization
+            # Check for missing team canonicalization and collect aliases
             if home_team and not home_canonical:
                 validation_warnings.append(f"Unknown home team: {home_team}")
+                missing_aliases.add(home_team)
             if away_team and not away_canonical:
                 validation_warnings.append(f"Unknown away team: {away_team}")
+                missing_aliases.add(away_team)
             
             # Apply canonical names and conferences if available
             if home_canonical:
@@ -276,6 +279,10 @@ class CFBDataIngester:
             
             processed_games.append(processed_game)
         
+        # Save missing aliases report for automated processing
+        if missing_aliases:
+            self._save_missing_aliases_report(missing_aliases, games[0].get('season', 2024))
+        
         # Log validation results
         if validation_warnings:
             self.logger.warning(f"Data validation warnings: {len(validation_warnings)} issues found")
@@ -290,6 +297,11 @@ class CFBDataIngester:
             # Fail if too many bad rows (indicates systematic data issue)
             if len(bad_rows) > len(games) * 0.05:  # More than 5% bad data
                 raise ValueError(f"Too many data validation failures: {len(bad_rows)}/{len(games)} games")
+        
+        # CI blocking mechanism: Assert zero missing aliases in strict mode
+        if self.config.get('validation', {}).get('strict_mode', False):
+            assert not missing_aliases, \
+                f"Unhandled aliases in strict mode: {sorted(missing_aliases)}"
         
         df = pd.DataFrame(processed_games)
         
@@ -333,6 +345,23 @@ class CFBDataIngester:
                     self.logger.error(f"CRITICAL: {team} has only {team_game_counts[team]} games - data integrity issue!")
         
         self.logger.info(f"Schedule validation complete: {len(all_teams)} teams, {len(games_df)} games")
+    
+    def _save_missing_aliases_report(self, missing_aliases: set, season: int) -> None:
+        """Save missing aliases report for automated processing"""
+        import json
+        import os
+        
+        # Create reports directory if it doesn't exist
+        reports_dir = 'reports'
+        os.makedirs(reports_dir, exist_ok=True)
+        
+        # Save missing aliases as JSON for tool processing
+        report_path = f"{reports_dir}/missing_aliases_{season}.json"
+        with open(report_path, 'w') as f:
+            json.dump(sorted(list(missing_aliases)), f, indent=2)
+        
+        self.logger.info(f"Missing aliases report saved to {report_path}")
+        self.logger.info(f"To auto-generate placeholders, run: python tools/add_placeholders.py {report_path}")
 
 def fetch_results_upto_week(week: int, season: int, config: Dict = None) -> pd.DataFrame:
     """Convenience function for pipeline use"""
