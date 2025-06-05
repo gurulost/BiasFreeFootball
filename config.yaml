@@ -41,7 +41,7 @@ bias_audit:
 
 # Data source configuration
 api:
-  base_url: "https://api.collegefootballdata.com"
+  base_url: "https://apinext.collegefootballdata.com"
   key: ""  # Will be loaded from environment variable CFB_API_KEY
   
 # Pipeline configuration
