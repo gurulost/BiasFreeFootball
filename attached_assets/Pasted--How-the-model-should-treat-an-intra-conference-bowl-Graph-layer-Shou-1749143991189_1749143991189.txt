@@ -1,0 +1,62 @@
+### How the model **should** treat an intra-conference bowl
+
+| Graph layer                    | Should the game appear?                                                                                                                             | Why |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| **Team graph** (Stage 2)       | **Yes.** Two directed edges: loser → winner (credit) and winner → loser (penalty).  It is still valuable evidence about the two teams.              |     |
+| **Conference graph** (Stage 1) | **No.** Both schools share the same league, so the game tells us nothing about league-vs-league strength.  Leaving it out prevents double-counting. |     |
+
+The bowl bonus ( +10 % weight ) still applies on the *team* edge because it is a high-leverage neutral-site game; it simply doesn’t flow into the conference PageRank.
+
+---
+
+### What may be happening now
+
+If your ingest logic marks every postseason game as “bowl” **and** “cross-conference” without checking team conferences, then the BYU vs Colorado Alamo Bowl is being:
+
+1. added to the **conference** graph as Colorado → BYU (loss → win), and
+2. counted in the Big 12’s bowl ledger as a win *and* a loss (one on each side), which muddies the 4-5 total.
+
+That artificially drags the Big 12 strength down (because the self-loop edge has no opponent to absorb the penalty).
+
+---
+
+### One-line fix in `ingest.py`
+
+Right before you set `is_cross_conf`:
+
+```python
+is_cross_conf = (home_conf != away_conf)      # current
+
+# replace with
+is_cross_conf = (home_conf and away_conf and home_conf != away_conf)
+```
+
+Then:
+
+```python
+if row['season_type'] == 'postseason' and not is_cross_conf:
+    row['bowl_intra_conf'] = True   # optional flag
+```
+
+* Effect: the BYU–Colorado game will **still get the 1.10 bowl bonus** on its
+  team-level credit edge but will be skipped when you build `G_conf`.
+
+---
+
+### Verify
+
+```python
+# after fix
+sum(1 for g in games if g.bowl and g.is_cross_conf and g.season==2024)
+# should equal (total bowls) – 1  # the Alamo Bowl removed
+```
+
+Run the pipeline; Big 12’s conference strength S should tick up slightly and
+their record display as **4-5** (not 5-5 or 4-6).
+
+---
+
+### Take-away
+
+*Treat intra-conference bowls exactly like any other intra-conference game:*
+valuable for the two teams, irrelevant for conference-vs-conference ranking.
