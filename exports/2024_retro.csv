@@ -1,139 +1,139 @@
 # CFB Rankings Export
-# Generated: 2025-06-05T16:33:51.595763
+# Generated: 2025-06-05T16:49:08.035232
 # Season: 2024
 #
 rank_retro,team,conference,rating_retro,conf_weight,quality_wins,uncertainty
 1,Ohio State,Big Ten,0.010126550586931083,0.1667882905836856,"['Penn State', 'Virginia Tech', 'Tennessee']",0.0
 2,Penn State,Big Ten,0.009627838327247918,0.1667882905836856,"['Ohio State', 'Virginia Tech', 'Tennessee']",0.0
 3,Virginia Tech,ACC,0.009116357123226159,0.19502077785974134,"['Ohio State', 'Penn State', 'Tennessee']",0.0
-4,Tennessee,SEC,0.00896546678828624,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+4,Tennessee,SEC,0.00896546678828624,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 5,Texas,Big 12,0.008948235193956721,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-6,Notre Dame,Independent,0.008880565992712782,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+6,Notre Dame,Independent,0.00888056599271278,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 7,Clemson,ACC,0.00882347876108044,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 8,Indiana,Big Ten,0.008710525844819093,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-9,Alabama,SEC,0.008681704710303008,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-10,Florida,SEC,0.008671031761086082,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-11,Arizona State,Pac-12,0.008610996215476584,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+9,Alabama,SEC,0.008681704710303008,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+10,Florida,SEC,0.008671031761086084,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+11,Arizona State,Pac-12,0.008610996215476585,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 12,Boston College,ACC,0.008590407277118505,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-13,Georgia,SEC,0.008580452607774259,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-14,Missouri,SEC,0.008568695706533047,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-15,Michigan,Big Ten,0.008546001519884844,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-16,Arkansas,SEC,0.008533149975473282,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-17,LSU,SEC,0.008500358806379098,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-18,Miami (OH),Independent,0.008478642445337718,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-19,Ole Miss,SEC,0.008446390533274105,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-20,Nebraska,Big Ten,0.00836428503434995,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-21,Texas A&M,SEC,0.00828253879729127,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+13,Georgia,SEC,0.00858045260777426,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+14,Missouri,SEC,0.008568695706533047,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+15,Michigan,Big Ten,0.008546001519884846,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+16,Arkansas,SEC,0.008533149975473282,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+17,LSU,SEC,0.008500358806379098,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+18,Miami (OH),Independent,0.008478642445337718,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+19,Ole Miss,SEC,0.008446390533274105,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+20,Nebraska,Big Ten,0.008364285034349949,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+21,Texas A&M,SEC,0.008282538797291268,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 22,Georgia Tech,ACC,0.008277071213876958,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 23,Syracuse,ACC,0.008271464428208626,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 24,Miami,ACC,0.008258046645959149,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-25,Vanderbilt,SEC,0.00823768345410991,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+25,Vanderbilt,SEC,0.00823768345410991,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 26,Illinois,Big Ten,0.008217576856962793,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-27,Jacksonville State,Independent,0.00820722819089496,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-28,North Carolina,ACC,0.00814549057362719,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-29,Army,Independent,0.008117816012740836,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-30,Mississippi State,SEC,0.00808563346168185,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-31,Boise State,Independent,0.008051618307545652,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+27,Jacksonville State,Independent,0.008207228190894958,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+28,North Carolina,ACC,0.008145490573627187,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+29,Army,Independent,0.008117816012740836,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+30,Mississippi State,SEC,0.008085633461681853,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+31,Boise State,Independent,0.008051618307545652,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 32,Northwestern,Big Ten,0.007952343954837189,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 33,Duke,ACC,0.007925347393699432,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 34,Iowa,Big Ten,0.007923750858062644,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 35,Pittsburgh,ACC,0.007908178654933462,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 36,Michigan State,Big Ten,0.00788729428855707,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-37,Ohio,Independent,0.007864221360307266,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-38,Tulane,Independent,0.007853371472275095,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-39,Auburn,SEC,0.007826726306272437,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-40,Colorado State,Independent,0.0078171190026664,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-41,Memphis,Independent,0.007812426311976248,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+37,Ohio,Independent,0.007864221360307264,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+38,Tulane,Independent,0.007853371472275095,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+39,Auburn,SEC,0.007826726306272437,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+40,Colorado State,Independent,0.0078171190026664,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+41,Memphis,Independent,0.0078124263119762494,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 42,Louisville,ACC,0.007803486095516144,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-43,Florida State,ACC,0.007766591196771043,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-44,South Carolina,SEC,0.007764932548655197,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+43,Florida State,ACC,0.007766591196771042,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+44,South Carolina,SEC,0.007764932548655197,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 45,Baylor,Big 12,0.007746822596161191,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-46,NC State,ACC,0.0077088531941991835,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+46,NC State,ACC,0.007708853194199183,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 47,Wisconsin,Big Ten,0.007676471946114465,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-48,Temple,Independent,0.0076690319534682685,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+48,Temple,Independent,0.0076690319534682685,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 49,Rutgers,Big Ten,0.007651771644795591,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-50,Western Kentucky,Independent,0.007613188574225442,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-51,Houston,Independent,0.007591704871004286,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-52,Sam Houston,Independent,0.007570495355064072,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-53,UNLV,Independent,0.007556555518339397,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-54,Purdue,Big Ten,0.007539787501119459,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-55,UTSA,Independent,0.0075340524149595895,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+50,Western Kentucky,Independent,0.007613188574225442,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+51,Houston,Independent,0.007591704871004286,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+52,Sam Houston,Independent,0.007570495355064072,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+53,UNLV,Independent,0.007556555518339397,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+54,Purdue,Big Ten,0.0075397875011194585,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+55,UTSA,Independent,0.0075340524149595895,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 56,Virginia,ACC,0.0075249591513495894,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 57,Minnesota,Big Ten,0.007502403885020872,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-58,UConn,Independent,0.007502088318487473,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-59,Coastal Carolina,Independent,0.0074862937456271796,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+58,UConn,Independent,0.007502088318487473,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+59,Coastal Carolina,Independent,0.0074862937456271796,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 60,Colorado,Pac-12,0.0074759387959518735,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-61,Louisiana,Independent,0.007467436094732803,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-62,Kentucky,SEC,0.007409024713322997,0.18938160665937545,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-63,East Carolina,Independent,0.007390124400967866,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-64,Louisiana Tech,Independent,0.007368884013558111,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+61,Louisiana,Independent,0.007467436094732804,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+62,Kentucky,SEC,0.007409024713322997,0.18938160665937548,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+63,East Carolina,Independent,0.007390124400967866,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+64,Louisiana Tech,Independent,0.007368884013558111,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 65,West Virginia,Big 12,0.007364069210307379,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-66,Arkansas State,Independent,0.007361187401459016,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-67,Buffalo,Independent,0.007352832087212709,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+66,Arkansas State,Independent,0.007361187401459016,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+67,Buffalo,Independent,0.007352832087212708,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 68,Kansas State,Big 12,0.0073491562318923715,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 69,Maryland,Big Ten,0.00734478849836778,0.1667882905836856,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-70,Western Michigan,Independent,0.007319693212716287,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-71,Fresno State,Independent,0.007292791785701287,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-72,North Texas,Independent,0.007251296141223382,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-73,SMU,Independent,0.007250664156801498,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-74,South Florida,Independent,0.0072454099351555844,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+70,Western Michigan,Independent,0.007319693212716285,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+71,Fresno State,Independent,0.007292791785701287,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+72,North Texas,Independent,0.007251296141223383,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+73,SMU,Independent,0.007250664156801498,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+74,South Florida,Independent,0.0072454099351555844,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 75,USC,Pac-12,0.00721924969089275,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 76,Washington,Pac-12,0.007185423047599607,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-77,James Madison,Independent,0.007147758408646142,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-78,Arizona,Pac-12,0.007141351180309065,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-79,San José State,Independent,0.007140410238423648,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-80,UTEP,Independent,0.007126408727068126,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-81,Bowling Green,Independent,0.0071118575517586345,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-82,Navy,Independent,0.007076442441889934,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-83,Utah State,Independent,0.007071968545129297,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-84,Old Dominion,Independent,0.0070704688075437765,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-85,Marshall,Independent,0.007070359944285028,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+77,James Madison,Independent,0.007147758408646141,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+78,Arizona,Pac-12,0.007141351180309066,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+79,San José State,Independent,0.007140410238423647,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+80,UTEP,Independent,0.007126408727068127,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+81,Bowling Green,Independent,0.0071118575517586345,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+82,Navy,Independent,0.007076442441889934,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+83,Utah State,Independent,0.007071968545129297,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+84,Old Dominion,Independent,0.007070468807543776,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+85,Marshall,Independent,0.007070359944285027,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 86,Oregon,Pac-12,0.00705364980839359,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 87,Iowa State,Big 12,0.007035702721416144,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-88,Air Force,Independent,0.007030111414282817,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-89,Southern Miss,Independent,0.007014578663473498,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-90,Oregon State,Pac-12,0.007005794924245424,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-91,Akron,Independent,0.006998375693361435,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-92,Nevada,Independent,0.006980975270855456,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-93,New Mexico,Independent,0.006977460081534846,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-94,South Alabama,Independent,0.00697620383619755,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-95,BYU,Independent,0.00697610978317137,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-96,Northern Illinois,Independent,0.00697022468835206,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-97,Toledo,Independent,0.006968247914389767,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-98,UAB,Independent,0.006966740029952941,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+88,Air Force,Independent,0.007030111414282818,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+89,Southern Miss,Independent,0.007014578663473498,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+90,Oregon State,Pac-12,0.007005794924245425,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+91,Akron,Independent,0.006998375693361435,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+92,Nevada,Independent,0.006980975270855456,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+93,New Mexico,Independent,0.006977460081534846,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+94,South Alabama,Independent,0.006976203836197549,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+95,BYU,Independent,0.006976109783171369,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+96,Northern Illinois,Independent,0.006970224688352061,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+97,Toledo,Independent,0.006968247914389767,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+98,UAB,Independent,0.00696674002995294,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 99,Oklahoma,Big 12,0.006962978814779051,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 100,Oklahoma State,Big 12,0.00694167842402065,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-101,Georgia Southern,Independent,0.006932772691672524,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-102,Middle Tennessee,Independent,0.006918651122225614,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-103,UL Monroe,Independent,0.006911210299437327,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+101,Georgia Southern,Independent,0.006932772691672524,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+102,Middle Tennessee,Independent,0.006918651122225614,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+103,UL Monroe,Independent,0.006911210299437327,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 104,Texas Tech,Big 12,0.006893621620078099,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 105,Washington State,Pac-12,0.006893284551053842,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-106,Georgia State,Independent,0.006890443779564386,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+106,Georgia State,Independent,0.006890443779564385,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 107,TCU,Big 12,0.006886258567254352,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 108,Wake Forest,ACC,0.006877579228640661,0.19502077785974134,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-109,New Mexico State,Independent,0.0068382811894197836,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-110,Florida Atlantic,Independent,0.006816590815781666,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-111,Rice,Independent,0.006808195460134067,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+109,New Mexico State,Independent,0.006838281189419783,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+110,Florida Atlantic,Independent,0.006816590815781666,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+111,Rice,Independent,0.006808195460134067,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 112,Kansas,Big 12,0.006795277367924903,0.0974361249589602,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-113,Texas State,Independent,0.006792780768212549,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-114,Kennesaw State,Independent,0.006781371813931571,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-115,Troy,Independent,0.00676384509174995,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-116,Kent State,Independent,0.006751940126804534,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-117,Florida International,Independent,0.0066894746848240845,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+113,Texas State,Independent,0.00679278076821255,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+114,Kennesaw State,Independent,0.006781371813931571,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+115,Troy,Independent,0.006763845091749949,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+116,Kent State,Independent,0.006751940126804534,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+117,Florida International,Independent,0.0066894746848240845,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 118,UCLA,Pac-12,0.006661958133266535,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-119,Cincinnati,Independent,0.006659259055992954,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-120,UCF,Independent,0.006599773121965962,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-121,Appalachian State,Independent,0.006552621893297628,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-122,Tulsa,Independent,0.006525077843737184,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+119,Cincinnati,Independent,0.006659259055992954,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+120,UCF,Independent,0.006599773121965963,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+121,Appalachian State,Independent,0.006552621893297628,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+122,Tulsa,Independent,0.006525077843737184,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 123,California,Pac-12,0.0064782904854782195,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-124,San Diego State,Independent,0.0064656178963442695,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-125,Liberty,Independent,0.006462662667077016,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-126,Charlotte,Independent,0.006426319972080785,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-127,Eastern Michigan,Independent,0.006415473548972327,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-128,Wyoming,Independent,0.006345908293045632,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-129,Central Michigan,Independent,0.006296397659758095,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+124,San Diego State,Independent,0.00646561789634427,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+125,Liberty,Independent,0.006462662667077016,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+126,Charlotte,Independent,0.006426319972080785,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+127,Eastern Michigan,Independent,0.006415473548972327,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+128,Wyoming,Independent,0.006345908293045632,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+129,Central Michigan,Independent,0.006296397659758095,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 130,Utah,Pac-12,0.006253562534059913,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-131,Ball State,Independent,0.006229822020005442,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+131,Ball State,Independent,0.006229822020005441,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
 132,Stanford,Pac-12,0.006114868477248994,0.08762031398862062,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-133,Massachusetts,Independent,0.005963613119231411,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
-134,Hawaii,Independent,0.005939793499768314,0.030133434363949718,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+133,Massachusetts,Independent,0.005963613119231411,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
+134,Hawaii,Independent,0.005939793499768314,0.03013343436394971,"['Ohio State', 'Penn State', 'Virginia Tech']",0.0
