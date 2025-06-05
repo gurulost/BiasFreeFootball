@@ -157,6 +157,53 @@ UConn: {name: "UConn", conf: "Independent"}
 Massachusetts: {name: "Massachusetts", conf: "Independent"}
 UMass: {name: "Massachusetts", conf: "Independent"}
 
+# Missing teams from validation warnings
+SMU: {name: "SMU", conf: "ACC"}
+"Florida Atlantic": {name: "Florida Atlantic", conf: "American"}
+FAU: {name: "Florida Atlantic", conf: "American"}
+Oklahoma: {name: "Oklahoma", conf: "SEC"}
+"Hawai'i": {name: "Hawaii", conf: "Mountain West"}
+Charlotte: {name: "Charlotte", conf: "American"}
+"UL Monroe": {name: "UL Monroe", conf: "Sun Belt"}
+"Louisiana Monroe": {name: "UL Monroe", conf: "Sun Belt"}
+UAB: {name: "UAB", conf: "American"}
+"Alabama at Birmingham": {name: "UAB", conf: "American"}
+FIU: {name: "Florida International", conf: "Conference USA"}
+"Florida Intl": {name: "Florida International", conf: "Conference USA"}
+"UT San Antonio": {name: "UTSA", conf: "American"}
+"Texas San Antonio": {name: "UTSA", conf: "American"}
+"UT Martin": {name: "UT Martin", conf: "FCS"}
+"Tennessee Martin": {name: "UT Martin", conf: "FCS"}
+"South Alabama": {name: "South Alabama", conf: "Sun Belt"}
+"USA": {name: "South Alabama", conf: "Sun Belt"}
+"Middle Tenn": {name: "Middle Tennessee", conf: "Conference USA"}
+"Middle Tennessee State": {name: "Middle Tennessee", conf: "Conference USA"}
+"MTSU": {name: "Middle Tennessee", conf: "Conference USA"}
+"WKU": {name: "Western Kentucky", conf: "Conference USA"}
+"Western Ky": {name: "Western Kentucky", conf: "Conference USA"}
+"Fla Atlantic": {name: "Florida Atlantic", conf: "American"}
+"Fl Atlantic": {name: "Florida Atlantic", conf: "American"}
+"North Texas": {name: "North Texas", conf: "American"}
+"Nth Texas": {name: "North Texas", conf: "American"}
+"UNT": {name: "North Texas", conf: "American"}
+"Rice": {name: "Rice", conf: "American"}
+"Rice Owls": {name: "Rice", conf: "American"}
+"Tulsa": {name: "Tulsa", conf: "American"}
+"Tulsa Golden Hurricane": {name: "Tulsa", conf: "American"}
+"South Fla": {name: "South Florida", conf: "American"}
+"South Florida": {name: "South Florida", conf: "American"}
+"USF": {name: "South Florida", conf: "American"}
+"East Carolina": {name: "East Carolina", conf: "American"}
+"ECU": {name: "East Carolina", conf: "American"}
+"Navy": {name: "Navy", conf: "American"}
+"Navy Midshipmen": {name: "Navy", conf: "American"}
+"Air Force": {name: "Air Force", conf: "Mountain West"}
+"Air Force Academy": {name: "Air Force", conf: "Mountain West"}
+"USAFA": {name: "Air Force", conf: "Mountain West"}
+"Army": {name: "Army", conf: "American"}
+"Army West Point": {name: "Army", conf: "American"}
+"USMA": {name: "Army", conf: "American"}
+
 # Common aliases and variations
 "Ohio St.": {name: "Ohio State", conf: "Big Ten"}
 "Penn St.": {name: "Penn State", conf: "Big Ten"}

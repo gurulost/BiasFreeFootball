@@ -7,6 +7,7 @@ import requests
 import json
 import os
 import logging
+import yaml
 from datetime import datetime
 from typing import Dict, List, Optional
 import pandas as pd
@@ -21,6 +22,34 @@ class CFBDataIngester:
             self.headers['Authorization'] = f'Bearer {self.api_key}'
         
         self.logger = logging.getLogger(__name__)
+        
+        # Load canonical team mapping for data validation
+        self.canonical_teams = self._load_canonical_teams()
+        
+    def _load_canonical_teams(self) -> Dict:
+        """Load canonical team name mapping"""
+        try:
+            with open('data/canonical_teams.yaml', 'r') as f:
+                return yaml.safe_load(f)
+        except FileNotFoundError:
+            self.logger.warning("Canonical teams file not found - data validation disabled")
+            return {}
+    
+    def canonicalize_team(self, team_name: str) -> Optional[Dict]:
+        """Convert team name to canonical form with conference info"""
+        if not team_name or not self.canonical_teams:
+            return None
+        
+        # Direct lookup
+        if team_name in self.canonical_teams:
+            return self.canonical_teams[team_name]
+        
+        # Case-insensitive lookup
+        for key, value in self.canonical_teams.items():
+            if key.lower() == team_name.lower():
+                return value
+        
+        return None
         
     def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
         """Make API request with error handling"""
@@ -158,8 +187,10 @@ class CFBDataIngester:
         return all_games
     
     def process_game_data(self, games: List[Dict]) -> pd.DataFrame:
-        """Process raw game data into standardized format"""
+        """Process raw game data into standardized format with validation"""
         processed_games = []
+        bad_rows = []
+        validation_warnings = []
         
         for game in games:
             if not game.get('completed', False):
@@ -174,6 +205,27 @@ class CFBDataIngester:
             
             if not all([home_team, away_team, home_score is not None, away_score is not None]):
                 continue
+            
+            # Validate and canonicalize team names
+            home_canonical = self.canonicalize_team(home_team) if home_team else None
+            away_canonical = self.canonicalize_team(away_team) if away_team else None
+            
+            # Check for missing team canonicalization
+            if home_team and not home_canonical:
+                validation_warnings.append(f"Unknown home team: {home_team}")
+            if away_team and not away_canonical:
+                validation_warnings.append(f"Unknown away team: {away_team}")
+            
+            # Apply canonical names and conferences if available
+            if home_canonical:
+                home_team = home_canonical['name']
+                if not home_conf or pd.isna(home_conf):
+                    home_conf = home_canonical['conf']
+            
+            if away_canonical:
+                away_team = away_canonical['name']
+                if not away_conf or pd.isna(away_conf):
+                    away_conf = away_canonical['conf']
                 
             # Determine winner/loser and venue
             if game.get('neutralSite', False):
@@ -223,8 +275,64 @@ class CFBDataIngester:
             )
             
             processed_games.append(processed_game)
+        
+        # Log validation results
+        if validation_warnings:
+            self.logger.warning(f"Data validation warnings: {len(validation_warnings)} issues found")
+            for warning in validation_warnings[:10]:  # Log first 10 warnings
+                self.logger.warning(f"  {warning}")
+        
+        if bad_rows:
+            self.logger.error(f"Data validation failed: {len(bad_rows)} games dropped due to data issues")
+            for bad_row in bad_rows[:5]:  # Log first 5 bad rows
+                self.logger.error(f"  Dropped: {bad_row}")
             
-        return pd.DataFrame(processed_games)
+            # Fail if too many bad rows (indicates systematic data issue)
+            if len(bad_rows) > len(games) * 0.05:  # More than 5% bad data
+                raise ValueError(f"Too many data validation failures: {len(bad_rows)}/{len(games)} games")
+        
+        df = pd.DataFrame(processed_games)
+        
+        # Validate schedule completeness for FBS teams
+        if not df.empty:
+            self._validate_schedule_completeness(df)
+        
+        return df
+    
+    def _validate_schedule_completeness(self, games_df: pd.DataFrame) -> None:
+        """Validate that all FBS teams have complete schedules"""
+        # Get all teams that appear in games
+        all_teams = set()
+        for _, game in games_df.iterrows():
+            all_teams.add(game['winner'])
+            all_teams.add(game['loser'])
+        
+        # Count games per team
+        team_game_counts = {}
+        for team in all_teams:
+            team_games = games_df[
+                (games_df['winner'] == team) | (games_df['loser'] == team)
+            ]
+            team_game_counts[team] = len(team_games)
+        
+        # Check for teams with suspiciously few games (< 8 games suggests missing data)
+        missing_games = []
+        for team, count in team_game_counts.items():
+            if count < 8:  # Most FBS teams play 12+ games
+                missing_games.append((team, count))
+        
+        if missing_games:
+            self.logger.warning(f"Teams with potentially incomplete schedules:")
+            for team, count in sorted(missing_games):
+                self.logger.warning(f"  {team}: {count} games (expected 10-15)")
+                
+            # Special check for known major teams
+            major_teams = ['BYU', 'Ohio State', 'Georgia', 'Alabama', 'Texas', 'Notre Dame']
+            for team in major_teams:
+                if team in team_game_counts and team_game_counts[team] < 10:
+                    self.logger.error(f"CRITICAL: {team} has only {team_game_counts[team]} games - data integrity issue!")
+        
+        self.logger.info(f"Schedule validation complete: {len(all_teams)} teams, {len(games_df)} games")
 
 def fetch_results_upto_week(week: int, season: int, config: Dict = None) -> pd.DataFrame:
     """Convenience function for pipeline use"""
