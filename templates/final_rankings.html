@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final College Football Rankings</title>
+    <title>{{ metadata.get('season', '2024') }} Final College Football Rankings</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -59,18 +59,48 @@
     </nav>
 
     <div class="container mt-4">
+        <!-- Breadcrumb Navigation -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/current">Current Rankings</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ metadata.get('season', '2024') }} Final Rankings</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Season Selector -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">
+                        <i class="fas fa-calendar-alt me-2 text-primary"></i>Season: 
+                        <span class="badge bg-primary fs-5">{{ metadata.get('season', '2024') }}</span>
+                    </h4>
+                    <div class="btn-group" role="group">
+                        <a href="/final/2023" class="btn btn-outline-secondary btn-sm">2023</a>
+                        <a href="/final/2024" class="btn btn-primary btn-sm">2024</a>
+                        <a href="/final/2025" class="btn btn-outline-secondary btn-sm">2025</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Header -->
         <div class="row mb-4">
             <div class="col-12">
                 <div class="card bg-warning text-dark">
                     <div class="card-body text-center">
                         <h2 class="card-title mb-2">
-                            <i class="fas fa-medal me-2"></i>Final College Football Rankings
+                            <i class="fas fa-medal me-2"></i>{{ metadata.get('season', '2024') }} Final College Football Rankings
                         </h2>
                         <p class="card-text mb-2">Definitive end-of-season rankings using complete game data</p>
                         <div class="d-flex justify-content-center align-items-center gap-3">
-                            <span class="badge bg-dark final-badge">
-                                <i class="fas fa-flag-checkered me-1"></i>Season Complete
+                            <span class="badge bg-dark final-badge fs-6">
+                                <i class="fas fa-flag-checkered me-1"></i>{{ metadata.get('season', '2024') }} Season Complete
                             </span>
                             <small>Generated: {{ metadata.get('timestamp', 'Unknown') if metadata else 'Unknown' }}</small>
                         </div>
