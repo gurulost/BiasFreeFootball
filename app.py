@@ -275,23 +275,56 @@ def final_rankings(season=None):
             current_year = datetime.now().year
             season = current_year - 1 if datetime.now().month <= 7 else current_year
         
-        # Load cached final rankings data directly
-        cache_file = f'data/cache/final_rankings_{season}.json'
+        # Load authentic final rankings data
+        # Try authentic rankings first, then fall back to cached
+        authentic_file = f'exports/{season}_authentic.json'
+        cache_file = f'data/cache/final_rankings_{season}_authentic.json'
+        legacy_cache = f'data/cache/final_rankings_{season}.json'
+        
+        rankings_data = None
+        data_source = "unknown"
+        
+        # Try authentic export file first
         try:
-            with open(cache_file, 'r') as f:
+            with open(authentic_file, 'r') as f:
                 rankings_data = json.load(f)
+                data_source = "authentic_export"
         except FileNotFoundError:
-            return render_template('final_rankings.html', 
-                                 rankings=[], 
-                                 metadata={'title': f'{season} Final Rankings', 'season': season},
-                                 ratings_data=None,
-                                 error=f"Final rankings for {season} not available yet")
+            # Try authentic cache file
+            try:
+                with open(cache_file, 'r') as f:
+                    rankings_data = json.load(f)
+                    data_source = "authentic_cache"
+            except FileNotFoundError:
+                # Try legacy cache as last resort
+                try:
+                    with open(legacy_cache, 'r') as f:
+                        rankings_data = json.load(f)
+                        data_source = "legacy_cache"
+                except FileNotFoundError:
+                    return render_template('final_rankings.html', 
+                                         rankings=[], 
+                                         metadata={'title': f'{season} Final Rankings', 'season': season},
+                                         ratings_data=None,
+                                         error=f"Final rankings for {season} not available yet")
         
         rankings = rankings_data.get('rankings', [])
         metadata = rankings_data.get('metadata', {})
         metadata['title'] = f'{season} Final Rankings'
         metadata['season'] = season
         metadata['is_final'] = True
+        metadata['data_source_type'] = data_source
+        
+        # Add authentic data indicators
+        if data_source == "authentic_export":
+            metadata['data_quality'] = "Authentic CFBD API Data"
+            metadata['generation_method'] = "Two-layer PageRank with bias auditing"
+        elif data_source == "authentic_cache":
+            metadata['data_quality'] = "Authentic Cached Data"
+            metadata['generation_method'] = "Two-layer PageRank with bias auditing"
+        else:
+            metadata['data_quality'] = "Legacy Data"
+            metadata['generation_method'] = "Standard Processing"
         
         # Format data for template compatibility
         ratings_data = {
