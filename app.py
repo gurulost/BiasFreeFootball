@@ -217,5 +217,133 @@ def api_export(format):
         logging.error(f"Export error: {e}")
         return jsonify({"error": str(e)}), 500
 
+@app.route('/current')
+def current_rankings():
+    """Display current auto-updated rankings"""
+    try:
+        scheduler = get_scheduler(config)
+        rankings_data = scheduler.get_current_rankings()
+        
+        if not rankings_data:
+            rankings_data = storage.get_latest_ratings()
+        
+        if not rankings_data:
+            return render_template('rankings.html', 
+                                 rankings=[], 
+                                 metadata={'title': 'Current Rankings', 'auto_updated': True},
+                                 error="No current rankings available")
+        
+        rankings = rankings_data.get('rankings', [])
+        metadata = rankings_data.get('metadata', {})
+        metadata['title'] = 'Current Rankings'
+        metadata['auto_updated'] = True
+        metadata['next_update'] = "Every Monday at 3:30 AM ET"
+        
+        return render_template('rankings.html', rankings=rankings, metadata=metadata)
+                             
+    except Exception as e:
+        logging.error(f"Current rankings error: {e}")
+        return render_template('rankings.html', 
+                             rankings=[], 
+                             metadata={'title': 'Current Rankings', 'auto_updated': True},
+                             error=f"Error loading current rankings: {e}")
+
+@app.route('/final')
+@app.route('/final/<int:season>')
+def final_rankings(season=None):
+    """Display final season rankings"""
+    try:
+        if season is None:
+            current_year = datetime.now().year
+            season = current_year - 1 if datetime.now().month <= 7 else current_year
+        
+        scheduler = get_scheduler(config)
+        rankings_data = scheduler.get_final_rankings(season)
+        
+        if not rankings_data:
+            return render_template('rankings.html', 
+                                 rankings=[], 
+                                 metadata={'title': f'{season} Final Rankings', 'season': season},
+                                 error=f"Final rankings for {season} not available yet")
+        
+        rankings = rankings_data.get('rankings', [])
+        metadata = rankings_data.get('metadata', {})
+        metadata['title'] = f'{season} Final Rankings'
+        metadata['season'] = season
+        metadata['is_final'] = True
+        
+        return render_template('rankings.html', rankings=rankings, metadata=metadata)
+                             
+    except Exception as e:
+        logging.error(f"Final rankings error: {e}")
+        return render_template('rankings.html', 
+                             rankings=[], 
+                             metadata={'title': f'{season} Final Rankings', 'season': season or 'Unknown'},
+                             error=f"Error loading final rankings: {e}")
+
+@app.route('/api/current')
+def api_current_rankings():
+    """API endpoint for current rankings"""
+    try:
+        scheduler = get_scheduler(config)
+        rankings_data = scheduler.get_current_rankings()
+        
+        if not rankings_data:
+            rankings_data = storage.get_latest_ratings()
+        
+        if not rankings_data:
+            return jsonify({'error': 'No current rankings available'}), 404
+        
+        return jsonify(rankings_data)
+        
+    except Exception as e:
+        logging.error(f"API current rankings error: {e}")
+        return jsonify({'error': 'Failed to load current rankings'}), 500
+
+@app.route('/api/final')
+@app.route('/api/final/<int:season>')
+def api_final_rankings(season=None):
+    """API endpoint for final rankings"""
+    try:
+        if season is None:
+            current_year = datetime.now().year
+            season = current_year - 1 if datetime.now().month <= 7 else current_year
+        
+        scheduler = get_scheduler(config)
+        rankings_data = scheduler.get_final_rankings(season)
+        
+        if not rankings_data:
+            return jsonify({'error': f'Final rankings for {season} not available'}), 404
+        
+        return jsonify(rankings_data)
+        
+    except Exception as e:
+        logging.error(f"API final rankings error: {e}")
+        return jsonify({'error': 'Failed to load final rankings'}), 500
+
+@app.route('/api/update', methods=['POST'])
+def api_manual_update():
+    """Manually trigger ranking update"""
+    try:
+        data = request.get_json() or {}
+        season = data.get('season')
+        week = data.get('week')
+        
+        scheduler = get_scheduler(config)
+        result = scheduler.manual_update(season=season, week=week)
+        
+        return jsonify({
+            'status': 'success',
+            'message': 'Rankings updated successfully',
+            'result': result
+        })
+        
+    except Exception as e:
+        logging.error(f"Manual update error: {e}")
+        return jsonify({
+            'status': 'error',
+            'message': f'Update failed: {e}'
+        }), 500
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
