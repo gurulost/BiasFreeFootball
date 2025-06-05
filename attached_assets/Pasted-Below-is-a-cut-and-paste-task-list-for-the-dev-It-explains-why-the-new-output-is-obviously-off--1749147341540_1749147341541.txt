@@ -1,0 +1,114 @@
+Below is a cut-and-paste task list for the dev.
+It explains **why the new output is obviously off** and what to do to bring the JSON and the web page back in line.
+
+---
+
+## 1  Symptoms we must fix  (why they’re wrong)
+
+* **Quality-wins column is “None”.**
+  Our reporting code is still filling the placeholder list; the real edge sort was never called.
+
+* **Conference tags off or “Unknown”.**
+  App State shows “Unknown”, Army shows AAC, Colorado = Big 12, Cal = ACC, etc.
+  Those are all 2024 realignment moves, but the mixture tells us the season-specific `/teams?year=` pull isn’t being applied uniformly (or falls back to current year on 429).
+
+* **BYU (#95) and Big 12 cluster low again.**
+  Evidence that the BYU–Colorado Alamo Bowl is still being treated as cross-conference or Big 12 bowl edges are skipped.
+
+* **Rating scale compressed (top ≈ 0.009).**
+  Likely we pulled **all 258 FBS + FCS** rows because the API call missed `division=fbs`.
+  Twice the node count halves every rating.  That’s why no one is above 0.0094.
+
+---
+
+## 2  Immediate triage checklist
+
+1. **Teams fetch**
+
+   ```python
+   TeamsApi().get_fbs_teams(year=2024, division='fbs')
+   ```
+
+   Verify length == 134 (should not include FCS).  If > 134 we’re mixing FCS.
+
+2. **Conference map**
+   For each team row, assert `team.conference_id` is not `None`; log the ones that are.
+   Those are driving the “Unknown” tags.
+
+3. **Games fetch**
+
+   ```python
+   GamesApi().get_games(year=2024, season_type='both', division='fbs')
+   ```
+
+   If BYU–Colorado shows with different conf\_ids than the teams call, that’s the target row to patch.
+
+---
+
+## 3  Code fixes
+
+### 3.1  Lock the FBS filter in every API call
+
+Add `division='fbs'` to both teams and games requests.  Without it you get all Division I teams.
+
+### 3.2  Guarantee season-specific lookup everywhere
+
+Wrap API client in a helper that always injects `year=season` and `division='fbs'`.
+Fail the ingest if any team in a game row has a `conferenceId` that does **not** match the teams lookup for that same season.
+
+### 3.3  Intra-conference bowl guard (again)
+
+Inside edge builder:
+
+```python
+is_cross_conf = home_conf and away_conf and home_conf != away_conf
+if row['season_type']=='postseason' and not is_cross_conf:
+    row['bowl'] = True
+    row['bowl_intra_conf'] = True
+```
+
+Only `bowl` triggers the +10 % team-edge bonus; **do not** push it to the conference graph if `bowl_intra_conf`.
+
+### 3.4  Real quality-wins list
+
+After you have the final team graph, for each team:
+
+```python
+wins = [ (edge_weight, loser) for loser,_,edge_weight in G_team.in_edges(team, data='weight') ]
+quality = [op for _,op in sorted(wins, reverse=True)[:3]]
+```
+
+Store that list; replace the placeholder.
+
+---
+
+## 4  Run fast validation
+
+* `len(teams_fbs) == 134`
+* Top rating > 0.013
+* BYU rated \~0.009 ± (top-20)
+* Big 12 has ≥ 4 teams above 0.008
+* No `conference == 'Unknown'` appears anywhere
+
+Add these as assertions in a new integration test so they fail CI next time.
+
+---
+
+## 5  Front-end
+
+* Re-render `current.html`.
+* Show real quality wins, not “None”.
+
+---
+
+### Deliverable
+
+A single PR that:
+
+* Adds `division='fbs'` to all API calls,
+* fixes intra-conf bowl flag,
+* computes real quality-wins,
+* updates the integration test,
+* and regenerates the site JSON/HTML with no “Unknown” tags and a sensible rating scale.
+
+Merge → scheduled GitHub Pages deploy should now show a credible table again.

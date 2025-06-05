@@ -176,25 +176,55 @@ class CFBDataIngester:
         """Fetch all completed games including bowls - FBS teams only"""
         all_games = []
         
-        # Get authentic FBS teams list for strict filtering
+        # Get authentic FBS teams list for strict filtering with season-specific conferences
         fbs_teams = self.fetch_teams(season, division='fbs')
         fbs_team_names = {team['school'] for team in fbs_teams}
+        
+        # Build season-specific team to conference mapping for accurate assignments
+        team_to_conference = {team['school']: team.get('conference', 'Unknown') for team in fbs_teams}
+        
+        # Verify FBS count (should be exactly 134 for 2024)
+        if len(fbs_team_names) != 134:
+            self.logger.warning(f"Expected 134 FBS teams, got {len(fbs_team_names)} - may include FCS teams")
         
         self.logger.info(f"Filtering complete season using {len(fbs_team_names)} authentic FBS teams")
         
         # Regular season games with FBS-only filtering
         regular_games = self.fetch_games(season, season_type='regular')
         fbs_regular_games = [g for g in regular_games 
-                            if (g.get('homeClassification') == 'fbs' and 
-                                g.get('awayClassification') == 'fbs')]
+                            if (g.get('homeTeam') in fbs_team_names and 
+                                g.get('awayTeam') in fbs_team_names)]
         all_games.extend(fbs_regular_games)
         
         # Postseason games with FBS-only filtering
         bowl_games = self.fetch_games(season, season_type='postseason')
         fbs_bowl_games = [g for g in bowl_games 
-                         if (g.get('homeClassification') == 'fbs' and 
-                             g.get('awayClassification') == 'fbs')]
+                         if (g.get('homeTeam') in fbs_team_names and 
+                             g.get('awayTeam') in fbs_team_names)]
         all_games.extend(fbs_bowl_games)
+        
+        # Add season-specific conference information to all games
+        for game in all_games:
+            home_team = game.get('homeTeam')
+            away_team = game.get('awayTeam')
+            
+            if home_team in team_to_conference:
+                game['homeConference'] = team_to_conference[home_team]
+            else:
+                game['homeConference'] = 'Unknown'
+                
+            if away_team in team_to_conference:
+                game['awayConference'] = team_to_conference[away_team]
+            else:
+                game['awayConference'] = 'Unknown'
+                
+            # Mark intra-conference bowl games for special handling
+            if (game.get('seasonType') == 'postseason' and 
+                game.get('homeConference') == game.get('awayConference') and
+                game.get('homeConference') != 'Unknown'):
+                game['bowl_intra_conf'] = True
+            else:
+                game['bowl_intra_conf'] = False
         
         self.logger.info(f"FBS-only games: {len(all_games)} (regular: {len(fbs_regular_games)}, bowls: {len(fbs_bowl_games)})")
         self.logger.info(f"Filtered out {len(regular_games) + len(bowl_games) - len(all_games)} non-FBS games")

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "season": 2024,
-    "generated_at": "2025-06-05T17:16:45.350939",
+    "generated_at": "2025-06-05T18:17:14.405909",
     "data_source": "authentic_cfbd_api",
     "total_games": 798,
     "total_teams": 134,
@@ -14,15 +14,25 @@
       "conference": "SEC",
       "rating": 0.009383837374352291,
       "rating_retro": 0.009383837374352291,
-      "rank_retro": 1
+      "rank_retro": 1,
+      "quality_wins": [
+        "Georgia",
+        "Kentucky",
+        "Florida"
+      ]
     },
     {
       "rank": 2,
       "team": "Penn State",
       "conference": "Big Ten",
-      "rating": 0.009179021936272553,
-      "rating_retro": 0.009179021936272553,
-      "rank_retro": 2
+      "rating": 0.009179021936272555,
+      "rating_retro": 0.009179021936272555,
+      "rank_retro": 2,
+      "quality_wins": [
+        "Maryland",
+        "Oregon",
+        "Washington"
+      ]
     },
     {
       "rank": 3,
@@ -30,7 +40,12 @@
       "conference": "FBS Independents",
       "rating": 0.009146327048258606,
       "rating_retro": 0.009146327048258606,
-      "rank_retro": 3
+      "rank_retro": 3,
+      "quality_wins": [
+        "Virginia",
+        "Army",
+        "Florida State"
+      ]
     },
     {
       "rank": 4,
@@ -38,7 +53,12 @@
       "conference": "Mid-American",
       "rating": 0.009055737738322021,
       "rating_retro": 0.009055737738322021,
-      "rank_retro": 4
+      "rank_retro": 4,
+      "quality_wins": [
+        "Ohio",
+        "Northern Illinois",
+        "Kent State"
+      ]
     },
     {
       "rank": 5,
@@ -46,7 +66,12 @@
       "conference": "Big 12",
       "rating": 0.009042112396134637,
       "rating_retro": 0.009042112396134637,
-      "rank_retro": 5
+      "rank_retro": 5,
+      "quality_wins": [
+        "Iowa State",
+        "BYU",
+        "Arizona"
+      ]
     },
     {
       "rank": 6,
@@ -54,7 +79,12 @@
       "conference": "Big Ten",
       "rating": 0.009006811487213134,
       "rating_retro": 0.009006811487213134,
-      "rank_retro": 6
+      "rank_retro": 6,
+      "quality_wins": [
+        "Indiana",
+        "Purdue",
+        "Northwestern"
+      ]
     },
     {
       "rank": 7,
@@ -62,7 +92,12 @@
       "conference": "American Athletic",
       "rating": 0.008880407159237743,
       "rating_retro": 0.008880407159237743,
-      "rank_retro": 7
+      "rank_retro": 7,
+      "quality_wins": [
+        "Tulane",
+        "Navy",
+        "UTSA"
+      ]
     },
     {
       "rank": 8,
@@ -70,7 +105,12 @@
       "conference": "Conference USA",
       "rating": 0.00866760907762305,
       "rating_retro": 0.00866760907762305,
-      "rank_retro": 8
+      "rank_retro": 8,
+      "quality_wins": [
+        "Western Kentucky",
+        "Sam Houston",
+        "Middle Tennessee"
+      ]
     },
     {
       "rank": 9,
@@ -78,15 +118,25 @@
       "conference": "Mountain West",
       "rating": 0.008652999858864535,
       "rating_retro": 0.008652999858864535,
-      "rank_retro": 9
+      "rank_retro": 9,
+      "quality_wins": [
+        "UNLV",
+        "Oregon State",
+        "Nevada"
+      ]
     },
     {
       "rank": 10,
       "team": "Ohio",
       "conference": "Mid-American",
-      "rating": 0.0084598124538444,
-      "rating_retro": 0.0084598124538444,
-      "rank_retro": 10
+      "rating": 0.008459812453844398,
+      "rating_retro": 0.008459812453844398,
+      "rank_retro": 10,
+      "quality_wins": [
+        "Miami (OH)",
+        "Ball State",
+        "Eastern Michigan"
+      ]
     },
     {
       "rank": 11,
@@ -94,7 +144,12 @@
       "conference": "American Athletic",
       "rating": 0.008234921331026641,
       "rating_retro": 0.008234921331026641,
-      "rank_retro": 11
+      "rank_retro": 11,
+      "quality_wins": [
+        "Army",
+        "Temple",
+        "Memphis"
+      ]
     },
     {
       "rank": 12,
@@ -102,7 +157,12 @@
       "conference": "Conference USA",
       "rating": 0.00814785700149186,
       "rating_retro": 0.00814785700149186,
-      "rank_retro": 12
+      "rank_retro": 12,
+      "quality_wins": [
+        "Jacksonville State",
+        "Liberty",
+        "Kennesaw State"
+      ]
     },
     {
       "rank": 13,
@@ -110,7 +170,12 @@
       "conference": "SEC",
       "rating": 0.00814492458520111,
       "rating_retro": 0.00814492458520111,
-      "rank_retro": 13
+      "rank_retro": 13,
+      "quality_wins": [
+        "UTEP",
+        "Georgia",
+        "Mississippi State"
+      ]
     },
     {
       "rank": 14,
@@ -118,15 +183,25 @@
       "conference": "SEC",
       "rating": 0.008133716555004012,
       "rating_retro": 0.008133716555004012,
-      "rank_retro": 14
+      "rank_retro": 14,
+      "quality_wins": [
+        "Texas",
+        "Massachusetts",
+        "Tennessee"
+      ]
     },
     {
       "rank": 15,
       "team": "UNLV",
       "conference": "Mountain West",
-      "rating": 0.008096347655967923,
-      "rating_retro": 0.008096347655967923,
-      "rank_retro": 15
+      "rating": 0.008096347655967921,
+      "rating_retro": 0.008096347655967921,
+      "rank_retro": 15,
+      "quality_wins": [
+        "Boise State",
+        "Nevada",
+        "San Diego State"
+      ]
     },
     {
       "rank": 16,
@@ -134,7 +209,12 @@
       "conference": "Mountain West",
       "rating": 0.008080896198503875,
       "rating_retro": 0.008080896198503875,
-      "rank_retro": 16
+      "rank_retro": 16,
+      "quality_wins": [
+        "Utah State",
+        "Fresno State",
+        "Wyoming"
+      ]
     },
     {
       "rank": 17,
@@ -142,7 +222,12 @@
       "conference": "ACC",
       "rating": 0.008045949367738425,
       "rating_retro": 0.008045949367738425,
-      "rank_retro": 17
+      "rank_retro": 17,
+      "quality_wins": [
+        "Virginia",
+        "Syracuse",
+        "Georgia Tech"
+      ]
     },
     {
       "rank": 18,
@@ -150,23 +235,38 @@
       "conference": "Sun Belt",
       "rating": 0.008000050156604408,
       "rating_retro": 0.008000050156604408,
-      "rank_retro": 18
+      "rank_retro": 18,
+      "quality_wins": [
+        "Troy",
+        "Arkansas State",
+        "Marshall"
+      ]
     },
     {
       "rank": 19,
       "team": "Memphis",
       "conference": "American Athletic",
-      "rating": 0.007960771613670814,
-      "rating_retro": 0.007960771613670814,
-      "rank_retro": 19
+      "rating": 0.007960771613670816,
+      "rating_retro": 0.007960771613670816,
+      "rank_retro": 19,
+      "quality_wins": [
+        "UAB",
+        "Rice",
+        "UTSA"
+      ]
     },
     {
       "rank": 20,
       "team": "SMU",
       "conference": "ACC",
-      "rating": 0.00795943056897454,
-      "rating_retro": 0.00795943056897454,
-      "rank_retro": 20
+      "rating": 0.007959430568974538,
+      "rating_retro": 0.007959430568974538,
+      "rank_retro": 20,
+      "quality_wins": [
+        "California",
+        "Boston College",
+        "Pittsburgh"
+      ]
     },
     {
       "rank": 21,
@@ -174,15 +274,25 @@
       "conference": "Big Ten",
       "rating": 0.007942816961973857,
       "rating_retro": 0.007942816961973857,
-      "rank_retro": 21
+      "rank_retro": 21,
+      "quality_wins": [
+        "Purdue",
+        "Ohio State",
+        "Michigan"
+      ]
     },
     {
       "rank": 22,
       "team": "Florida",
       "conference": "SEC",
-      "rating": 0.007899790620055068,
-      "rating_retro": 0.007899790620055068,
-      "rank_retro": 22
+      "rating": 0.00789979062005507,
+      "rating_retro": 0.00789979062005507,
+      "rank_retro": 22,
+      "quality_wins": [
+        "Ole Miss",
+        "LSU",
+        "Texas"
+      ]
     },
     {
       "rank": 23,
@@ -190,15 +300,25 @@
       "conference": "Conference USA",
       "rating": 0.007899123191008793,
       "rating_retro": 0.007899123191008793,
-      "rank_retro": 23
+      "rank_retro": 23,
+      "quality_wins": [
+        "Kennesaw State",
+        "Arkansas",
+        "Sam Houston"
+      ]
     },
     {
       "rank": 24,
       "team": "Michigan",
       "conference": "Big Ten",
-      "rating": 0.007866701764803656,
-      "rating_retro": 0.007866701764803656,
-      "rank_retro": 24
+      "rating": 0.007866701764803658,
+      "rating_retro": 0.007866701764803658,
+      "rank_retro": 24,
+      "quality_wins": [
+        "Northwestern",
+        "Indiana",
+        "Michigan State"
+      ]
     },
     {
       "rank": 25,
@@ -206,15 +326,25 @@
       "conference": "Big Ten",
       "rating": 0.007853154748610786,
       "rating_retro": 0.007853154748610786,
-      "rank_retro": 25
+      "rank_retro": 25,
+      "quality_wins": [
+        "Washington",
+        "Penn State",
+        "Maryland"
+      ]
     },
     {
       "rank": 26,
       "team": "Clemson",
       "conference": "ACC",
-      "rating": 0.007847260825509825,
-      "rating_retro": 0.007847260825509825,
-      "rank_retro": 26
+      "rating": 0.007847260825509827,
+      "rating_retro": 0.007847260825509827,
+      "rank_retro": 26,
+      "quality_wins": [
+        "Virginia",
+        "SMU",
+        "Virginia Tech"
+      ]
     },
     {
       "rank": 27,
@@ -222,7 +352,12 @@
       "conference": "American Athletic",
       "rating": 0.007843590603509388,
       "rating_retro": 0.007843590603509388,
-      "rank_retro": 27
+      "rank_retro": 27,
+      "quality_wins": [
+        "UTSA",
+        "Tulane",
+        "North Texas"
+      ]
     },
     {
       "rank": 28,
@@ -230,7 +365,12 @@
       "conference": "SEC",
       "rating": 0.007813952646745599,
       "rating_retro": 0.007813952646745599,
-      "rank_retro": 28
+      "rank_retro": 28,
+      "quality_wins": [
+        "Arkansas",
+        "Oklahoma",
+        "South Carolina"
+      ]
     },
     {
       "rank": 29,
@@ -238,23 +378,38 @@
       "conference": "FBS Independents",
       "rating": 0.007813444482873244,
       "rating_retro": 0.007813444482873244,
-      "rank_retro": 29
+      "rank_retro": 29,
+      "quality_wins": [
+        "Syracuse",
+        "Georgia State",
+        "Massachusetts"
+      ]
     },
     {
       "rank": 30,
       "team": "Coastal Carolina",
       "conference": "Sun Belt",
-      "rating": 0.007799429363678862,
-      "rating_retro": 0.007799429363678862,
-      "rank_retro": 30
+      "rating": 0.007799429363678863,
+      "rating_retro": 0.007799429363678863,
+      "rank_retro": 30,
+      "quality_wins": [
+        "Marshall",
+        "Appalachian State",
+        "Troy"
+      ]
     },
     {
       "rank": 31,
       "team": "Colorado",
       "conference": "Big 12",
-      "rating": 0.007761707891998201,
-      "rating_retro": 0.007761707891998201,
-      "rank_retro": 31
+      "rating": 0.007761707891998202,
+      "rating_retro": 0.007761707891998202,
+      "rank_retro": 31,
+      "quality_wins": [
+        "Oklahoma State",
+        "Utah",
+        "Kansas"
+      ]
     },
     {
       "rank": 32,
@@ -262,7 +417,12 @@
       "conference": "Big 12",
       "rating": 0.007760931915868192,
       "rating_retro": 0.007760931915868192,
-      "rank_retro": 32
+      "rank_retro": 32,
+      "quality_wins": [
+        "Kansas",
+        "Oklahoma State",
+        "Houston"
+      ]
     },
     {
       "rank": 33,
@@ -270,15 +430,25 @@
       "conference": "Big 12",
       "rating": 0.0077606498301309385,
       "rating_retro": 0.0077606498301309385,
-      "rank_retro": 33
+      "rank_retro": 33,
+      "quality_wins": [
+        "BYU",
+        "Arizona",
+        "Kansas State"
+      ]
     },
     {
       "rank": 34,
       "team": "Marshall",
       "conference": "Sun Belt",
-      "rating": 0.007744011094160679,
-      "rating_retro": 0.007744011094160679,
-      "rank_retro": 34
+      "rating": 0.00774401109416068,
+      "rating_retro": 0.00774401109416068,
+      "rank_retro": 34,
+      "quality_wins": [
+        "Coastal Carolina",
+        "Louisiana",
+        "UL Monroe"
+      ]
     },
     {
       "rank": 35,
@@ -286,7 +456,12 @@
       "conference": "ACC",
       "rating": 0.007741761354295582,
       "rating_retro": 0.007741761354295582,
-      "rank_retro": 35
+      "rank_retro": 35,
+      "quality_wins": [
+        "Pittsburgh",
+        "North Carolina",
+        "SMU"
+      ]
     },
     {
       "rank": 36,
@@ -294,15 +469,25 @@
       "conference": "SEC",
       "rating": 0.0077338695457424105,
       "rating_retro": 0.0077338695457424105,
-      "rank_retro": 36
+      "rank_retro": 36,
+      "quality_wins": [
+        "Oklahoma",
+        "Vanderbilt",
+        "Florida"
+      ]
     },
     {
       "rank": 37,
       "team": "Washington",
       "conference": "Big Ten",
-      "rating": 0.0077250514307737285,
-      "rating_retro": 0.0077250514307737285,
-      "rank_retro": 37
+      "rating": 0.007725051430773729,
+      "rating_retro": 0.007725051430773729,
+      "rank_retro": 37,
+      "quality_wins": [
+        "Oregon",
+        "UCLA",
+        "Penn State"
+      ]
     },
     {
       "rank": 38,
@@ -310,7 +495,12 @@
       "conference": "Big Ten",
       "rating": 0.007705189896345784,
       "rating_retro": 0.007705189896345784,
-      "rank_retro": 38
+      "rank_retro": 38,
+      "quality_wins": [
+        "Nebraska",
+        "Washington",
+        "Notre Dame"
+      ]
     },
     {
       "rank": 39,
@@ -318,31 +508,51 @@
       "conference": "Big Ten",
       "rating": 0.007640181317981063,
       "rating_retro": 0.007640181317981063,
-      "rank_retro": 39
+      "rank_retro": 39,
+      "quality_wins": [
+        "Wisconsin",
+        "USC",
+        "Iowa"
+      ]
     },
     {
       "rank": 40,
       "team": "Buffalo",
       "conference": "Mid-American",
-      "rating": 0.007633856303780126,
-      "rating_retro": 0.007633856303780126,
-      "rank_retro": 40
+      "rating": 0.007633856303780125,
+      "rating_retro": 0.007633856303780125,
+      "rank_retro": 40,
+      "quality_wins": [
+        "Kent State",
+        "Ohio",
+        "Eastern Michigan"
+      ]
     },
     {
       "rank": 41,
       "team": "Western Michigan",
       "conference": "Mid-American",
-      "rating": 0.0076335678280081195,
-      "rating_retro": 0.0076335678280081195,
-      "rank_retro": 41
+      "rating": 0.007633567828008119,
+      "rating_retro": 0.007633567828008119,
+      "rank_retro": 41,
+      "quality_wins": [
+        "Eastern Michigan",
+        "Bowling Green",
+        "Kent State"
+      ]
     },
     {
       "rank": 42,
       "team": "South Florida",
       "conference": "American Athletic",
-      "rating": 0.007633069166945023,
-      "rating_retro": 0.007633069166945023,
-      "rank_retro": 42
+      "rating": 0.007633069166945024,
+      "rating_retro": 0.007633069166945024,
+      "rank_retro": 42,
+      "quality_wins": [
+        "Rice",
+        "Tulsa",
+        "UAB"
+      ]
     },
     {
       "rank": 43,
@@ -350,15 +560,25 @@
       "conference": "American Athletic",
       "rating": 0.0076267250694901315,
       "rating_retro": 0.0076267250694901315,
-      "rank_retro": 43
+      "rank_retro": 43,
+      "quality_wins": [
+        "Army",
+        "Temple",
+        "North Texas"
+      ]
     },
     {
       "rank": 44,
       "team": "Iowa State",
       "conference": "Big 12",
-      "rating": 0.007622901953049766,
-      "rating_retro": 0.007622901953049766,
-      "rank_retro": 44
+      "rating": 0.007622901953049767,
+      "rating_retro": 0.007622901953049767,
+      "rank_retro": 44,
+      "quality_wins": [
+        "Kansas State",
+        "Arizona State",
+        "Cincinnati"
+      ]
     },
     {
       "rank": 45,
@@ -366,7 +586,12 @@
       "conference": "SEC",
       "rating": 0.007622817726535512,
       "rating_retro": 0.007622817726535512,
-      "rank_retro": 45
+      "rank_retro": 45,
+      "quality_wins": [
+        "Auburn",
+        "Oklahoma",
+        "Missouri"
+      ]
     },
     {
       "rank": 46,
@@ -374,23 +599,38 @@
       "conference": "ACC",
       "rating": 0.007609788807170752,
       "rating_retro": 0.007609788807170752,
-      "rank_retro": 46
+      "rank_retro": 46,
+      "quality_wins": [
+        "UConn",
+        "Miami",
+        "Boston College"
+      ]
     },
     {
       "rank": 47,
       "team": "Ole Miss",
       "conference": "SEC",
-      "rating": 0.00760875519579044,
-      "rating_retro": 0.00760875519579044,
-      "rank_retro": 47
+      "rating": 0.007608755195790441,
+      "rating_retro": 0.007608755195790441,
+      "rank_retro": 47,
+      "quality_wins": [
+        "Mississippi State",
+        "Florida",
+        "Georgia"
+      ]
     },
     {
       "rank": 48,
       "team": "Arkansas State",
       "conference": "Sun Belt",
-      "rating": 0.007605375633500901,
-      "rating_retro": 0.007605375633500901,
-      "rank_retro": 48
+      "rating": 0.0076053756335009,
+      "rating_retro": 0.0076053756335009,
+      "rank_retro": 48,
+      "quality_wins": [
+        "UL Monroe",
+        "Louisiana",
+        "Old Dominion"
+      ]
     },
     {
       "rank": 49,
@@ -398,23 +638,38 @@
       "conference": "American Athletic",
       "rating": 0.007601766116319041,
       "rating_retro": 0.007601766116319041,
-      "rank_retro": 49
+      "rank_retro": 49,
+      "quality_wins": [
+        "Army",
+        "Rice",
+        "East Carolina"
+      ]
     },
     {
       "rank": 50,
       "team": "East Carolina",
       "conference": "American Athletic",
-      "rating": 0.007598479918556455,
-      "rating_retro": 0.007598479918556455,
-      "rank_retro": 50
+      "rating": 0.007598479918556454,
+      "rating_retro": 0.007598479918556454,
+      "rank_retro": 50,
+      "quality_wins": [
+        "Florida Atlantic",
+        "Navy",
+        "Temple"
+      ]
     },
     {
       "rank": 51,
       "team": "Arkansas",
       "conference": "SEC",
-      "rating": 0.007589607206541961,
-      "rating_retro": 0.007589607206541961,
-      "rank_retro": 51
+      "rating": 0.0075896072065419614,
+      "rating_retro": 0.0075896072065419614,
+      "rank_retro": 51,
+      "quality_wins": [
+        "Missouri",
+        "Louisiana Tech",
+        "Texas"
+      ]
     },
     {
       "rank": 52,
@@ -422,7 +677,12 @@
       "conference": "Big 12",
       "rating": 0.007560898927292453,
       "rating_retro": 0.007560898927292453,
-      "rank_retro": 52
+      "rank_retro": 52,
+      "quality_wins": [
+        "Texas Tech",
+        "UCF",
+        "Baylor"
+      ]
     },
     {
       "rank": 53,
@@ -430,15 +690,25 @@
       "conference": "Conference USA",
       "rating": 0.007502689322643596,
       "rating_retro": 0.007502689322643596,
-      "rank_retro": 53
+      "rank_retro": 53,
+      "quality_wins": [
+        "Jacksonville State",
+        "Louisiana Tech",
+        "Kennesaw State"
+      ]
     },
     {
       "rank": 54,
       "team": "Kansas State",
       "conference": "Big 12",
-      "rating": 0.007494152879261395,
-      "rating_retro": 0.007494152879261395,
-      "rank_retro": 54
+      "rating": 0.007494152879261396,
+      "rating_retro": 0.007494152879261396,
+      "rank_retro": 54,
+      "quality_wins": [
+        "Iowa State",
+        "Cincinnati",
+        "Houston"
+      ]
     },
     {
       "rank": 55,
@@ -446,7 +716,12 @@
       "conference": "Mid-American",
       "rating": 0.0074883579721598936,
       "rating_retro": 0.0074883579721598936,
-      "rank_retro": 55
+      "rank_retro": 55,
+      "quality_wins": [
+        "Western Michigan",
+        "Miami (OH)",
+        "Ball State"
+      ]
     },
     {
       "rank": 56,
@@ -454,15 +729,25 @@
       "conference": "Big 12",
       "rating": 0.007487805510137849,
       "rating_retro": 0.007487805510137849,
-      "rank_retro": 56
+      "rank_retro": 56,
+      "quality_wins": [
+        "TCU",
+        "Houston",
+        "UCF"
+      ]
     },
     {
       "rank": 57,
       "team": "Georgia State",
       "conference": "Sun Belt",
-      "rating": 0.007481958632142521,
-      "rating_retro": 0.007481958632142521,
-      "rank_retro": 57
+      "rating": 0.007481958632142522,
+      "rating_retro": 0.007481958632142522,
+      "rank_retro": 57,
+      "quality_wins": [
+        "James Madison",
+        "UConn",
+        "Coastal Carolina"
+      ]
     },
     {
       "rank": 58,
@@ -470,15 +755,25 @@
       "conference": "Conference USA",
       "rating": 0.007479650044529989,
       "rating_retro": 0.007479650044529989,
-      "rank_retro": 58
+      "rank_retro": 58,
+      "quality_wins": [
+        "Tennessee",
+        "Kennesaw State",
+        "New Mexico State"
+      ]
     },
     {
       "rank": 59,
       "team": "UL Monroe",
       "conference": "Sun Belt",
-      "rating": 0.007479113262834337,
-      "rating_retro": 0.007479113262834337,
-      "rank_retro": 59
+      "rating": 0.007479113262834336,
+      "rating_retro": 0.007479113262834336,
+      "rank_retro": 59,
+      "quality_wins": [
+        "Arkansas State",
+        "Auburn",
+        "Marshall"
+      ]
     },
     {
       "rank": 60,
@@ -486,15 +781,25 @@
       "conference": "Mountain West",
       "rating": 0.007479010237400749,
       "rating_retro": 0.007479010237400749,
-      "rank_retro": 60
+      "rank_retro": 60,
+      "quality_wins": [
+        "Colorado State",
+        "San Diego State",
+        "Hawaii"
+      ]
     },
     {
       "rank": 61,
       "team": "Illinois",
       "conference": "Big Ten",
-      "rating": 0.007470073878882652,
-      "rating_retro": 0.007470073878882652,
-      "rank_retro": 61
+      "rating": 0.007470073878882651,
+      "rating_retro": 0.007470073878882651,
+      "rank_retro": 61,
+      "quality_wins": [
+        "Northwestern",
+        "Michigan State",
+        "Oregon"
+      ]
     },
     {
       "rank": 62,
@@ -502,7 +807,12 @@
       "conference": "Mid-American",
       "rating": 0.007469015090009627,
       "rating_retro": 0.007469015090009627,
-      "rank_retro": 62
+      "rank_retro": 62,
+      "quality_wins": [
+        "Central Michigan",
+        "Miami (OH)",
+        "Akron"
+      ]
     },
     {
       "rank": 63,
@@ -510,15 +820,25 @@
       "conference": "Pac-12",
       "rating": 0.007462726675391917,
       "rating_retro": 0.007462726675391917,
-      "rank_retro": 63
+      "rank_retro": 63,
+      "quality_wins": [
+        "Boise State",
+        "Air Force",
+        "California"
+      ]
     },
     {
       "rank": 64,
       "team": "Fresno State",
       "conference": "Mountain West",
-      "rating": 0.007436919881079205,
-      "rating_retro": 0.007436919881079205,
-      "rank_retro": 64
+      "rating": 0.007436919881079207,
+      "rating_retro": 0.007436919881079207,
+      "rank_retro": 64,
+      "quality_wins": [
+        "UCLA",
+        "Colorado State",
+        "Air Force"
+      ]
     },
     {
       "rank": 65,
@@ -526,7 +846,12 @@
       "conference": "Sun Belt",
       "rating": 0.007423924934143185,
       "rating_retro": 0.007423924934143185,
-      "rank_retro": 65
+      "rank_retro": 65,
+      "quality_wins": [
+        "Troy",
+        "Texas State",
+        "James Madison"
+      ]
     },
     {
       "rank": 66,
@@ -534,15 +859,25 @@
       "conference": "American Athletic",
       "rating": 0.007410059217773847,
       "rating_retro": 0.007410059217773847,
-      "rank_retro": 66
+      "rank_retro": 66,
+      "quality_wins": [
+        "UTSA",
+        "Temple",
+        "East Carolina"
+      ]
     },
     {
       "rank": 67,
       "team": "Akron",
       "conference": "Mid-American",
-      "rating": 0.007395233388819968,
-      "rating_retro": 0.007395233388819968,
-      "rank_retro": 67
+      "rating": 0.007395233388819969,
+      "rating_retro": 0.007395233388819969,
+      "rank_retro": 67,
+      "quality_wins": [
+        "Toledo",
+        "Northern Illinois",
+        "Kent State"
+      ]
     },
     {
       "rank": 68,
@@ -550,31 +885,51 @@
       "conference": "Sun Belt",
       "rating": 0.007394236742715008,
       "rating_retro": 0.007394236742715008,
-      "rank_retro": 68
+      "rank_retro": 68,
+      "quality_wins": [
+        "Appalachian State",
+        "Georgia State",
+        "Southern Miss"
+      ]
     },
     {
       "rank": 69,
       "team": "Vanderbilt",
       "conference": "SEC",
-      "rating": 0.007390306542983347,
-      "rating_retro": 0.007390306542983347,
-      "rank_retro": 69
+      "rating": 0.007390306542983346,
+      "rating_retro": 0.007390306542983346,
+      "rank_retro": 69,
+      "quality_wins": [
+        "LSU",
+        "Tennessee",
+        "Ball State"
+      ]
     },
     {
       "rank": 70,
       "team": "San Jos\u00e9 State",
       "conference": "Mountain West",
-      "rating": 0.007382761230073642,
-      "rating_retro": 0.007382761230073642,
-      "rank_retro": 70
+      "rating": 0.007382761230073644,
+      "rating_retro": 0.007382761230073644,
+      "rank_retro": 70,
+      "quality_wins": [
+        "Fresno State",
+        "UNLV",
+        "Stanford"
+      ]
     },
     {
       "rank": 71,
       "team": "Air Force",
       "conference": "Mountain West",
-      "rating": 0.00738098485069022,
-      "rating_retro": 0.00738098485069022,
-      "rank_retro": 71
+      "rating": 0.007380984850690219,
+      "rating_retro": 0.007380984850690219,
+      "rank_retro": 71,
+      "quality_wins": [
+        "Oregon State",
+        "Fresno State",
+        "Army"
+      ]
     },
     {
       "rank": 72,
@@ -582,31 +937,51 @@
       "conference": "American Athletic",
       "rating": 0.0073805262060239255,
       "rating_retro": 0.0073805262060239255,
-      "rank_retro": 72
+      "rank_retro": 72,
+      "quality_wins": [
+        "Rice",
+        "Memphis",
+        "Tulsa"
+      ]
     },
     {
       "rank": 73,
       "team": "Old Dominion",
       "conference": "Sun Belt",
-      "rating": 0.00737049034938533,
-      "rating_retro": 0.00737049034938533,
-      "rank_retro": 73
+      "rating": 0.007370490349385331,
+      "rating_retro": 0.007370490349385331,
+      "rank_retro": 73,
+      "quality_wins": [
+        "Appalachian State",
+        "Arkansas State",
+        "Georgia Southern"
+      ]
     },
     {
       "rank": 74,
       "team": "Texas A&M",
       "conference": "SEC",
-      "rating": 0.00736669592941645,
-      "rating_retro": 0.00736669592941645,
-      "rank_retro": 74
+      "rating": 0.0073666959294164495,
+      "rating_retro": 0.0073666959294164495,
+      "rank_retro": 74,
+      "quality_wins": [
+        "New Mexico State",
+        "South Carolina",
+        "Texas"
+      ]
     },
     {
       "rank": 75,
       "team": "Oklahoma",
       "conference": "SEC",
-      "rating": 0.0073559946664124645,
-      "rating_retro": 0.0073559946664124645,
-      "rank_retro": 75
+      "rating": 0.007355994666412465,
+      "rating_retro": 0.007355994666412465,
+      "rank_retro": 75,
+      "quality_wins": [
+        "LSU",
+        "Alabama",
+        "Missouri"
+      ]
     },
     {
       "rank": 76,
@@ -614,7 +989,12 @@
       "conference": "Big Ten",
       "rating": 0.007344935103066748,
       "rating_retro": 0.007344935103066748,
-      "rank_retro": 76
+      "rank_retro": 76,
+      "quality_wins": [
+        "Fresno State",
+        "Washington",
+        "USC"
+      ]
     },
     {
       "rank": 77,
@@ -622,23 +1002,38 @@
       "conference": "ACC",
       "rating": 0.0073107402343254215,
       "rating_retro": 0.0073107402343254215,
-      "rank_retro": 77
+      "rank_retro": 77,
+      "quality_wins": [
+        "Wake Forest",
+        "Syracuse",
+        "Georgia Tech"
+      ]
     },
     {
       "rank": 78,
       "team": "Mississippi State",
       "conference": "SEC",
-      "rating": 0.007303628975369232,
-      "rating_retro": 0.007303628975369232,
-      "rank_retro": 78
+      "rating": 0.007303628975369233,
+      "rating_retro": 0.007303628975369233,
+      "rank_retro": 78,
+      "quality_wins": [
+        "Ole Miss",
+        "Tennessee",
+        "Massachusetts"
+      ]
     },
     {
       "rank": 79,
       "team": "Iowa",
       "conference": "Big Ten",
-      "rating": 0.007303006199929035,
-      "rating_retro": 0.007303006199929035,
-      "rank_retro": 79
+      "rating": 0.007303006199929036,
+      "rating_retro": 0.007303006199929036,
+      "rank_retro": 79,
+      "quality_wins": [
+        "Wisconsin",
+        "Northwestern",
+        "Maryland"
+      ]
     },
     {
       "rank": 80,
@@ -646,15 +1041,25 @@
       "conference": "Mid-American",
       "rating": 0.00728887288826288,
       "rating_retro": 0.00728887288826288,
-      "rank_retro": 80
+      "rank_retro": 80,
+      "quality_wins": [
+        "Akron",
+        "Central Michigan",
+        "Ohio"
+      ]
     },
     {
       "rank": 81,
       "team": "Northwestern",
       "conference": "Big Ten",
-      "rating": 0.007287997212093685,
-      "rating_retro": 0.007287997212093685,
-      "rank_retro": 81
+      "rating": 0.0072879972120936855,
+      "rating_retro": 0.0072879972120936855,
+      "rank_retro": 81,
+      "quality_wins": [
+        "Michigan",
+        "Illinois",
+        "Ohio State"
+      ]
     },
     {
       "rank": 82,
@@ -662,23 +1067,38 @@
       "conference": "ACC",
       "rating": 0.0072818317362108665,
       "rating_retro": 0.0072818317362108665,
-      "rank_retro": 82
+      "rank_retro": 82,
+      "quality_wins": [
+        "Boston College",
+        "Louisville",
+        "SMU"
+      ]
     },
     {
       "rank": 83,
       "team": "Middle Tennessee",
       "conference": "Conference USA",
-      "rating": 0.007280487722197559,
-      "rating_retro": 0.007280487722197559,
-      "rank_retro": 83
+      "rating": 0.007280487722197561,
+      "rating_retro": 0.007280487722197561,
+      "rank_retro": 83,
+      "quality_wins": [
+        "Florida International",
+        "Jacksonville State",
+        "New Mexico State"
+      ]
     },
     {
       "rank": 84,
       "team": "Rutgers",
       "conference": "Big Ten",
-      "rating": 0.0072774500966305,
-      "rating_retro": 0.0072774500966305,
-      "rank_retro": 84
+      "rating": 0.007277450096630499,
+      "rating_retro": 0.007277450096630499,
+      "rank_retro": 84,
+      "quality_wins": [
+        "Minnesota",
+        "Michigan State",
+        "USC"
+      ]
     },
     {
       "rank": 85,
@@ -686,7 +1106,12 @@
       "conference": "Mid-American",
       "rating": 0.00724529691892403,
       "rating_retro": 0.00724529691892403,
-      "rank_retro": 85
+      "rank_retro": 85,
+      "quality_wins": [
+        "Buffalo",
+        "Miami (OH)",
+        "Western Michigan"
+      ]
     },
     {
       "rank": 86,
@@ -694,7 +1119,12 @@
       "conference": "Conference USA",
       "rating": 0.007227885549609063,
       "rating_retro": 0.007227885549609063,
-      "rank_retro": 86
+      "rank_retro": 86,
+      "quality_wins": [
+        "Texas A&M",
+        "UTEP",
+        "Middle Tennessee"
+      ]
     },
     {
       "rank": 87,
@@ -702,7 +1132,12 @@
       "conference": "ACC",
       "rating": 0.007227628077415239,
       "rating_retro": 0.007227628077415239,
-      "rank_retro": 87
+      "rank_retro": 87,
+      "quality_wins": [
+        "Pittsburgh",
+        "Kentucky",
+        "Stanford"
+      ]
     },
     {
       "rank": 88,
@@ -710,7 +1145,12 @@
       "conference": "Big Ten",
       "rating": 0.007216871908436742,
       "rating_retro": 0.007216871908436742,
-      "rank_retro": 88
+      "rank_retro": 88,
+      "quality_wins": [
+        "Purdue",
+        "Illinois",
+        "Rutgers"
+      ]
     },
     {
       "rank": 89,
@@ -718,7 +1158,12 @@
       "conference": "Mountain West",
       "rating": 0.007195174472900988,
       "rating_retro": 0.007195174472900988,
-      "rank_retro": 89
+      "rank_retro": 89,
+      "quality_wins": [
+        "UNLV",
+        "Boise State",
+        "Hawaii"
+      ]
     },
     {
       "rank": 90,
@@ -726,39 +1171,64 @@
       "conference": "Mountain West",
       "rating": 0.007194249885236193,
       "rating_retro": 0.007194249885236193,
-      "rank_retro": 90
+      "rank_retro": 90,
+      "quality_wins": [
+        "Hawaii",
+        "Colorado State",
+        "Air Force"
+      ]
     },
     {
       "rank": 91,
       "team": "Oklahoma State",
       "conference": "Big 12",
-      "rating": 0.007168711390908376,
-      "rating_retro": 0.007168711390908376,
-      "rank_retro": 91
+      "rating": 0.007168711390908378,
+      "rating_retro": 0.007168711390908378,
+      "rank_retro": 91,
+      "quality_wins": [
+        "Colorado",
+        "TCU",
+        "Baylor"
+      ]
     },
     {
       "rank": 92,
       "team": "Rice",
       "conference": "American Athletic",
-      "rating": 0.007167676369873773,
-      "rating_retro": 0.007167676369873773,
-      "rank_retro": 92
+      "rating": 0.0071676763698737735,
+      "rating_retro": 0.0071676763698737735,
+      "rank_retro": 92,
+      "quality_wins": [
+        "South Florida",
+        "UAB",
+        "Memphis"
+      ]
     },
     {
       "rank": 93,
       "team": "Georgia Southern",
       "conference": "Sun Belt",
-      "rating": 0.0071643761760668105,
-      "rating_retro": 0.0071643761760668105,
-      "rank_retro": 93
+      "rating": 0.007164376176066811,
+      "rating_retro": 0.007164376176066811,
+      "rank_retro": 93,
+      "quality_wins": [
+        "Appalachian State",
+        "Old Dominion",
+        "Coastal Carolina"
+      ]
     },
     {
       "rank": 94,
       "team": "Texas State",
       "conference": "Sun Belt",
-      "rating": 0.007147311806195082,
-      "rating_retro": 0.007147311806195082,
-      "rank_retro": 94
+      "rating": 0.007147311806195083,
+      "rating_retro": 0.007147311806195083,
+      "rank_retro": 94,
+      "quality_wins": [
+        "Southern Miss",
+        "South Alabama",
+        "Georgia State"
+      ]
     },
     {
       "rank": 95,
@@ -766,15 +1236,25 @@
       "conference": "Big 12",
       "rating": 0.007142958300168859,
       "rating_retro": 0.007142958300168859,
-      "rank_retro": 95
+      "rank_retro": 95,
+      "quality_wins": [
+        "Houston",
+        "Arizona State",
+        "Arizona"
+      ]
     },
     {
       "rank": 96,
       "team": "Wisconsin",
       "conference": "Big Ten",
-      "rating": 0.007126431044207602,
-      "rating_retro": 0.007126431044207602,
-      "rank_retro": 96
+      "rating": 0.007126431044207601,
+      "rating_retro": 0.007126431044207601,
+      "rank_retro": 96,
+      "quality_wins": [
+        "Nebraska",
+        "Iowa",
+        "Minnesota"
+      ]
     },
     {
       "rank": 97,
@@ -782,7 +1262,12 @@
       "conference": "Big 12",
       "rating": 0.007116274091727908,
       "rating_retro": 0.007116274091727908,
-      "rank_retro": 97
+      "rank_retro": 97,
+      "quality_wins": [
+        "Kansas State",
+        "Iowa State",
+        "TCU"
+      ]
     },
     {
       "rank": 98,
@@ -790,95 +1275,155 @@
       "conference": "ACC",
       "rating": 0.007115877279837825,
       "rating_retro": 0.007115877279837825,
-      "rank_retro": 98
+      "rank_retro": 98,
+      "quality_wins": [
+        "Boston College",
+        "Wake Forest",
+        "NC State"
+      ]
     },
     {
       "rank": 99,
       "team": "Troy",
       "conference": "Sun Belt",
-      "rating": 0.007115618210903785,
-      "rating_retro": 0.007115618210903785,
-      "rank_retro": 99
+      "rating": 0.007115618210903784,
+      "rating_retro": 0.007115618210903784,
+      "rank_retro": 99,
+      "quality_wins": [
+        "Southern Miss",
+        "Louisiana",
+        "Coastal Carolina"
+      ]
     },
     {
       "rank": 100,
       "team": "Florida Atlantic",
       "conference": "American Athletic",
-      "rating": 0.007088852276955355,
-      "rating_retro": 0.007088852276955355,
-      "rank_retro": 100
+      "rating": 0.007088852276955357,
+      "rating_retro": 0.007088852276955357,
+      "rank_retro": 100,
+      "quality_wins": [
+        "East Carolina",
+        "Tulsa",
+        "Charlotte"
+      ]
     },
     {
       "rank": 101,
       "team": "Purdue",
       "conference": "Big Ten",
-      "rating": 0.007086729312534088,
-      "rating_retro": 0.007086729312534088,
-      "rank_retro": 101
+      "rating": 0.007086729312534089,
+      "rating_retro": 0.007086729312534089,
+      "rank_retro": 101,
+      "quality_wins": [
+        "Indiana",
+        "Michigan State",
+        "Ohio State"
+      ]
     },
     {
       "rank": 102,
       "team": "Kennesaw State",
       "conference": "Conference USA",
-      "rating": 0.007083215900380492,
-      "rating_retro": 0.007083215900380492,
-      "rank_retro": 102
+      "rating": 0.007083215900380493,
+      "rating_retro": 0.007083215900380493,
+      "rank_retro": 102,
+      "quality_wins": [
+        "Louisiana Tech",
+        "UTEP",
+        "Western Kentucky"
+      ]
     },
     {
       "rank": 103,
       "team": "Kansas",
       "conference": "Big 12",
-      "rating": 0.007050528265168474,
-      "rating_retro": 0.007050528265168474,
-      "rank_retro": 103
+      "rating": 0.007050528265168475,
+      "rating_retro": 0.007050528265168475,
+      "rank_retro": 103,
+      "quality_wins": [
+        "Baylor",
+        "Colorado",
+        "Iowa State"
+      ]
     },
     {
       "rank": 104,
       "team": "South Alabama",
       "conference": "Sun Belt",
-      "rating": 0.007038785075389179,
-      "rating_retro": 0.007038785075389179,
-      "rank_retro": 104
+      "rating": 0.00703878507538918,
+      "rating_retro": 0.00703878507538918,
+      "rank_retro": 104,
+      "quality_wins": [
+        "Texas State",
+        "UL Monroe",
+        "Southern Miss"
+      ]
     },
     {
       "rank": 105,
       "team": "Auburn",
       "conference": "SEC",
-      "rating": 0.007036937738679365,
-      "rating_retro": 0.007036937738679365,
-      "rank_retro": 105
+      "rating": 0.007036937738679366,
+      "rating_retro": 0.007036937738679366,
+      "rank_retro": 105,
+      "quality_wins": [
+        "Alabama",
+        "UL Monroe",
+        "Georgia"
+      ]
     },
     {
       "rank": 106,
       "team": "Duke",
       "conference": "ACC",
-      "rating": 0.0070097073841966125,
-      "rating_retro": 0.0070097073841966125,
-      "rank_retro": 106
+      "rating": 0.007009707384196612,
+      "rating_retro": 0.007009707384196612,
+      "rank_retro": 106,
+      "quality_wins": [
+        "Miami",
+        "Wake Forest",
+        "Florida State"
+      ]
     },
     {
       "rank": 107,
       "team": "Appalachian State",
       "conference": "Unknown",
-      "rating": 0.007009437946446339,
-      "rating_retro": 0.007009437946446339,
-      "rank_retro": 107
+      "rating": 0.007009437946446338,
+      "rating_retro": 0.007009437946446338,
+      "rank_retro": 107,
+      "quality_wins": [
+        "Georgia Southern",
+        "James Madison",
+        "Coastal Carolina"
+      ]
     },
     {
       "rank": 108,
       "team": "UCF",
       "conference": "Big 12",
-      "rating": 0.00700602235533585,
-      "rating_retro": 0.00700602235533585,
-      "rank_retro": 108
+      "rating": 0.007006022355335851,
+      "rating_retro": 0.007006022355335851,
+      "rank_retro": 108,
+      "quality_wins": [
+        "West Virginia",
+        "Arizona",
+        "Utah"
+      ]
     },
     {
       "rank": 109,
       "team": "Virginia",
       "conference": "ACC",
-      "rating": 0.006981163162648831,
-      "rating_retro": 0.006981163162648831,
-      "rank_retro": 109
+      "rating": 0.006981163162648832,
+      "rating_retro": 0.006981163162648832,
+      "rank_retro": 109,
+      "quality_wins": [
+        "Virginia Tech",
+        "Notre Dame",
+        "SMU"
+      ]
     },
     {
       "rank": 110,
@@ -886,7 +1431,12 @@
       "conference": "Big 12",
       "rating": 0.00697254844729482,
       "rating_retro": 0.00697254844729482,
-      "rank_retro": 110
+      "rank_retro": 110,
+      "quality_wins": [
+        "Arizona",
+        "Oklahoma State",
+        "Cincinnati"
+      ]
     },
     {
       "rank": 111,
@@ -894,7 +1444,12 @@
       "conference": "Pac-12",
       "rating": 0.006972547251621796,
       "rating_retro": 0.006972547251621796,
-      "rank_retro": 111
+      "rank_retro": 111,
+      "quality_wins": [
+        "Utah State",
+        "Hawaii",
+        "Oregon State"
+      ]
     },
     {
       "rank": 112,
@@ -902,7 +1457,12 @@
       "conference": "ACC",
       "rating": 0.006947849526217694,
       "rating_retro": 0.006947849526217694,
-      "rank_retro": 112
+      "rank_retro": 112,
+      "quality_wins": [
+        "SMU",
+        "Oregon State",
+        "Syracuse"
+      ]
     },
     {
       "rank": 113,
@@ -910,23 +1470,38 @@
       "conference": "Mountain West",
       "rating": 0.006930140802135785,
       "rating_retro": 0.006930140802135785,
-      "rank_retro": 113
+      "rank_retro": 113,
+      "quality_wins": [
+        "Utah State",
+        "UNLV",
+        "Boise State"
+      ]
     },
     {
       "rank": 114,
       "team": "Georgia Tech",
       "conference": "ACC",
-      "rating": 0.0068785956540725335,
-      "rating_retro": 0.0068785956540725335,
-      "rank_retro": 114
+      "rating": 0.006878595654072534,
+      "rating_retro": 0.006878595654072534,
+      "rank_retro": 114,
+      "quality_wins": [
+        "Miami",
+        "Virginia Tech",
+        "Notre Dame"
+      ]
     },
     {
       "rank": 115,
       "team": "Florida State",
       "conference": "ACC",
-      "rating": 0.006862290761234925,
-      "rating_retro": 0.006862290761234925,
-      "rank_retro": 115
+      "rating": 0.006862290761234926,
+      "rating_retro": 0.006862290761234926,
+      "rank_retro": 115,
+      "quality_wins": [
+        "Notre Dame",
+        "Florida",
+        "Miami"
+      ]
     },
     {
       "rank": 116,
@@ -934,31 +1509,51 @@
       "conference": "Big 12",
       "rating": 0.006858701751961697,
       "rating_retro": 0.006858701751961697,
-      "rank_retro": 116
+      "rank_retro": 116,
+      "quality_wins": [
+        "West Virginia",
+        "Oklahoma State",
+        "Colorado"
+      ]
     },
     {
       "rank": 117,
       "team": "Maryland",
       "conference": "Big Ten",
-      "rating": 0.006838753843896619,
-      "rating_retro": 0.006838753843896619,
-      "rank_retro": 117
+      "rating": 0.006838753843896618,
+      "rating_retro": 0.006838753843896618,
+      "rank_retro": 117,
+      "quality_wins": [
+        "Penn State",
+        "Oregon",
+        "Minnesota"
+      ]
     },
     {
       "rank": 118,
       "team": "Florida International",
       "conference": "Conference USA",
-      "rating": 0.006825456705940038,
-      "rating_retro": 0.006825456705940038,
-      "rank_retro": 118
+      "rating": 0.006825456705940039,
+      "rating_retro": 0.006825456705940039,
+      "rank_retro": 118,
+      "quality_wins": [
+        "Middle Tennessee",
+        "New Mexico State",
+        "UTEP"
+      ]
     },
     {
       "rank": 119,
       "team": "NC State",
       "conference": "ACC",
-      "rating": 0.006815914583745759,
-      "rating_retro": 0.006815914583745759,
-      "rank_retro": 119
+      "rating": 0.006815914583745761,
+      "rating_retro": 0.006815914583745761,
+      "rank_retro": 119,
+      "quality_wins": [
+        "Stanford",
+        "North Carolina",
+        "Duke"
+      ]
     },
     {
       "rank": 120,
@@ -966,15 +1561,25 @@
       "conference": "Big Ten",
       "rating": 0.006811667711084099,
       "rating_retro": 0.006811667711084099,
-      "rank_retro": 120
+      "rank_retro": 120,
+      "quality_wins": [
+        "Rutgers",
+        "Wisconsin",
+        "Maryland"
+      ]
     },
     {
       "rank": 121,
       "team": "Tulsa",
       "conference": "American Athletic",
-      "rating": 0.006791889393231157,
-      "rating_retro": 0.006791889393231157,
-      "rank_retro": 121
+      "rating": 0.0067918893932311574,
+      "rating_retro": 0.0067918893932311574,
+      "rank_retro": 121,
+      "quality_wins": [
+        "South Florida",
+        "UAB",
+        "Florida Atlantic"
+      ]
     },
     {
       "rank": 122,
@@ -982,7 +1587,12 @@
       "conference": "SEC",
       "rating": 0.006775975766933327,
       "rating_retro": 0.006775975766933327,
-      "rank_retro": 122
+      "rank_retro": 122,
+      "quality_wins": [
+        "Texas A&M",
+        "Missouri",
+        "Vanderbilt"
+      ]
     },
     {
       "rank": 123,
@@ -990,7 +1600,12 @@
       "conference": "Mid-American",
       "rating": 0.006766834096682425,
       "rating_retro": 0.006766834096682425,
-      "rank_retro": 123
+      "rank_retro": 123,
+      "quality_wins": [
+        "Ohio",
+        "Bowling Green",
+        "Vanderbilt"
+      ]
     },
     {
       "rank": 124,
@@ -998,15 +1613,25 @@
       "conference": "ACC",
       "rating": 0.006752460598131453,
       "rating_retro": 0.006752460598131453,
-      "rank_retro": 124
+      "rank_retro": 124,
+      "quality_wins": [
+        "NC State",
+        "San Jos\u00e9 State",
+        "California"
+      ]
     },
     {
       "rank": 125,
       "team": "Eastern Michigan",
       "conference": "Mid-American",
-      "rating": 0.006728206628736059,
-      "rating_retro": 0.006728206628736059,
-      "rank_retro": 125
+      "rating": 0.00672820662873606,
+      "rating_retro": 0.00672820662873606,
+      "rank_retro": 125,
+      "quality_wins": [
+        "Western Michigan",
+        "Ohio",
+        "Buffalo"
+      ]
     },
     {
       "rank": 126,
@@ -1014,7 +1639,12 @@
       "conference": "Mid-American",
       "rating": 0.006718581086868867,
       "rating_retro": 0.006718581086868867,
-      "rank_retro": 126
+      "rank_retro": 126,
+      "quality_wins": [
+        "Northern Illinois",
+        "Toledo",
+        "Miami (OH)"
+      ]
     },
     {
       "rank": 127,
@@ -1022,15 +1652,25 @@
       "conference": "American Athletic",
       "rating": 0.0066835842239355995,
       "rating_retro": 0.0066835842239355995,
-      "rank_retro": 127
+      "rank_retro": 127,
+      "quality_wins": [
+        "Memphis",
+        "Florida Atlantic",
+        "Navy"
+      ]
     },
     {
       "rank": 128,
       "team": "Liberty",
       "conference": "Conference USA",
-      "rating": 0.0066100201678857854,
-      "rating_retro": 0.0066100201678857854,
-      "rank_retro": 128
+      "rating": 0.006610020167885786,
+      "rating_retro": 0.006610020167885786,
+      "rank_retro": 128,
+      "quality_wins": [
+        "Western Kentucky",
+        "Florida International",
+        "Middle Tennessee"
+      ]
     },
     {
       "rank": 129,
@@ -1038,15 +1678,25 @@
       "conference": "SEC",
       "rating": 0.006601569409809657,
       "rating_retro": 0.006601569409809657,
-      "rank_retro": 129
+      "rank_retro": 129,
+      "quality_wins": [
+        "Texas",
+        "Tennessee",
+        "Louisville"
+      ]
     },
     {
       "rank": 130,
       "team": "Wake Forest",
       "conference": "ACC",
-      "rating": 0.006547305903658585,
-      "rating_retro": 0.006547305903658585,
-      "rank_retro": 130
+      "rating": 0.006547305903658586,
+      "rating_retro": 0.006547305903658586,
+      "rank_retro": 130,
+      "quality_wins": [
+        "Miami",
+        "North Carolina",
+        "Duke"
+      ]
     },
     {
       "rank": 131,
@@ -1054,23 +1704,38 @@
       "conference": "Big 12",
       "rating": 0.006485976297976563,
       "rating_retro": 0.006485976297976563,
-      "rank_retro": 131
+      "rank_retro": 131,
+      "quality_wins": [
+        "Colorado",
+        "UCF",
+        "Arizona State"
+      ]
     },
     {
       "rank": 132,
       "team": "Wyoming",
       "conference": "Mountain West",
-      "rating": 0.006388893010803061,
-      "rating_retro": 0.006388893010803061,
-      "rank_retro": 132
+      "rating": 0.006388893010803062,
+      "rating_retro": 0.006388893010803062,
+      "rank_retro": 132,
+      "quality_wins": [
+        "Colorado State",
+        "San Jos\u00e9 State",
+        "Boise State"
+      ]
     },
     {
       "rank": 133,
       "team": "Hawaii",
       "conference": "Unknown",
-      "rating": 0.006239056081046852,
-      "rating_retro": 0.006239056081046852,
-      "rank_retro": 133
+      "rating": 0.006239056081046854,
+      "rating_retro": 0.006239056081046854,
+      "rank_retro": 133,
+      "quality_wins": [
+        "New Mexico",
+        "Utah State",
+        "Nevada"
+      ]
     },
     {
       "rank": 134,
@@ -1078,7 +1743,12 @@
       "conference": "FBS Independents",
       "rating": 0.006190050878598087,
       "rating_retro": 0.006190050878598087,
-      "rank_retro": 134
+      "rank_retro": 134,
+      "quality_wins": [
+        "Georgia",
+        "Mississippi State",
+        "UConn"
+      ]
     }
   ]
 }
