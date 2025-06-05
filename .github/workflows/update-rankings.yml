@@ -1,0 +1,227 @@
+name: Weekly Rankings Update
+
+on:
+  schedule:
+    # Run every Monday at 07:30 UTC (03:30 ET) to allow for late box scores
+    - cron: '30 7 * * 1'
+  workflow_dispatch:  # Allow manual triggering
+    inputs:
+      season:
+        description: 'Season year (optional, auto-detects if empty)'
+        required: false
+        default: ''
+      week:
+        description: 'Week number (optional, auto-detects if empty)'
+        required: false
+        default: ''
+
+env:
+  CFB_API_KEY: ${{ secrets.CFB_API_KEY }}
+
+jobs:
+  update-rankings:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install cfbd==4.5.3 email-validator==2.1.0 flask==3.0.0 flask-sqlalchemy==3.1.1 gunicorn==23.0.0 networkx==3.2.1 numpy==1.26.2 pandas==2.1.4 psycopg2-binary==2.9.9 pydantic==2.5.2 pyyaml==6.0.1 requests==2.31.0 werkzeug==3.0.1
+        
+    - name: Check if season is active
+      id: season_check
+      run: |
+        python -c "
+        import yaml
+        from datetime import datetime
+        
+        with open('config.yaml', 'r') as f:
+            config = yaml.safe_load(f)
+        
+        # Check if we're in an active season
+        now = datetime.now()
+        current_year = now.year
+        
+        # Football season runs roughly August-January
+        if now.month >= 8:  # August-December
+            season = current_year
+        elif now.month <= 1:  # January (bowl season)
+            season = current_year - 1
+        else:  # February-July (off-season)
+            print('off-season')
+            exit(0)
+        
+        print(f'active-season={season}')
+        " >> $GITHUB_OUTPUT
+        
+    - name: Run live pipeline
+      if: steps.season_check.outputs.active-season
+      run: |
+        SEASON="${{ github.event.inputs.season }}"
+        WEEK="${{ github.event.inputs.week }}"
+        
+        if [ -z "$SEASON" ]; then
+          # Auto-detect season
+          SEASON=$(python -c "
+          from datetime import datetime
+          now = datetime.now()
+          if now.month >= 8:
+              print(now.year)
+          elif now.month <= 1:
+              print(now.year - 1)
+          else:
+              print(now.year)
+          ")
+        fi
+        
+        if [ -z "$WEEK" ]; then
+          # Auto-detect week
+          python -c "
+          from src.live_pipeline import run_current_week
+          import yaml
+          
+          try:
+              result = run_current_week(season=$SEASON)
+              print(f'Pipeline completed successfully')
+          except Exception as e:
+              print(f'Pipeline failed: {e}')
+              exit(1)
+          "
+        else
+          python -c "
+          from src.live_pipeline import run_live
+          import yaml
+          
+          try:
+              result = run_live(week=$WEEK, season=$SEASON)
+              print(f'Pipeline completed for week $WEEK')
+          except Exception as e:
+              print(f'Pipeline failed: {e}')
+              exit(1)
+          "
+        fi
+        
+    - name: Find latest export file
+      if: steps.season_check.outputs.active-season
+      id: find_export
+      run: |
+        # Find the most recent live export
+        LATEST_LIVE=$(ls -t exports/*_live.json 2>/dev/null | head -1 || echo "")
+        
+        if [ -n "$LATEST_LIVE" ]; then
+          echo "latest_file=$LATEST_LIVE" >> $GITHUB_OUTPUT
+          echo "Found latest export: $LATEST_LIVE"
+        else
+          echo "No live export found"
+          exit 1
+        fi
+        
+    - name: Generate site files
+      if: steps.season_check.outputs.active-season && steps.find_export.outputs.latest_file
+      run: |
+        # Copy JSON to site
+        cp "${{ steps.find_export.outputs.latest_file }}" site/current.json
+        
+        # Generate HTML table
+        python tools/make_html_table.py "${{ steps.find_export.outputs.latest_file }}" > site/current.html
+        
+        # Create simple index.html if it doesn't exist
+        if [ ! -f site/index.html ]; then
+          cat > site/index.html << 'EOF'
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bias-Free College Football Rankings</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <header>
+                    <h1>Bias-Free College Football Rankings</h1>
+                    <p class="subtitle">Data-driven rankings using advanced PageRank algorithms</p>
+                </header>
+                
+                <div class="navigation">
+                    <a href="current.html" class="nav-button">Current Rankings</a>
+                    <a href="final.html" class="nav-button">Final Season Rankings</a>
+                    <a href="current.json" class="nav-button">JSON Data</a>
+                </div>
+                
+                <div class="content">
+                    <h2>About the System</h2>
+                    <p>Our ranking system uses a sophisticated two-layer PageRank algorithm with enhanced EM convergence to generate unbiased, data-driven college football rankings.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>FBS-only game processing for authentic competition analysis</li>
+                        <li>Advanced conference strength adjustment</li>
+                        <li>Bootstrap confidence intervals for ranking uncertainty</li>
+                        <li>Industry-grade data validation and integrity checks</li>
+                        <li>Comprehensive bias auditing and neutrality metrics</li>
+                    </ul>
+                    
+                    <h3>Data Updates</h3>
+                    <p>Rankings are automatically updated every Monday during the season using the latest game results from the College Football Data API.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        EOF
+        fi
+        
+    - name: Commit and push changes
+      if: steps.season_check.outputs.active-season
+      run: |
+        git config --global user.name 'rankings-bot'
+        git config --global user.email 'rankings-bot@users.noreply.github.com'
+        
+        # Add generated files
+        git add site/current.json site/current.html site/index.html
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit with timestamp
+        TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+        git commit -m "Auto-update rankings: $TIMESTAMP"
+        
+        # Push changes
+        git push
+        
+    - name: Check for final season rankings
+      if: steps.season_check.outputs.off-season
+      run: |
+        # During off-season, check if we need to generate final rankings
+        LATEST_RETRO=$(ls -t exports/*_retro.json 2>/dev/null | head -1 || echo "")
+        
+        if [ -n "$LATEST_RETRO" ] && [ ! -f site/final.json ]; then
+          echo "Generating final season rankings"
+          
+          # Copy final rankings
+          cp "$LATEST_RETRO" site/final.json
+          python tools/make_html_table.py "$LATEST_RETRO" > site/final.html
+          
+          # Update current to show final rankings during off-season
+          cp "$LATEST_RETRO" site/current.json
+          python tools/make_html_table.py "$LATEST_RETRO" > site/current.html
+          
+          # Commit final rankings
+          git config --global user.name 'rankings-bot'
+          git config --global user.email 'rankings-bot@users.noreply.github.com'
+          git add site/final.json site/final.html site/current.json site/current.html
+          git commit -m "Add final season rankings" || echo "No changes to commit"
+          git push
+        fi

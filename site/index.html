@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bias-Free College Football Rankings</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navigation {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #1e3c72;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-button:hover {
+            background: #2a5298;
+        }
+        
+        .content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .content h2 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+        
+        .content h3 {
+            color: #2a5298;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #28a745;
+            color: white;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        
+        .api-info {
+            background: #f8f9fa;
+            border-left: 4px solid #1e3c72;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bias-Free College Football Rankings</h1>
+            <p class="subtitle">Data-driven rankings using advanced PageRank algorithms</p>
+            <span class="status-badge">Auto-Updated Weekly</span>
+        </header>
+        
+        <div class="navigation">
+            <a href="current.html" class="nav-button">Current Rankings</a>
+            <a href="final.html" class="nav-button">Final Season Rankings</a>
+            <a href="current.json" class="nav-button">JSON API</a>
+            <a href="final.json" class="nav-button">Final JSON</a>
+        </div>
+        
+        <div class="content">
+            <h2>About the Ranking System</h2>
+            <p>Our ranking system uses a sophisticated two-layer PageRank algorithm with enhanced EM convergence to generate completely unbiased, data-driven college football rankings. The system processes only authentic FBS game data to ensure accurate competitive analysis.</p>
+            
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>FBS-Only Processing:</strong> Analyzes only authentic Division I FBS games for accurate competition assessment</li>
+                <li><strong>Two-Layer PageRank:</strong> Separate team and conference ranking algorithms with mutual reinforcement</li>
+                <li><strong>Conference Strength Adjustment:</strong> Relative scaling based on inter-conference performance</li>
+                <li><strong>Bootstrap Confidence:</strong> Statistical uncertainty analysis for ranking reliability</li>
+                <li><strong>Industry-Grade Validation:</strong> Comprehensive data integrity checks and edge condition handling</li>
+                <li><strong>Bias Auditing:</strong> Advanced neutrality metrics ensure mathematical fairness</li>
+            </ul>
+            
+            <h3>Automatic Updates</h3>
+            <p>Rankings are automatically updated every Monday at 3:30 AM ET during the football season using the latest game results. The system:</p>
+            <ul>
+                <li>Fetches fresh data from the College Football Data API</li>
+                <li>Runs complete data validation and integrity checks</li>
+                <li>Generates new rankings using the full mathematical pipeline</li>
+                <li>Publishes updated tables and JSON data automatically</li>
+                <li>Switches to final retrospective rankings after the season</li>
+            </ul>
+            
+            <div class="api-info">
+                <h3>API Access</h3>
+                <p><strong>Current Rankings:</strong> <code>https://your-site.github.io/site/current.json</code></p>
+                <p><strong>Final Rankings:</strong> <code>https://your-site.github.io/site/final.json</code></p>
+                <p>JSON data is freely accessible with no authentication required. Perfect for building your own applications or analyses.</p>
+            </div>
+            
+            <h3>Mathematical Methodology</h3>
+            <p>The ranking algorithm follows a rigorous mathematical approach:</p>
+            <ul>
+                <li><strong>Graph Construction:</strong> Teams and conferences modeled as directed graphs with weighted edges</li>
+                <li><strong>Edge Weighting:</strong> Victory margins adjusted for venue advantage and temporal decay</li>
+                <li><strong>EM Convergence:</strong> Iterative algorithm converges to stable ratings with confidence bounds</li>
+                <li><strong>Neutrality Optimization:</strong> Bias metric B minimization ensures conference-neutral results</li>
+            </ul>
+            
+            <h3>Data Sources & Integrity</h3>
+            <p>All data sourced from the official College Football Data API with comprehensive validation:</p>
+            <ul>
+                <li>Schema validation with strict type checking</li>
+                <li>FBS classification verification against master lists</li>
+                <li>Duplicate detection and outlier analysis</li>
+                <li>Season consistency and game status validation</li>
+                <li>API reliability with exponential backoff and fallback mechanisms</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

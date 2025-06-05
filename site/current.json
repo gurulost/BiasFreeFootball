@@ -1,0 +1,1766 @@
+{
+  "metadata": {
+    "season": 2024,
+    "timestamp": "2025-06-05T16:14:42.667513",
+    "total_teams": 134,
+    "total_conferences": 11,
+    "pipeline_type": "retro"
+  },
+  "rankings": [
+    {
+      "rank_retro": 1,
+      "team": "Ohio State",
+      "conference": "Big Ten",
+      "rating_retro": 0.010126550586931083,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Penn State",
+        "Virginia Tech",
+        "Tennessee"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 2,
+      "team": "Penn State",
+      "conference": "Big Ten",
+      "rating_retro": 0.009627838327247918,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Virginia Tech",
+        "Tennessee"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 3,
+      "team": "Virginia Tech",
+      "conference": "ACC",
+      "rating_retro": 0.009116357123226159,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Tennessee"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 4,
+      "team": "Tennessee",
+      "conference": "SEC",
+      "rating_retro": 0.00896546678828624,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 5,
+      "team": "Texas",
+      "conference": "Big 12",
+      "rating_retro": 0.008948235193956721,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 6,
+      "team": "Notre Dame",
+      "conference": "Independent",
+      "rating_retro": 0.00888056599271278,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 7,
+      "team": "Clemson",
+      "conference": "ACC",
+      "rating_retro": 0.00882347876108044,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 8,
+      "team": "Indiana",
+      "conference": "Big Ten",
+      "rating_retro": 0.008710525844819092,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 9,
+      "team": "Alabama",
+      "conference": "SEC",
+      "rating_retro": 0.008681704710303008,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 10,
+      "team": "Florida",
+      "conference": "SEC",
+      "rating_retro": 0.008671031761086082,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 11,
+      "team": "Arizona State",
+      "conference": "Pac-12",
+      "rating_retro": 0.008610996215476585,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 12,
+      "team": "Boston College",
+      "conference": "ACC",
+      "rating_retro": 0.008590407277118505,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 13,
+      "team": "Georgia",
+      "conference": "SEC",
+      "rating_retro": 0.008580452607774262,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 14,
+      "team": "Missouri",
+      "conference": "SEC",
+      "rating_retro": 0.008568695706533047,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 15,
+      "team": "Michigan",
+      "conference": "Big Ten",
+      "rating_retro": 0.008546001519884846,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 16,
+      "team": "Arkansas",
+      "conference": "SEC",
+      "rating_retro": 0.008533149975473282,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 17,
+      "team": "LSU",
+      "conference": "SEC",
+      "rating_retro": 0.008500358806379098,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 18,
+      "team": "Miami (OH)",
+      "conference": "Independent",
+      "rating_retro": 0.008478642445337718,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 19,
+      "team": "Ole Miss",
+      "conference": "SEC",
+      "rating_retro": 0.008446390533274105,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 20,
+      "team": "Nebraska",
+      "conference": "Big Ten",
+      "rating_retro": 0.00836428503434995,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 21,
+      "team": "Texas A&M",
+      "conference": "SEC",
+      "rating_retro": 0.00828253879729127,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 22,
+      "team": "Georgia Tech",
+      "conference": "ACC",
+      "rating_retro": 0.008277071213876958,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 23,
+      "team": "Syracuse",
+      "conference": "ACC",
+      "rating_retro": 0.008271464428208626,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 24,
+      "team": "Miami",
+      "conference": "ACC",
+      "rating_retro": 0.008258046645959149,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 25,
+      "team": "Vanderbilt",
+      "conference": "SEC",
+      "rating_retro": 0.00823768345410991,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 26,
+      "team": "Illinois",
+      "conference": "Big Ten",
+      "rating_retro": 0.008217576856962795,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 27,
+      "team": "Jacksonville State",
+      "conference": "Independent",
+      "rating_retro": 0.008207228190894958,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 28,
+      "team": "North Carolina",
+      "conference": "ACC",
+      "rating_retro": 0.008145490573627187,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 29,
+      "team": "Army",
+      "conference": "Independent",
+      "rating_retro": 0.008117816012740834,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 30,
+      "team": "Mississippi State",
+      "conference": "SEC",
+      "rating_retro": 0.008085633461681853,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 31,
+      "team": "Boise State",
+      "conference": "Independent",
+      "rating_retro": 0.00805161830754565,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 32,
+      "team": "Northwestern",
+      "conference": "Big Ten",
+      "rating_retro": 0.007952343954837189,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 33,
+      "team": "Duke",
+      "conference": "ACC",
+      "rating_retro": 0.007925347393699432,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 34,
+      "team": "Iowa",
+      "conference": "Big Ten",
+      "rating_retro": 0.007923750858062645,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 35,
+      "team": "Pittsburgh",
+      "conference": "ACC",
+      "rating_retro": 0.00790817865493346,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 36,
+      "team": "Michigan State",
+      "conference": "Big Ten",
+      "rating_retro": 0.00788729428855707,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 37,
+      "team": "Ohio",
+      "conference": "Independent",
+      "rating_retro": 0.007864221360307266,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 38,
+      "team": "Tulane",
+      "conference": "Independent",
+      "rating_retro": 0.007853371472275095,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 39,
+      "team": "Auburn",
+      "conference": "SEC",
+      "rating_retro": 0.007826726306272437,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 40,
+      "team": "Colorado State",
+      "conference": "Independent",
+      "rating_retro": 0.0078171190026664,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 41,
+      "team": "Memphis",
+      "conference": "Independent",
+      "rating_retro": 0.0078124263119762494,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 42,
+      "team": "Louisville",
+      "conference": "ACC",
+      "rating_retro": 0.007803486095516142,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 43,
+      "team": "Florida State",
+      "conference": "ACC",
+      "rating_retro": 0.007766591196771043,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 44,
+      "team": "South Carolina",
+      "conference": "SEC",
+      "rating_retro": 0.007764932548655197,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 45,
+      "team": "Baylor",
+      "conference": "Big 12",
+      "rating_retro": 0.007746822596161191,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 46,
+      "team": "NC State",
+      "conference": "ACC",
+      "rating_retro": 0.007708853194199183,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 47,
+      "team": "Wisconsin",
+      "conference": "Big Ten",
+      "rating_retro": 0.007676471946114464,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 48,
+      "team": "Temple",
+      "conference": "Independent",
+      "rating_retro": 0.0076690319534682685,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 49,
+      "team": "Rutgers",
+      "conference": "Big Ten",
+      "rating_retro": 0.007651771644795591,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 50,
+      "team": "Western Kentucky",
+      "conference": "Independent",
+      "rating_retro": 0.007613188574225442,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 51,
+      "team": "Houston",
+      "conference": "Independent",
+      "rating_retro": 0.007591704871004287,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 52,
+      "team": "Sam Houston",
+      "conference": "Independent",
+      "rating_retro": 0.007570495355064072,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 53,
+      "team": "UNLV",
+      "conference": "Independent",
+      "rating_retro": 0.007556555518339397,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 54,
+      "team": "Purdue",
+      "conference": "Big Ten",
+      "rating_retro": 0.007539787501119459,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 55,
+      "team": "UTSA",
+      "conference": "Independent",
+      "rating_retro": 0.0075340524149595895,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 56,
+      "team": "Virginia",
+      "conference": "ACC",
+      "rating_retro": 0.0075249591513495894,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 57,
+      "team": "Minnesota",
+      "conference": "Big Ten",
+      "rating_retro": 0.007502403885020872,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 58,
+      "team": "UConn",
+      "conference": "Independent",
+      "rating_retro": 0.007502088318487472,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 59,
+      "team": "Coastal Carolina",
+      "conference": "Independent",
+      "rating_retro": 0.0074862937456271796,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 60,
+      "team": "Colorado",
+      "conference": "Pac-12",
+      "rating_retro": 0.0074759387959518735,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 61,
+      "team": "Louisiana",
+      "conference": "Independent",
+      "rating_retro": 0.007467436094732804,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 62,
+      "team": "Kentucky",
+      "conference": "SEC",
+      "rating_retro": 0.007409024713322997,
+      "conf_weight": 0.18938160665937548,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 63,
+      "team": "East Carolina",
+      "conference": "Independent",
+      "rating_retro": 0.007390124400967865,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 64,
+      "team": "Louisiana Tech",
+      "conference": "Independent",
+      "rating_retro": 0.007368884013558111,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 65,
+      "team": "West Virginia",
+      "conference": "Big 12",
+      "rating_retro": 0.007364069210307379,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 66,
+      "team": "Arkansas State",
+      "conference": "Independent",
+      "rating_retro": 0.007361187401459016,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 67,
+      "team": "Buffalo",
+      "conference": "Independent",
+      "rating_retro": 0.007352832087212708,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 68,
+      "team": "Kansas State",
+      "conference": "Big 12",
+      "rating_retro": 0.0073491562318923715,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 69,
+      "team": "Maryland",
+      "conference": "Big Ten",
+      "rating_retro": 0.00734478849836778,
+      "conf_weight": 0.1667882905836856,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 70,
+      "team": "Western Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.007319693212716285,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 71,
+      "team": "Fresno State",
+      "conference": "Independent",
+      "rating_retro": 0.007292791785701287,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 72,
+      "team": "North Texas",
+      "conference": "Independent",
+      "rating_retro": 0.007251296141223383,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 73,
+      "team": "SMU",
+      "conference": "Independent",
+      "rating_retro": 0.007250664156801498,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 74,
+      "team": "South Florida",
+      "conference": "Independent",
+      "rating_retro": 0.007245409935155584,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 75,
+      "team": "USC",
+      "conference": "Pac-12",
+      "rating_retro": 0.00721924969089275,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 76,
+      "team": "Washington",
+      "conference": "Pac-12",
+      "rating_retro": 0.007185423047599607,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 77,
+      "team": "James Madison",
+      "conference": "Independent",
+      "rating_retro": 0.007147758408646142,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 78,
+      "team": "Arizona",
+      "conference": "Pac-12",
+      "rating_retro": 0.007141351180309066,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 79,
+      "team": "San José State",
+      "conference": "Independent",
+      "rating_retro": 0.007140410238423648,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 80,
+      "team": "UTEP",
+      "conference": "Independent",
+      "rating_retro": 0.007126408727068126,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 81,
+      "team": "Bowling Green",
+      "conference": "Independent",
+      "rating_retro": 0.0071118575517586345,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 82,
+      "team": "Navy",
+      "conference": "Independent",
+      "rating_retro": 0.007076442441889934,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 83,
+      "team": "Utah State",
+      "conference": "Independent",
+      "rating_retro": 0.007071968545129297,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 84,
+      "team": "Old Dominion",
+      "conference": "Independent",
+      "rating_retro": 0.007070468807543776,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 85,
+      "team": "Marshall",
+      "conference": "Independent",
+      "rating_retro": 0.007070359944285027,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 86,
+      "team": "Oregon",
+      "conference": "Pac-12",
+      "rating_retro": 0.00705364980839359,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 87,
+      "team": "Iowa State",
+      "conference": "Big 12",
+      "rating_retro": 0.007035702721416143,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 88,
+      "team": "Air Force",
+      "conference": "Independent",
+      "rating_retro": 0.007030111414282817,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 89,
+      "team": "Southern Miss",
+      "conference": "Independent",
+      "rating_retro": 0.007014578663473498,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 90,
+      "team": "Oregon State",
+      "conference": "Pac-12",
+      "rating_retro": 0.007005794924245425,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 91,
+      "team": "Akron",
+      "conference": "Independent",
+      "rating_retro": 0.006998375693361435,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 92,
+      "team": "Nevada",
+      "conference": "Independent",
+      "rating_retro": 0.006980975270855456,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 93,
+      "team": "New Mexico",
+      "conference": "Independent",
+      "rating_retro": 0.006977460081534847,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 94,
+      "team": "South Alabama",
+      "conference": "Independent",
+      "rating_retro": 0.00697620383619755,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 95,
+      "team": "BYU",
+      "conference": "Independent",
+      "rating_retro": 0.00697610978317137,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 96,
+      "team": "Northern Illinois",
+      "conference": "Independent",
+      "rating_retro": 0.006970224688352061,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 97,
+      "team": "Toledo",
+      "conference": "Independent",
+      "rating_retro": 0.006968247914389767,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 98,
+      "team": "UAB",
+      "conference": "Independent",
+      "rating_retro": 0.00696674002995294,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 99,
+      "team": "Oklahoma",
+      "conference": "Big 12",
+      "rating_retro": 0.0069629788147790505,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 100,
+      "team": "Oklahoma State",
+      "conference": "Big 12",
+      "rating_retro": 0.00694167842402065,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 101,
+      "team": "Georgia Southern",
+      "conference": "Independent",
+      "rating_retro": 0.006932772691672524,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 102,
+      "team": "Middle Tennessee",
+      "conference": "Independent",
+      "rating_retro": 0.006918651122225614,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 103,
+      "team": "UL Monroe",
+      "conference": "Independent",
+      "rating_retro": 0.006911210299437326,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 104,
+      "team": "Texas Tech",
+      "conference": "Big 12",
+      "rating_retro": 0.006893621620078099,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 105,
+      "team": "Washington State",
+      "conference": "Pac-12",
+      "rating_retro": 0.006893284551053842,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 106,
+      "team": "Georgia State",
+      "conference": "Independent",
+      "rating_retro": 0.006890443779564386,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 107,
+      "team": "TCU",
+      "conference": "Big 12",
+      "rating_retro": 0.006886258567254352,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 108,
+      "team": "Wake Forest",
+      "conference": "ACC",
+      "rating_retro": 0.006877579228640662,
+      "conf_weight": 0.19502077785974134,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 109,
+      "team": "New Mexico State",
+      "conference": "Independent",
+      "rating_retro": 0.006838281189419783,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 110,
+      "team": "Florida Atlantic",
+      "conference": "Independent",
+      "rating_retro": 0.006816590815781666,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 111,
+      "team": "Rice",
+      "conference": "Independent",
+      "rating_retro": 0.006808195460134067,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 112,
+      "team": "Kansas",
+      "conference": "Big 12",
+      "rating_retro": 0.006795277367924903,
+      "conf_weight": 0.09743612495896019,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 113,
+      "team": "Texas State",
+      "conference": "Independent",
+      "rating_retro": 0.00679278076821255,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 114,
+      "team": "Kennesaw State",
+      "conference": "Independent",
+      "rating_retro": 0.006781371813931571,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 115,
+      "team": "Troy",
+      "conference": "Independent",
+      "rating_retro": 0.00676384509174995,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 116,
+      "team": "Kent State",
+      "conference": "Independent",
+      "rating_retro": 0.006751940126804534,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 117,
+      "team": "Florida International",
+      "conference": "Independent",
+      "rating_retro": 0.0066894746848240845,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 118,
+      "team": "UCLA",
+      "conference": "Pac-12",
+      "rating_retro": 0.006661958133266535,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 119,
+      "team": "Cincinnati",
+      "conference": "Independent",
+      "rating_retro": 0.006659259055992955,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 120,
+      "team": "UCF",
+      "conference": "Independent",
+      "rating_retro": 0.006599773121965963,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 121,
+      "team": "Appalachian State",
+      "conference": "Independent",
+      "rating_retro": 0.006552621893297628,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 122,
+      "team": "Tulsa",
+      "conference": "Independent",
+      "rating_retro": 0.006525077843737184,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 123,
+      "team": "California",
+      "conference": "Pac-12",
+      "rating_retro": 0.0064782904854782195,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 124,
+      "team": "San Diego State",
+      "conference": "Independent",
+      "rating_retro": 0.00646561789634427,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 125,
+      "team": "Liberty",
+      "conference": "Independent",
+      "rating_retro": 0.006462662667077016,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 126,
+      "team": "Charlotte",
+      "conference": "Independent",
+      "rating_retro": 0.006426319972080785,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 127,
+      "team": "Eastern Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.006415473548972327,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 128,
+      "team": "Wyoming",
+      "conference": "Independent",
+      "rating_retro": 0.006345908293045632,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 129,
+      "team": "Central Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.006296397659758096,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 130,
+      "team": "Utah",
+      "conference": "Pac-12",
+      "rating_retro": 0.006253562534059914,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 131,
+      "team": "Ball State",
+      "conference": "Independent",
+      "rating_retro": 0.006229822020005442,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 132,
+      "team": "Stanford",
+      "conference": "Pac-12",
+      "rating_retro": 0.006114868477248994,
+      "conf_weight": 0.08762031398862062,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 133,
+      "team": "Massachusetts",
+      "conference": "Independent",
+      "rating_retro": 0.005963613119231411,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 134,
+      "team": "Hawaii",
+      "conference": "Independent",
+      "rating_retro": 0.005939793499768314,
+      "conf_weight": 0.030133434363949718,
+      "quality_wins": [
+        "Ohio State",
+        "Penn State",
+        "Virginia Tech"
+      ],
+      "uncertainty": 0.0
+    }
+  ],
+  "conference_ratings": {
+    "Pac-12": 0.08762031398862062,
+    "American": 0.05465340722455822,
+    "Sun Belt": 0.05439639649426913,
+    "Independent": 0.030133434363949718,
+    "Big Ten": 0.1667882905836856,
+    "Big 12": 0.09743612495896019,
+    "MAC": 0.0483859684369334,
+    "Conference USA": 0.025652867300919,
+    "ACC": 0.19502077785974134,
+    "Mountain West": 0.050530812128987475,
+    "SEC": 0.18938160665937548
+  }
+}
