@@ -275,17 +275,27 @@ def final_rankings(season=None):
             current_year = datetime.now().year
             season = current_year - 1 if datetime.now().month <= 7 else current_year
         
-        # Load cached final rankings data directly
-        cache_file = f'data/cache/final_rankings_{season}.json'
+        # Load authentic rankings data
+        authentic_file = f'exports/{season}_authentic.json'
+        cache_file = f'data/cache/final_rankings_{season}_authentic.json'
+        
+        rankings_data = None
+        
+        # Try authentic export file first
         try:
-            with open(cache_file, 'r') as f:
+            with open(authentic_file, 'r') as f:
                 rankings_data = json.load(f)
         except FileNotFoundError:
-            return render_template('final_rankings.html', 
-                                 rankings=[], 
-                                 metadata={'title': f'{season} Final Rankings', 'season': season},
-                                 ratings_data=None,
-                                 error=f"Final rankings for {season} not available yet")
+            # Try cached authentic file
+            try:
+                with open(cache_file, 'r') as f:
+                    rankings_data = json.load(f)
+            except FileNotFoundError:
+                return render_template('final_rankings.html', 
+                                     rankings=[], 
+                                     metadata={'title': f'{season} Final Rankings', 'season': season},
+                                     ratings_data=None,
+                                     error=f"Final rankings for {season} not available yet")
         
         rankings = rankings_data.get('rankings', [])
         metadata = rankings_data.get('metadata', {})
@@ -339,11 +349,23 @@ def api_final_rankings(season=None):
             current_year = datetime.now().year
             season = current_year - 1 if datetime.now().month <= 7 else current_year
         
-        scheduler = get_scheduler(config)
-        rankings_data = scheduler.get_final_rankings(season)
+        # Load authentic rankings data
+        authentic_file = f'exports/{season}_authentic.json'
+        cache_file = f'data/cache/final_rankings_{season}_authentic.json'
         
-        if not rankings_data:
-            return jsonify({'error': f'Final rankings for {season} not available'}), 404
+        rankings_data = None
+        
+        # Try authentic export file first
+        try:
+            with open(authentic_file, 'r') as f:
+                rankings_data = json.load(f)
+        except FileNotFoundError:
+            # Try cached authentic file
+            try:
+                with open(cache_file, 'r') as f:
+                    rankings_data = json.load(f)
+            except FileNotFoundError:
+                return jsonify({'error': f'Final rankings for {season} not available'}), 404
         
         return jsonify(rankings_data)
         
