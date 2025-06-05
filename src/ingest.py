@@ -140,7 +140,14 @@ class CFBDataIngester:
             if not all([home_team, away_team, home_score is not None, away_score is not None]):
                 continue
                 
-            # Determine winner/loser
+            # Determine winner/loser and venue
+            if game.get('neutralSite', False):
+                venue = 'neutral'
+            elif home_score > away_score:
+                venue = 'home'
+            else:
+                venue = 'away'
+                
             if home_score > away_score:
                 winner, loser = home_team, away_team
                 winner_score, loser_score = home_score, away_score
@@ -151,10 +158,6 @@ class CFBDataIngester:
                 winner_score, loser_score = away_score, home_score
                 winner_conf, loser_conf = away_conf, home_conf
                 winner_home = False
-                
-            # Handle neutral site games
-            if game.get('neutral_site', False):
-                venue = 'neutral'
                 
             processed_game = {
                 'game_id': game.get('id'),
@@ -168,8 +171,11 @@ class CFBDataIngester:
                 'margin': abs(winner_score - loser_score),
                 'venue': venue,
                 'neutral_site': game.get('neutral_site', False),
-                'winner_conference': game.get('home_team') == winner and game.get('home_conference') or game.get('away_conference'),
-                'loser_conference': game.get('home_team') == loser and game.get('home_conference') or game.get('away_conference'),
+                'winner_conference': winner_conf,
+                'loser_conference': loser_conf,
+                'points_winner': winner_score,
+                'points_loser': loser_score,
+                'winner_home': winner_home,
                 'date': game.get('start_date'),
                 'is_bowl': game.get('season_type') == 'postseason'
             }

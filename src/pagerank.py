@@ -11,9 +11,9 @@ import logging
 class PageRankCalculator:
     def __init__(self, config: Dict):
         self.config = config
-        self.damping = config['pagerank']['damping']
-        self.tolerance = config['pagerank']['tolerance'] 
-        self.max_iterations = config['pagerank']['max_iterations']
+        self.damping = float(config['pagerank']['damping'])
+        self.tolerance = float(config['pagerank']['tolerance'])
+        self.max_iterations = int(config['pagerank']['max_iterations'])
         self.logger = logging.getLogger(__name__)
     
     def pagerank(self, G: nx.DiGraph, personalization: Optional[Dict] = None,
@@ -75,7 +75,7 @@ class PageRankCalculator:
             pr_new = self.damping * M.dot(pr) + (1 - self.damping) * pers
             
             # Check convergence
-            diff = np.abs(pr_new - pr).max()
+            diff = float(np.abs(pr_new - pr).max())
             if diff < self.tolerance:
                 self.logger.debug(f"PageRank converged in {iteration + 1} iterations")
                 break
