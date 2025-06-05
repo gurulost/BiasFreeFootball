@@ -86,8 +86,8 @@ class WeightCalculator:
         # Credit for winner (upset factor)
         credit = (1 - p_exp) / (0.5**self.risk_b)
         
-        # Penalty for loser (reduced to prevent tough schedule penalties)
-        penalty = 0.2 * (p_exp / 0.5)**self.risk_b
+        # Penalty for loser (expected loss factor)
+        penalty = (p_exp / 0.5)**self.risk_b
         
         return credit, penalty
 
