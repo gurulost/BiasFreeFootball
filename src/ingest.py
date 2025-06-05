@@ -114,19 +114,37 @@ class CFBDataIngester:
         return all_games
     
     def fetch_results_upto_bowls(self, season: int) -> List[Dict]:
-        """Fetch all completed games including bowls"""
+        """Fetch all completed games including bowls - FBS teams only"""
         all_games = []
         
-        # Regular season
-        regular_games = self.fetch_games(season, season_type='regular')
-        all_games.extend(regular_games)
+        # Get FBS teams list for strict filtering
+        fbs_teams = self.fetch_teams(season, division='fbs')
+        fbs_team_names = {team['school'] for team in fbs_teams}
+        self.logger.info(f"Loaded {len(fbs_team_names)} FBS teams for filtering")
         
-        # Postseason
-        try:
-            postseason_games = self.fetch_games(season, season_type='postseason')
-            all_games.extend(postseason_games)
-        except Exception as e:
-            self.logger.warning(f"Failed to fetch postseason games: {e}")
+        # Regular season games
+        regular_games = self.fetch_games(season, season_type='regular')
+        # Filter for FBS-only games
+        fbs_regular_games = [g for g in regular_games 
+                            if g.get('home_team') in fbs_team_names and 
+                               g.get('away_team') in fbs_team_names]
+        all_games.extend(fbs_regular_games)
+        
+        # Postseason games
+        bowl_games = self.fetch_games(season, season_type='postseason')
+        # Filter for FBS-only bowl games
+        fbs_bowl_games = [g for g in bowl_games 
+                         if g.get('home_team') in fbs_team_names and 
+                            g.get('away_team') in fbs_team_names]
+        all_games.extend(fbs_bowl_games)
+        
+        self.logger.info(f"Total FBS-only games: {len(all_games)} (regular: {len(fbs_regular_games)}, bowls: {len(fbs_bowl_games)})")
+        
+        # Save raw data
+        raw_path = f"{self.config['paths']['data_raw']}/games_{season}_complete.json"
+        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
+        with open(raw_path, 'w') as f:
+            json.dump(all_games, f, indent=2)
             
         return all_games
     

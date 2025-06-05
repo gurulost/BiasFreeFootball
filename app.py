@@ -118,9 +118,9 @@ def api_bias_metrics():
         logging.error(f"API error: {e}")
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/run-pipeline', methods=['POST'])
+@app.route('/api/run_pipeline')
 def api_run_pipeline():
-    """API endpoint to trigger intelligent pipeline runs"""
+    """API endpoint to trigger intelligent FBS-only pipeline runs"""
     try:
         from src.season_utils import get_pipeline_recommendation, should_use_retro_rankings
         
@@ -128,51 +128,60 @@ def api_run_pipeline():
         recommendation = get_pipeline_recommendation()
         
         if recommendation['pipeline'] == 'retro' or should_use_retro_rankings():
-            # Between seasons - automatically use RETRO pipeline for definitive rankings
+            # Between seasons - automatically use RETRO pipeline for definitive FBS rankings
             from src.retro_pipeline import run_retro
             result = run_retro(season=recommendation['season'], max_outer=6)
             
-            if result['success']:
+            if result.get('success'):
                 return jsonify({
                     'success': True,
-                    'message': f"Definitive {recommendation['season']} season rankings",
+                    'message': f"Definitive {recommendation['season']} FBS season rankings",
                     'pipeline_type': 'retro',
                     'reason': recommendation['reason'],
                     'season': recommendation['season'],
-                    'result': result
+                    'games_processed': result.get('metrics', {}).get('games_processed', 0),
+                    'teams_ranked': len(result.get('team_ratings', {})),
+                    'neutrality_metric': result.get('metrics', {}).get('neutrality_metric', 0)
                 })
             else:
                 return jsonify({
                     'success': False,
-                    'error': result['error'],
+                    'error': result.get('error', 'Unknown error'),
                     'pipeline_type': 'retro'
                 }), 500
                 
         else:
-            # Active season - use live pipeline for current week
+            # Active season - use live pipeline for current week FBS games
             from src.live_pipeline import run_live
             result = run_live(week=recommendation['week'], season=recommendation['season'])
             
-            if result['success']:
+            if result.get('success'):
                 return jsonify({
                     'success': True,
-                    'message': f"Week {recommendation['week']} live rankings",
+                    'message': f"Week {recommendation['week']} FBS live rankings",
                     'pipeline_type': 'live',
                     'reason': recommendation['reason'],
                     'week': recommendation['week'],
                     'season': recommendation['season'],
-                    'result': result
+                    'games_processed': result.get('metrics', {}).get('games_processed', 0),
+                    'teams_ranked': len(result.get('team_ratings', {})),
+                    'neutrality_metric': result.get('metrics', {}).get('neutrality_metric', 0)
                 })
             else:
                 return jsonify({
                     'success': False,
-                    'error': result['error'],
+                    'error': result.get('error', 'Unknown error'),
                     'pipeline_type': 'live'
                 }), 500
         
     except Exception as e:
-        logging.error(f"Pipeline error: {e}")
+        logging.error(f"FBS Pipeline error: {e}")
         return jsonify({"error": str(e)}), 500
+
+@app.route('/api/run-pipeline', methods=['POST'])
+def api_run_pipeline_post():
+    """API endpoint to trigger pipeline runs via POST"""
+    return api_run_pipeline()
 
 @app.route('/api/export/<format>')
 def api_export(format):
