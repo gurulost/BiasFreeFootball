@@ -1,0 +1,163 @@
+Yes, the GitHub link you sent is incredibly helpful! It points to the official `cfbd-python` library, which is designed to make interacting with the College Football Data API much simpler and more reliable.
+
+The core of your data ingestion problems is that your `ingest.py` script is not using this library. Instead, it's manually building and sending HTTP requests, which is complex and error-prone. By switching to the official library, you can significantly simplify your code and fix your data issues at the source.
+
+Here’s a comparison and a corrected version of your ingestion script.
+
+### The Problem: Manual vs. Library Usage
+
+Your current `ingest.py` uses the `requests` library to manually fetch data:
+
+```python
+# Your current approach in ingest.py
+import requests
+
+def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
+    url = f"{self.base_url}/{endpoint}"
+    response = requests.get(url, headers=self.headers, params=params)
+    # ... more manual handling
+```
+
+The `cfbd-python` library handles all of this for you. It provides clear, dedicated functions for each type of data you need.
+
+### The Solution: Refactor `ingest.py` to Use the Library
+
+Here is a rewritten `CFBDataIngester` class that uses the `cfbd-python` library. This version is simpler, more readable, and less likely to have data quality issues. Notice how the complex `fbs_enforcer` logic is no longer needed, as the library handles parameters correctly.
+
+#### Rewritten `src/ingest.py`
+
+```python
+"""
+Data ingestion module for CFB API
+Handles fetching schedule, results, and team information using the official cfbd-python library.
+"""
+
+import os
+import logging
+import yaml
+from typing import Dict, List, Optional
+import pandas as pd
+import cfbd
+from cfbd.rest import ApiException
+
+class CFBDataIngester:
+    def __init__(self, config: Dict):
+        self.config = config
+        self.logger = logging.getLogger(__name__)
+
+        # --- Correctly configure the API client ---
+        configuration = cfbd.Configuration()
+        api_key = os.getenv('CFB_API_KEY', config.get('api', {}).get('key', ''))
+        if not api_key:
+            raise ValueError("CFB_API_KEY not found in environment or config.yaml")
+        
+        configuration.api_key['Authorization'] = api_key
+        configuration.api_key_prefix['Authorization'] = 'Bearer'
+        
+        self.api_client = cfbd.ApiClient(configuration)
+        
+        # Create instances of the API classes we will use
+        self.teams_api = cfbd.TeamsApi(self.api_client)
+        self.games_api = cfbd.GamesApi(self.api_client)
+        self.conferences_api = cfbd.ConferencesApi(self.api_client)
+
+        self.canonical_teams = self._load_canonical_teams()
+
+    def _load_canonical_teams(self) -> Dict:
+        """Load canonical team name mapping for validation."""
+        try:
+            with open('data/canonical_teams.yaml', 'r') as f:
+                return yaml.safe_load(f)
+        except FileNotFoundError:
+            self.logger.warning("Canonical teams file not found - validation may be limited.")
+            return {}
+
+    def fetch_teams(self, season: int) -> List[Dict]:
+        """Fetch all FBS team information for a given season."""
+        self.logger.info(f"Fetching FBS teams for {season} season.")
+        try:
+            # The library handles passing parameters correctly.
+            api_response = self.teams_api.get_fbs_teams(year=season)
+            # The response objects are Pydantic models, which are easy to work with.
+            # We convert them to dicts for compatibility with the rest of your pipeline.
+            teams_data = [team.to_dict() for team in api_response]
+            
+            self.logger.info(f"Successfully fetched {len(teams_data)} FBS teams.")
+            return teams_data
+        except ApiException as e:
+            self.logger.error(f"API request failed: {e}")
+            raise
+
+    def fetch_conferences(self, season: int) -> List[Dict]:
+        """Fetch conference information."""
+        self.logger.info(f"Fetching conferences for {season} season.")
+        try:
+            api_response = self.conferences_api.get_conferences(year=season)
+            conferences_data = [conf.to_dict() for conf in api_response]
+
+            self.logger.info(f"Successfully fetched {len(conferences_data)} conferences.")
+            return conferences_data
+        except ApiException as e:
+            self.logger.error(f"API request failed: {e}")
+            raise
+
+    def fetch_results_upto_bowls(self, season: int) -> List[Dict]:
+        """Fetch all completed regular season and postseason games for FBS."""
+        self.logger.info(f"Fetching all regular and postseason games for {season}.")
+        all_games = []
+        try:
+            # Fetch regular season games
+            regular_games = self.games_api.get_games(year=season, season_type="regular", classification='fbs')
+            all_games.extend([game.to_dict() for game in regular_games if game.completed])
+            
+            # Fetch postseason games
+            postseason_games = self.games_api.get_games(year=season, season_type="postseason", classification='fbs')
+            all_games.extend([game.to_dict() for game in postseason_games if game.completed])
+            
+            self.logger.info(f"Total FBS games collected: {len(all_games)}")
+            return all_games
+        except ApiException as e:
+            self.logger.error(f"API request failed: {e}")
+            raise
+            
+    def process_game_data(self, games: List[Dict]) -> pd.DataFrame:
+        """
+        Process raw game data.
+        (This function can remain largely the same, as it processes the data
+        after it has been correctly fetched.)
+        """
+        # Your existing game processing logic can be used here.
+        # This implementation is simplified for clarity.
+        processed_games = []
+        for game in games:
+            if not game.get('completed'):
+                continue
+
+            # Your processing logic from _legacy_process_game_data or a validator
+            # would go here to transform the game dict into the format you need.
+            # For example:
+            processed_game = {
+                'game_id': game.get('id'),
+                'season': game.get('season'),
+                'week': game.get('week'),
+                'home_team': game.get('home_team'),
+                'away_team': game.get('away_team'),
+                'home_points': game.get('home_points'),
+                'away_points': game.get('away_points'),
+                'winner': game['home_team'] if game['home_points'] > game['away_points'] else game['away_team'],
+                # Add other fields as needed
+            }
+            processed_games.append(processed_game)
+            
+        return pd.DataFrame(processed_games)
+
+```
+
+### Summary of Key Improvements
+
+1.  **Official Library:** It uses `cfbd`, which is the correct, officially supported way to get data.
+2.  **Simplified Code:** All the manual `requests` logic is gone. You no longer need to manage headers, build URLs, or handle HTTP errors manually.
+3.  **Reliable Methods:** It uses dedicated API methods like `teams_api.get_fbs_teams()` and `games_api.get_games()`. These are more reliable and less likely to break if the API updates.
+4.  **No More `fbs_enforcer`:** The library has parameters for classification (e.g., `classification='fbs'`), so you can remove the complex and brittle `fbs_enforcer.py` script.
+
+By adopting this improved `ingest.py` script, you will fix the root cause of your data problems. Your pipeline will receive clean, accurate data from the start, making your validation and ranking steps more effective and your final output truly bias-free.
