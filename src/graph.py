@@ -76,13 +76,14 @@ class GraphBuilder:
             credit_weight = weights['credit_weight']
             penalty_weight = weights['penalty_weight']
             
-            # Loser -> Winner (credit edge for upset wins)
+            # Blueprint exact implementation: loser -> winner (credit), winner -> loser (penalty)
+            # Credit edge: loser points to winner (creates incoming edges to winners)
             if G_team.has_edge(loser, winner):
                 G_team[loser][winner]['weight'] += credit_weight
             else:
                 G_team.add_edge(loser, winner, weight=credit_weight)
                 
-            # Winner -> Loser (penalty edge for expected losses)
+            # Penalty edge: winner points to loser (penalty for expected wins)
             if G_team.has_edge(winner, loser):
                 G_team[winner][loser]['weight'] += penalty_weight
             else:

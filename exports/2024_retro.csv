@@ -1,24 +1,24 @@
 # CFB Rankings Export
-# Generated: 2025-06-05T06:36:55.210483
+# Generated: 2025-06-05T06:45:18.152064
 # Season: 2024
 #
 rank_retro,team,conference,rating_retro,conf_weight,quality_wins,uncertainty
 1,Notre Dame,Independent,0.011493352700624451,0.5,"['Texas', 'Miami (OH)', 'Jacksonville State']",0.0
-2,Texas,Big 12,0.011016113210572115,0.0793148558931967,"['Notre Dame', 'Miami (OH)', 'Jacksonville State']",0.0
-3,Miami (OH),Independent,0.009991773768303453,0.5,"['Notre Dame', 'Texas', 'Jacksonville State']",0.0
-4,Jacksonville State,Independent,0.009377208060149985,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-5,Arizona State,Pac-12,0.009373463538695802,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+2,Texas,Big 12,0.011016113210572116,0.0793148558931967,"['Notre Dame', 'Miami (OH)', 'Jacksonville State']",0.0
+3,Miami (OH),Independent,0.009991773768303451,0.5,"['Notre Dame', 'Texas', 'Jacksonville State']",0.0
+4,Jacksonville State,Independent,0.009377208060149987,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+5,Arizona State,Pac-12,0.009373463538695802,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 6,SMU,Independent,0.009333033440855868,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 7,Ohio,Independent,0.0092789238566667,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-8,Boise State,Independent,0.009274852444885788,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+8,Boise State,Independent,0.009274852444885786,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 9,UConn,Independent,0.009232490253773453,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-10,Army,Independent,0.00914751762677086,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-11,Penn State,Big Ten,0.009106706386656279,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+10,Army,Independent,0.009147517626770862,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+11,Penn State,Big Ten,0.00910670638665628,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 12,Tulane,Independent,0.009067919420229878,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 13,Houston,Independent,0.00905140853081444,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 14,Memphis,Independent,0.00898191374388107,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-15,Colorado State,Independent,0.008942226339306112,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-16,Western Kentucky,Independent,0.008760847334733096,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+15,Colorado State,Independent,0.008942226339306114,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+16,Western Kentucky,Independent,0.008760847334733098,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 17,UNLV,Independent,0.008734271010325022,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 18,Temple,Independent,0.0086935963429816,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 19,Western Michigan,Independent,0.008660009837486247,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
@@ -26,114 +26,114 @@ rank_retro,team,conference,rating_retro,conf_weight,quality_wins,uncertainty
 21,Coastal Carolina,Independent,0.008588159485304392,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 22,Louisiana,Independent,0.008556588132285704,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 23,Sam Houston,Independent,0.008504964157911233,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-24,Louisiana Tech,Independent,0.008493046435144345,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+24,Louisiana Tech,Independent,0.008493046435144347,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 25,Arkansas State,Independent,0.008491449858449946,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-26,UTSA,Independent,0.008473837959446855,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-27,USC,Pac-12,0.00844922961385741,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-28,Fresno State,Independent,0.0084379761910916,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+26,UTSA,Independent,0.008473837959446857,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+27,USC,Pac-12,0.008449229613857412,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+28,Fresno State,Independent,0.008437976191091602,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 29,South Florida,Independent,0.008417976809304993,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-30,Akron,Independent,0.008402551419651835,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-31,Oklahoma,Big 12,0.008388667168081353,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-32,Ohio State,Big Ten,0.00837259944866643,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+30,Akron,Independent,0.008402551419651834,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+31,Oklahoma,Big 12,0.008388667168081355,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+32,Ohio State,Big Ten,0.00837259944866643,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 33,Bowling Green,Independent,0.008370770598642923,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 34,East Carolina,Independent,0.008370220207683006,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 35,BYU,Independent,0.008322520641046645,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 36,Marshall,Independent,0.008269782283830449,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-37,UTEP,Independent,0.008258970590555418,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+37,UTEP,Independent,0.00825897059055542,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 38,James Madison,Independent,0.00824677227579283,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 39,Old Dominion,Independent,0.008232258281492407,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-40,Toledo,Independent,0.008178993557947604,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-41,North Texas,Independent,0.008152701707779824,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-42,Northern Illinois,Independent,0.008148059962065302,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+40,Toledo,Independent,0.008178993557947602,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+41,North Texas,Independent,0.008152701707779826,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+42,Northern Illinois,Independent,0.008148059962065303,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 43,Georgia State,Independent,0.00812282887452302,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-44,California,Pac-12,0.008114134961019743,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+44,California,Pac-12,0.008114134961019743,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 45,San José State,Independent,0.008096709321774814,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 46,Utah State,Independent,0.008095243495150893,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-47,Kent State,Independent,0.008094648076668563,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-48,Nevada,Independent,0.008081191449847416,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+47,Kent State,Independent,0.008094648076668562,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+48,Nevada,Independent,0.008081191449847418,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 49,Southern Miss,Independent,0.008041391643039644,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-50,Colorado,Pac-12,0.008038385434780465,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-51,Middle Tennessee,Independent,0.008032613670741755,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+50,Colorado,Pac-12,0.008038385434780465,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+51,Middle Tennessee,Independent,0.008032613670741756,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 52,Navy,Independent,0.008027572690743948,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 53,New Mexico,Independent,0.008014356659585177,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-54,South Alabama,Independent,0.008003000622559181,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+54,South Alabama,Independent,0.008003000622559183,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 55,UL Monroe,Independent,0.007989263078815912,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 56,UAB,Independent,0.007981179194135093,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-57,Air Force,Independent,0.007976166611278172,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-58,Cincinnati,Independent,0.007964617386245772,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+57,Air Force,Independent,0.007976166611278174,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+58,Cincinnati,Independent,0.007964617386245773,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 59,Georgia Southern,Independent,0.007961479615929546,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 60,UCF,Independent,0.00791815486721666,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 61,Florida Atlantic,Independent,0.007847824900384843,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-62,Oregon,Pac-12,0.007841520218527971,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+62,Oregon,Pac-12,0.007841520218527971,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 63,New Mexico State,Independent,0.007801922322955596,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 64,Troy,Independent,0.007765111311263575,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-65,Stanford,Pac-12,0.007746119104721593,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-66,Rice,Independent,0.007694524295657298,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+65,Stanford,Pac-12,0.0077461191047215935,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+66,Rice,Independent,0.0076945242956572985,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 67,Texas State,Independent,0.0076589183247025095,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 68,Florida International,Independent,0.007640111618120211,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 69,Kennesaw State,Independent,0.00758551941133982,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-70,App State,Independent,0.007532654231554478,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-71,Charlotte,Independent,0.007520266252333315,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+70,App State,Independent,0.0075326542315544785,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+71,Charlotte,Independent,0.007520266252333314,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 72,Eastern Michigan,Independent,0.007465457177492083,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 73,Ball State,Independent,0.0074207101850086235,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-74,Michigan,Big Ten,0.00740217488556759,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+74,Michigan,Big Ten,0.007402174885567591,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 75,Tulsa,Independent,0.007362212129999152,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-76,Oregon State,Pac-12,0.007350783751606112,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-77,San Diego State,Independent,0.007336624080409223,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+76,Oregon State,Pac-12,0.007350783751606114,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+77,San Diego State,Independent,0.0073366240804092235,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 78,Central Michigan,Independent,0.007332046685857174,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 79,Liberty,Independent,0.007249397198217044,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 80,Massachusetts,Independent,0.007194482101859146,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-81,Washington,Pac-12,0.007165010108931071,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-82,Wyoming,Independent,0.007151625767874534,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-83,Arizona,Pac-12,0.0071213201930677,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-84,UCLA,Pac-12,0.007120066355015318,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-85,Washington State,Pac-12,0.007108863004589518,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-86,Kansas State,Big 12,0.006895410548248022,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-87,Virginia Tech,ACC,0.006875390405736347,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+81,Washington,Pac-12,0.007165010108931073,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+82,Wyoming,Independent,0.007151625767874535,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+83,Arizona,Pac-12,0.007121320193067701,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+84,UCLA,Pac-12,0.007120066355015318,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+85,Washington State,Pac-12,0.007108863004589519,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+86,Kansas State,Big 12,0.006895410548248023,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+87,Virginia Tech,ACC,0.006875390405736347,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 88,Hawai'i,Independent,0.006729701090598453,0.5,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-89,Indiana,Big Ten,0.006722374734984096,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-90,Georgia,SEC,0.006706175535985135,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-91,Tennessee,SEC,0.006692062710268374,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-92,Clemson,ACC,0.006684896275958352,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-93,Nebraska,Big Ten,0.006625034211335569,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-94,Alabama,SEC,0.006603190337964144,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-95,LSU,SEC,0.0065968047091099135,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-96,Ole Miss,SEC,0.006567688486715325,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-97,Florida,SEC,0.006549926202104671,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-98,Missouri,SEC,0.006540501126898128,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-99,TCU,Big 12,0.006517892508859126,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-100,Arkansas,SEC,0.006465422786070513,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-101,Texas Tech,Big 12,0.0063903401550463815,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-102,Vanderbilt,SEC,0.006353028277028103,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-103,Baylor,Big 12,0.006352582736256506,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-104,Rutgers,Big Ten,0.006349694002811048,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-105,Boston College,ACC,0.006231806457447398,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-106,Iowa State,Big 12,0.006212364103075643,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-107,Texas A&M,SEC,0.006193219528524802,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-108,Syracuse,ACC,0.006176165379704591,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-109,Illinois,Big Ten,0.0061396965018753295,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-110,NC State,ACC,0.006099239312520741,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-111,Louisville,ACC,0.006058694389667933,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+89,Indiana,Big Ten,0.006722374734984096,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+90,Georgia,SEC,0.006706175535985135,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+91,Tennessee,SEC,0.006692062710268373,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+92,Clemson,ACC,0.006684896275958351,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+93,Nebraska,Big Ten,0.006625034211335568,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+94,Alabama,SEC,0.006603190337964145,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+95,LSU,SEC,0.0065968047091099135,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+96,Ole Miss,SEC,0.006567688486715325,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+97,Florida,SEC,0.006549926202104671,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+98,Missouri,SEC,0.006540501126898129,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+99,TCU,Big 12,0.006517892508859127,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+100,Arkansas,SEC,0.006465422786070513,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+101,Texas Tech,Big 12,0.006390340155046383,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+102,Vanderbilt,SEC,0.006353028277028103,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+103,Baylor,Big 12,0.006352582736256507,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+104,Rutgers,Big Ten,0.006349694002811049,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+105,Boston College,ACC,0.006231806457447397,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+106,Iowa State,Big 12,0.006212364103075644,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+107,Texas A&M,SEC,0.006193219528524803,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+108,Syracuse,ACC,0.00617616537970459,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+109,Illinois,Big Ten,0.00613969650187533,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+110,NC State,ACC,0.006099239312520742,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+111,Louisville,ACC,0.006058694389667933,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 112,West Virginia,Big 12,0.006058223981015778,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-113,Iowa,Big Ten,0.0060129657581003025,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-114,Minnesota,Big Ten,0.006000691810382947,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-115,Florida State,ACC,0.005984477938081827,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-116,South Carolina,SEC,0.005971135138315981,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-117,Utah,Pac-12,0.005894788430425753,0.05191671043751008,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-118,Pittsburgh,ACC,0.005880795568104896,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-119,Mississippi State,SEC,0.0058219950653919435,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+113,Iowa,Big Ten,0.0060129657581003025,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+114,Minnesota,Big Ten,0.006000691810382947,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+115,Florida State,ACC,0.005984477938081828,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+116,South Carolina,SEC,0.005971135138315981,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+117,Utah,Pac-12,0.005894788430425753,0.05191671043751006,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+118,Pittsburgh,ACC,0.005880795568104896,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+119,Mississippi State,SEC,0.0058219950653919435,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 120,Kansas,Big 12,0.005811907780535425,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
 121,Oklahoma State,Big 12,0.005792541271781763,0.0793148558931967,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-122,Duke,ACC,0.005774025099760617,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-123,Wisconsin,Big Ten,0.005691345557027806,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-124,Auburn,SEC,0.005632406593056565,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-125,Georgia Tech,ACC,0.005574863044567237,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-126,Kentucky,SEC,0.005563831223270703,0.18076638830126981,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-127,Northwestern,Big Ten,0.005544962797878003,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-128,Michigan State,Big Ten,0.005540401866149664,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-129,Maryland,Big Ten,0.005477122902776632,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-130,Miami,ACC,0.005470998663443317,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-131,North Carolina,ACC,0.005352927249865014,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-132,Virginia,ACC,0.005304404381097358,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-133,Purdue,Big Ten,0.005183980014117429,0.16728416799379037,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
-134,Wake Forest,ACC,0.005092670929024641,0.13977274127393033,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+122,Duke,ACC,0.005774025099760616,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+123,Wisconsin,Big Ten,0.005691345557027806,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+124,Auburn,SEC,0.005632406593056566,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+125,Georgia Tech,ACC,0.005574863044567237,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+126,Kentucky,SEC,0.005563831223270704,0.18076638830126976,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+127,Northwestern,Big Ten,0.005544962797878003,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+128,Michigan State,Big Ten,0.0055404018661496645,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+129,Maryland,Big Ten,0.005477122902776631,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+130,Miami,ACC,0.005470998663443318,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+131,North Carolina,ACC,0.005352927249865013,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+132,Virginia,ACC,0.005304404381097357,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+133,Purdue,Big Ten,0.005183980014117428,0.16728416799379034,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
+134,Wake Forest,ACC,0.00509267092902464,0.1397727412739303,"['Notre Dame', 'Texas', 'Miami (OH)']",0.0
