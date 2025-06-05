@@ -388,6 +388,12 @@ class DataValidator:
             games_data.append({
                 'season': game.season,
                 'week': game.week,
+                'home_team': home_canonical['name'],
+                'away_team': away_canonical['name'],
+                'home_points': home_score,
+                'away_points': away_score,
+                'home_conference': home_canonical['conf'],
+                'away_conference': away_canonical['conf'],
                 'winner': winner_canonical['name'],
                 'loser': loser_canonical['name'],
                 'winner_score': winner_score,
