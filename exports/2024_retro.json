@@ -1,7 +1,7 @@
 {
   "metadata": {
     "season": 2024,
-    "timestamp": "2025-06-05T15:28:57.157762",
+    "timestamp": "2025-06-05T15:30:28.830111",
     "total_teams": 134,
     "total_conferences": 11,
     "pipeline_type": "retro"
@@ -11,7 +11,7 @@
       "rank_retro": 1,
       "team": "Notre Dame",
       "conference": "Independent",
-      "rating_retro": 0.01149335270062445,
+      "rating_retro": 0.011493352700624451,
       "conf_weight": 0.5,
       "quality_wins": [
         "Texas",
@@ -25,7 +25,7 @@
       "team": "Texas",
       "conference": "Big 12",
       "rating_retro": 0.011016113210572115,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Miami (OH)",
@@ -37,7 +37,7 @@
       "rank_retro": 3,
       "team": "Miami (OH)",
       "conference": "Independent",
-      "rating_retro": 0.00999177376830345,
+      "rating_retro": 0.009991773768303451,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -50,7 +50,7 @@
       "rank_retro": 4,
       "team": "Jacksonville State",
       "conference": "Independent",
-      "rating_retro": 0.009377208060149987,
+      "rating_retro": 0.009377208060149985,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -64,7 +64,7 @@
       "team": "Arizona State",
       "conference": "Pac-12",
       "rating_retro": 0.0093734635386958,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -102,7 +102,7 @@
       "rank_retro": 8,
       "team": "Boise State",
       "conference": "Independent",
-      "rating_retro": 0.009274852444885786,
+      "rating_retro": 0.009274852444885788,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -141,7 +141,7 @@
       "rank_retro": 11,
       "team": "Penn State",
       "conference": "Big Ten",
-      "rating_retro": 0.009106706386656279,
+      "rating_retro": 0.00910670638665628,
       "conf_weight": 0.16728416799379037,
       "quality_wins": [
         "Notre Dame",
@@ -219,7 +219,7 @@
       "rank_retro": 17,
       "team": "UNLV",
       "conference": "Independent",
-      "rating_retro": 0.008734271010325022,
+      "rating_retro": 0.00873427101032502,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -245,7 +245,7 @@
       "rank_retro": 19,
       "team": "Western Michigan",
       "conference": "Independent",
-      "rating_retro": 0.008660009837486247,
+      "rating_retro": 0.008660009837486245,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -258,7 +258,7 @@
       "rank_retro": 20,
       "team": "Buffalo",
       "conference": "Independent",
-      "rating_retro": 0.008623306516177603,
+      "rating_retro": 0.008623306516177601,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -284,7 +284,7 @@
       "rank_retro": 22,
       "team": "Louisiana",
       "conference": "Independent",
-      "rating_retro": 0.008556588132285704,
+      "rating_retro": 0.008556588132285705,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -310,7 +310,7 @@
       "rank_retro": 24,
       "team": "Louisiana Tech",
       "conference": "Independent",
-      "rating_retro": 0.008493046435144345,
+      "rating_retro": 0.008493046435144347,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -336,7 +336,7 @@
       "rank_retro": 26,
       "team": "UTSA",
       "conference": "Independent",
-      "rating_retro": 0.008473837959446855,
+      "rating_retro": 0.008473837959446857,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -350,7 +350,7 @@
       "team": "USC",
       "conference": "Pac-12",
       "rating_retro": 0.00844922961385741,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -362,7 +362,7 @@
       "rank_retro": 28,
       "team": "Fresno State",
       "conference": "Independent",
-      "rating_retro": 0.008437976191091599,
+      "rating_retro": 0.0084379761910916,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -401,8 +401,8 @@
       "rank_retro": 31,
       "team": "Oklahoma",
       "conference": "Big 12",
-      "rating_retro": 0.008388667168081353,
-      "conf_weight": 0.07931485589319671,
+      "rating_retro": 0.008388667168081355,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -414,7 +414,7 @@
       "rank_retro": 32,
       "team": "Ohio State",
       "conference": "Big Ten",
-      "rating_retro": 0.00837259944866643,
+      "rating_retro": 0.008372599448666432,
       "conf_weight": 0.16728416799379037,
       "quality_wins": [
         "Notre Dame",
@@ -453,7 +453,7 @@
       "rank_retro": 35,
       "team": "BYU",
       "conference": "Independent",
-      "rating_retro": 0.008322520641046643,
+      "rating_retro": 0.008322520641046645,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -557,7 +557,7 @@
       "rank_retro": 43,
       "team": "Georgia State",
       "conference": "Independent",
-      "rating_retro": 0.008122828874523022,
+      "rating_retro": 0.00812282887452302,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -571,7 +571,7 @@
       "team": "California",
       "conference": "Pac-12",
       "rating_retro": 0.008114134961019745,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -622,7 +622,7 @@
       "rank_retro": 48,
       "team": "Nevada",
       "conference": "Independent",
-      "rating_retro": 0.008081191449847416,
+      "rating_retro": 0.008081191449847418,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -649,7 +649,7 @@
       "team": "Colorado",
       "conference": "Pac-12",
       "rating_retro": 0.008038385434780465,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -661,7 +661,7 @@
       "rank_retro": 51,
       "team": "Middle Tennessee",
       "conference": "Independent",
-      "rating_retro": 0.008032613670741755,
+      "rating_retro": 0.008032613670741756,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -700,7 +700,7 @@
       "rank_retro": 54,
       "team": "South Alabama",
       "conference": "Independent",
-      "rating_retro": 0.008003000622559183,
+      "rating_retro": 0.008003000622559181,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -778,7 +778,7 @@
       "rank_retro": 60,
       "team": "UCF",
       "conference": "Independent",
-      "rating_retro": 0.007918154867216658,
+      "rating_retro": 0.00791815486721666,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -791,7 +791,7 @@
       "rank_retro": 61,
       "team": "Florida Atlantic",
       "conference": "Independent",
-      "rating_retro": 0.007847824900384843,
+      "rating_retro": 0.007847824900384845,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -805,7 +805,7 @@
       "team": "Oregon",
       "conference": "Pac-12",
       "rating_retro": 0.007841520218527971,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -817,7 +817,7 @@
       "rank_retro": 63,
       "team": "New Mexico State",
       "conference": "Independent",
-      "rating_retro": 0.007801922322955595,
+      "rating_retro": 0.007801922322955596,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -830,7 +830,7 @@
       "rank_retro": 64,
       "team": "Troy",
       "conference": "Independent",
-      "rating_retro": 0.0077651113112635764,
+      "rating_retro": 0.007765111311263575,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -844,7 +844,7 @@
       "team": "Stanford",
       "conference": "Pac-12",
       "rating_retro": 0.007746119104721593,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -856,7 +856,7 @@
       "rank_retro": 66,
       "team": "Rice",
       "conference": "Independent",
-      "rating_retro": 0.007694524295657298,
+      "rating_retro": 0.0076945242956572985,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -921,7 +921,7 @@
       "rank_retro": 71,
       "team": "Charlotte",
       "conference": "Independent",
-      "rating_retro": 0.007520266252333315,
+      "rating_retro": 0.007520266252333314,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -934,7 +934,7 @@
       "rank_retro": 72,
       "team": "Eastern Michigan",
       "conference": "Independent",
-      "rating_retro": 0.007465457177492082,
+      "rating_retro": 0.007465457177492083,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -960,7 +960,7 @@
       "rank_retro": 74,
       "team": "Michigan",
       "conference": "Big Ten",
-      "rating_retro": 0.00740217488556759,
+      "rating_retro": 0.007402174885567591,
       "conf_weight": 0.16728416799379037,
       "quality_wins": [
         "Notre Dame",
@@ -987,7 +987,7 @@
       "team": "Oregon State",
       "conference": "Pac-12",
       "rating_retro": 0.007350783751606112,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -999,7 +999,7 @@
       "rank_retro": 77,
       "team": "San Diego State",
       "conference": "Independent",
-      "rating_retro": 0.0073366240804092235,
+      "rating_retro": 0.007336624080409222,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -1012,7 +1012,7 @@
       "rank_retro": 78,
       "team": "Central Michigan",
       "conference": "Independent",
-      "rating_retro": 0.007332046685857175,
+      "rating_retro": 0.007332046685857174,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -1025,7 +1025,7 @@
       "rank_retro": 79,
       "team": "Liberty",
       "conference": "Independent",
-      "rating_retro": 0.007249397198217044,
+      "rating_retro": 0.0072493971982170455,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -1051,8 +1051,8 @@
       "rank_retro": 81,
       "team": "Washington",
       "conference": "Pac-12",
-      "rating_retro": 0.007165010108931072,
-      "conf_weight": 0.05191671043751008,
+      "rating_retro": 0.007165010108931073,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1064,7 +1064,7 @@
       "rank_retro": 82,
       "team": "Wyoming",
       "conference": "Independent",
-      "rating_retro": 0.007151625767874534,
+      "rating_retro": 0.007151625767874535,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -1078,7 +1078,7 @@
       "team": "Arizona",
       "conference": "Pac-12",
       "rating_retro": 0.007121320193067701,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1091,7 +1091,7 @@
       "team": "UCLA",
       "conference": "Pac-12",
       "rating_retro": 0.007120066355015318,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1104,7 +1104,7 @@
       "team": "Washington State",
       "conference": "Pac-12",
       "rating_retro": 0.007108863004589519,
-      "conf_weight": 0.05191671043751008,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1116,8 +1116,8 @@
       "rank_retro": 86,
       "team": "Kansas State",
       "conference": "Big 12",
-      "rating_retro": 0.006895410548248021,
-      "conf_weight": 0.07931485589319671,
+      "rating_retro": 0.006895410548248022,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1130,7 +1130,7 @@
       "team": "Virginia Tech",
       "conference": "ACC",
       "rating_retro": 0.006875390405736347,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1142,7 +1142,7 @@
       "rank_retro": 88,
       "team": "Hawai'i",
       "conference": "Independent",
-      "rating_retro": 0.006729701090598453,
+      "rating_retro": 0.006729701090598452,
       "conf_weight": 0.5,
       "quality_wins": [
         "Notre Dame",
@@ -1195,7 +1195,7 @@
       "team": "Clemson",
       "conference": "ACC",
       "rating_retro": 0.006684896275958351,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1207,7 +1207,7 @@
       "rank_retro": 93,
       "team": "Nebraska",
       "conference": "Big Ten",
-      "rating_retro": 0.006625034211335569,
+      "rating_retro": 0.006625034211335568,
       "conf_weight": 0.16728416799379037,
       "quality_wins": [
         "Notre Dame",
@@ -1220,7 +1220,7 @@
       "rank_retro": 94,
       "team": "Alabama",
       "conference": "SEC",
-      "rating_retro": 0.006603190337964145,
+      "rating_retro": 0.006603190337964144,
       "conf_weight": 0.1807663883012698,
       "quality_wins": [
         "Notre Dame",
@@ -1233,7 +1233,7 @@
       "rank_retro": 95,
       "team": "LSU",
       "conference": "SEC",
-      "rating_retro": 0.0065968047091099135,
+      "rating_retro": 0.006596804709109914,
       "conf_weight": 0.1807663883012698,
       "quality_wins": [
         "Notre Dame",
@@ -1285,8 +1285,8 @@
       "rank_retro": 99,
       "team": "TCU",
       "conference": "Big 12",
-      "rating_retro": 0.006517892508859126,
-      "conf_weight": 0.07931485589319671,
+      "rating_retro": 0.006517892508859127,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1312,7 +1312,7 @@
       "team": "Texas Tech",
       "conference": "Big 12",
       "rating_retro": 0.0063903401550463815,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1338,7 +1338,7 @@
       "team": "Baylor",
       "conference": "Big 12",
       "rating_retro": 0.006352582736256506,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1363,8 +1363,8 @@
       "rank_retro": 105,
       "team": "Boston College",
       "conference": "ACC",
-      "rating_retro": 0.006231806457447398,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.006231806457447399,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1377,7 +1377,7 @@
       "team": "Iowa State",
       "conference": "Big 12",
       "rating_retro": 0.006212364103075643,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1402,8 +1402,8 @@
       "rank_retro": 108,
       "team": "Syracuse",
       "conference": "ACC",
-      "rating_retro": 0.006176165379704591,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.006176165379704589,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1429,7 +1429,7 @@
       "team": "NC State",
       "conference": "ACC",
       "rating_retro": 0.006099239312520742,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1442,7 +1442,7 @@
       "team": "Louisville",
       "conference": "ACC",
       "rating_retro": 0.006058694389667933,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1454,8 +1454,8 @@
       "rank_retro": 112,
       "team": "West Virginia",
       "conference": "Big 12",
-      "rating_retro": 0.006058223981015778,
-      "conf_weight": 0.07931485589319671,
+      "rating_retro": 0.006058223981015777,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1493,8 +1493,8 @@
       "rank_retro": 115,
       "team": "Florida State",
       "conference": "ACC",
-      "rating_retro": 0.005984477938081828,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.005984477938081827,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1519,8 +1519,8 @@
       "rank_retro": 117,
       "team": "Utah",
       "conference": "Pac-12",
-      "rating_retro": 0.005894788430425753,
-      "conf_weight": 0.05191671043751008,
+      "rating_retro": 0.005894788430425754,
+      "conf_weight": 0.05191671043751009,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1532,8 +1532,8 @@
       "rank_retro": 118,
       "team": "Pittsburgh",
       "conference": "ACC",
-      "rating_retro": 0.005880795568104896,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.005880795568104895,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1559,7 +1559,7 @@
       "team": "Kansas",
       "conference": "Big 12",
       "rating_retro": 0.005811907780535425,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1572,7 +1572,7 @@
       "team": "Oklahoma State",
       "conference": "Big 12",
       "rating_retro": 0.005792541271781763,
-      "conf_weight": 0.07931485589319671,
+      "conf_weight": 0.0793148558931967,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1585,7 +1585,7 @@
       "team": "Duke",
       "conference": "ACC",
       "rating_retro": 0.005774025099760616,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1597,7 +1597,7 @@
       "rank_retro": 123,
       "team": "Wisconsin",
       "conference": "Big Ten",
-      "rating_retro": 0.005691345557027805,
+      "rating_retro": 0.005691345557027806,
       "conf_weight": 0.16728416799379037,
       "quality_wins": [
         "Notre Dame",
@@ -1610,7 +1610,7 @@
       "rank_retro": 124,
       "team": "Auburn",
       "conference": "SEC",
-      "rating_retro": 0.005632406593056566,
+      "rating_retro": 0.005632406593056565,
       "conf_weight": 0.1807663883012698,
       "quality_wins": [
         "Notre Dame",
@@ -1624,7 +1624,7 @@
       "team": "Georgia Tech",
       "conference": "ACC",
       "rating_retro": 0.005574863044567237,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1636,7 +1636,7 @@
       "rank_retro": 126,
       "team": "Kentucky",
       "conference": "SEC",
-      "rating_retro": 0.005563831223270703,
+      "rating_retro": 0.005563831223270704,
       "conf_weight": 0.1807663883012698,
       "quality_wins": [
         "Notre Dame",
@@ -1688,8 +1688,8 @@
       "rank_retro": 130,
       "team": "Miami",
       "conference": "ACC",
-      "rating_retro": 0.005470998663443317,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.005470998663443318,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1702,7 +1702,7 @@
       "team": "North Carolina",
       "conference": "ACC",
       "rating_retro": 0.005352927249865013,
-      "conf_weight": 0.13977274127393033,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1714,8 +1714,8 @@
       "rank_retro": 132,
       "team": "Virginia",
       "conference": "ACC",
-      "rating_retro": 0.005304404381097358,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.005304404381097357,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1740,8 +1740,8 @@
       "rank_retro": 134,
       "team": "Wake Forest",
       "conference": "ACC",
-      "rating_retro": 0.005092670929024641,
-      "conf_weight": 0.13977274127393033,
+      "rating_retro": 0.00509267092902464,
+      "conf_weight": 0.1397727412739303,
       "quality_wins": [
         "Notre Dame",
         "Texas",
@@ -1751,16 +1751,16 @@
     }
   ],
   "conference_ratings": {
-    "American Athletic": 0.0511776313166171,
+    "ACC": 0.1397727412739303,
     "Mountain West": 0.06624483360611241,
-    "Pac-12": 0.05191671043751008,
-    "Conference USA": 0.028598172898112832,
-    "Sun Belt": 0.052544834882482606,
-    "Mid-American": 0.07086423152710113,
+    "Pac-12": 0.05191671043751009,
+    "American Athletic": 0.05117763131661711,
     "SEC": 0.1807663883012698,
-    "Big 12": 0.07931485589319671,
+    "Sun Belt": 0.05254483488248261,
+    "Big 12": 0.0793148558931967,
+    "Mid-American": 0.07086423152710113,
+    "Conference USA": 0.028598172898112832,
     "Big Ten": 0.16728416799379037,
-    "ACC": 0.13977274127393033,
     "FBS Independents": 0.11151543186987686
   }
 }
