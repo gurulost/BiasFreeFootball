@@ -1,0 +1,90 @@
+rank_live,team,conference,rating_live,delta_rank,conf_weight,quality_wins,fbs_rank
+29,Miami (OH),Independent,0.001830641905987,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",1
+34,SMU,Independent,0.0018133999666674,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",2
+35,Ohio,Independent,0.0018123956091428,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",3
+39,Boise State,Independent,0.0017924536884927,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",4
+47,Texas,Big 12,0.0017717340099216,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",5
+55,Notre Dame,Independent,0.0017324708422262,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",6
+70,Tulane,Independent,0.0017040538212516,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",7
+77,Western Kentucky,Independent,0.0016875207721167,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",8
+78,Houston,Independent,0.0016861055595334,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",9
+83,Oklahoma,Big 12,0.0016810972045179,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",10
+87,Colorado State,Independent,0.0016724323321931,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",11
+95,Army,Independent,0.0016573418160333,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",12
+101,Cincinnati,Independent,0.0016515079233098,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",13
+103,Western Michigan,Independent,0.0016502234866482,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",14
+105,Louisiana,Independent,0.0016482125797952,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",15
+111,Arizona State,Pac-12,0.0016436745679579,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",16
+113,Memphis,Independent,0.0016364218307072,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",17
+119,UCF,Independent,0.001626176459834,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",18
+132,UAB,Independent,0.0016154142666753,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",19
+137,Coastal Carolina,Independent,0.0016098121047794,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",20
+139,Stanford,Pac-12,0.0016085540482977,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",21
+144,Air Force,Independent,0.0016038325092065,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",22
+148,Buffalo,Independent,0.0016023684539896,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",23
+168,UTSA,Independent,0.001583375913962,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",24
+180,Troy,Independent,0.001576820964996,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",25
+183,Oregon,Pac-12,0.0015755664369124,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",26
+187,Fresno State,Independent,0.0015724660587557,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",27
+207,Toledo,Independent,0.0015560692440268,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",28
+230,California,Pac-12,0.0015377873694963,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",29
+308,San Diego State,Independent,0.0014950684268106,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",30
+322,USC,Pac-12,0.0014856580242258,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",31
+343,Colorado,Pac-12,0.0014717029985223,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",32
+360,Oregon State,Pac-12,0.0014611460692608,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",33
+377,Navy,Independent,0.0014538079326981,0,0.5,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",34
+451,Arizona,Pac-12,0.0014078807506694,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",35
+535,UCLA,Pac-12,0.001357771798296,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",36
+538,Washington,Pac-12,0.0013558888812602,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",37
+600,Penn State,Big Ten,0.0012706904454832,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",38
+608,Washington State,Pac-12,0.001242566123256,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",39
+614,Kansas State,Big 12,0.0012211492019787,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",40
+615,Iowa State,Big 12,0.0012078750293455,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",41
+617,Florida State,ACC,0.0011980765794451,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",42
+618,Georgia,SEC,0.0011908835931412,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",43
+619,Clemson,ACC,0.0011849202494019,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",44
+622,Utah,Pac-12,0.0011558381754045,0,0.0185543424291609,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",45
+623,TCU,Big 12,0.001155363489827,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",46
+624,Kansas,Big 12,0.0011106774542584,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",47
+625,Louisville,ACC,0.0011089446524498,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",48
+626,Oklahoma State,Big 12,0.0010995635673915,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",49
+627,Florida,SEC,0.0010971733946267,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",50
+628,Kentucky,SEC,0.0010942121797387,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",51
+629,Alabama,SEC,0.0010809548103635,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",52
+630,Syracuse,ACC,0.001076943606797,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",53
+631,LSU,SEC,0.0010715531515848,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",54
+632,West Virginia,Big 12,0.0010545050759908,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",55
+633,Michigan,Big Ten,0.0010515833290846,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",56
+635,Missouri,SEC,0.0010454784493006,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",57
+636,Arkansas,SEC,0.001044728828041,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",58
+637,Tennessee,SEC,0.001042935365397,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",59
+638,Nebraska,Big Ten,0.0010355961793673,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",60
+639,Rutgers,Big Ten,0.0010308965635603,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",61
+640,Virginia,ACC,0.001029472634139,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",62
+641,Texas A&M,SEC,0.0010290461472571,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",63
+642,Boston College,ACC,0.0010239737855879,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",64
+643,South Carolina,SEC,0.0010163247209178,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",65
+644,Pittsburgh,ACC,0.0010157088619707,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",66
+645,Baylor,Big 12,0.001007038412589,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",67
+646,Mississippi State,SEC,0.0010060397121097,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",68
+647,Ole Miss,SEC,0.0010000868687015,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",69
+648,Indiana,Big Ten,0.0009968018149928,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",70
+649,NC State,ACC,0.0009921482434481,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",71
+650,Auburn,SEC,0.0009891112420586,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",72
+651,Vanderbilt,SEC,0.0009826684771476,0,0.0674301981147738,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",73
+652,Texas Tech,Big 12,0.0009767790338826,0,0.0322304829938464,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",74
+653,Wake Forest,ACC,0.0009764277207257,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",75
+654,Wisconsin,Big Ten,0.0009599839501841,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",76
+655,Virginia Tech,ACC,0.0009557920084927,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",77
+656,Maryland,Big Ten,0.0009436415063388,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",78
+657,Iowa,Big Ten,0.0009320927816861,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",79
+658,Michigan State,Big Ten,0.000906073999699,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",80
+659,Illinois,Big Ten,0.0009043414008315,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",81
+660,Miami,ACC,0.0009020040681546,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",82
+661,Duke,ACC,0.0008913963825257,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",83
+662,Minnesota,Big Ten,0.0008911132370036,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",84
+663,Georgia Tech,ACC,0.0008890638966054,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",85
+664,Northwestern,Big Ten,0.0008769604117253,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",86
+665,Purdue,Big Ten,0.0008670547543291,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",87
+666,North Carolina,ACC,0.0008287164226585,0,0.0626390370093378,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",88
+667,Ohio State,Big Ten,0.0008131673936839,0,0.0414271532861493,"['Defiance College', 'Lincoln (CA)', 'Virginia Union']",89

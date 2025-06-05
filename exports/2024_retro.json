@@ -1,7 +1,7 @@
 {
   "metadata": {
     "season": 2024,
-    "timestamp": "2025-06-05T06:05:09.426516",
+    "timestamp": "2025-06-05T06:08:38.082732",
     "total_teams": 707,
     "total_conferences": 72,
     "pipeline_type": "retro"
@@ -24,7 +24,7 @@
       "rank_retro": 2,
       "team": "Lincoln (CA)",
       "conference": "Independent",
-      "rating_retro": 0.0022562650657145375,
+      "rating_retro": 0.002256265065714537,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -37,7 +37,7 @@
       "rank_retro": 3,
       "team": "Valdosta State",
       "conference": "Independent",
-      "rating_retro": 0.0020674987042824493,
+      "rating_retro": 0.002067498704282449,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -50,7 +50,7 @@
       "rank_retro": 4,
       "team": "North Central College",
       "conference": "Independent",
-      "rating_retro": 0.0020592407263183917,
+      "rating_retro": 0.002059240726318392,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -76,7 +76,7 @@
       "rank_retro": 6,
       "team": "Ferris State",
       "conference": "Independent",
-      "rating_retro": 0.0020440578159540783,
+      "rating_retro": 0.002044057815954078,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -129,7 +129,7 @@
       "team": "Texas",
       "conference": "Big 12",
       "rating_retro": 0.0019657919716790256,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -154,7 +154,7 @@
       "rank_retro": 12,
       "team": "Virginia Union",
       "conference": "Independent",
-      "rating_retro": 0.0019214204840818502,
+      "rating_retro": 0.0019214204840818498,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -180,7 +180,7 @@
       "rank_retro": 14,
       "team": "Nebraska Wesleyan",
       "conference": "Independent",
-      "rating_retro": 0.0019060383059342828,
+      "rating_retro": 0.001906038305934283,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -245,7 +245,7 @@
       "rank_retro": 19,
       "team": "South Dakota State",
       "conference": "Independent",
-      "rating_retro": 0.001878753999229368,
+      "rating_retro": 0.0018787539992293685,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -271,7 +271,7 @@
       "rank_retro": 21,
       "team": "Central Oklahoma",
       "conference": "Independent",
-      "rating_retro": 0.0018667083867662802,
+      "rating_retro": 0.00186670838676628,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -284,7 +284,7 @@
       "rank_retro": 22,
       "team": "Mercer",
       "conference": "Independent",
-      "rating_retro": 0.0018576501055975155,
+      "rating_retro": 0.0018576501055975157,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -297,7 +297,7 @@
       "rank_retro": 23,
       "team": "Springfield",
       "conference": "Independent",
-      "rating_retro": 0.0018429609414222239,
+      "rating_retro": 0.0018429609414222243,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -323,7 +323,7 @@
       "rank_retro": 25,
       "team": "Alabama A&M",
       "conference": "Independent",
-      "rating_retro": 0.0018248346498716734,
+      "rating_retro": 0.0018248346498716736,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -349,7 +349,7 @@
       "rank_retro": 27,
       "team": "Minnesota State Mankato",
       "conference": "Independent",
-      "rating_retro": 0.0018008636577516736,
+      "rating_retro": 0.0018008636577516739,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -375,7 +375,7 @@
       "rank_retro": 29,
       "team": "Salisbury",
       "conference": "Independent",
-      "rating_retro": 0.00179335999905987,
+      "rating_retro": 0.0017933599990598702,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -388,7 +388,7 @@
       "rank_retro": 30,
       "team": "Stetson",
       "conference": "Independent",
-      "rating_retro": 0.0017909328715109945,
+      "rating_retro": 0.0017909328715109943,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -401,7 +401,7 @@
       "rank_retro": 31,
       "team": "South Dakota",
       "conference": "Independent",
-      "rating_retro": 0.0017896342202826541,
+      "rating_retro": 0.0017896342202826543,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -414,7 +414,7 @@
       "rank_retro": 32,
       "team": "Arkansas-Pine Bluff",
       "conference": "Independent",
-      "rating_retro": 0.0017849687197236176,
+      "rating_retro": 0.0017849687197236178,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -440,7 +440,7 @@
       "rank_retro": 34,
       "team": "Hope College",
       "conference": "Independent",
-      "rating_retro": 0.0017839484273808818,
+      "rating_retro": 0.001783948427380882,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -466,7 +466,7 @@
       "rank_retro": 36,
       "team": "Villanova",
       "conference": "Independent",
-      "rating_retro": 0.0017724892755039043,
+      "rating_retro": 0.0017724892755039046,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -492,7 +492,7 @@
       "rank_retro": 38,
       "team": "Hardin-Simmons",
       "conference": "Independent",
-      "rating_retro": 0.0017679567890061853,
+      "rating_retro": 0.0017679567890061855,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -544,7 +544,7 @@
       "rank_retro": 42,
       "team": "Grand Valley State University",
       "conference": "Independent",
-      "rating_retro": 0.0017602300168511127,
+      "rating_retro": 0.0017602300168511125,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -570,7 +570,7 @@
       "rank_retro": 44,
       "team": "Boise State",
       "conference": "Independent",
-      "rating_retro": 0.0017532066111267573,
+      "rating_retro": 0.001753206611126757,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -583,7 +583,7 @@
       "rank_retro": 45,
       "team": "Army",
       "conference": "Independent",
-      "rating_retro": 0.0017518943075612887,
+      "rating_retro": 0.0017518943075612884,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -596,7 +596,7 @@
       "rank_retro": 46,
       "team": "Depauw",
       "conference": "Independent",
-      "rating_retro": 0.0017512521455414639,
+      "rating_retro": 0.0017512521455414637,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -609,7 +609,7 @@
       "rank_retro": 47,
       "team": "Endicott College",
       "conference": "Independent",
-      "rating_retro": 0.0017508185250024162,
+      "rating_retro": 0.0017508185250024164,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -635,7 +635,7 @@
       "rank_retro": 49,
       "team": "Fort Lewis",
       "conference": "Independent",
-      "rating_retro": 0.0017390909316839698,
+      "rating_retro": 0.00173909093168397,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -648,7 +648,7 @@
       "rank_retro": 50,
       "team": "Slippery Rock",
       "conference": "Independent",
-      "rating_retro": 0.001738534795250819,
+      "rating_retro": 0.0017385347952508189,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -674,7 +674,7 @@
       "rank_retro": 52,
       "team": "Miles College",
       "conference": "Independent",
-      "rating_retro": 0.0017346727289090074,
+      "rating_retro": 0.0017346727289090076,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -687,7 +687,7 @@
       "rank_retro": 53,
       "team": "Lewis & Clark College",
       "conference": "Independent",
-      "rating_retro": 0.0017346584093130384,
+      "rating_retro": 0.0017346584093130381,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -700,7 +700,7 @@
       "rank_retro": 54,
       "team": "Eastern Kentucky",
       "conference": "Independent",
-      "rating_retro": 0.0017288716218499497,
+      "rating_retro": 0.0017288716218499499,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -778,7 +778,7 @@
       "rank_retro": 60,
       "team": "Rhode Island",
       "conference": "Independent",
-      "rating_retro": 0.0017154447958899126,
+      "rating_retro": 0.001715444795889913,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -791,7 +791,7 @@
       "rank_retro": 61,
       "team": "Saint John's (MN)",
       "conference": "Independent",
-      "rating_retro": 0.0017127000474429727,
+      "rating_retro": 0.001712700047442973,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -804,7 +804,7 @@
       "rank_retro": 62,
       "team": "Western Colorado",
       "conference": "Independent",
-      "rating_retro": 0.0017077695438220389,
+      "rating_retro": 0.0017077695438220387,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -817,7 +817,7 @@
       "rank_retro": 63,
       "team": "Missouri S&T",
       "conference": "Independent",
-      "rating_retro": 0.0017021793339644274,
+      "rating_retro": 0.0017021793339644276,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -856,7 +856,7 @@
       "rank_retro": 66,
       "team": "Southern",
       "conference": "Independent",
-      "rating_retro": 0.0016941235110527928,
+      "rating_retro": 0.0016941235110527926,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -921,7 +921,7 @@
       "rank_retro": 71,
       "team": "Wisconsin-Platteville",
       "conference": "Independent",
-      "rating_retro": 0.0016721121137562632,
+      "rating_retro": 0.0016721121137562634,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1012,7 +1012,7 @@
       "rank_retro": 78,
       "team": "Houston Christian",
       "conference": "Independent",
-      "rating_retro": 0.001653214913615103,
+      "rating_retro": 0.0016532149136151027,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1025,7 +1025,7 @@
       "rank_retro": 79,
       "team": "Texas Lutheran",
       "conference": "Independent",
-      "rating_retro": 0.0016495871269672177,
+      "rating_retro": 0.0016495871269672174,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1038,7 +1038,7 @@
       "rank_retro": 80,
       "team": "Coastal Carolina",
       "conference": "Independent",
-      "rating_retro": 0.001649498960704704,
+      "rating_retro": 0.0016494989607047043,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1051,7 +1051,7 @@
       "rank_retro": 81,
       "team": "St. Thomas (MN)",
       "conference": "Independent",
-      "rating_retro": 0.0016490635336117345,
+      "rating_retro": 0.0016490635336117348,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1064,7 +1064,7 @@
       "rank_retro": 82,
       "team": "Emory & Henry College",
       "conference": "Independent",
-      "rating_retro": 0.0016488784967071525,
+      "rating_retro": 0.0016488784967071527,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1181,7 +1181,7 @@
       "rank_retro": 91,
       "team": "Louisiana",
       "conference": "Independent",
-      "rating_retro": 0.0016431884020864035,
+      "rating_retro": 0.0016431884020864033,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1246,7 +1246,7 @@
       "rank_retro": 96,
       "team": "Lincoln (MO)",
       "conference": "Independent",
-      "rating_retro": 0.0016302819257967744,
+      "rating_retro": 0.0016302819257967742,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1272,8 +1272,8 @@
       "rank_retro": 98,
       "team": "Arizona State",
       "conference": "Pac-12",
-      "rating_retro": 0.0016295814614544796,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0016295814614544798,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -1285,7 +1285,7 @@
       "rank_retro": 99,
       "team": "Lehigh",
       "conference": "Independent",
-      "rating_retro": 0.0016239888002962677,
+      "rating_retro": 0.0016239888002962674,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1324,7 +1324,7 @@
       "rank_retro": 102,
       "team": "Roosevelt",
       "conference": "Independent",
-      "rating_retro": 0.001620607262565293,
+      "rating_retro": 0.0016206072625652931,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1350,7 +1350,7 @@
       "rank_retro": 104,
       "team": "Maryville College (TN)",
       "conference": "Independent",
-      "rating_retro": 0.0016192068442183723,
+      "rating_retro": 0.001619206844218372,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1376,7 +1376,7 @@
       "rank_retro": 106,
       "team": "East Carolina",
       "conference": "Independent",
-      "rating_retro": 0.001614647272894349,
+      "rating_retro": 0.0016146472728943487,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1402,7 +1402,7 @@
       "rank_retro": 108,
       "team": "Fresno State",
       "conference": "Independent",
-      "rating_retro": 0.0016126751114780844,
+      "rating_retro": 0.0016126751114780842,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1468,7 +1468,7 @@
       "team": "Oklahoma",
       "conference": "Big 12",
       "rating_retro": 0.0016055603594198845,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -1493,7 +1493,7 @@
       "rank_retro": 115,
       "team": "Arkansas State",
       "conference": "Independent",
-      "rating_retro": 0.001604850468258689,
+      "rating_retro": 0.0016048504682586889,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1636,7 +1636,7 @@
       "rank_retro": 126,
       "team": "Centre College Kentucky",
       "conference": "Independent",
-      "rating_retro": 0.0015978410418517387,
+      "rating_retro": 0.0015978410418517385,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1662,7 +1662,7 @@
       "rank_retro": 128,
       "team": "North Greenville",
       "conference": "Independent",
-      "rating_retro": 0.001591866812366199,
+      "rating_retro": 0.0015918668123661986,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1740,7 +1740,7 @@
       "rank_retro": 134,
       "team": "James Madison",
       "conference": "Independent",
-      "rating_retro": 0.001586991243956752,
+      "rating_retro": 0.0015869912439567522,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1792,7 +1792,7 @@
       "rank_retro": 138,
       "team": "University Of Charleston (WV)",
       "conference": "Independent",
-      "rating_retro": 0.0015803779020375159,
+      "rating_retro": 0.001580377902037516,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1818,7 +1818,7 @@
       "rank_retro": 140,
       "team": "Howard Payne",
       "conference": "Independent",
-      "rating_retro": 0.0015799688196951724,
+      "rating_retro": 0.0015799688196951726,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1883,7 +1883,7 @@
       "rank_retro": 145,
       "team": "Olivet College",
       "conference": "Independent",
-      "rating_retro": 0.001578285975204428,
+      "rating_retro": 0.0015782859752044279,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1909,7 +1909,7 @@
       "rank_retro": 147,
       "team": "Bluffton",
       "conference": "Independent",
-      "rating_retro": 0.001577404606891307,
+      "rating_retro": 0.0015774046068913073,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -1948,7 +1948,7 @@
       "rank_retro": 150,
       "team": "Missouri Southern State",
       "conference": "Independent",
-      "rating_retro": 0.0015760076556657512,
+      "rating_retro": 0.001576007655665751,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2039,7 +2039,7 @@
       "rank_retro": 157,
       "team": "Truman State",
       "conference": "Independent",
-      "rating_retro": 0.0015729277358781566,
+      "rating_retro": 0.0015729277358781568,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2078,7 +2078,7 @@
       "rank_retro": 160,
       "team": "Wisconsin-Lacrosse",
       "conference": "Independent",
-      "rating_retro": 0.0015697792471335468,
+      "rating_retro": 0.001569779247133547,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2169,7 +2169,7 @@
       "rank_retro": 167,
       "team": "Trinity University TX",
       "conference": "Independent",
-      "rating_retro": 0.0015634774295598959,
+      "rating_retro": 0.0015634774295598956,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2234,7 +2234,7 @@
       "rank_retro": 172,
       "team": "Tiffin",
       "conference": "Independent",
-      "rating_retro": 0.0015613372416380252,
+      "rating_retro": 0.001561337241638025,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2247,7 +2247,7 @@
       "rank_retro": 173,
       "team": "Northern Illinois",
       "conference": "Independent",
-      "rating_retro": 0.0015609927983195131,
+      "rating_retro": 0.0015609927983195133,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2273,7 +2273,7 @@
       "rank_retro": 175,
       "team": "Lindenwood",
       "conference": "Independent",
-      "rating_retro": 0.001556575372576433,
+      "rating_retro": 0.0015565753725764332,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2312,7 +2312,7 @@
       "rank_retro": 178,
       "team": "Robert Morris",
       "conference": "Independent",
-      "rating_retro": 0.0015542212473123335,
+      "rating_retro": 0.0015542212473123338,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2338,7 +2338,7 @@
       "rank_retro": 180,
       "team": "Hobart College",
       "conference": "Independent",
-      "rating_retro": 0.001553646388734116,
+      "rating_retro": 0.0015536463887341158,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2351,7 +2351,7 @@
       "rank_retro": 181,
       "team": "Northern Michigan",
       "conference": "Independent",
-      "rating_retro": 0.0015532846622638653,
+      "rating_retro": 0.0015532846622638649,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2364,7 +2364,7 @@
       "rank_retro": 182,
       "team": "Eastern Illinois",
       "conference": "Independent",
-      "rating_retro": 0.001553056244645477,
+      "rating_retro": 0.0015530562446454772,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2403,7 +2403,7 @@
       "rank_retro": 185,
       "team": "Adams State",
       "conference": "Independent",
-      "rating_retro": 0.0015501091936784084,
+      "rating_retro": 0.0015501091936784086,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2416,7 +2416,7 @@
       "rank_retro": 186,
       "team": "Northwest Missouri St",
       "conference": "Independent",
-      "rating_retro": 0.0015499655528463364,
+      "rating_retro": 0.0015499655528463366,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2455,8 +2455,8 @@
       "rank_retro": 189,
       "team": "California",
       "conference": "Pac-12",
-      "rating_retro": 0.0015482463089173469,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0015482463089173466,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -2481,7 +2481,7 @@
       "rank_retro": 191,
       "team": "Martin Luther",
       "conference": "Independent",
-      "rating_retro": 0.0015478161964861742,
+      "rating_retro": 0.0015478161964861744,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2520,7 +2520,7 @@
       "rank_retro": 194,
       "team": "Utah State",
       "conference": "Independent",
-      "rating_retro": 0.0015472262891406976,
+      "rating_retro": 0.0015472262891406978,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2533,7 +2533,7 @@
       "rank_retro": 195,
       "team": "Temple",
       "conference": "Independent",
-      "rating_retro": 0.0015471492520109016,
+      "rating_retro": 0.0015471492520109013,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2559,7 +2559,7 @@
       "rank_retro": 197,
       "team": "San José State",
       "conference": "Independent",
-      "rating_retro": 0.001545441670478932,
+      "rating_retro": 0.0015454416704789318,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2611,7 +2611,7 @@
       "rank_retro": 201,
       "team": "South Alabama",
       "conference": "Independent",
-      "rating_retro": 0.001543483005777946,
+      "rating_retro": 0.0015434830057779463,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2624,7 +2624,7 @@
       "rank_retro": 202,
       "team": "West Alabama",
       "conference": "Independent",
-      "rating_retro": 0.001542719954683529,
+      "rating_retro": 0.0015427199546835288,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2637,7 +2637,7 @@
       "rank_retro": 203,
       "team": "Nevada",
       "conference": "Independent",
-      "rating_retro": 0.001542264011346493,
+      "rating_retro": 0.0015422640113464932,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2650,7 +2650,7 @@
       "rank_retro": 204,
       "team": "Augustana University (SD)",
       "conference": "Independent",
-      "rating_retro": 0.001541771471133098,
+      "rating_retro": 0.0015417714711330982,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2702,7 +2702,7 @@
       "rank_retro": 208,
       "team": "Georgia Southern",
       "conference": "Independent",
-      "rating_retro": 0.0015387027973186715,
+      "rating_retro": 0.0015387027973186712,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2715,7 +2715,7 @@
       "rank_retro": 209,
       "team": "New Mexico Highlands",
       "conference": "Independent",
-      "rating_retro": 0.0015386438805437125,
+      "rating_retro": 0.0015386438805437123,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2728,7 +2728,7 @@
       "rank_retro": 210,
       "team": "Colgate",
       "conference": "Independent",
-      "rating_retro": 0.0015377413214054574,
+      "rating_retro": 0.001537741321405457,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2767,7 +2767,7 @@
       "rank_retro": 213,
       "team": "Limestone",
       "conference": "Independent",
-      "rating_retro": 0.001535968442012516,
+      "rating_retro": 0.0015359684420125162,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2832,7 +2832,7 @@
       "rank_retro": 218,
       "team": "Sewanee",
       "conference": "Independent",
-      "rating_retro": 0.0015325693503661286,
+      "rating_retro": 0.0015325693503661284,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -2897,7 +2897,7 @@
       "rank_retro": 223,
       "team": "Luther",
       "conference": "Independent",
-      "rating_retro": 0.0015274533023842101,
+      "rating_retro": 0.00152745330238421,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3040,7 +3040,7 @@
       "rank_retro": 234,
       "team": "Cincinnati",
       "conference": "Independent",
-      "rating_retro": 0.0015222876633560142,
+      "rating_retro": 0.0015222876633560144,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3118,7 +3118,7 @@
       "rank_retro": 240,
       "team": "Florida Atlantic",
       "conference": "Independent",
-      "rating_retro": 0.0015200793594864327,
+      "rating_retro": 0.001520079359486433,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3131,7 +3131,7 @@
       "rank_retro": 241,
       "team": "Trine University",
       "conference": "Independent",
-      "rating_retro": 0.0015200406298031264,
+      "rating_retro": 0.0015200406298031268,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3144,7 +3144,7 @@
       "rank_retro": 242,
       "team": "Berry College",
       "conference": "Independent",
-      "rating_retro": 0.0015199491772703902,
+      "rating_retro": 0.00151994917727039,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3170,7 +3170,7 @@
       "rank_retro": 244,
       "team": "Alabama State",
       "conference": "Independent",
-      "rating_retro": 0.0015184671053530365,
+      "rating_retro": 0.0015184671053530367,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3183,7 +3183,7 @@
       "rank_retro": 245,
       "team": "Penn State",
       "conference": "Big Ten",
-      "rating_retro": 0.0015177236255238553,
+      "rating_retro": 0.001517723625523855,
       "conf_weight": 0.06211703098049312,
       "quality_wins": [
         "Defiance College",
@@ -3222,7 +3222,7 @@
       "rank_retro": 248,
       "team": "Dubuque",
       "conference": "Independent",
-      "rating_retro": 0.0015164019689402307,
+      "rating_retro": 0.0015164019689402305,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3313,7 +3313,7 @@
       "rank_retro": 255,
       "team": "Anderson (IN)",
       "conference": "Independent",
-      "rating_retro": 0.001513151227071196,
+      "rating_retro": 0.0015131512270711962,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3326,7 +3326,7 @@
       "rank_retro": 256,
       "team": "Southern Illinois",
       "conference": "Independent",
-      "rating_retro": 0.0015120438499086903,
+      "rating_retro": 0.00151204384990869,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3430,7 +3430,7 @@
       "rank_retro": 264,
       "team": "Central Arkansas",
       "conference": "Independent",
-      "rating_retro": 0.0015063525210044153,
+      "rating_retro": 0.0015063525210044155,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3443,7 +3443,7 @@
       "rank_retro": 265,
       "team": "Sam Houston",
       "conference": "Independent",
-      "rating_retro": 0.0015062249604303835,
+      "rating_retro": 0.0015062249604303837,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3521,7 +3521,7 @@
       "rank_retro": 271,
       "team": "New Mexico State",
       "conference": "Independent",
-      "rating_retro": 0.001502800701752836,
+      "rating_retro": 0.0015028007017528358,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3535,7 +3535,7 @@
       "team": "Colorado",
       "conference": "Pac-12",
       "rating_retro": 0.0015022328334083892,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -3560,7 +3560,7 @@
       "rank_retro": 274,
       "team": "McMurry",
       "conference": "Independent",
-      "rating_retro": 0.0015020222025882422,
+      "rating_retro": 0.001502022202588242,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3586,7 +3586,7 @@
       "rank_retro": 276,
       "team": "Wisconsin-Stevens Pt",
       "conference": "Independent",
-      "rating_retro": 0.001501344363573162,
+      "rating_retro": 0.0015013443635731624,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3625,7 +3625,7 @@
       "rank_retro": 279,
       "team": "North Dakota",
       "conference": "Independent",
-      "rating_retro": 0.00149994078014809,
+      "rating_retro": 0.0014999407801480902,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3664,7 +3664,7 @@
       "rank_retro": 282,
       "team": "Winona State",
       "conference": "Independent",
-      "rating_retro": 0.0014986705970146947,
+      "rating_retro": 0.001498670597014695,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3729,7 +3729,7 @@
       "rank_retro": 287,
       "team": "Edward Waters",
       "conference": "Independent",
-      "rating_retro": 0.0014962351421549105,
+      "rating_retro": 0.0014962351421549103,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3755,7 +3755,7 @@
       "rank_retro": 289,
       "team": "Lagrange College",
       "conference": "Independent",
-      "rating_retro": 0.0014953582015390311,
+      "rating_retro": 0.0014953582015390314,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3768,8 +3768,8 @@
       "rank_retro": 290,
       "team": "Stanford",
       "conference": "Pac-12",
-      "rating_retro": 0.001494963661994697,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0014949636619946969,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -3781,7 +3781,7 @@
       "rank_retro": 291,
       "team": "Morgan State",
       "conference": "Independent",
-      "rating_retro": 0.0014948361822834497,
+      "rating_retro": 0.0014948361822834499,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3820,7 +3820,7 @@
       "rank_retro": 294,
       "team": "Towson",
       "conference": "Independent",
-      "rating_retro": 0.001494460263658387,
+      "rating_retro": 0.0014944602636583872,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -3885,7 +3885,7 @@
       "rank_retro": 299,
       "team": "Elon",
       "conference": "Independent",
-      "rating_retro": 0.0014935489604775067,
+      "rating_retro": 0.001493548960477507,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4028,7 +4028,7 @@
       "rank_retro": 310,
       "team": "Michigan Tech",
       "conference": "Independent",
-      "rating_retro": 0.0014886702232415731,
+      "rating_retro": 0.0014886702232415733,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4041,7 +4041,7 @@
       "rank_retro": 311,
       "team": "Shepherd",
       "conference": "Independent",
-      "rating_retro": 0.0014873496818684857,
+      "rating_retro": 0.001487349681868486,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4054,7 +4054,7 @@
       "rank_retro": 312,
       "team": "Texas A&M-Kingsville",
       "conference": "Independent",
-      "rating_retro": 0.0014868840914846328,
+      "rating_retro": 0.0014868840914846325,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4067,7 +4067,7 @@
       "rank_retro": 313,
       "team": "Texas State",
       "conference": "Independent",
-      "rating_retro": 0.0014868425799287154,
+      "rating_retro": 0.0014868425799287157,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4080,7 +4080,7 @@
       "rank_retro": 314,
       "team": "Southern Virginia",
       "conference": "Independent",
-      "rating_retro": 0.0014861670148705998,
+      "rating_retro": 0.0014861670148706,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4093,7 +4093,7 @@
       "rank_retro": 315,
       "team": "Kentucky Wesleyan",
       "conference": "Independent",
-      "rating_retro": 0.0014861427575849815,
+      "rating_retro": 0.0014861427575849817,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4119,8 +4119,8 @@
       "rank_retro": 317,
       "team": "Oregon",
       "conference": "Pac-12",
-      "rating_retro": 0.001485062618442578,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0014850626184425778,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -4133,7 +4133,7 @@
       "team": "USC",
       "conference": "Pac-12",
       "rating_retro": 0.0014848886034079362,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -4197,7 +4197,7 @@
       "rank_retro": 323,
       "team": "Delaware State",
       "conference": "Independent",
-      "rating_retro": 0.001480940951119714,
+      "rating_retro": 0.0014809409511197143,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4210,7 +4210,7 @@
       "rank_retro": 324,
       "team": "Rowan",
       "conference": "Independent",
-      "rating_retro": 0.0014804116870504851,
+      "rating_retro": 0.0014804116870504856,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4236,7 +4236,7 @@
       "rank_retro": 326,
       "team": "Western Oregon",
       "conference": "Independent",
-      "rating_retro": 0.0014785675381499338,
+      "rating_retro": 0.0014785675381499335,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4275,7 +4275,7 @@
       "rank_retro": 329,
       "team": "Grambling",
       "conference": "Independent",
-      "rating_retro": 0.0014764768796269256,
+      "rating_retro": 0.0014764768796269258,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4288,7 +4288,7 @@
       "rank_retro": 330,
       "team": "Idaho State",
       "conference": "Independent",
-      "rating_retro": 0.0014751254815764795,
+      "rating_retro": 0.00147512548157648,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4301,7 +4301,7 @@
       "rank_retro": 331,
       "team": "Sacred Heart",
       "conference": "Independent",
-      "rating_retro": 0.0014749036660491478,
+      "rating_retro": 0.0014749036660491475,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4392,7 +4392,7 @@
       "rank_retro": 338,
       "team": "Old Dominion",
       "conference": "Independent",
-      "rating_retro": 0.0014684604186926337,
+      "rating_retro": 0.001468460418692634,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4405,7 +4405,7 @@
       "rank_retro": 339,
       "team": "UVA Wise",
       "conference": "Independent",
-      "rating_retro": 0.0014681252095933618,
+      "rating_retro": 0.001468125209593362,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4431,7 +4431,7 @@
       "rank_retro": 341,
       "team": "Ursinus",
       "conference": "Independent",
-      "rating_retro": 0.0014655122462984998,
+      "rating_retro": 0.0014655122462984996,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4470,7 +4470,7 @@
       "rank_retro": 344,
       "team": "Western New England",
       "conference": "Independent",
-      "rating_retro": 0.0014647351561858338,
+      "rating_retro": 0.0014647351561858336,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4561,7 +4561,7 @@
       "rank_retro": 351,
       "team": "Crown College",
       "conference": "Independent",
-      "rating_retro": 0.0014614484917203747,
+      "rating_retro": 0.0014614484917203749,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4587,7 +4587,7 @@
       "rank_retro": 353,
       "team": "Rensselaer",
       "conference": "Independent",
-      "rating_retro": 0.0014607640440386861,
+      "rating_retro": 0.001460764044038686,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4626,7 +4626,7 @@
       "rank_retro": 356,
       "team": "Cornell College (IA)",
       "conference": "Independent",
-      "rating_retro": 0.0014588231182013187,
+      "rating_retro": 0.0014588231182013185,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4665,7 +4665,7 @@
       "rank_retro": 359,
       "team": "Augustana (IL)",
       "conference": "Independent",
-      "rating_retro": 0.0014584184473464552,
+      "rating_retro": 0.0014584184473464554,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4704,7 +4704,7 @@
       "rank_retro": 362,
       "team": "Gustavus Adolphus",
       "conference": "Independent",
-      "rating_retro": 0.0014547563497559225,
+      "rating_retro": 0.0014547563497559223,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4717,7 +4717,7 @@
       "rank_retro": 363,
       "team": "Southwestern University",
       "conference": "Independent",
-      "rating_retro": 0.0014536358645806068,
+      "rating_retro": 0.0014536358645806065,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4769,7 +4769,7 @@
       "rank_retro": 367,
       "team": "Walsh",
       "conference": "Independent",
-      "rating_retro": 0.0014525009119795023,
+      "rating_retro": 0.0014525009119795026,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4782,7 +4782,7 @@
       "rank_retro": 368,
       "team": "Sacramento State",
       "conference": "Independent",
-      "rating_retro": 0.0014520298051031286,
+      "rating_retro": 0.0014520298051031288,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4847,7 +4847,7 @@
       "rank_retro": 373,
       "team": "West Florida",
       "conference": "Independent",
-      "rating_retro": 0.001449880425662433,
+      "rating_retro": 0.0014498804256624326,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4860,7 +4860,7 @@
       "rank_retro": 374,
       "team": "Southwestern Oklahoma State",
       "conference": "Independent",
-      "rating_retro": 0.0014486159734099936,
+      "rating_retro": 0.0014486159734099933,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4912,7 +4912,7 @@
       "rank_retro": 378,
       "team": "Carroll University (WI)",
       "conference": "Independent",
-      "rating_retro": 0.001444951291333982,
+      "rating_retro": 0.0014449512913339822,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4938,7 +4938,7 @@
       "rank_retro": 380,
       "team": "Wisconsin-Stout",
       "conference": "Independent",
-      "rating_retro": 0.0014438635480730402,
+      "rating_retro": 0.0014438635480730404,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -4951,7 +4951,7 @@
       "rank_retro": 381,
       "team": "Buena Vista",
       "conference": "Independent",
-      "rating_retro": 0.0014438515662560391,
+      "rating_retro": 0.001443851566256039,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5029,7 +5029,7 @@
       "rank_retro": 387,
       "team": "Florida International",
       "conference": "Independent",
-      "rating_retro": 0.0014403943757009528,
+      "rating_retro": 0.0014403943757009532,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5107,7 +5107,7 @@
       "rank_retro": 393,
       "team": "Davenport",
       "conference": "Independent",
-      "rating_retro": 0.0014373653726074212,
+      "rating_retro": 0.001437365372607421,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5133,7 +5133,7 @@
       "rank_retro": 395,
       "team": "Colorado Mesa",
       "conference": "Independent",
-      "rating_retro": 0.0014354300716910998,
+      "rating_retro": 0.0014354300716910996,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5146,7 +5146,7 @@
       "rank_retro": 396,
       "team": "Ball State",
       "conference": "Independent",
-      "rating_retro": 0.0014353837795514392,
+      "rating_retro": 0.0014353837795514394,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5172,7 +5172,7 @@
       "rank_retro": 398,
       "team": "Tufts",
       "conference": "Independent",
-      "rating_retro": 0.0014339518734913805,
+      "rating_retro": 0.0014339518734913803,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5237,7 +5237,7 @@
       "rank_retro": 403,
       "team": "Washington and Lee",
       "conference": "Independent",
-      "rating_retro": 0.0014320487671042046,
+      "rating_retro": 0.0014320487671042048,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5250,7 +5250,7 @@
       "rank_retro": 404,
       "team": "Fitchburg State",
       "conference": "Independent",
-      "rating_retro": 0.0014312146338430745,
+      "rating_retro": 0.0014312146338430747,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5289,7 +5289,7 @@
       "rank_retro": 407,
       "team": "Hawai'i",
       "conference": "Independent",
-      "rating_retro": 0.0014302671490866853,
+      "rating_retro": 0.001430267149086685,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5302,7 +5302,7 @@
       "rank_retro": 408,
       "team": "Arkansas-Monticello",
       "conference": "Independent",
-      "rating_retro": 0.001430125611007097,
+      "rating_retro": 0.0014301256110070969,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5315,7 +5315,7 @@
       "rank_retro": 409,
       "team": "Brevard College",
       "conference": "Independent",
-      "rating_retro": 0.0014301160211593995,
+      "rating_retro": 0.0014301160211593993,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5328,7 +5328,7 @@
       "rank_retro": 410,
       "team": "Worcester St",
       "conference": "Independent",
-      "rating_retro": 0.0014298855637419256,
+      "rating_retro": 0.0014298855637419259,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5380,7 +5380,7 @@
       "rank_retro": 414,
       "team": "Albany State GA",
       "conference": "Independent",
-      "rating_retro": 0.0014281277351181425,
+      "rating_retro": 0.0014281277351181427,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5393,7 +5393,7 @@
       "rank_retro": 415,
       "team": "Kenyon",
       "conference": "Independent",
-      "rating_retro": 0.0014272936253658945,
+      "rating_retro": 0.0014272936253658948,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5432,7 +5432,7 @@
       "rank_retro": 418,
       "team": "Southeastern Oklahoma State",
       "conference": "Independent",
-      "rating_retro": 0.0014255026373017697,
+      "rating_retro": 0.0014255026373017699,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5445,7 +5445,7 @@
       "rank_retro": 419,
       "team": "Hampton",
       "conference": "Independent",
-      "rating_retro": 0.0014252330831389093,
+      "rating_retro": 0.0014252330831389095,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5497,7 +5497,7 @@
       "rank_retro": 423,
       "team": "American International",
       "conference": "Independent",
-      "rating_retro": 0.0014239629608890463,
+      "rating_retro": 0.0014239629608890465,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5536,7 +5536,7 @@
       "rank_retro": 426,
       "team": "Central Michigan",
       "conference": "Independent",
-      "rating_retro": 0.0014208816291215376,
+      "rating_retro": 0.0014208816291215378,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5588,7 +5588,7 @@
       "rank_retro": 430,
       "team": "Union (NY)",
       "conference": "Independent",
-      "rating_retro": 0.0014190659525045474,
+      "rating_retro": 0.0014190659525045476,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5601,7 +5601,7 @@
       "rank_retro": 431,
       "team": "Bluefield State",
       "conference": "Independent",
-      "rating_retro": 0.001419064980868621,
+      "rating_retro": 0.0014190649808686212,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5627,7 +5627,7 @@
       "rank_retro": 433,
       "team": "McDaniel College",
       "conference": "Independent",
-      "rating_retro": 0.0014188048013117917,
+      "rating_retro": 0.001418804801311792,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5653,7 +5653,7 @@
       "rank_retro": 435,
       "team": "Hampden-Sydney",
       "conference": "Independent",
-      "rating_retro": 0.0014177503010914818,
+      "rating_retro": 0.0014177503010914816,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5705,7 +5705,7 @@
       "rank_retro": 439,
       "team": "Sioux Falls",
       "conference": "Independent",
-      "rating_retro": 0.001414057153950131,
+      "rating_retro": 0.0014140571539501313,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5718,7 +5718,7 @@
       "rank_retro": 440,
       "team": "Bowie State",
       "conference": "Independent",
-      "rating_retro": 0.0014140037301274668,
+      "rating_retro": 0.001414003730127467,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5783,7 +5783,7 @@
       "rank_retro": 445,
       "team": "Dickinson (PA)",
       "conference": "Independent",
-      "rating_retro": 0.001411622010250576,
+      "rating_retro": 0.0014116220102505762,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5796,7 +5796,7 @@
       "rank_retro": 446,
       "team": "Wabash College",
       "conference": "Independent",
-      "rating_retro": 0.0014116035694540603,
+      "rating_retro": 0.00141160356945406,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5835,7 +5835,7 @@
       "rank_retro": 449,
       "team": "College Of New Jersey",
       "conference": "Independent",
-      "rating_retro": 0.0014088706835125187,
+      "rating_retro": 0.0014088706835125185,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5887,7 +5887,7 @@
       "rank_retro": 453,
       "team": "Liberty",
       "conference": "Independent",
-      "rating_retro": 0.0014065297547553569,
+      "rating_retro": 0.001406529754755357,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5900,7 +5900,7 @@
       "rank_retro": 454,
       "team": "Bowdoin",
       "conference": "Independent",
-      "rating_retro": 0.0014044760269726606,
+      "rating_retro": 0.0014044760269726604,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5926,7 +5926,7 @@
       "rank_retro": 456,
       "team": "Austin Peay",
       "conference": "Independent",
-      "rating_retro": 0.0014037290254777274,
+      "rating_retro": 0.0014037290254777276,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -5939,7 +5939,7 @@
       "rank_retro": 457,
       "team": "Concordia University Chicago",
       "conference": "Independent",
-      "rating_retro": 0.0014033582658321319,
+      "rating_retro": 0.0014033582658321316,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6004,7 +6004,7 @@
       "rank_retro": 462,
       "team": "Lycoming",
       "conference": "Independent",
-      "rating_retro": 0.0014015019629204305,
+      "rating_retro": 0.0014015019629204303,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6017,7 +6017,7 @@
       "rank_retro": 463,
       "team": "Brockport",
       "conference": "Independent",
-      "rating_retro": 0.001400782413251989,
+      "rating_retro": 0.0014007824132519888,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6030,7 +6030,7 @@
       "rank_retro": 464,
       "team": "Wittenberg",
       "conference": "Independent",
-      "rating_retro": 0.0014007737273572481,
+      "rating_retro": 0.001400773727357248,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6082,7 +6082,7 @@
       "rank_retro": 468,
       "team": "Colorado School Of Mines",
       "conference": "Independent",
-      "rating_retro": 0.001398489158579858,
+      "rating_retro": 0.0013984891585798577,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6121,7 +6121,7 @@
       "rank_retro": 471,
       "team": "Eureka College",
       "conference": "Independent",
-      "rating_retro": 0.0013971994317796008,
+      "rating_retro": 0.0013971994317796006,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6147,7 +6147,7 @@
       "rank_retro": 473,
       "team": "Central Missouri",
       "conference": "Independent",
-      "rating_retro": 0.0013962633261548711,
+      "rating_retro": 0.001396263326154871,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6160,7 +6160,7 @@
       "rank_retro": 474,
       "team": "Eastern University",
       "conference": "Independent",
-      "rating_retro": 0.0013960875184651981,
+      "rating_retro": 0.001396087518465198,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6186,7 +6186,7 @@
       "rank_retro": 476,
       "team": "Muskingum University",
       "conference": "Independent",
-      "rating_retro": 0.001394757868569561,
+      "rating_retro": 0.0013947578685695608,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6238,8 +6238,8 @@
       "rank_retro": 480,
       "team": "Oregon State",
       "conference": "Pac-12",
-      "rating_retro": 0.0013942176870902583,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0013942176870902585,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -6251,7 +6251,7 @@
       "rank_retro": 481,
       "team": "Benedict College",
       "conference": "Independent",
-      "rating_retro": 0.00139409506429191,
+      "rating_retro": 0.0013940950642919103,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6277,7 +6277,7 @@
       "rank_retro": 483,
       "team": "Huntingdon College (AL)",
       "conference": "Independent",
-      "rating_retro": 0.0013923447823497857,
+      "rating_retro": 0.0013923447823497854,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6290,7 +6290,7 @@
       "rank_retro": 484,
       "team": "St. Francis (PA)",
       "conference": "Independent",
-      "rating_retro": 0.0013923220555676344,
+      "rating_retro": 0.0013923220555676346,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6355,7 +6355,7 @@
       "rank_retro": 489,
       "team": "Bloomsburg",
       "conference": "Independent",
-      "rating_retro": 0.001387760439992456,
+      "rating_retro": 0.0013877604399924555,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6433,7 +6433,7 @@
       "rank_retro": 495,
       "team": "SUNY Maritime",
       "conference": "Independent",
-      "rating_retro": 0.0013851919393153872,
+      "rating_retro": 0.0013851919393153874,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6446,7 +6446,7 @@
       "rank_retro": 496,
       "team": "Lake Erie",
       "conference": "Independent",
-      "rating_retro": 0.0013845016018807933,
+      "rating_retro": 0.001384501601880793,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6472,7 +6472,7 @@
       "rank_retro": 498,
       "team": "Merrimack",
       "conference": "Independent",
-      "rating_retro": 0.0013840660777146008,
+      "rating_retro": 0.0013840660777146006,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6511,7 +6511,7 @@
       "rank_retro": 501,
       "team": "Furman",
       "conference": "Independent",
-      "rating_retro": 0.0013830829061460197,
+      "rating_retro": 0.0013830829061460194,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6524,7 +6524,7 @@
       "rank_retro": 502,
       "team": "Northwood (MI)",
       "conference": "Independent",
-      "rating_retro": 0.0013830714571774253,
+      "rating_retro": 0.001383071457177425,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6563,7 +6563,7 @@
       "rank_retro": 505,
       "team": "Oklahoma Baptist",
       "conference": "Independent",
-      "rating_retro": 0.0013820416939381594,
+      "rating_retro": 0.0013820416939381592,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6576,7 +6576,7 @@
       "rank_retro": 506,
       "team": "Mass Maritime",
       "conference": "Independent",
-      "rating_retro": 0.0013820412944620143,
+      "rating_retro": 0.0013820412944620145,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6589,7 +6589,7 @@
       "rank_retro": 507,
       "team": "Georgetown",
       "conference": "Independent",
-      "rating_retro": 0.0013815972915756027,
+      "rating_retro": 0.0013815972915756025,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6602,7 +6602,7 @@
       "rank_retro": 508,
       "team": "Franklin & Marshall",
       "conference": "Independent",
-      "rating_retro": 0.0013813622267468987,
+      "rating_retro": 0.001381362226746899,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6654,7 +6654,7 @@
       "rank_retro": 512,
       "team": "Morehouse College",
       "conference": "Independent",
-      "rating_retro": 0.0013785825300841696,
+      "rating_retro": 0.0013785825300841699,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6680,7 +6680,7 @@
       "rank_retro": 514,
       "team": "Portland State",
       "conference": "Independent",
-      "rating_retro": 0.001376952425511607,
+      "rating_retro": 0.0013769524255116071,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6758,7 +6758,7 @@
       "rank_retro": 520,
       "team": "Fairmont State",
       "conference": "Independent",
-      "rating_retro": 0.0013726582809181198,
+      "rating_retro": 0.00137265828091812,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6771,7 +6771,7 @@
       "rank_retro": 521,
       "team": "Waynesburg",
       "conference": "Independent",
-      "rating_retro": 0.0013722741514997222,
+      "rating_retro": 0.001372274151499722,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6810,7 +6810,7 @@
       "rank_retro": 524,
       "team": "Keystone",
       "conference": "Independent",
-      "rating_retro": 0.0013713605126815975,
+      "rating_retro": 0.0013713605126815978,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6862,7 +6862,7 @@
       "rank_retro": 528,
       "team": "Clarion",
       "conference": "Independent",
-      "rating_retro": 0.0013707111932554535,
+      "rating_retro": 0.0013707111932554532,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6875,7 +6875,7 @@
       "rank_retro": 529,
       "team": "SE Louisiana",
       "conference": "Independent",
-      "rating_retro": 0.0013704324039095967,
+      "rating_retro": 0.0013704324039095965,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6901,7 +6901,7 @@
       "rank_retro": 531,
       "team": "Curry College",
       "conference": "Independent",
-      "rating_retro": 0.0013694964793893299,
+      "rating_retro": 0.0013694964793893297,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6914,7 +6914,7 @@
       "rank_retro": 532,
       "team": "St. Anselm",
       "conference": "Independent",
-      "rating_retro": 0.0013691822966812382,
+      "rating_retro": 0.001369182296681238,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6953,7 +6953,7 @@
       "rank_retro": 535,
       "team": "Hiram College",
       "conference": "Independent",
-      "rating_retro": 0.0013671954154221224,
+      "rating_retro": 0.0013671954154221221,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -6979,7 +6979,7 @@
       "rank_retro": 537,
       "team": "Case Western Reserve",
       "conference": "Independent",
-      "rating_retro": 0.0013671204357109893,
+      "rating_retro": 0.001367120435710989,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7070,7 +7070,7 @@
       "rank_retro": 544,
       "team": "Southern Connecticut State",
       "conference": "Independent",
-      "rating_retro": 0.0013592321463554453,
+      "rating_retro": 0.001359232146355445,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7096,7 +7096,7 @@
       "rank_retro": 546,
       "team": "Christopher Newport",
       "conference": "Independent",
-      "rating_retro": 0.0013537898320912338,
+      "rating_retro": 0.001353789832091234,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7109,7 +7109,7 @@
       "rank_retro": 547,
       "team": "Mercyhurst",
       "conference": "Independent",
-      "rating_retro": 0.001351792582789166,
+      "rating_retro": 0.0013517925827891662,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7136,7 +7136,7 @@
       "team": "Washington",
       "conference": "Pac-12",
       "rating_retro": 0.0013504541189842702,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -7175,7 +7175,7 @@
       "team": "Washington State",
       "conference": "Pac-12",
       "rating_retro": 0.0013485661383143648,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -7265,7 +7265,7 @@
       "rank_retro": 559,
       "team": "Wyoming",
       "conference": "Independent",
-      "rating_retro": 0.0013469311356995785,
+      "rating_retro": 0.0013469311356995787,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7317,7 +7317,7 @@
       "rank_retro": 563,
       "team": "Lawrence University",
       "conference": "Independent",
-      "rating_retro": 0.001342296063257846,
+      "rating_retro": 0.0013422960632578458,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7343,7 +7343,7 @@
       "rank_retro": 565,
       "team": "Franklin Pierce",
       "conference": "Independent",
-      "rating_retro": 0.0013412523380188094,
+      "rating_retro": 0.0013412523380188091,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7357,7 +7357,7 @@
       "team": "Arizona",
       "conference": "Pac-12",
       "rating_retro": 0.0013402506414096277,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -7382,7 +7382,7 @@
       "rank_retro": 568,
       "team": "Gardner-Webb",
       "conference": "Independent",
-      "rating_retro": 0.0013396903290738055,
+      "rating_retro": 0.0013396903290738057,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7421,7 +7421,7 @@
       "rank_retro": 571,
       "team": "Baldwin Wallace",
       "conference": "Independent",
-      "rating_retro": 0.0013361844386656227,
+      "rating_retro": 0.0013361844386656225,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7447,7 +7447,7 @@
       "rank_retro": 573,
       "team": "Gettysburg",
       "conference": "Independent",
-      "rating_retro": 0.0013330061246029595,
+      "rating_retro": 0.0013330061246029598,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7473,7 +7473,7 @@
       "rank_retro": 575,
       "team": "Montclair State",
       "conference": "Independent",
-      "rating_retro": 0.001328484964439561,
+      "rating_retro": 0.0013284849644395612,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7551,7 +7551,7 @@
       "rank_retro": 581,
       "team": "Mars Hill",
       "conference": "Independent",
-      "rating_retro": 0.0013173531349615266,
+      "rating_retro": 0.0013173531349615264,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7603,7 +7603,7 @@
       "rank_retro": 585,
       "team": "Catholic",
       "conference": "Independent",
-      "rating_retro": 0.0013092711775454214,
+      "rating_retro": 0.0013092711775454212,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7616,7 +7616,7 @@
       "rank_retro": 586,
       "team": "Quincy",
       "conference": "Independent",
-      "rating_retro": 0.0013076696915630159,
+      "rating_retro": 0.001307669691563016,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7694,7 +7694,7 @@
       "rank_retro": 592,
       "team": "North Park",
       "conference": "Independent",
-      "rating_retro": 0.0012929907223580203,
+      "rating_retro": 0.0012929907223580201,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7707,7 +7707,7 @@
       "rank_retro": 593,
       "team": "Bates",
       "conference": "Independent",
-      "rating_retro": 0.0012923410310156213,
+      "rating_retro": 0.001292341031015621,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7720,7 +7720,7 @@
       "rank_retro": 594,
       "team": "Fayetteville State",
       "conference": "Independent",
-      "rating_retro": 0.0012922633182247617,
+      "rating_retro": 0.001292263318224762,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7733,7 +7733,7 @@
       "rank_retro": 595,
       "team": "Pennsylvania",
       "conference": "Independent",
-      "rating_retro": 0.0012893158285303386,
+      "rating_retro": 0.0012893158285303384,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7746,7 +7746,7 @@
       "rank_retro": 596,
       "team": "Hillsdale",
       "conference": "Independent",
-      "rating_retro": 0.00128900632330506,
+      "rating_retro": 0.0012890063233050597,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7772,7 +7772,7 @@
       "rank_retro": 598,
       "team": "Plymouth State",
       "conference": "Independent",
-      "rating_retro": 0.0012861106652586078,
+      "rating_retro": 0.001286110665258608,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7785,8 +7785,8 @@
       "rank_retro": 599,
       "team": "Kansas State",
       "conference": "Big 12",
-      "rating_retro": 0.001283023556895206,
-      "conf_weight": 0.0306271309381776,
+      "rating_retro": 0.0012830235568952063,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -7798,7 +7798,7 @@
       "rank_retro": 600,
       "team": "Holy Cross",
       "conference": "Independent",
-      "rating_retro": 0.0012829273367610992,
+      "rating_retro": 0.0012829273367610994,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7811,7 +7811,7 @@
       "rank_retro": 601,
       "team": "Nebraska-Kearney",
       "conference": "Independent",
-      "rating_retro": 0.0012819114663724979,
+      "rating_retro": 0.0012819114663724976,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7915,7 +7915,7 @@
       "rank_retro": 609,
       "team": "Wheeling",
       "conference": "Independent",
-      "rating_retro": 0.0012551885308804821,
+      "rating_retro": 0.001255188530880482,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -7981,7 +7981,7 @@
       "team": "UCLA",
       "conference": "Pac-12",
       "rating_retro": 0.001231334335274964,
-      "conf_weight": 0.016702374692178112,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8006,8 +8006,8 @@
       "rank_retro": 616,
       "team": "TCU",
       "conference": "Big 12",
-      "rating_retro": 0.001223922214527685,
-      "conf_weight": 0.0306271309381776,
+      "rating_retro": 0.0012239222145276848,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8137,7 +8137,7 @@
       "team": "Baylor",
       "conference": "Big 12",
       "rating_retro": 0.001161725926091832,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8149,8 +8149,8 @@
       "rank_retro": 627,
       "team": "Iowa State",
       "conference": "Big 12",
-      "rating_retro": 0.0011589753500790298,
-      "conf_weight": 0.0306271309381776,
+      "rating_retro": 0.0011589753500790296,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8162,7 +8162,7 @@
       "rank_retro": 628,
       "team": "Ole Miss",
       "conference": "SEC",
-      "rating_retro": 0.0011558483831011028,
+      "rating_retro": 0.001155848383101103,
       "conf_weight": 0.06697873889505217,
       "quality_wins": [
         "Defiance College",
@@ -8254,7 +8254,7 @@
       "team": "Texas Tech",
       "conference": "Big 12",
       "rating_retro": 0.001127665761920436,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8279,8 +8279,8 @@
       "rank_retro": 637,
       "team": "Utah",
       "conference": "Pac-12",
-      "rating_retro": 0.001122862719826913,
-      "conf_weight": 0.016702374692178112,
+      "rating_retro": 0.0011228627198269132,
+      "conf_weight": 0.01670237469217811,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8293,7 +8293,7 @@
       "team": "West Virginia",
       "conference": "Big 12",
       "rating_retro": 0.001115655526116971,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8331,7 +8331,7 @@
       "rank_retro": 641,
       "team": "Boston College",
       "conference": "ACC",
-      "rating_retro": 0.0011014553702125762,
+      "rating_retro": 0.0011014553702125764,
       "conf_weight": 0.05212844794051554,
       "quality_wins": [
         "Defiance College",
@@ -8344,7 +8344,7 @@
       "rank_retro": 642,
       "team": "Louisville",
       "conference": "ACC",
-      "rating_retro": 0.0010995306133824542,
+      "rating_retro": 0.001099530613382454,
       "conf_weight": 0.05212844794051554,
       "quality_wins": [
         "Defiance College",
@@ -8357,7 +8357,7 @@
       "rank_retro": 643,
       "team": "Gallaudet",
       "conference": "Independent",
-      "rating_retro": 0.0010981728493177367,
+      "rating_retro": 0.001098172849317737,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -8370,7 +8370,7 @@
       "rank_retro": 644,
       "team": "Texas A&M",
       "conference": "SEC",
-      "rating_retro": 0.0010949833823184676,
+      "rating_retro": 0.0010949833823184678,
       "conf_weight": 0.06697873889505217,
       "quality_wins": [
         "Defiance College",
@@ -8410,7 +8410,7 @@
       "team": "Kansas",
       "conference": "Big 12",
       "rating_retro": 0.001073820508261339,
-      "conf_weight": 0.0306271309381776,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8422,8 +8422,8 @@
       "rank_retro": 648,
       "team": "Oklahoma State",
       "conference": "Big 12",
-      "rating_retro": 0.001073126822611253,
-      "conf_weight": 0.0306271309381776,
+      "rating_retro": 0.0010731268226112532,
+      "conf_weight": 0.030627130938177594,
       "quality_wins": [
         "Defiance College",
         "Lincoln (CA)",
@@ -8500,7 +8500,7 @@
       "rank_retro": 654,
       "team": "Duke",
       "conference": "ACC",
-      "rating_retro": 0.001031537254242761,
+      "rating_retro": 0.0010315372542427613,
       "conf_weight": 0.05212844794051554,
       "quality_wins": [
         "Defiance College",
@@ -8526,7 +8526,7 @@
       "rank_retro": 656,
       "team": "Auburn",
       "conference": "SEC",
-      "rating_retro": 0.0010047762009351166,
+      "rating_retro": 0.0010047762009351168,
       "conf_weight": 0.06697873889505217,
       "quality_wins": [
         "Defiance College",
@@ -8552,7 +8552,7 @@
       "rank_retro": 658,
       "team": "Kentucky",
       "conference": "SEC",
-      "rating_retro": 0.0009930623731926773,
+      "rating_retro": 0.0009930623731926771,
       "conf_weight": 0.06697873889505217,
       "quality_wins": [
         "Defiance College",
@@ -8578,7 +8578,7 @@
       "rank_retro": 660,
       "team": "Miami",
       "conference": "ACC",
-      "rating_retro": 0.0009627347423920319,
+      "rating_retro": 0.000962734742392032,
       "conf_weight": 0.05212844794051554,
       "quality_wins": [
         "Defiance College",
@@ -8591,7 +8591,7 @@
       "rank_retro": 661,
       "team": "Maryland",
       "conference": "Big Ten",
-      "rating_retro": 0.0009588564035362501,
+      "rating_retro": 0.00095885640353625,
       "conf_weight": 0.06211703098049312,
       "quality_wins": [
         "Defiance College",
@@ -8604,7 +8604,7 @@
       "rank_retro": 662,
       "team": "Michigan State",
       "conference": "Big Ten",
-      "rating_retro": 0.0009581092038294617,
+      "rating_retro": 0.0009581092038294618,
       "conf_weight": 0.06211703098049312,
       "quality_wins": [
         "Defiance College",
@@ -8849,19 +8849,6 @@
     },
     {
       "rank_retro": 681,
-      "team": "University Of St Francis IN",
-      "conference": "Independent",
-      "rating_retro": 0.0004480998964884468,
-      "conf_weight": 0.5,
-      "quality_wins": [
-        "Defiance College",
-        "Lincoln (CA)",
-        "Valdosta State"
-      ],
-      "uncertainty": 0.0
-    },
-    {
-      "rank_retro": 682,
       "team": "St. Xavier IL",
       "conference": "Independent",
       "rating_retro": 0.0004480998964884468,
@@ -8874,8 +8861,21 @@
       "uncertainty": 0.0
     },
     {
-      "rank_retro": 683,
+      "rank_retro": 682,
       "team": "Concordia-Michigan",
+      "conference": "Independent",
+      "rating_retro": 0.0004480998964884468,
+      "conf_weight": 0.5,
+      "quality_wins": [
+        "Defiance College",
+        "Lincoln (CA)",
+        "Valdosta State"
+      ],
+      "uncertainty": 0.0
+    },
+    {
+      "rank_retro": 683,
+      "team": "University Of St Francis IN",
       "conference": "Independent",
       "rating_retro": 0.0004480998964884468,
       "conf_weight": 0.5,
@@ -8940,7 +8940,7 @@
     },
     {
       "rank_retro": 688,
-      "team": "Dakota State University",
+      "team": "Mayville State",
       "conference": "Independent",
       "rating_retro": 0.0003714360890003409,
       "conf_weight": 0.5,
@@ -8953,7 +8953,7 @@
     },
     {
       "rank_retro": 689,
-      "team": "Mayville State",
+      "team": "Dakota State University",
       "conference": "Independent",
       "rating_retro": 0.0003714360890003409,
       "conf_weight": 0.5,
@@ -9033,7 +9033,7 @@
       "rank_retro": 695,
       "team": "Langston University",
       "conference": "Independent",
-      "rating_retro": 0.00035398598619637523,
+      "rating_retro": 0.0003539859861963753,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -9072,7 +9072,7 @@
       "rank_retro": 698,
       "team": "Campbellsville University",
       "conference": "Independent",
-      "rating_retro": 0.0003476543497847839,
+      "rating_retro": 0.00034765434978478396,
       "conf_weight": 0.5,
       "quality_wins": [
         "Defiance College",
@@ -9200,77 +9200,77 @@
     }
   ],
   "conference_ratings": {
-    "Mountain West": 0.023407138311934545,
-    "Wisconsin": 0.023644865724360423,
-    "Presidents'": 0.002803523011057277,
-    "Michigan": 0.01806046027528182,
-    "Southern": 0.007598733095619842,
-    "Pac-12": 0.016702374692178112,
-    "SIAC": 0.0030851486412448743,
-    "Empire 8": 0.01849707326750805,
     "SWAC": 0.0040485367961245,
-    "American Southwest": 0.0099915671397445,
-    "Commonwealth Coast": 0.014673830835245608,
-    "Patriot": 0.007741594646456984,
-    "Great Lakes": 0.009176249038622464,
-    "Great American": 0.004853028501519684,
-    "Mid Atlantic": 0.010303908176505814,
-    "FCS Independents": 0.004432719089857724,
-    "USA South": 0.00331421729186486,
-    "Heartland": 0.00982986055793432,
+    "Empire 8": 0.01849707326750805,
+    "Old Dominion": 0.012590742117004668,
+    "New Jersey": 0.03752971023837737,
     "NESCAC": 0.002108222066057625,
-    "NEC": 0.007098561521433218,
-    "So. Cal.": 0.009012517938456569,
-    "American Athletic": 0.017838270456776367,
+    "Patriot": 0.007741594646456984,
+    "North Coast": 0.014207668266471532,
     "Big South-OVC": 0.006413103937192227,
-    "Liberty League": 0.017563788673539076,
-    "Independent DII": 0.002657832185370478,
-    "MVFC": 0.012187603472356583,
-    "GLIAC": 0.020523099463519153,
-    "Ivy": 0.005992686697399258,
+    "Presidents'": 0.0028035230110572775,
+    "Mid America": 0.01017138166979176,
+    "American Rivers": 0.011501658214456527,
+    "NACC": 0.011193408487525841,
+    "Conference USA": 0.008682633952115151,
+    "CAA": 0.013361017198247484,
+    "Northern Sun": 0.008227445656137146,
+    "Sun Belt": 0.018818712501034795,
+    "Pennsylvania State Athletic": 0.006477180433083894,
+    "Big Sky": 0.01064649211251337,
+    "MSCAC": 0.003980650489466455,
+    "UAC": 0.006148352947991715,
+    "Northwest": 0.012997559374392276,
+    "Great American": 0.004853028501519684,
+    "Ohio": 0.01420648178378903,
+    "FBS Independents": 0.03936467423438205,
+    "Mountain West": 0.02340713831193454,
+    "Upper Midwest": 0.0086401871608506,
+    "Great Lakes": 0.009176249038622464,
+    "Southland": 0.005623087012289385,
+    "Mountain East": 0.006005165618139844,
+    "Rocky Mountain": 0.0077223102916747005,
+    "ACC": 0.05212844794051554,
     "Lone Star": 0.007863230858150709,
     "Southern Athletic": 0.009440276915884036,
-    "Independent DIII": 0.0023054292428638604,
-    "UAC": 0.006148352947991715,
-    "Big Sky": 0.01064649211251337,
-    "Conference USA": 0.008682633952115151,
-    "American Rivers": 0.011501658214456527,
-    "Great Midwest Athletic": 0.009338191517841484,
-    "Ohio": 0.01420648178378903,
-    "Old Dominion": 0.012590742117004668,
-    "Gulf South": 0.009088298917066959,
-    "Northwest": 0.01299755937439228,
-    "Northern Sun": 0.008227445656137146,
-    "NACC": 0.011193408487525841,
-    "Centennial": 0.040578515421034383,
-    "Southern Collegiate Athletic": 0.00400258495328623,
-    "Mid-American": 0.02505548283998752,
-    "North Coast": 0.014207668266471532,
-    "ACC": 0.05212844794051554,
-    "CIAA": 0.007029304673109563,
-    "New Jersey": 0.03752971023837737,
-    "MEAC": 0.006143997697106899,
-    "Landmark Conference": 0.024540682652556888,
-    "Pennsylvania State Athletic": 0.006477180433083895,
-    "Northeast 10": 0.0037612017930361554,
-    "MSCAC": 0.003980650489466455,
-    "Minnesota": 0.020895355768972963,
+    "Wisconsin": 0.02364486572436042,
+    "SIAC": 0.0030851486412448747,
     "Pioneer": 0.008505095327981462,
-    "SEC": 0.06697873889505217,
-    "Southland": 0.005623087012289386,
-    "FBS Independents": 0.03936467423438205,
-    "Big Ten": 0.06211703098049312,
-    "Sun Belt": 0.018818712501034795,
-    "CAA": 0.013361017198247484,
-    "Rocky Mountain": 0.0077223102916747005,
-    "CCIW": 0.015579107534434533,
+    "GLIAC": 0.020523099463519153,
+    "Landmark Conference": 0.024540682652556885,
+    "Commonwealth Coast": 0.014673830835245611,
+    "Big 12": 0.030627130938177594,
+    "Heartland": 0.00982986055793432,
+    "MVFC": 0.012187603472356583,
+    "Mid Atlantic": 0.010303908176505814,
+    "Pac-12": 0.01670237469217811,
+    "American Southwest": 0.009991567139744497,
+    "Ivy": 0.005992686697399258,
+    "CCIW": 0.01557910753443453,
+    "Great Midwest Athletic": 0.009338191517841484,
+    "FCS Independents": 0.004432719089857724,
+    "Southern": 0.007598733095619841,
+    "Northeast 10": 0.0037612017930361554,
+    "MEAC": 0.006143997697106899,
+    "So. Cal.": 0.009012517938456569,
     "NEWMAC": 0.012517741722865506,
-    "ECFC": 0.00539782705314356,
-    "Upper Midwest": 0.0086401871608506,
-    "Mid America": 0.01017138166979176,
+    "Southern Collegiate Athletic": 0.00400258495328623,
+    "Independent DIII": 0.0023054292428638604,
+    "NEC": 0.007098561521433218,
+    "SEC": 0.06697873889505217,
+    "Centennial": 0.040578515421034383,
+    "Independent DII": 0.002657832185370478,
+    "USA South": 0.00331421729186486,
+    "Big Ten": 0.06211703098049312,
+    "Mid-American": 0.02505548283998752,
+    "American Athletic": 0.017838270456776367,
     "South Atlantic": 0.008408499576152136,
-    "Mountain East": 0.006005165618139844,
-    "Big 12": 0.0306271309381776,
-    "Midwest": 0.0060407915153892254
+    "Midwest": 0.0060407915153892254,
+    "CIAA": 0.007029304673109562,
+    "Michigan": 0.01806046027528182,
+    "Minnesota": 0.020895355768972963,
+    "Liberty League": 0.017563788673539076,
+    "Gulf South": 0.009088298917066959,
+    "ECFC": 0.00539782705314356
   }
 }
