@@ -103,7 +103,8 @@ class WeightCalculator:
 
     def is_bowl_game(self, game_data: Dict) -> bool:
         """Check if game is a bowl game"""
-        return game_data.get('season_type', 'regular') == 'postseason'
+        return (game_data.get('season_type', 'regular') == 'postseason' or 
+                game_data.get('is_bowl', False))
 
     def calculate_edge_weights(self, game_data: Dict, rating_winner: float, 
                              rating_loser: float, current_week: int,
@@ -136,20 +137,31 @@ class WeightCalculator:
         if self.is_bowl_game(game_data):
             credit_weight *= self.bowl_bump
         
-        # Conference graph weight (cross-conference only)
-        is_cross_conf = (game_data.get('winner_conference') != 
-                        game_data.get('loser_conference'))
+        # Conference classification and bowl detection
+        winner_conf = game_data.get('winner_conference')
+        loser_conf = game_data.get('loser_conference')
+        is_bowl = self.is_bowl_game(game_data)
+        is_cross_conf = (winner_conf != loser_conf)
         
+        # Special handling for intra-conference bowls
+        is_intra_conf_bowl = (is_bowl and not is_cross_conf and 
+                             winner_conf is not None and loser_conf is not None)
+        
+        # Conference graph weight
         conf_weight = 0
         if is_cross_conf:
+            # Cross-conference games contribute to conference graph
             surprise = self.surprise_multiplier(p_exp)
             conf_weight = credit_weight * surprise
+        # Note: Intra-conference bowls do NOT contribute to conference graph
         
         return {
             'credit_weight': credit_weight,
             'penalty_weight': penalty_weight,
             'conf_weight': conf_weight,
             'is_cross_conf': is_cross_conf,
+            'is_bowl': is_bowl,
+            'is_intra_conf_bowl': is_intra_conf_bowl,
             'p_exp': p_exp,
             'base_weight': base,
             'margin_factor': margin,

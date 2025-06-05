@@ -90,6 +90,7 @@ class GraphBuilder:
                 G_team.add_edge(winner, loser, weight=penalty_weight)
             
             # Conference graph edge (cross-conference only, loser -> winner)
+            # Note: Intra-conference bowls do NOT contribute to conference graph
             if (weights['is_cross_conf'] and winner_conf and loser_conf):
                 conf_weight = weights['conf_weight']
                 
@@ -97,6 +98,12 @@ class GraphBuilder:
                     G_conf[loser_conf][winner_conf]['weight'] += conf_weight
                 else:
                     G_conf.add_edge(loser_conf, winner_conf, weight=conf_weight)
+            
+            # Log intra-conference bowl detection for validation
+            if weights.get('is_intra_conf_bowl', False):
+                logger.info(f"Intra-conference bowl detected: {winner} ({winner_conf}) vs {loser} ({loser_conf})")
+                logger.info(f"  Team graph credit: {credit_weight:.3f} (includes bowl bump)")
+                logger.info(f"  Conference graph: skipped (intra-conference)")
         
         logger.info(f"Built team graph: {G_team.number_of_nodes()} nodes, {G_team.number_of_edges()} edges")
         logger.info(f"Built conference graph: {G_conf.number_of_nodes()} nodes, {G_conf.number_of_edges()} edges")
