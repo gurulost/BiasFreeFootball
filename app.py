@@ -28,6 +28,16 @@ def to_json_filter(obj):
 with open('config.yaml', 'r') as f:
     config = yaml.safe_load(f)
 
+# Initialize automated ranking scheduler
+from src.scheduler import start_automated_updates, stop_automated_updates, get_scheduler
+import atexit
+
+# Start automated updates when app starts
+start_automated_updates(config)
+
+# Ensure scheduler stops when app shuts down
+atexit.register(stop_automated_updates)
+
 # Initialize components
 storage = Storage()
 bias_audit = BiasAudit()
