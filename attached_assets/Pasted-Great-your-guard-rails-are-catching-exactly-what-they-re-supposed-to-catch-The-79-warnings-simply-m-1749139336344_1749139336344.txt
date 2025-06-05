@@ -1,0 +1,76 @@
+Great—your guard-rails are catching exactly what they’re supposed to catch.
+The 79 warnings simply mean the ingest found team strings that aren’t yet in `canonical_teams.yaml`.  Until we plug those holes the pipeline will keep halting (or silently skipping those rows, if you allowed that).  Below are concise directions you can paste into the GitHub issue for the coder.
+
+---
+
+### Next steps for the coder
+
+1. **Dump the missing aliases list automatically**
+
+   In `ingest.py` where we collect `bad_rows`, also collect the raw team strings:
+
+   ```python
+   missing = set()
+   if home is None: missing.add(row['home_team'])
+   if away is None: missing.add(row['away_team'])
+   ```
+
+   At the end write them to `reports/missing_aliases_YYYY.json` so we have a tidy list for PR review.
+
+2. **Auto-generate canonical placeholders**
+
+   Add a helper script:
+
+   ```python
+   python tools/add_placeholders.py reports/missing_aliases_2024.json
+   ```
+
+   For every unknown string it appends to `canonical_teams.yaml` like:
+
+   ```yaml
+   Oklahoma: {name: "Oklahoma", conf: null}
+   ```
+
+   `conf: null` forces a human to fill it in and commit.
+
+3. **Quick-fill obvious ones**
+
+   Open the YAML and assign the correct conference for each placeholder:
+
+   ```yaml
+   SMU:              {name: "SMU",              conf: "American"}
+   Florida Atlantic: {name: "Florida Atlantic", conf: "American"}
+   Oklahoma:         {name: "Oklahoma",         conf: "Big 12"}
+   ...
+   ```
+
+   Use the 2024 alignment (the file lives inside the repo so history captures future realignment changes).
+
+4. **Re-run ingest in CI**
+
+   `pytest tests/test_ingest.py` should now pass with **zero** validation warnings.
+   If warnings remain, repeat steps 2-3 until clean.
+
+5. **Block future drift**
+
+   In the validation step, after alias mapping, assert:
+
+   ```python
+   assert missing_aliases == set(), \
+       f"Unhandled aliases: {sorted(missing_aliases)}"
+   ```
+
+   That way any new team string (e.g., “James Madison”) instantly breaks CI until someone adds it.
+
+6. **House-keeping**
+
+   * Commit updated `canonical_teams.yaml` and the placeholder-generator script.
+   * Remove the temporary `reports/missing_aliases_*.json` files from the repo; they are only CI artefacts.
+
+---
+
+### Why this fixes the issue without bias
+
+We still rely solely on game results; we’re just guaranteeing that every string is mapped to the correct canonical school and conference.  No external rankings or opinions creep in—just accurate bookkeeping.
+
+Once the canonical map is complete the ingest step will import 100 % of FBS games, and your calculations—and only your calculations—drive the rankings.
