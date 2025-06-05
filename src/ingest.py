@@ -1,29 +1,40 @@
 """
 Data ingestion module for CFB API
-Handles fetching schedule, results, and team information
+Handles fetching schedule, results, and team information using the official cfbd-python library
 """
 
-import requests
-import json
 import os
 import logging
 import yaml
 from datetime import datetime
 from typing import Dict, List, Optional
 import pandas as pd
+import cfbd
+from cfbd.exceptions import ApiException
 
 class CFBDataIngester:
     def __init__(self, config: Dict):
         self.config = config
-        self.api_key = os.getenv('CFB_API_KEY', config.get('api', {}).get('key', ''))
-        self.base_url = config.get('api', {}).get('base_url', 'https://api.collegefootballdata.com')
-        self.headers = {}
-        if self.api_key:
-            self.headers['Authorization'] = f'Bearer {self.api_key}'
-        
         self.logger = logging.getLogger(__name__)
+
+        # Configure the official CFBD API client
+        from cfbd import Configuration, ApiClient, TeamsApi, GamesApi, ConferencesApi
         
-        # Initialize FBS enforcer for strict data integrity
+        configuration = Configuration()
+        api_key = os.getenv('CFB_API_KEY', config.get('api', {}).get('key', ''))
+        if not api_key:
+            self.logger.warning("CFB_API_KEY not found - API requests may fail")
+        
+        configuration.api_key['Authorization'] = api_key
+        configuration.api_key_prefix['Authorization'] = 'Bearer'
+        
+        # Create API client and specific API instances
+        api_client = ApiClient(configuration)
+        self.teams_api = TeamsApi(api_client)
+        self.games_api = GamesApi(api_client)
+        self.conferences_api = ConferencesApi(api_client)
+        
+        # Initialize FBS enforcer for data validation
         from src.fbs_enforcer import create_fbs_enforcer
         self.fbs_enforcer = create_fbs_enforcer(config)
         
@@ -69,46 +80,38 @@ class CFBDataIngester:
         else:
             return 'Unknown'
         
-    def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
-        """Make API request with error handling"""
-        url = f"{self.base_url}/{endpoint}"
+    def fetch_teams(self, season: int) -> List[Dict]:
+        """Fetch FBS team information using the official CFBD library"""
+        self.logger.info(f"Fetching FBS teams for {season} season using official library")
         
         try:
-            response = requests.get(url, headers=self.headers, params=params)
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"API request failed: {e}")
+            # Use the official library's dedicated FBS teams endpoint
+            api_response = self.teams_api.get_fbs_teams(year=season)
+            
+            # Convert Pydantic models to dictionaries for compatibility
+            teams_data = [team.to_dict() for team in api_response]
+            
+            # Validate response with FBS enforcer
+            fbs_teams, validation_report = self.fbs_enforcer.validate_teams_response(teams_data, season)
+            
+            # Log validation results
+            if validation_report['validation_passed']:
+                self.logger.info(f"✓ FBS teams validation passed: {len(fbs_teams)} teams")
+            else:
+                self.logger.warning(f"FBS teams validation concerns: {validation_report}")
+            
+            # Save raw data
+            raw_path = f"{self.config['paths']['data_raw']}/teams_{season}_fbs.json"
+            os.makedirs(os.path.dirname(raw_path), exist_ok=True)
+            with open(raw_path, 'w') as f:
+                import json
+                json.dump(fbs_teams, f, indent=2)
+                
+            return fbs_teams
+            
+        except ApiException as e:
+            self.logger.error(f"CFBD API request failed: {e}")
             raise
-            
-    def fetch_teams(self, season: int, division: str = 'fbs') -> List[Dict]:
-        """Fetch team information for a given season - FBS only with enforced validation"""
-        # Enforce FBS-only parameters
-        params = {
-            'year': season,
-            'division': division
-        }
-        enforced_params = self.fbs_enforcer.enforce_fbs_teams_request(params, season)
-        
-        # Make API request
-        teams = self._make_request('teams', enforced_params)
-        
-        # Validate response with FBS enforcer
-        fbs_teams, validation_report = self.fbs_enforcer.validate_teams_response(teams, season)
-        
-        # Log validation results
-        if validation_report['validation_passed']:
-            self.logger.info(f"✓ FBS teams validation passed: {len(fbs_teams)} teams")
-        else:
-            self.logger.warning(f"FBS teams validation concerns: {validation_report}")
-        
-        # Save raw data
-        raw_path = f"{self.config['paths']['data_raw']}/teams_{season}_fbs.json"
-        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
-        with open(raw_path, 'w') as f:
-            json.dump(fbs_teams, f, indent=2)
-            
-        return fbs_teams
     
     def fetch_conferences(self, season: int) -> List[Dict]:
         """Fetch conference information and build ID to name mapping"""
