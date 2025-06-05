@@ -89,6 +89,13 @@ def test_intra_conference_bowl_handling():
     for bowl in intra_conf_bowls[:3]:  # Test first 3
         game_data = bowl['game_data']
         
+        # Debug: Print game data to see what fields are available
+        print(f"   DEBUG - Game data for {bowl['winner']} vs {bowl['loser']}:")
+        print(f"     season_type: {game_data.get('season_type')}")
+        print(f"     is_bowl: {game_data.get('is_bowl')}")
+        print(f"     winner_conference: {game_data.get('winner_conference')}")
+        print(f"     loser_conference: {game_data.get('loser_conference')}")
+        
         # Mock ratings for calculation
         rating_winner = 0.009
         rating_loser = 0.008
