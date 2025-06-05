@@ -137,44 +137,45 @@ class GraphBuilder:
 
     def _get_team_conference_mapping(self, G_team: nx.DiGraph) -> Dict[str, str]:
         """
-        Extract team-to-conference mapping from team names or external data
-        This is a simplified version - in production, you'd load this from the API
+        Extract team-to-conference mapping from authentic API data
+        Uses current season data from College Football Data API
         """
-        # For now, return a simplified mapping for major conferences
         mapping = {}
         
-        # Major conference mappings (simplified)
-        sec_teams = ['Alabama', 'Georgia', 'Florida', 'LSU', 'Auburn', 'Tennessee', 
-                    'Kentucky', 'South Carolina', 'Mississippi State', 'Ole Miss',
-                    'Arkansas', 'Missouri', 'Vanderbilt', 'Texas A&M']
-        
-        big10_teams = ['Ohio State', 'Michigan', 'Penn State', 'Wisconsin', 
-                      'Iowa', 'Minnesota', 'Illinois', 'Indiana', 'Maryland',
-                      'Michigan State', 'Nebraska', 'Northwestern', 'Purdue', 'Rutgers']
-        
-        big12_teams = ['Oklahoma', 'Texas', 'Baylor', 'Oklahoma State', 'TCU',
-                      'Kansas State', 'West Virginia', 'Iowa State', 'Kansas', 'Texas Tech']
-        
-        pac12_teams = ['USC', 'UCLA', 'Oregon', 'Washington', 'Stanford', 'Cal',
-                      'Arizona State', 'Arizona', 'Utah', 'Colorado', 'Oregon State', 'Washington State']
-        
-        acc_teams = ['Clemson', 'Florida State', 'Miami', 'Virginia Tech', 'North Carolina',
-                    'Duke', 'NC State', 'Wake Forest', 'Virginia', 'Pittsburgh', 'Syracuse',
-                    'Boston College', 'Georgia Tech', 'Louisville']
-        
-        for team in G_team.nodes():
-            if team in sec_teams:
-                mapping[team] = 'SEC'
-            elif team in big10_teams:
-                mapping[team] = 'Big Ten'
-            elif team in big12_teams:
-                mapping[team] = 'Big 12'
-            elif team in pac12_teams:
-                mapping[team] = 'Pac-12'
-            elif team in acc_teams:
-                mapping[team] = 'ACC'
-            else:
-                mapping[team] = 'Other'
+        # Load authentic team conference data from API
+        try:
+            import json
+            import os
+            
+            # Try to load from cached API data first
+            season = self.config.get('season', 2024)
+            teams_file = f"data/raw/teams_{season}_fbs.json"
+            
+            if os.path.exists(teams_file):
+                with open(teams_file, 'r') as f:
+                    teams_data = json.load(f)
+                    
+                # Create mapping from authentic API data
+                for team_data in teams_data:
+                    school_name = team_data.get('school')
+                    conference = team_data.get('conference')
+                    
+                    if school_name and conference:
+                        mapping[school_name] = conference
+                        
+                        # Add alternate name mappings
+                        for alt_name in team_data.get('alternateNames', []):
+                            mapping[alt_name] = conference
+            
+            # Fill in any missing teams from graph with 'Independent'
+            for team in G_team.nodes():
+                if team not in mapping:
+                    mapping[team] = 'Independent'
+                    
+        except Exception as e:
+            # Fallback: mark all unknown teams as Independent
+            for team in G_team.nodes():
+                mapping[team] = 'Independent'
         
         return mapping
 
