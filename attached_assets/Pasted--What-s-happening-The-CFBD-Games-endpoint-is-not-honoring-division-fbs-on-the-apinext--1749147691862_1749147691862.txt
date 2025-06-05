@@ -1,0 +1,105 @@
+### What’s happening
+
+The CFBD **Games** endpoint is not honoring `division='fbs'` on the **apinext** host, so your pull for `year=2024` is getting all 700-plus Division-I games (FBS + FCS) and even the occasional Division-II exhibition. Those extra rows:
+
+* double the node-count → every rating is \~½ its proper size
+* scramble conferences (FCS schools have `conferenceId = None`) → “Unknown” tags
+* stuff the graph with cupcakes → mid-majors float to the top
+
+Until the vendor fixes the filter we must hard-filter on our side.
+
+---
+
+## Fix: explicit FBS whitelist
+
+1. **Pull the authoritative FBS roster first**
+
+```python
+teams_api = TeamsApi(api)
+fbs_teams = teams_api.get_fbs_teams(year=season)   # always FBS-only
+FBS_IDS   = {t.id for t in fbs_teams}
+TEAM_META = {t.id: t for t in fbs_teams}           # school, conf id, conf name
+```
+
+2. **Fetch games without the division filter (it’s broken anyway)**
+
+```python
+games_raw = GamesApi(api).get_games(year=season, season_type='both')
+```
+
+3. **Filter in memory**
+
+```python
+games_clean = []
+for g in games_raw:
+    if g.home_team_id in FBS_IDS and g.away_team_id in FBS_IDS:
+        games_clean.append(g)
+    else:
+        skipped.append(g)
+```
+
+4. **Fail hard if you skipped anything**
+
+```python
+if skipped:
+    raise ValueError(f"{len(skipped)} non-FBS games slipped through API filter")
+```
+
+5. **Replace every team/conference field from `TEAM_META`**
+
+```python
+g.home_conference = TEAM_META[g.home_team_id].conference
+g.away_conference = TEAM_META[g.away_team_id].conference
+g.home_team       = TEAM_META[g.home_team_id].school
+g.away_team       = TEAM_META[g.away_team_id].school
+```
+
+This guarantees alignment with the season-specific team list regardless of what the games payload claims.
+
+---
+
+## Integration test (add to CI)
+
+```python
+def test_no_fcs_rows():
+    games = ingest_games(2024)
+    assert all(g.home_team_id in FBS_IDS and g.away_team_id in FBS_IDS for g in games)
+```
+
+CI goes red the moment the API sneaks in an FCS row.
+
+---
+
+## Quality-wins placeholder
+
+Once you have `games_clean` fixed, restore the real quality-wins list:
+
+```python
+for team in team_nodes:
+    wins = [(w, loser) for loser,_,w in G_team.in_edges(team, data='weight')]
+    rankings[team]['quality_wins'] = [op for _,op in sorted(wins, reverse=True)[:3]]
+```
+
+---
+
+## Vendor heads-up
+
+Open an issue at `github.com/CFBD/cfbd-api`:
+
+> *`division=fbs` on /games is returning FCS rows on apinext; confirmed 2024 season.*
+
+Link to a curl snippet.  Once they patch it you can drop the client-side filter (but keep the integration test).
+
+---
+
+### Deliverables for this PR
+
+1. New `src/ingest.py` logic that whitelists by `team_id`.
+2. CI test `test_no_fcs_rows`.
+3. Regenerated rankings JSON/HTML:
+
+   * top rating ≈ 0.014–0.016
+   * no “Unknown” conference tags
+   * quality-wins populated.
+
+Merge → let Sunday’s Action publish the clean table.
