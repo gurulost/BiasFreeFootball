@@ -95,11 +95,19 @@ class CFBDataIngester:
         """Fetch all completed games up to and including specified week"""
         all_games = []
         
+        # Get FBS teams list for filtering
+        fbs_teams = self.fetch_teams(season, division='fbs')
+        fbs_team_names = {team['school'] for team in fbs_teams}
+        
         # Regular season games
         for w in range(1, week + 1):
             try:
                 week_games = self.fetch_games(season, w, 'regular')
-                all_games.extend(week_games)
+                # Filter for FBS-only games
+                fbs_week_games = [g for g in week_games 
+                                 if g.get('home_team') in fbs_team_names and 
+                                    g.get('away_team') in fbs_team_names]
+                all_games.extend(fbs_week_games)
             except Exception as e:
                 self.logger.warning(f"Failed to fetch week {w}: {e}")
                 

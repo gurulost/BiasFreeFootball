@@ -35,6 +35,30 @@
     </nav>
 
     <div class="container mt-4">
+        <!-- How to Use Instructions -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="alert alert-success">
+                    <h5><i class="fas fa-info-circle me-2"></i>How to Get FBS College Football Rankings</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>Step 1:</strong> Click "Run Live Pipeline" to process current week FBS games</p>
+                            <p class="mb-2"><strong>Step 2:</strong> View authentic FBS-only rankings (no FCS/D-II/D-III teams)</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-2"><strong>Step 3:</strong> Use "Run RETRO Pipeline" for definitive end-of-season rankings</p>
+                            <p class="mb-2"><strong>Step 4:</strong> Export CSV files with complete FBS data and conference strength</p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="/api/run_pipeline" class="btn btn-success me-2">Run Live Pipeline</a>
+                        <a href="/api/run_retro" class="btn btn-warning me-2">Run RETRO Pipeline</a>
+                        <a href="/bias-audit" class="btn btn-info">View Bias Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- System Status -->
         <div class="row mb-4">
             <div class="col-12">
@@ -42,7 +66,7 @@
                     <div class="card-header">
                         <h5 class="card-title mb-0">
                             <i class="fas fa-tachometer-alt me-2"></i>
-                            System Status
+                            FBS System Status
                         </h5>
                     </div>
                     <div class="card-body">
