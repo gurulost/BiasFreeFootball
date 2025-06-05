@@ -1,19 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFB Bias-Free Rankings</title>
+    <title>Bias-Free College Football Rankings</title>
     <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="/static/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        .feature-card {
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .badge-custom {
+            font-size: 0.75rem;
+            padding: 0.5rem 0.75rem;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <i class="fas fa-football-ball me-2"></i>
-                CFB Bias-Free Rankings
+                <i class="fas fa-trophy me-2"></i>CFB Rankings
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -21,21 +34,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/">Dashboard</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                             Rankings
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/current">Current Rankings</a></li>
                             <li><a class="dropdown-item" href="/final">Final Rankings</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/rankings">All Rankings</a></li>
+                            <li><a class="dropdown-item" href="/api/current">JSON API</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/bias-audit">Bias Audit</a>
+                        <a class="nav-link" href="/bias-audit">Analytics</a>
                     </li>
                 </ul>
             </div>
@@ -46,91 +59,53 @@
         <!-- Hero Section -->
         <div class="row mb-5">
             <div class="col-12">
-                <div class="hero-section text-center py-5 rounded-3" style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white;">
-                    <h1 class="display-4 mb-3">Bias-Free College Football Rankings</h1>
-                    <p class="lead mb-4">Automated rankings updated every Monday using advanced mathematical algorithms</p>
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <div class="d-flex flex-wrap justify-content-center gap-3">
-                                <a href="/current" class="btn btn-light btn-lg px-4 py-2">
-                                    <i class="fas fa-trophy me-2"></i>Current Rankings
-                                </a>
-                                <a href="/final" class="btn btn-outline-light btn-lg px-4 py-2">
-                                    <i class="fas fa-medal me-2"></i>Final Rankings
-                                </a>
-                                <a href="/api/current" class="btn btn-outline-light btn-lg px-4 py-2">
-                                    <i class="fas fa-code me-2"></i>JSON API
-                                </a>
-                            </div>
-                        </div>
+                <div class="hero-gradient text-white text-center py-5 rounded-3">
+                    <h1 class="display-4 mb-3">Automated College Football Rankings</h1>
+                    <p class="lead mb-4">Bias-free rankings updated every Monday using advanced mathematical algorithms</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="/current" class="btn btn-light btn-lg px-4">
+                            <i class="fas fa-trophy me-2"></i>View Current Rankings
+                        </a>
+                        <a href="/final" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-medal me-2"></i>Final Season Rankings
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Quick Access Cards -->
+        <!-- Key Features -->
         <div class="row mb-5">
             <div class="col-12">
-                <h2 class="text-center mb-4">Quick Access</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body text-center p-4">
-                                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
-                                <h4 class="card-title">Current Rankings</h4>
-                                <p class="card-text">View the latest rankings, automatically updated every Monday during football season</p>
-                                <a href="/current" class="btn btn-primary btn-lg">View Rankings</a>
-                                <small class="text-muted d-block mt-2">Updates: Monday 3:30 AM ET</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-body text-center p-4">
-                                <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
-                                <h4 class="card-title">Final Rankings</h4>
-                                <p class="card-text">Complete season analysis with definitive rankings after all games are played</p>
-                                <a href="/final" class="btn btn-warning btn-lg">View Final Rankings</a>
-                                <small class="text-muted d-block mt-2">Available after season ends</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Why Our Rankings Are Better -->
-        <div class="row mb-5">
-            <div class="col-12">
-                <h2 class="text-center mb-4">Why Choose Our Rankings?</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                <h2 class="text-center mb-4">Why Our Rankings Are Different</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
                             <div class="card-body text-center p-4">
                                 <i class="fas fa-robot fa-3x text-primary mb-3"></i>
                                 <h5 class="card-title">Fully Automated</h5>
-                                <p class="card-text">Rankings update automatically every Monday at 3:30 AM ET. No human bias, no committee votes, no subjective opinions.</p>
-                                <div class="badge bg-success">Zero Human Bias</div>
+                                <p class="card-text">Rankings update automatically every Monday at 3:30 AM ET. No human bias, committee votes, or subjective opinions.</p>
+                                <span class="badge bg-success badge-custom">Zero Human Bias</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
                             <div class="card-body text-center p-4">
                                 <i class="fas fa-balance-scale fa-3x text-success mb-3"></i>
                                 <h5 class="card-title">Mathematically Fair</h5>
                                 <p class="card-text">Two-layer PageRank algorithm with conference strength adjustment ensures no conference gets unfair advantages.</p>
-                                <div class="badge bg-info">Conference Neutral</div>
+                                <span class="badge bg-info badge-custom">Conference Neutral</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 border-0 shadow-sm">
+                    <div class="col-md-4">
+                        <div class="card feature-card h-100 border-0 shadow-sm">
                             <div class="card-body text-center p-4">
                                 <i class="fas fa-graduation-cap fa-3x text-warning mb-3"></i>
                                 <h5 class="card-title">FBS Only</h5>
-                                <p class="card-text">Analyzes only Division I FBS teams and games. No FCS, D-II, or D-III matchups affecting Power 5 rankings.</p>
-                                <div class="badge bg-warning">134 Teams Only</div>
+                                <p class="card-text">Analyzes only Division I FBS teams and games. No FCS, D-II, or D-III matchups affecting rankings.</p>
+                                <span class="badge bg-warning badge-custom">134 Teams Only</span>
                             </div>
                         </div>
                     </div>
@@ -144,98 +119,36 @@
                 <div class="card bg-light border-0">
                     <div class="card-body p-5">
                         <h3 class="text-center mb-4">How It Works</h3>
-                        <div class="row">
+                        <div class="row g-4">
                             <div class="col-md-6">
-                                <h5><i class="fas fa-download me-2 text-primary"></i>Automatic Data Collection</h5>
-                                <p>Every Monday, the system automatically downloads the latest game results from official sources and processes only FBS games.</p>
-                                
-                                <h5><i class="fas fa-calculator me-2 text-success"></i>Advanced Algorithm</h5>
-                                <p>Uses a two-layer PageRank algorithm that considers both team performance and conference strength to eliminate bias.</p>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-download fa-2x text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Automatic Data Collection</h5>
+                                        <p class="mb-0">Every Monday, the system automatically downloads the latest game results from official sources and processes only FBS games.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-calculator fa-2x text-success me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Advanced Algorithm</h5>
+                                        <p class="mb-0">Uses a two-layer PageRank algorithm that considers both team performance and conference strength to eliminate bias.</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <h5><i class="fas fa-chart-line me-2 text-warning"></i>Instant Publishing</h5>
-                                <p>New rankings are automatically published on this website and made available through our JSON API for other sites to use.</p>
-                                
-                                <h5><i class="fas fa-shield-alt me-2 text-info"></i>Quality Assurance</h5>
-                                <p>Built-in validation ensures data integrity and catches any anomalies before rankings are published.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Developer Tools -->
-        <div class="row mb-4">
-            <div class="col-12">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-header bg-dark text-white">
-                        <h5 class="card-title mb-0">
-                            <i class="fas fa-tools me-2"></i>
-                            Developer Tools & Advanced Features
-                        </h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <h6>Manual Pipeline Controls</h6>
-                                <p class="text-muted small">For testing and development purposes</p>
-                                <button onclick="runPipeline()" class="btn btn-outline-success me-2">Run Live Pipeline</button>
-                                <button onclick="runRetroPipeline()" class="btn btn-outline-warning">Run Final Pipeline</button>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <h6>Analytics & Monitoring</h6>
-                                <p class="text-muted small">Advanced bias detection and system monitoring</p>
-                                <a href="/bias-audit" class="btn btn-outline-info me-2">Bias Dashboard</a>
-                                <a href="/rankings" class="btn btn-outline-secondary">Detailed View</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Technical Info (Collapsed) -->
-        <div class="row mb-4">
-            <div class="col-12">
-                <div class="card border-0">
-                    <div class="card-body">
-                        <div class="accordion" id="technicalAccordion">
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#technicalDetails">
-                                        <i class="fas fa-cog me-2"></i>Technical Details & System Status
-                                    </button>
-                                </h2>
-                                <div id="technicalDetails" class="accordion-collapse collapse" data-bs-parent="#technicalAccordion">
-                                    <div class="accordion-body">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="metric-card text-center p-3 bg-light rounded">
-                                                    <div class="metric-value h4 text-success">134</div>
-                                                    <div class="metric-label">FBS Teams Tracked</div>
-                                                </div>
-                                            </div>
-                                                    <div class="metric-value h4 text-info">10</div>
-                                                    <div class="metric-label">FBS Conferences</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="metric-card text-center p-3 bg-light rounded">
-                                                    <div class="metric-value h4 text-warning">Mon 3:30 AM</div>
-                                                    <div class="metric-label">Auto-Update Time</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="mt-3">
-                                            <h6>Algorithm Details:</h6>
-                                            <ul class="list-unstyled small">
-                                                <li><i class="fas fa-check text-success me-2"></i>Two-layer PageRank with conference strength scaling</li>
-                                                <li><i class="fas fa-check text-success me-2"></i>Exponential recency decay (λ = 0.95)</li>
-                                                <li><i class="fas fa-check text-success me-2"></i>Venue advantage adjustment (home/away/neutral)</li>
-                                                <li><i class="fas fa-check text-success me-2"></i>Bootstrap confidence intervals</li>
-                                            </ul>
-                                        </div>
+                                <div class="d-flex mb-3">
+                                    <i class="fas fa-chart-line fa-2x text-warning me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Instant Publishing</h5>
+                                        <p class="mb-0">New rankings are automatically published on this website and made available through our JSON API for other sites to use.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-shield-alt fa-2x text-info me-3 mt-1"></i>
+                                    <div>
+                                        <h5>Quality Assurance</h5>
+                                        <p class="mb-0">Built-in validation ensures data integrity and catches any anomalies before rankings are published.</p>
                                     </div>
                                 </div>
                             </div>
@@ -245,13 +158,94 @@
             </div>
         </div>
 
-        <!-- Quick Stats Preview -->
+        <!-- Quick Access -->
         <div class="row mb-5">
             <div class="col-12">
-                <div class="text-center">
-                    <h3 class="mb-3">Latest Rankings Preview</h3>
-                    <p class="text-muted mb-4">See the top 10 teams from our latest automated rankings</p>
-                    <a href="/current" class="btn btn-primary btn-lg">View Full Rankings</a>
+                <h3 class="text-center mb-4">Quick Access</h3>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                                <h4 class="card-title">Current Rankings</h4>
+                                <p class="card-text">View the latest rankings, automatically updated every Monday during football season.</p>
+                                <a href="/current" class="btn btn-primary btn-lg mb-2">View Rankings</a>
+                                <div><small class="text-muted">Updates: Monday 3:30 AM ET</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="fas fa-trophy fa-3x text-warning mb-3"></i>
+                                <h4 class="card-title">Final Rankings</h4>
+                                <p class="card-text">Complete season analysis with definitive rankings after all games are played.</p>
+                                <a href="/final" class="btn btn-warning btn-lg mb-2">View Final Rankings</a>
+                                <div><small class="text-muted">Available after season ends</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- For Developers -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="accordion" id="developerAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#developerTools">
+                                <i class="fas fa-code me-2"></i>For Developers & Advanced Users
+                            </button>
+                        </h2>
+                        <div id="developerTools" class="accordion-collapse collapse" data-bs-parent="#developerAccordion">
+                            <div class="accordion-body">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <h6><i class="fas fa-terminal me-2"></i>Manual Pipeline Controls</h6>
+                                        <p class="text-muted small">For testing and development purposes</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <button onclick="runPipeline()" class="btn btn-outline-success">Run Live Pipeline</button>
+                                            <button onclick="runRetroPipeline()" class="btn btn-outline-warning">Run Final Pipeline</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6><i class="fas fa-chart-bar me-2"></i>Analytics & APIs</h6>
+                                        <p class="text-muted small">Advanced analytics and data access</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <a href="/bias-audit" class="btn btn-outline-info">Bias Dashboard</a>
+                                            <a href="/api/current" class="btn btn-outline-secondary">JSON API</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <div>
+                                    <h6>Technical Details:</h6>
+                                    <div class="row">
+                                        <div class="col-md-4 text-center">
+                                            <div class="bg-light p-3 rounded">
+                                                <div class="h4 text-success mb-1">134</div>
+                                                <small class="text-muted">FBS Teams</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="bg-light p-3 rounded">
+                                                <div class="h4 text-info mb-1">10</div>
+                                                <small class="text-muted">Conferences</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <div class="bg-light p-3 rounded">
+                                                <div class="h6 text-warning mb-1">Mon 3:30 AM</div>
+                                                <small class="text-muted">Auto-Update</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,15 +257,11 @@
                     <div class="card-body text-center p-4">
                         <h5>College Football Rankings System</h5>
                         <p class="mb-3">Automated, unbiased rankings using advanced mathematical algorithms</p>
-                        <div class="row justify-content-center">
-                            <div class="col-md-8">
-                                <div class="d-flex flex-wrap justify-content-center gap-3">
-                                    <a href="/current" class="btn btn-outline-light">Current Rankings</a>
-                                    <a href="/final" class="btn btn-outline-light">Final Rankings</a>
-                                    <a href="/api/current" class="btn btn-outline-light">JSON API</a>
-                                    <a href="/bias-audit" class="btn btn-outline-light">Bias Dashboard</a>
-                                </div>
-                            </div>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <a href="/current" class="btn btn-outline-light">Current Rankings</a>
+                            <a href="/final" class="btn btn-outline-light">Final Rankings</a>
+                            <a href="/api/current" class="btn btn-outline-light">JSON API</a>
+                            <a href="/bias-audit" class="btn btn-outline-light">Analytics</a>
                         </div>
                     </div>
                 </div>
@@ -279,11 +269,8 @@
         </div>
     </div>
 
-    <!-- Include Bootstrap JS for accordion functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
-        // Pipeline control functions for developer tools
         function runPipeline() {
             if (!confirm('Run live pipeline? This will fetch current week data and update rankings.')) return;
             
@@ -323,128 +310,6 @@
                     alert('Error running retrospective pipeline: ' + error.message);
                 });
         }
-    </script>
-</body>
-</html>
-                                <h6>Live Pipeline</h6>
-                                <p class="text-muted">Run weekly rankings update</p>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" id="live-week" placeholder="Week" min="1" max="15" value="1">
-                                    <input type="number" class="form-control" id="live-season" placeholder="Season" min="2020" max="2030" value="2023">
-                                    <button class="btn btn-primary" id="run-live-btn">
-                                        <i class="fas fa-play me-1"></i>Run Live
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>Retro Pipeline</h6>
-                                <p class="text-muted">Run season-ending definitive rankings</p>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" id="retro-season" placeholder="Season" min="2020" max="2030" value="2023">
-                                    <button class="btn btn-success" id="run-retro-btn">
-                                        <i class="fas fa-history me-1"></i>Run Retro
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="pipeline-status" class="mt-3" style="display: none;">
-                                    <div class="alert alert-info">
-                                        <i class="fas fa-spinner fa-spin me-2"></i>
-                                        <span id="pipeline-message">Running pipeline...</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Quick Stats -->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h6 class="card-title mb-0">System Configuration</h6>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li><strong>PageRank Damping:</strong> {{ config.pagerank.damping }}</li>
-                            <li><strong>Risk Elasticity:</strong> {{ config.risk.B }}</li>
-                            <li><strong>Surprise Factor:</strong> {{ config.surprise.gamma }}</li>
-                            <li><strong>Margin Cap:</strong> {{ config.margin.cap }}</li>
-                            <li><strong>Recency Lambda:</strong> {{ config.recency.lambda }}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h6 class="card-title mb-0">Export Data</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="d-grid gap-2">
-                            <a href="/api/export/csv" class="btn btn-outline-primary" target="_blank">
-                                <i class="fas fa-download me-2"></i>Download CSV
-                            </a>
-                            <a href="/api/export/json" class="btn btn-outline-primary" target="_blank">
-                                <i class="fas fa-download me-2"></i>Download JSON
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h6 class="card-title mb-0">Documentation</h6>
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fas fa-book me-2"></i>Algorithm Overview
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fas fa-code me-2"></i>API Documentation
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none">
-                                    <i class="fas fa-question-circle me-2"></i>FAQ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Custom JS -->
-    <script src="/static/app.js"></script>
-    
-    <script>
-        // Pass data from Flask to JavaScript
-        window.latestRatings = {{ latest_ratings | tojsonfilter | safe }};
-        window.biasMetrics = {{ bias_metrics | tojsonfilter | safe }};
-        
-        // Initialize dashboard when page loads
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.latestRatings) {
-                populateTop25Table(window.latestRatings.team_ratings);
-                createConferenceChart(window.latestRatings.conference_ratings);
-            }
-        });
     </script>
 </body>
 </html>
