@@ -311,12 +311,19 @@ class CFBDataIngester:
                 'is_bowl': game.get('season_type') == 'postseason'
             }
             
-            # Determine if cross-conference
-            processed_game['cross_conf'] = (
-                processed_game['winner_conference'] != processed_game['loser_conference']
-                and processed_game['winner_conference'] is not None
-                and processed_game['loser_conference'] is not None
-            )
+            # Determine if cross-conference - fixed for intra-conference bowls
+            home_conf = processed_game['winner_conference'] if processed_game['winner_home'] else processed_game['loser_conference']
+            away_conf = processed_game['loser_conference'] if processed_game['winner_home'] else processed_game['winner_conference']
+            
+            # Fix: Only count as cross-conference if both conferences exist AND are different
+            is_cross_conf = (home_conf and away_conf and home_conf != away_conf)
+            processed_game['cross_conf'] = is_cross_conf
+            
+            # Flag intra-conference bowl games for proper handling
+            if processed_game['is_bowl'] and not is_cross_conf:
+                processed_game['bowl_intra_conf'] = True
+            else:
+                processed_game['bowl_intra_conf'] = False
             
             processed_games.append(processed_game)
         

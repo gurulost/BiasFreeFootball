@@ -1,0 +1,91 @@
+**Task: add “how sure are we?” bands to every team’s rating so visitors can see at a glance whether two teams are genuinely different or effectively tied.**
+
+---
+
+### Why we need it
+
+The single rating we publish is an estimate that depends on which games happened and by how much.
+If we could replay the season a hundred different ways the numbers would jiggle.
+Showing that jiggle (statisticians call it a *bootstrap confidence band*) makes the leaderboard honest and helps users judge whether, say, #5 Indiana really outranks #8 Alabama or if they’re neck-and-neck.
+
+---
+
+### Back-end work (pipeline)
+
+1. **Add a flag to the retro script**
+   `--bootstrap N` where N defaults to `500`.
+
+2. **Inside the retro pipeline**
+
+   ```
+   if args.bootstrap:
+       for _ in range(args.bootstrap):
+           resample = random.choices(full_game_list, k=len(full_game_list))
+           S, R = run_full_rating(resample)        # same function we already use
+           for team, r in R.items():
+               store[team].append(r)
+   ```
+
+   `run_full_rating` is just the existing “build graph → two-stage PageRank” function.
+
+3. **After the loop compute bands**
+   For each team:
+
+   ```
+   ratings = store[team]
+   mid = np.mean(ratings)
+   lo  = np.percentile(ratings, 5)    # 90 % interval
+   hi  = np.percentile(ratings, 95)
+   sigma = np.std(ratings)
+   ```
+
+   Save `mid, lo, hi, sigma` in the export JSON:
+
+   ```
+   {
+     "team": "Indiana",
+     "rating": 0.01170,
+     "uncertainty": {"lo": 0.01090, "hi": 0.01240, "sigma": 0.00075}
+   }
+   ```
+
+4. **Performance note**
+   500 resamples × 133 teams × 2 graph solves runs in < 2 min on GitHub Actions
+   (the graph is small).  Cache the resampled edge lists in memory; no disk I/O.
+
+---
+
+### Front-end work (site/current.html)
+
+1. **Add a new column** right after “Rating” labelled
+   “90 % band”.
+
+2. **Display format**
+   `0.01170  (0.0109 – 0.0124)` for each team.
+
+3. **Colour cue**
+   If the band of team i overlaps the band of team i–1, grey-out their rank number; that tells users “these two are statistically inseparable.”
+
+4. **Hover tooltip**
+   On the rating cell show
+   “σ = 0.00075 (bootstrap, 500 draws)”.
+
+5. **Legend at top of page** (one sentence)
+   “The grey range shows where this team’s rating lands in 90 % of simulated seasons; overlapping ranges mean the teams are effectively tied.”
+
+---
+
+### CI / tests
+
+* Add a unit test `test_bootstrap_shape` that runs a 50-draw bootstrap on the golden mini-dataset and asserts each team now carries `uncertainty` with keys `lo, hi, sigma`.
+* Set the GitHub Action to call `python retro_pipeline.py --bootstrap 500` once per season‐end.
+
+---
+
+### Deliverables
+
+* Code changes committed.
+* Updated JSON contract noted in `README`.
+* Front-end deployed; table now shows the band column with hover tooltips.
+
+Once merged, visitors will immediately understand “how firm” each rank is instead of trusting raw decimals alone.
