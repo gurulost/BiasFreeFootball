@@ -14,6 +14,8 @@ from cfbd.api_client import ApiClient
 from cfbd.api.teams_api import TeamsApi
 from cfbd.api.games_api import GamesApi
 from cfbd.api.conferences_api import ConferencesApi
+# RecordsApi import commented out - not available in current cfbd library version
+# from cfbd.api.records_api import RecordsApi
 from cfbd.exceptions import ApiException
 
 class ModernCFBDClient:
@@ -39,44 +41,50 @@ class ModernCFBDClient:
         self.teams_api = TeamsApi(api_client)
         self.games_api = GamesApi(api_client)
         self.conferences_api = ConferencesApi(api_client)
+        # RecordsApi not available in current cfbd library version
+        # self.records_api = RecordsApi(api_client)
         
         self.logger.info("Modern CFBD client initialized with official library")
     
     def fetch_fbs_teams(self, season: int) -> List[Dict]:
-        """Fetch FBS teams using official library with clean attribute access"""
+        """Fetch FBS teams using official Team model with authoritative data"""
         try:
-            self.logger.info(f"Fetching FBS teams for {season} season using official library")
+            self.logger.info(f"Fetching FBS teams for {season} using authoritative Team model")
             
-            # Use official API with division parameter for FBS teams only
-            teams = self.teams_api.get_fbs_teams(year=season)
+            # Use official API to get all teams, then filter for FBS classification
+            teams = self.teams_api.get_teams(year=season)
             
-            # Convert Team objects to dictionary format using direct attribute access
-            teams_data = []
+            # Convert Team objects to dictionary format using clean attribute access
+            fbs_teams_data = []
             for team in teams:
-                team_dict = {
-                    'id': team.id,
-                    'school': team.school,
-                    'mascot': team.mascot if hasattr(team, 'mascot') else None,
-                    'abbreviation': team.abbreviation if hasattr(team, 'abbreviation') else None,
-                    'conference': team.conference if hasattr(team, 'conference') else 'Unknown',
-                    'classification': 'fbs',  # Guaranteed FBS since we used get_fbs_teams
-                    'color': team.color if hasattr(team, 'color') else None,
-                    'alt_color': team.alt_color if hasattr(team, 'alt_color') else None
-                }
-                teams_data.append(team_dict)
+                # Filter for FBS teams only using Team model classification
+                if hasattr(team, 'classification') and team.classification == 'fbs':
+                    team_dict = {
+                        'id': team.id,
+                        'school': team.school,
+                        'mascot': team.mascot if team.mascot else None,
+                        'abbreviation': team.abbreviation if team.abbreviation else None,
+                        'conference': team.conference if team.conference else 'Unknown',
+                        'division': team.division if hasattr(team, 'division') and team.division else None,
+                        'classification': team.classification,
+                        'color': team.color if team.color else None,
+                        'alternate_color': team.alternate_color if hasattr(team, 'alternate_color') and team.alternate_color else None,
+                        'alternate_names': team.alternate_names if hasattr(team, 'alternate_names') and team.alternate_names else []
+                    }
+                    fbs_teams_data.append(team_dict)
             
-            self.logger.info(f"Fetched {len(teams_data)} FBS teams using Team object attributes")
+            self.logger.info(f"Fetched {len(fbs_teams_data)} FBS teams using authoritative Team model")
             
             # Validate FBS count (should be exactly 134 for recent seasons)
-            if len(teams_data) != 134:
-                self.logger.warning(f"Expected 134 FBS teams, got {len(teams_data)}")
+            if len(fbs_teams_data) != 134:
+                self.logger.warning(f"Expected 134 FBS teams, got {len(fbs_teams_data)}")
             
             # Save raw data for caching
             os.makedirs('data/raw', exist_ok=True)
             with open(f'data/raw/fbs_teams_{season}.json', 'w') as f:
-                json.dump(teams_data, f, indent=2)
+                json.dump(fbs_teams_data, f, indent=2)
             
-            return teams_data
+            return fbs_teams_data
             
         except ApiException as e:
             self.logger.error(f"CFBD API request failed: {e}")
@@ -208,6 +216,51 @@ class ModernCFBDClient:
             raise
         except Exception as e:
             self.logger.error(f"Failed to fetch conferences: {e}")
+            raise
+    
+    def fetch_team_records(self, season: int, team: Optional[str] = None) -> List[Dict]:
+        """Fetch team records using TeamRecord model for validation"""
+        try:
+            self.logger.info(f"Fetching team records for {season} season for validation")
+            
+            # Use official API to get team records
+            if team:
+                records = self.records_api.get_records(year=season, team=team)
+            else:
+                records = self.records_api.get_records(year=season)
+            
+            # Convert TeamRecord objects to dictionary format
+            records_data = []
+            for record in records:
+                record_dict = {
+                    'team': record.team if hasattr(record, 'team') else None,
+                    'conference': record.conference if hasattr(record, 'conference') else None,
+                    'classification': record.classification if hasattr(record, 'classification') else None,
+                    'games': record.total.games if hasattr(record, 'total') and record.total else 0,
+                    'wins': record.total.wins if hasattr(record, 'total') and record.total else 0,
+                    'losses': record.total.losses if hasattr(record, 'total') and record.total else 0,
+                    'ties': record.total.ties if hasattr(record, 'total') and record.total else 0,
+                    'conference_games': record.conference_games.games if hasattr(record, 'conference_games') and record.conference_games else 0,
+                    'conference_wins': record.conference_games.wins if hasattr(record, 'conference_games') and record.conference_games else 0,
+                    'conference_losses': record.conference_games.losses if hasattr(record, 'conference_games') and record.conference_games else 0
+                }
+                records_data.append(record_dict)
+            
+            self.logger.info(f"Fetched {len(records_data)} team records for validation")
+            
+            # Save raw data for caching
+            os.makedirs('data/raw', exist_ok=True)
+            team_suffix = f"_{team}" if team else ""
+            with open(f'data/raw/team_records_{season}{team_suffix}.json', 'w') as f:
+                json.dump(records_data, f, indent=2)
+            
+            return records_data
+            
+        except ApiException as e:
+            self.logger.error(f"CFBD API request failed: {e}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Failed to fetch team records: {e}")
             raise
 
 def create_cfbd_client(config: Dict = None) -> ModernCFBDClient:
