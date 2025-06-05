@@ -192,10 +192,40 @@ class RankingScheduler:
     def get_final_rankings(self, season: int) -> Optional[Dict]:
         """Get final rankings for a specific season"""
         try:
-            cache_file = Path(f'data/cache/final_rankings_{season}.json')
+            cache_dir = Path('data/cache')
+            
+            # Check authentic cache files first
+            authentic_cache = cache_dir / f'final_rankings_{season}_authentic.json'
+            if authentic_cache.exists():
+                with open(authentic_cache, 'r') as f:
+                    return json.load(f)
+            
+            # Check regular cache
+            cache_file = cache_dir / f'final_rankings_{season}.json'
             if cache_file.exists():
                 with open(cache_file, 'r') as f:
                     return json.load(f)
+                    
+            # Try exports directory
+            exports_dir = Path('exports')
+            export_files = [
+                exports_dir / f'{season}_authentic.json',
+                exports_dir / f'{season}_retro.json',
+                exports_dir / f'{season}_final.json'
+            ]
+            
+            for export_file in export_files:
+                if export_file.exists():
+                    with open(export_file, 'r') as f:
+                        rankings_data = json.load(f)
+                    
+                    # Cache it for future use
+                    cache_dir.mkdir(exist_ok=True)
+                    with open(cache_file, 'w') as f:
+                        json.dump(rankings_data, f, indent=2)
+                        
+                    return rankings_data
+            
         except Exception as e:
             self.logger.error(f"Failed to load final rankings for {season}: {e}")
         return None
