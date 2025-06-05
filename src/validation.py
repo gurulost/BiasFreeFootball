@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 import hashlib
 import json
+import yaml
 import logging
 from pathlib import Path
 
@@ -57,8 +58,21 @@ class DataValidator:
                     season = int(yaml_file.stem.split('_')[1])
                     with open(yaml_file, 'r') as f:
                         data = yaml.safe_load(f)
-                    fbs_lists[season] = set(data.get('fbs_teams', []))
-                    self.logger.debug(f"Loaded FBS list for {season}: {len(fbs_lists[season])} teams")
+                    
+                    # Build comprehensive team set including aliases
+                    team_set = set(data.get('fbs_teams', []))
+                    
+                    # Add team aliases if present
+                    for alias_entry in data.get('team_aliases', []):
+                        canonical = alias_entry.get('canonical')
+                        aliases = alias_entry.get('aliases', [])
+                        if canonical:
+                            team_set.add(canonical)
+                        for alias in aliases:
+                            team_set.add(alias)
+                    
+                    fbs_lists[season] = team_set
+                    self.logger.debug(f"Loaded FBS list for {season}: {len(team_set)} teams (including aliases)")
                 except (ValueError, yaml.YAMLError) as e:
                     self.logger.warning(f"Failed to load FBS list from {yaml_file}: {e}")
         

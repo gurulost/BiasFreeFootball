@@ -1,7 +1,7 @@
 {
   "metadata": {
     "season": 2024,
-    "timestamp": "2025-06-05T16:10:08.483936",
+    "timestamp": "2025-06-05T16:14:42.667513",
     "total_teams": 134,
     "total_conferences": 11,
     "pipeline_type": "retro"
@@ -51,7 +51,7 @@
       "team": "Tennessee",
       "conference": "SEC",
       "rating_retro": 0.00896546678828624,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -64,7 +64,7 @@
       "team": "Texas",
       "conference": "Big 12",
       "rating_retro": 0.008948235193956721,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -76,7 +76,7 @@
       "rank_retro": 6,
       "team": "Notre Dame",
       "conference": "Independent",
-      "rating_retro": 0.008880565992712782,
+      "rating_retro": 0.00888056599271278,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -115,8 +115,8 @@
       "rank_retro": 9,
       "team": "Alabama",
       "conference": "SEC",
-      "rating_retro": 0.00868170471030301,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.008681704710303008,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -129,7 +129,7 @@
       "team": "Florida",
       "conference": "SEC",
       "rating_retro": 0.008671031761086082,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -141,7 +141,7 @@
       "rank_retro": 11,
       "team": "Arizona State",
       "conference": "Pac-12",
-      "rating_retro": 0.008610996215476584,
+      "rating_retro": 0.008610996215476585,
       "conf_weight": 0.08762031398862062,
       "quality_wins": [
         "Ohio State",
@@ -167,8 +167,8 @@
       "rank_retro": 13,
       "team": "Georgia",
       "conference": "SEC",
-      "rating_retro": 0.00858045260777426,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.008580452607774262,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -181,7 +181,7 @@
       "team": "Missouri",
       "conference": "SEC",
       "rating_retro": 0.008568695706533047,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -207,7 +207,7 @@
       "team": "Arkansas",
       "conference": "SEC",
       "rating_retro": 0.008533149975473282,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -219,8 +219,8 @@
       "rank_retro": 17,
       "team": "LSU",
       "conference": "SEC",
-      "rating_retro": 0.008500358806379097,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.008500358806379098,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -232,7 +232,7 @@
       "rank_retro": 18,
       "team": "Miami (OH)",
       "conference": "Independent",
-      "rating_retro": 0.00847864244533772,
+      "rating_retro": 0.008478642445337718,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -246,7 +246,7 @@
       "team": "Ole Miss",
       "conference": "SEC",
       "rating_retro": 0.008446390533274105,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -258,7 +258,7 @@
       "rank_retro": 20,
       "team": "Nebraska",
       "conference": "Big Ten",
-      "rating_retro": 0.008364285034349949,
+      "rating_retro": 0.00836428503434995,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -271,8 +271,8 @@
       "rank_retro": 21,
       "team": "Texas A&M",
       "conference": "SEC",
-      "rating_retro": 0.008282538797291268,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.00828253879729127,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -284,7 +284,7 @@
       "rank_retro": 22,
       "team": "Georgia Tech",
       "conference": "ACC",
-      "rating_retro": 0.00827707121387696,
+      "rating_retro": 0.008277071213876958,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -297,7 +297,7 @@
       "rank_retro": 23,
       "team": "Syracuse",
       "conference": "ACC",
-      "rating_retro": 0.008271464428208624,
+      "rating_retro": 0.008271464428208626,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -323,8 +323,8 @@
       "rank_retro": 25,
       "team": "Vanderbilt",
       "conference": "SEC",
-      "rating_retro": 0.008237683454109912,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.00823768345410991,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -336,7 +336,7 @@
       "rank_retro": 26,
       "team": "Illinois",
       "conference": "Big Ten",
-      "rating_retro": 0.008217576856962793,
+      "rating_retro": 0.008217576856962795,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -362,7 +362,7 @@
       "rank_retro": 28,
       "team": "North Carolina",
       "conference": "ACC",
-      "rating_retro": 0.00814549057362719,
+      "rating_retro": 0.008145490573627187,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -375,7 +375,7 @@
       "rank_retro": 29,
       "team": "Army",
       "conference": "Independent",
-      "rating_retro": 0.008117816012740836,
+      "rating_retro": 0.008117816012740834,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -389,7 +389,7 @@
       "team": "Mississippi State",
       "conference": "SEC",
       "rating_retro": 0.008085633461681853,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -401,7 +401,7 @@
       "rank_retro": 31,
       "team": "Boise State",
       "conference": "Independent",
-      "rating_retro": 0.008051618307545652,
+      "rating_retro": 0.00805161830754565,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -440,7 +440,7 @@
       "rank_retro": 34,
       "team": "Iowa",
       "conference": "Big Ten",
-      "rating_retro": 0.007923750858062644,
+      "rating_retro": 0.007923750858062645,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -453,7 +453,7 @@
       "rank_retro": 35,
       "team": "Pittsburgh",
       "conference": "ACC",
-      "rating_retro": 0.007908178654933462,
+      "rating_retro": 0.00790817865493346,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -506,7 +506,7 @@
       "team": "Auburn",
       "conference": "SEC",
       "rating_retro": 0.007826726306272437,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -531,7 +531,7 @@
       "rank_retro": 41,
       "team": "Memphis",
       "conference": "Independent",
-      "rating_retro": 0.007812426311976248,
+      "rating_retro": 0.0078124263119762494,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -557,7 +557,7 @@
       "rank_retro": 43,
       "team": "Florida State",
       "conference": "ACC",
-      "rating_retro": 0.007766591196771042,
+      "rating_retro": 0.007766591196771043,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -570,8 +570,8 @@
       "rank_retro": 44,
       "team": "South Carolina",
       "conference": "SEC",
-      "rating_retro": 0.007764932548655199,
-      "conf_weight": 0.18938160665937545,
+      "rating_retro": 0.007764932548655197,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -584,7 +584,7 @@
       "team": "Baylor",
       "conference": "Big 12",
       "rating_retro": 0.007746822596161191,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -596,7 +596,7 @@
       "rank_retro": 46,
       "team": "NC State",
       "conference": "ACC",
-      "rating_retro": 0.007708853194199182,
+      "rating_retro": 0.007708853194199183,
       "conf_weight": 0.19502077785974134,
       "quality_wins": [
         "Ohio State",
@@ -609,7 +609,7 @@
       "rank_retro": 47,
       "team": "Wisconsin",
       "conference": "Big Ten",
-      "rating_retro": 0.007676471946114465,
+      "rating_retro": 0.007676471946114464,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -635,7 +635,7 @@
       "rank_retro": 49,
       "team": "Rutgers",
       "conference": "Big Ten",
-      "rating_retro": 0.00765177164479559,
+      "rating_retro": 0.007651771644795591,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -661,7 +661,7 @@
       "rank_retro": 51,
       "team": "Houston",
       "conference": "Independent",
-      "rating_retro": 0.007591704871004288,
+      "rating_retro": 0.007591704871004287,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -752,7 +752,7 @@
       "rank_retro": 58,
       "team": "UConn",
       "conference": "Independent",
-      "rating_retro": 0.007502088318487473,
+      "rating_retro": 0.007502088318487472,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -791,7 +791,7 @@
       "rank_retro": 61,
       "team": "Louisiana",
       "conference": "Independent",
-      "rating_retro": 0.007467436094732803,
+      "rating_retro": 0.007467436094732804,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -805,7 +805,7 @@
       "team": "Kentucky",
       "conference": "SEC",
       "rating_retro": 0.007409024713322997,
-      "conf_weight": 0.18938160665937545,
+      "conf_weight": 0.18938160665937548,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -830,7 +830,7 @@
       "rank_retro": 64,
       "team": "Louisiana Tech",
       "conference": "Independent",
-      "rating_retro": 0.00736888401355811,
+      "rating_retro": 0.007368884013558111,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -844,7 +844,7 @@
       "team": "West Virginia",
       "conference": "Big 12",
       "rating_retro": 0.007364069210307379,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -883,7 +883,7 @@
       "team": "Kansas State",
       "conference": "Big 12",
       "rating_retro": 0.0073491562318923715,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -895,7 +895,7 @@
       "rank_retro": 69,
       "team": "Maryland",
       "conference": "Big Ten",
-      "rating_retro": 0.007344788498367781,
+      "rating_retro": 0.00734478849836778,
       "conf_weight": 0.1667882905836856,
       "quality_wins": [
         "Ohio State",
@@ -908,7 +908,7 @@
       "rank_retro": 70,
       "team": "Western Michigan",
       "conference": "Independent",
-      "rating_retro": 0.007319693212716286,
+      "rating_retro": 0.007319693212716285,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -934,7 +934,7 @@
       "rank_retro": 72,
       "team": "North Texas",
       "conference": "Independent",
-      "rating_retro": 0.007251296141223382,
+      "rating_retro": 0.007251296141223383,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -973,7 +973,7 @@
       "rank_retro": 75,
       "team": "USC",
       "conference": "Pac-12",
-      "rating_retro": 0.007219249690892751,
+      "rating_retro": 0.00721924969089275,
       "conf_weight": 0.08762031398862062,
       "quality_wins": [
         "Ohio State",
@@ -1025,7 +1025,7 @@
       "rank_retro": 79,
       "team": "San José State",
       "conference": "Independent",
-      "rating_retro": 0.007140410238423647,
+      "rating_retro": 0.007140410238423648,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1064,7 +1064,7 @@
       "rank_retro": 82,
       "team": "Navy",
       "conference": "Independent",
-      "rating_retro": 0.007076442441889933,
+      "rating_retro": 0.007076442441889934,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1103,7 +1103,7 @@
       "rank_retro": 85,
       "team": "Marshall",
       "conference": "Independent",
-      "rating_retro": 0.007070359944285028,
+      "rating_retro": 0.007070359944285027,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1129,8 +1129,8 @@
       "rank_retro": 87,
       "team": "Iowa State",
       "conference": "Big 12",
-      "rating_retro": 0.007035702721416144,
-      "conf_weight": 0.0974361249589602,
+      "rating_retro": 0.007035702721416143,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1142,7 +1142,7 @@
       "rank_retro": 88,
       "team": "Air Force",
       "conference": "Independent",
-      "rating_retro": 0.007030111414282818,
+      "rating_retro": 0.007030111414282817,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1168,7 +1168,7 @@
       "rank_retro": 90,
       "team": "Oregon State",
       "conference": "Pac-12",
-      "rating_retro": 0.007005794924245426,
+      "rating_retro": 0.007005794924245425,
       "conf_weight": 0.08762031398862062,
       "quality_wins": [
         "Ohio State",
@@ -1233,7 +1233,7 @@
       "rank_retro": 95,
       "team": "BYU",
       "conference": "Independent",
-      "rating_retro": 0.006976109783171369,
+      "rating_retro": 0.00697610978317137,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1259,7 +1259,7 @@
       "rank_retro": 97,
       "team": "Toledo",
       "conference": "Independent",
-      "rating_retro": 0.006968247914389768,
+      "rating_retro": 0.006968247914389767,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1272,7 +1272,7 @@
       "rank_retro": 98,
       "team": "UAB",
       "conference": "Independent",
-      "rating_retro": 0.006966740029952941,
+      "rating_retro": 0.00696674002995294,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1285,8 +1285,8 @@
       "rank_retro": 99,
       "team": "Oklahoma",
       "conference": "Big 12",
-      "rating_retro": 0.006962978814779051,
-      "conf_weight": 0.0974361249589602,
+      "rating_retro": 0.0069629788147790505,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1299,7 +1299,7 @@
       "team": "Oklahoma State",
       "conference": "Big 12",
       "rating_retro": 0.00694167842402065,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1337,7 +1337,7 @@
       "rank_retro": 103,
       "team": "UL Monroe",
       "conference": "Independent",
-      "rating_retro": 0.006911210299437327,
+      "rating_retro": 0.006911210299437326,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1351,7 +1351,7 @@
       "team": "Texas Tech",
       "conference": "Big 12",
       "rating_retro": 0.006893621620078099,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1376,7 +1376,7 @@
       "rank_retro": 106,
       "team": "Georgia State",
       "conference": "Independent",
-      "rating_retro": 0.006890443779564385,
+      "rating_retro": 0.006890443779564386,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1390,7 +1390,7 @@
       "team": "TCU",
       "conference": "Big 12",
       "rating_retro": 0.006886258567254352,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1415,7 +1415,7 @@
       "rank_retro": 109,
       "team": "New Mexico State",
       "conference": "Independent",
-      "rating_retro": 0.0068382811894197836,
+      "rating_retro": 0.006838281189419783,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1428,7 +1428,7 @@
       "rank_retro": 110,
       "team": "Florida Atlantic",
       "conference": "Independent",
-      "rating_retro": 0.006816590815781665,
+      "rating_retro": 0.006816590815781666,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1441,7 +1441,7 @@
       "rank_retro": 111,
       "team": "Rice",
       "conference": "Independent",
-      "rating_retro": 0.006808195460134066,
+      "rating_retro": 0.006808195460134067,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1455,7 +1455,7 @@
       "team": "Kansas",
       "conference": "Big 12",
       "rating_retro": 0.006795277367924903,
-      "conf_weight": 0.0974361249589602,
+      "conf_weight": 0.09743612495896019,
       "quality_wins": [
         "Ohio State",
         "Penn State",
@@ -1467,7 +1467,7 @@
       "rank_retro": 113,
       "team": "Texas State",
       "conference": "Independent",
-      "rating_retro": 0.006792780768212549,
+      "rating_retro": 0.00679278076821255,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1558,7 +1558,7 @@
       "rank_retro": 120,
       "team": "UCF",
       "conference": "Independent",
-      "rating_retro": 0.006599773121965962,
+      "rating_retro": 0.006599773121965963,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1636,7 +1636,7 @@
       "rank_retro": 126,
       "team": "Charlotte",
       "conference": "Independent",
-      "rating_retro": 0.0064263199720807854,
+      "rating_retro": 0.006426319972080785,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1675,7 +1675,7 @@
       "rank_retro": 129,
       "team": "Central Michigan",
       "conference": "Independent",
-      "rating_retro": 0.006296397659758097,
+      "rating_retro": 0.006296397659758096,
       "conf_weight": 0.030133434363949718,
       "quality_wins": [
         "Ohio State",
@@ -1688,7 +1688,7 @@
       "rank_retro": 130,
       "team": "Utah",
       "conference": "Pac-12",
-      "rating_retro": 0.006253562534059913,
+      "rating_retro": 0.006253562534059914,
       "conf_weight": 0.08762031398862062,
       "quality_wins": [
         "Ohio State",
@@ -1751,16 +1751,16 @@
     }
   ],
   "conference_ratings": {
-    "SEC": 0.18938160665937545,
-    "Sun Belt": 0.054396396494269125,
-    "Big Ten": 0.1667882905836856,
-    "American": 0.05465340722455822,
-    "Conference USA": 0.025652867300919,
-    "MAC": 0.04838596843693341,
-    "Big 12": 0.0974361249589602,
-    "ACC": 0.19502077785974134,
     "Pac-12": 0.08762031398862062,
+    "American": 0.05465340722455822,
+    "Sun Belt": 0.05439639649426913,
+    "Independent": 0.030133434363949718,
+    "Big Ten": 0.1667882905836856,
+    "Big 12": 0.09743612495896019,
+    "MAC": 0.0483859684369334,
+    "Conference USA": 0.025652867300919,
+    "ACC": 0.19502077785974134,
     "Mountain West": 0.050530812128987475,
-    "Independent": 0.030133434363949718
+    "SEC": 0.18938160665937548
   }
 }

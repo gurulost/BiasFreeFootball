@@ -156,7 +156,23 @@ fbs_teams:
 
   # Independents
   - Connecticut
+  - UConn
   - Massachusetts
   - Notre Dame
+
+# Team name variations for API compatibility
+team_aliases:
+  - canonical: Miami (FL)
+    aliases: [Miami, "Miami"]
+  - canonical: Connecticut
+    aliases: [UConn, "UConn"]
+  - canonical: Hawaii
+    aliases: ["Hawai'i", "Hawaii"]
+  - canonical: Cal
+    aliases: [California, "California"]
+  - canonical: San Jose State
+    aliases: ["San José State", "San Jose State"]
+  - canonical: Appalachian State
+    aliases: ["App State", "Appalachian State"]
 
 total_fbs_teams: 134
