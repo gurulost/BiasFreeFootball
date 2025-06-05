@@ -25,6 +25,7 @@ class CFBDataIngester:
         
         # Load canonical team mapping for data validation
         self.canonical_teams = self._load_canonical_teams()
+        self.conference_cache = {}  # Cache for conference ID to name mapping
         
     def _load_canonical_teams(self) -> Dict:
         """Load canonical team name mapping"""
@@ -50,6 +51,14 @@ class CFBDataIngester:
                 return value
         
         return None
+    
+    def get_conference_name(self, conference_id: int, season: int) -> str:
+        """Get conference name from ID using cached mapping"""
+        if season not in self.conference_cache:
+            # Fetch conferences if not cached
+            self.fetch_conferences(season)
+        
+        return self.conference_cache.get(season, {}).get(conference_id, 'Unknown')
         
     def _make_request(self, endpoint: str, params: Dict = None) -> Dict:
         """Make API request with error handling"""
@@ -86,10 +95,17 @@ class CFBDataIngester:
         return fbs_teams
     
     def fetch_conferences(self, season: int) -> List[Dict]:
-        """Fetch conference information"""
+        """Fetch conference information and build ID to name mapping"""
         params = {'year': season}
         
         conferences = self._make_request('conferences', params)
+        
+        # Build conference ID to name mapping for this season
+        self.conference_cache[season] = {
+            conf['id']: conf['name'] for conf in conferences
+        }
+        
+        self.logger.info(f"Built conference mapping for {season}: {len(self.conference_cache[season])} conferences")
         
         # Save raw data
         raw_path = f"{self.config['paths']['data_raw']}/conferences_{season}.json"
