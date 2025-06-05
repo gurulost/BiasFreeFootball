@@ -28,38 +28,48 @@ class FBSEnforcer:
     
     def validate_teams_response(self, teams: List[Dict], season: int) -> Tuple[List[Dict], Dict]:
         """
-        Validate teams API response ensures only FBS teams
-        Expected count: 134 for 2024
+        Validate teams API response ensures exactly 134 FBS teams
+        Implements hard whitelist approach with fail-fast validation
         """
-        expected_count = 134  # 2024 FBS count
+        expected_count = 134  # Exact FBS count for 2024
         
-        # Filter for FBS classification if present
+        # Build authoritative FBS roster with strict filtering
         fbs_teams = []
+        non_fbs_teams = []
+        
         for team in teams:
             classification = team.get('classification', '').lower()
-            if classification == 'fbs' or not classification:  # Include if FBS or missing
+            if classification == 'fbs':
                 fbs_teams.append(team)
+            else:
+                non_fbs_teams.append(team)
+        
+        # Create FBS ID whitelist for game filtering
+        fbs_ids = {team.get('id') for team in fbs_teams if team.get('id')}
         
         validation_report = {
             'total_received': len(teams),
-            'fbs_filtered': len(fbs_teams),
+            'fbs_count': len(fbs_teams),
+            'non_fbs_count': len(non_fbs_teams),
             'expected_count': expected_count,
+            'fbs_ids': fbs_ids,
             'validation_passed': len(fbs_teams) == expected_count,
             'excess_teams': max(0, len(fbs_teams) - expected_count),
-            'missing_teams': max(0, expected_count - len(fbs_teams))
+            'missing_teams': max(0, expected_count - len(fbs_teams)),
+            'contamination_detected': len(non_fbs_teams) > 0
         }
         
+        # Fail fast if team count is wrong
         if len(fbs_teams) != expected_count:
-            if len(fbs_teams) > expected_count:
-                self.logger.warning(f"FCS teams leaked in: got {len(fbs_teams)}, expected {expected_count}")
-            else:
-                self.logger.warning(f"Missing FBS teams: got {len(fbs_teams)}, expected {expected_count}")
-        else:
-            self.logger.info(f"✓ FBS teams validation passed: {len(fbs_teams)} teams")
+            self.logger.error(f"FBS team count mismatch: got {len(fbs_teams)}, expected {expected_count}")
+            if validation_report['contamination_detected']:
+                self.logger.error(f"API contamination: {len(non_fbs_teams)} non-FBS teams detected")
+            raise ValueError(f"FBS team validation failed: expected {expected_count}, got {len(fbs_teams)}")
         
-        # Cache for later use
-        self._fbs_teams_cache[season] = {team['school'] for team in fbs_teams if team.get('school')}
+        # Cache the FBS whitelist
+        self._fbs_teams_cache[season] = fbs_ids
         
+        self.logger.info(f"FBS teams validation: {len(fbs_teams)}/{expected_count} ({'✓' if validation_report['validation_passed'] else '✗'})")
         return fbs_teams, validation_report
     
     def enforce_games_request(self, params: Dict, season: int) -> Tuple[Dict, bool]:
@@ -80,28 +90,52 @@ class FBSEnforcer:
     
     def validate_games_response(self, games: List[Dict], season: int) -> Tuple[List[Dict], Dict]:
         """
-        Validate and filter games response to ensure FBS-only
-        Uses both classification fields and cached FBS team list
+        Validate and filter games response using hard FBS whitelist
+        Implements fail-fast validation against authorized FBS team IDs
         """
         if season not in self._fbs_teams_cache:
-            self.logger.warning(f"No FBS teams cache for {season} - using classification only")
-            fbs_team_names = set()
-        else:
-            fbs_team_names = self._fbs_teams_cache[season]
+            raise ValueError(f"No FBS team whitelist available for {season} - run teams validation first")
         
+        fbs_ids = self._fbs_teams_cache[season]
         fbs_games = []
-        filtered_count = 0
-        classification_failures = 0
-        team_name_failures = 0
+        contaminated_games = []
         
         for game in games:
-            # Method 1: Check team classifications (handle null values)
-            home_class = game.get('homeClassification') or ''
-            away_class = game.get('awayClassification') or ''
+            home_id = game.get('home_id')
+            away_id = game.get('away_id')
             
-            # Convert to lowercase safely
-            home_class = str(home_class).lower() if home_class else ''
-            away_class = str(away_class).lower() if away_class else ''
+            # Hard whitelist check using team IDs
+            if home_id in fbs_ids and away_id in fbs_ids:
+                fbs_games.append(game)
+            else:
+                contaminated_games.append({
+                    'home_team': game.get('home_team', 'Unknown'),
+                    'away_team': game.get('away_team', 'Unknown'),
+                    'home_id': home_id,
+                    'away_id': away_id,
+                    'home_in_fbs': home_id in fbs_ids,
+                    'away_in_fbs': away_id in fbs_ids
+                })
+        
+        validation_report = {
+            'total_games': len(games),
+            'fbs_games': len(fbs_games),
+            'contaminated_games': len(contaminated_games),
+            'contamination_rate': len(contaminated_games) / len(games) if games else 0,
+            'expected_games_min': 700,  # Minimum expected for full season
+            'validation_passed': len(contaminated_games) == 0 and len(fbs_games) >= 700,
+            'contamination_details': contaminated_games[:10]  # First 10 for debugging
+        }
+        
+        # Fail fast if contamination detected
+        if contaminated_games:
+            self.logger.error(f"API contamination detected: {len(contaminated_games)} non-FBS games found")
+            for bad_game in contaminated_games[:5]:
+                self.logger.error(f"  Non-FBS: {bad_game['home_team']} vs {bad_game['away_team']}")
+            raise ValueError(f"Games API contamination: {len(contaminated_games)} non-FBS matchups detected")
+        
+        self.logger.info(f"Games validation: {len(fbs_games)} FBS-only games ({'✓' if validation_report['validation_passed'] else '✗'})")
+        return fbs_games, validation_report
             
             classification_valid = (home_class == 'fbs' and away_class == 'fbs')
             

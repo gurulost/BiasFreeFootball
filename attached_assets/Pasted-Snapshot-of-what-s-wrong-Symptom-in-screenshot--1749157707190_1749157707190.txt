@@ -1,0 +1,53 @@
+Snapshot of what's wrong: 
+| Symptom in screenshot                                                                                                                                                           | What it really means |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| **Top rating only ≈ 0.0096** (should be ≥ 0.013) → rating pie is spread over **> 134 nodes** or PageRank is renormalised twice.                                                 |                      |
+| “**132 Teams**” at header  → we lost **2 FBS schools** during ingest.                                                                                                           |                      |
+| **Miami-OH, Jax State, WKU, Colorado St in top 15** → risk/surprise multipliers are still exploding mid-major edges.                                                            |                      |
+| **Army tagged “American Athletic”, Notre Dame “FBS Independents”, Boise “Mountain West”** (good) but **App State “Unknown” earlier** → conference map still missing edge cases. |                      |
+| **Quality wins now populated** ✔, but check top teams for plausibility (Texas shows Georgia, Kentucky, Florida).                                                                |                      |
+
+1. Guarantee we ingest exactly 134 FBS teams
+
+Load authoritative roster first
+fbs_teams = TeamsApi(api).get_fbs_teams(year=season, division='fbs')
+FBS_IDS   = {t.id for t in fbs_teams}      # len must be 134
+assert len(FBS_IDS) == 134, "missing or extra FBS teams"
+Filter games in memory
+games = [
+    g for g in GamesApi(api).get_games(year=season, season_type='both')
+    if g.home_team_id in FBS_IDS and g.away_team_id in FBS_IDS
+]
+Fail fast if any non-FBS row sneaks through:
+bad = [g for g in games if g.home_team_id not in FBS_IDS or g.away_team_id not in FBS_IDS]
+assert not bad, f"{len(bad)} non-FBS rows – API bug or filter off"
+CI test
+def test_team_count():
+    assert len(ingest_games(2024).team_ids()) == 134
+2. Stop accidental double-normalisation in PageRank
+
+In pagerank.py we already normalise the adjacency matrix and then networkx
+does its own row-normalisation again. Delete the pre-normalise:
+
+# remove or comment this
+M = A / A.sum(axis=1, keepdims=True)
+# just feed raw weighted adjacency into nx.pagerank
+Top rating should jump ~40 % (0.009 → > 0.013).
+
+4. Verify conference map completeness
+
+After building TEAM_META:
+
+missing_conf = [t for t in fbs_teams if t.conference is None]
+assert not missing_conf, f"teams without conference: {missing_conf}"
+Add any stragglers (e.g., transitional schools) to a manual_conf_overrides.yaml.
+
+6. Quick sanity KPI after fixes
+
+Metric	Target
+len(teams)	134
+Top rating	≥ 0.013
+≥ 4 Power-5 teams rated ≥ 0.009	
+BYU rank	top-25 if 10-2 season
+No “Unknown” conf	0 rows
+Add these as assertions in tests/test_integrity.py.
