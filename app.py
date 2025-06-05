@@ -19,6 +19,11 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SESSION_SECRET", "dev-key-change-in-production")
 app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
+# Add custom Jinja2 filter for JSON conversion
+@app.template_filter('tojsonfilter')
+def to_json_filter(obj):
+    return json.dumps(obj) if obj is not None else 'null'
+
 # Load configuration
 with open('config.yaml', 'r') as f:
     config = yaml.safe_load(f)

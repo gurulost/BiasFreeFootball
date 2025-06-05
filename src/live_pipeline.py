@@ -6,7 +6,7 @@ Runs every Sunday to update rankings with latest results
 import yaml
 import logging
 from datetime import datetime
-from typing import Dict, Tuple
+from typing import Dict, Tuple, List
 import pandas as pd
 
 from src.ingest import fetch_results_upto_week
