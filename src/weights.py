@@ -137,8 +137,8 @@ class WeightCalculator:
             credit_weight *= self.bowl_bump
         
         # Conference graph weight (cross-conference only)
-        # Fixed: Use the corrected cross_conf flag from ingest
-        is_cross_conf = game_data.get('cross_conf', False)
+        is_cross_conf = (game_data.get('winner_conference') != 
+                        game_data.get('loser_conference'))
         
         conf_weight = 0
         if is_cross_conf:
