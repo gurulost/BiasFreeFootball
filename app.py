@@ -22,7 +22,15 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 # Add custom Jinja2 filter for JSON conversion
 @app.template_filter('tojsonfilter')
 def to_json_filter(obj):
-    return json.dumps(obj) if obj is not None else 'null'
+    try:
+        if obj is None:
+            return 'null'
+        # Handle Jinja2 Undefined objects
+        if hasattr(obj, '_undefined_hint'):
+            return 'null'
+        return json.dumps(obj, default=str)
+    except (TypeError, ValueError):
+        return 'null'
 
 # Load configuration
 with open('config.yaml', 'r') as f:
