@@ -122,11 +122,11 @@ class CFBDataIngester:
     
     def fetch_games(self, season: int, week: Optional[int] = None, 
                    season_type: str = 'regular') -> List[Dict]:
-        """Fetch game results up to specified week"""
+        """Fetch game results with FBS-only filtering (Games endpoint ignores division parameter)"""
         params = {
             'year': season,
-            'seasonType': season_type,
-            'division': 'fbs'
+            'seasonType': season_type
+            # NOTE: division parameter doesn't work on games endpoint, filter manually
         }
         
         if week:
@@ -137,14 +137,21 @@ class CFBDataIngester:
         # Filter only completed games
         completed_games = [g for g in games if g.get('completed', False)]
         
+        # Critical fix: Games endpoint ignores division=fbs, so filter manually using classifications
+        fbs_games = [g for g in completed_games 
+                    if (g.get('homeClassification') == 'fbs' and 
+                        g.get('awayClassification') == 'fbs')]
+        
+        self.logger.info(f"Manual FBS filtering: {len(fbs_games)}/{len(completed_games)} games (filtered out {len(completed_games) - len(fbs_games)} non-FBS)")
+        
         # Save raw data
         week_str = f"_week{week}" if week else ""
         raw_path = f"{self.config['paths']['data_raw']}/games_{season}{week_str}.json"
         os.makedirs(os.path.dirname(raw_path), exist_ok=True)
         with open(raw_path, 'w') as f:
-            json.dump(completed_games, f, indent=2)
+            json.dump(fbs_games, f, indent=2)
             
-        return completed_games
+        return fbs_games
     
     def fetch_results_upto_week(self, week: int, season: int) -> List[Dict]:
         """Fetch all completed games up to and including specified week - FBS only"""
