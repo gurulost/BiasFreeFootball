@@ -89,8 +89,22 @@ def run_pipeline(season=2024):
         # --- Step 3: Generate Rankings from Validated Data ---
         logger.info("Step 3: Generating rankings with validated data")
         graph_builder = GraphBuilder(config)
-        conf_graph, team_graph = graph_builder.build_graphs(fbs_games_df)
         ranker = PageRankCalculator(config)
+
+        # Build the initial graphs
+        conf_graph, team_graph = graph_builder.build_graphs(fbs_games_df)
+
+        # --- STAGE 1: Calculate Conference Strength ---
+        logger.info("Running STAGE 1: Calculating conference strength ratings")
+        conf_ratings = ranker.pagerank(conf_graph)
+        logger.info(f"Top 5 conferences: {sorted(conf_ratings.items(), key=lambda x: x[1], reverse=True)[:5]}")
+
+        # --- STAGE 2: Inject Conference Strength and Rank Teams ---
+        logger.info("Running STAGE 2: Injecting conference strength into team graph")
+        # The inject_conf_strength function modifies the team_graph in place
+        graph_builder.inject_conf_strength(team_graph, conf_ratings)
+
+        logger.info("Calculating final team ratings from conference-adjusted graph")
         team_ratings = ranker.pagerank(team_graph)
 
         # --- Step 4: Calculate Quality Wins & Build Final Rankings ---
