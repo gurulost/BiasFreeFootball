@@ -1,6 +1,6 @@
 """
 Run complete pipeline with authentic 2024 CFBD data
-Generates accurate rankings based on real game results with validation-first approach
+Generates accurate rankings based on real game results with a validation-first approach
 """
 
 import os
@@ -30,86 +30,87 @@ def load_config():
     with open('config.yaml', 'r') as f:
         return yaml.safe_load(f)
 
-def run_authentic_pipeline(season=2024):
+def run_pipeline(season=2024):
     """
     Run a complete, validation-first pipeline with authentic CFBD data.
     This pipeline ensures data integrity BEFORE generating rankings.
     """
     logger = setup_logging()
     logger.info(f"Starting authentic pipeline for {season} season")
-    
+
     try:
         # Load configuration
         config = load_config()
-        
+
         # Initialize ingester and validator
         ingester = CFBDataIngester(config)
         quality_validator = DataQualityValidator(config)
 
-        # --- Step 1: Ingest Raw Data ---
-        logger.info("Step 1: Fetching authentic team and game data")
+        # --- Step 1: Ingest and Clean Raw Data ---
+        logger.info("Step 1: Fetching and cleaning authentic team and game data")
         teams = ingester.fetch_teams(season)
-        ingester.fetch_conferences(season) # Populates conference cache
-        games = ingester.fetch_results_upto_bowls(season)
-        games_df = ingester.process_game_data(games)
-        
-        logger.info(f"Initial ingestion complete: {len(teams)} teams, {len(games_df)} games")
+        fbs_team_names = {team['school'].strip() for team in teams}
+
+        ingester.fetch_conferences()  # Populates conference cache
+
+        all_games = ingester.fetch_results_upto_bowls(season)
+        all_games_df = ingester.process_game_data(all_games)
+
+        if all_games_df.empty:
+            logger.warning("No valid games found after processing. Exiting.")
+            return {'success': False, 'error': 'No valid games found'}
+
+        # Filter for games between two FBS teams
+        fbs_games_df = all_games_df[
+            all_games_df['winner'].isin(fbs_team_names) &
+            all_games_df['loser'].isin(fbs_team_names)
+        ].copy()
+
+        logger.info(f"Initial ingestion complete: {len(teams)} teams, {len(fbs_games_df)} FBS games")
+
+        if fbs_games_df.empty:
+            logger.error("No FBS vs. FBS games were found in the dataset. Cannot proceed.")
+            return {'success': False, 'error': 'No FBS vs. FBS games found'}
 
         # --- Step 2: Comprehensive Data Quality Validation ---
-        # This is the most critical step. If validation fails, the pipeline stops.
         logger.info("Step 2: Running comprehensive data quality validation")
-        
-        # Build a temporary ratings map for the validator (can be dummy or initial)
-        # The validator primarily checks team counts, conferences, and game data here.
         temp_ratings = {team['school']: 0.0 for team in teams}
-
         validation_report = quality_validator.run_comprehensive_validation(
-            teams, games_df, temp_ratings, season
+            teams, fbs_games_df, temp_ratings, season
         )
-        
-        # Fail fast on any critical data quality issues
+
         if not validation_report['overall_validation_passed']:
             critical_issues = validation_report['critical_issues']
             logger.error(f"PIPELINE FAILED due to critical data quality issues: {critical_issues}")
-            # You can examine the full 'validation_report' for details
             raise ValueError(f"Data quality validation failed with issues: {critical_issues}")
-        
+
         logger.info("✓ Comprehensive data quality validation PASSED")
-        
+
         # --- Step 3: Generate Rankings from Validated Data ---
         logger.info("Step 3: Generating rankings with validated data")
-        
-        # Build graphs
         graph_builder = GraphBuilder(config)
-        conf_graph, team_graph = graph_builder.build_graphs(games_df)
-        
-        # Run PageRank
+        conf_graph, team_graph = graph_builder.build_graphs(fbs_games_df)
         ranker = PageRankCalculator(config)
         team_ratings = ranker.pagerank(team_graph)
-        
+
         # --- Step 4: Calculate Quality Wins & Build Final Rankings ---
         logger.info("Step 4: Calculating quality wins and building final rankings")
-        
-        # Build team-to-conference mapping from the validated team data
         team_conf_mapping = {team['school']: team.get('conference', 'Independent') for team in teams}
-        
         quality_calculator = QualityWinsCalculator(config)
         quality_wins = quality_calculator.calculate_quality_wins(team_graph, team_ratings, max_wins=3)
-        
+
         rankings_data = {
             'metadata': {
                 'season': season,
                 'generated_at': datetime.now().isoformat(),
                 'data_source': 'authentic_cfbd_api',
-                'total_games': len(games_df),
+                'total_games': len(fbs_games_df),
                 'total_teams': len(team_ratings),
                 'validation_status': 'PASSED'
             },
             'rankings': []
         }
-        
         sorted_teams = sorted(team_ratings.items(), key=lambda x: x[1], reverse=True)
-        
         for rank, (team, rating) in enumerate(sorted_teams, 1):
             rankings_data['rankings'].append({
                 'rank': rank,
@@ -118,54 +119,42 @@ def run_authentic_pipeline(season=2024):
                 'rating': rating,
                 'quality_wins': quality_wins.get(team, [])
             })
-            
+
         # --- Step 5: Save and Display Results ---
         logger.info("Step 5: Saving authentic rankings")
-        
-        # Create directories if they don't exist
         os.makedirs('data/cache', exist_ok=True)
         os.makedirs('exports', exist_ok=True)
-        
-        # Save to cache and exports
+
         cache_file = f"data/cache/final_rankings_{season}_authentic.json"
         export_file = f"exports/{season}_authentic.json"
-        
+
         with open(cache_file, 'w') as f:
             json.dump(rankings_data, f, indent=2)
         with open(export_file, 'w') as f:
             json.dump(rankings_data, f, indent=2)
-        
+
         logger.info(f"Authentic rankings saved to {export_file}")
-        
         logger.info("--- Top 25 Authentic Rankings ---")
         for team_data in rankings_data['rankings'][:25]:
             logger.info(
                 f"{team_data['rank']:2d}. {team_data['team']:20s} "
                 f"({team_data['conference']:15s}) {team_data['rating']:.6f}"
             )
-        
+
         logger.info("\nAuthentic pipeline completed successfully!")
-        
         return {
             'success': True,
             'rankings_file': export_file,
             'total_teams': len(team_ratings),
-            'total_games': len(games_df)
+            'total_games': len(fbs_games_df)
         }
-        
+
     except Exception as e:
         logger.error(f"Pipeline failed with an unexpected error: {e}", exc_info=True)
         return {'success': False, 'error': str(e)}
 
 if __name__ == "__main__":
-    result = run_authentic_pipeline()
-    
-    if result['success']:
-        print("\n=== AUTHENTIC PIPELINE SUCCESS ===")
-        print(f"Rankings saved to: {result['rankings_file']}")
-        print(f"Teams processed: {result['total_teams']}")
-        print(f"Games analyzed: {result['total_games']}")
-    else:
-        print(f"\n=== PIPELINE FAILED ===")
-        print(f"Error: {result['error']}")
+    result = run_pipeline()
+    if not result['success']:
+        print(f"\n=== PIPELINE FAILED ===\nError: {result['error']}")
         exit(1)

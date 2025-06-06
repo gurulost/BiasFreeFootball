@@ -4,7 +4,7 @@
 # Core mathematical parameters
 margin:
   cap: 5  # Maximum margin factor (log base 2)
-  
+
 venue:
   home_factor: 1.1
   neutral_factor: 1.0
@@ -41,9 +41,9 @@ bias_audit:
 
 # Data source configuration
 api:
-  base_url: "https://apinext.collegefootballdata.com"
-  key: ""  # Will be loaded from environment variable CFB_API_KEY
-  
+  base_url: "https://api.collegefootballdata.com"
+  key: "wQFpYo4FojSBRPm4nM7kLpCaqS1tykHwPrWgy2yUDhbDPf5EapDBnO5tXTTIUltv"
+
 # Pipeline configuration
 pipeline:
   live:

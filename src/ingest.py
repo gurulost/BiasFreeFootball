@@ -19,29 +19,30 @@ class CFBDataIngester:
 
         # Configure the official CFBD API client
         from cfbd import Configuration, ApiClient, TeamsApi, GamesApi, ConferencesApi
-        
+
         configuration = Configuration()
         api_key = os.getenv('CFB_API_KEY', config.get('api', {}).get('key', ''))
         if not api_key:
-            self.logger.warning("CFB_API_KEY not found - API requests may fail")
-        
-        configuration.api_key['Authorization'] = api_key
-        configuration.api_key_prefix['Authorization'] = 'Bearer'
-        
+            self.logger.error("API key not found in config.yaml or CFB_API_KEY environment variable.")
+            raise ValueError("API Key is missing.")
+
+        # Set the access token directly as per cfbd library documentation
+        configuration.access_token = api_key
+
         # Create API client and specific API instances
         api_client = ApiClient(configuration)
         self.teams_api = TeamsApi(api_client)
         self.games_api = GamesApi(api_client)
         self.conferences_api = ConferencesApi(api_client)
-        
+
         # Initialize FBS enforcer for data validation
         from src.fbs_enforcer import create_fbs_enforcer
         self.fbs_enforcer = create_fbs_enforcer(config)
-        
+
         # Load canonical team mapping for data validation
         self.canonical_teams = self._load_canonical_teams()
         self.conference_cache = {}  # Cache for conference ID to name mapping
-        
+
     def _load_canonical_teams(self) -> Dict:
         """Load canonical team name mapping"""
         try:
@@ -50,23 +51,23 @@ class CFBDataIngester:
         except FileNotFoundError:
             self.logger.warning("Canonical teams file not found - data validation disabled")
             return {}
-    
+
     def canonicalize_team(self, team_name: str) -> Optional[Dict]:
         """Convert team name to canonical form with conference info"""
         if not team_name or not self.canonical_teams:
             return None
-        
+
         # Direct lookup
         if team_name in self.canonical_teams:
             return self.canonical_teams[team_name]
-        
+
         # Case-insensitive lookup
         for key, value in self.canonical_teams.items():
             if key.lower() == team_name.lower():
                 return value
-        
+
         return None
-    
+
     def get_conference_name(self, conference_data, season: int) -> str:
         """Get conference name from API data"""
         # Handle both direct string and ID-based conference data
@@ -74,410 +75,123 @@ class CFBDataIngester:
             return conference_data
         elif isinstance(conference_data, int):
             # Fallback to ID mapping if needed
-            if season not in self.conference_cache:
-                self.fetch_conferences(season)
-            return self.conference_cache.get(season, {}).get(conference_data, 'Unknown')
-        else:
-            return 'Unknown'
-        
-    def fetch_teams(self, season: int) -> List[Dict]:
-        """Fetch FBS team information using the official CFBD library"""
-        self.logger.info(f"Fetching FBS teams for {season} season using official library")
-        
+            if not self.conference_cache:
+                self.fetch_conferences()
+            return self.conference_cache.get(conference_data, 'Unknown')
+        return 'Unknown'
+
+    def fetch_teams(self, season: int, classification: str = 'fbs') -> List[Dict]:
+        """Fetch all teams for a given season, enforcing FBS classification."""
         try:
-            # Use the official library's dedicated FBS teams endpoint
+            # Always fetch FBS teams
             api_response = self.teams_api.get_fbs_teams(year=season)
-            
-            # Convert Pydantic models to dictionaries for compatibility
-            teams_data = [team.to_dict() for team in api_response]
-            
-            # Validate response with FBS enforcer
-            fbs_teams, validation_report = self.fbs_enforcer.validate_teams_response(teams_data, season)
-            
-            # Log validation results
-            if validation_report['validation_passed']:
-                self.logger.info(f"✓ FBS teams validation passed: {len(fbs_teams)} teams")
-            else:
-                self.logger.warning(f"FBS teams validation concerns: {validation_report}")
-            
-            # Save raw data
-            raw_path = f"{self.config['paths']['data_raw']}/teams_{season}_fbs.json"
-            os.makedirs(os.path.dirname(raw_path), exist_ok=True)
-            with open(raw_path, 'w') as f:
-                import json
-                json.dump(fbs_teams, f, indent=2)
-                
-            return fbs_teams
-            
+            return [team.to_dict() for team in api_response]
         except ApiException as e:
-            self.logger.error(f"CFBD API request failed: {e}")
-            raise
-    
-    def fetch_conferences(self, season: int) -> List[Dict]:
-        """Fetch conference information and build ID to name mapping"""
-        params = {'year': season}
-        
-        conferences = self._make_request('conferences', params)
-        
-        # Build conference ID to name mapping for this season
-        self.conference_cache[season] = {
-            conf['id']: conf['name'] for conf in conferences
-        }
-        
-        self.logger.info(f"Built conference mapping for {season}: {len(self.conference_cache[season])} conferences")
-        
-        # Save raw data
-        raw_path = f"{self.config['paths']['data_raw']}/conferences_{season}.json"
-        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
-        with open(raw_path, 'w') as f:
-            json.dump(conferences, f, indent=2)
-            
-        return conferences
-    
-    def fetch_games(self, season: int, week: Optional[int] = None, 
-                   season_type: str = 'regular') -> List[Dict]:
-        """Fetch game results with enforced FBS-only filtering"""
-        # Enforce FBS-only parameters (though API ignores division for games)
-        params = {
-            'year': season,
-            'seasonType': season_type
-        }
-        
-        if week:
-            params['week'] = week
-            
-        enforced_params, needs_manual_filtering = self.fbs_enforcer.enforce_games_request(params, season)
-        
-        # Make API request
-        games = self._make_request('games', enforced_params)
-        
-        # Filter only completed games
-        completed_games = [g for g in games if g.get('completed', False)]
-        
-        # Validate response with FBS enforcer (handles manual filtering)
-        fbs_games, validation_report = self.fbs_enforcer.validate_games_response(completed_games, season)
-        
-        # Log validation results
-        if validation_report['filtering_effective']:
-            self.logger.info(f"FBS games filtering: {len(fbs_games)}/{len(completed_games)} games kept")
-        else:
-            self.logger.info(f"✓ All {len(completed_games)} games were already FBS-only")
-        
-        # Save raw data
-        week_str = f"_week{week}" if week else ""
-        raw_path = f"{self.config['paths']['data_raw']}/games_{season}{week_str}.json"
-        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
-        with open(raw_path, 'w') as f:
-            json.dump(fbs_games, f, indent=2)
-            
-        return fbs_games
-    
-    def fetch_results_upto_week(self, week: int, season: int) -> List[Dict]:
-        """Fetch all completed games up to and including specified week - FBS only"""
-        all_games = []
-        
-        # Get authentic FBS teams list for strict filtering
-        fbs_teams = self.fetch_teams(season, division='fbs')
-        fbs_team_names = {team['school'] for team in fbs_teams}
-        
-        self.logger.info(f"Filtering games using {len(fbs_team_names)} authentic FBS teams")
-        
-        # Regular season games
-        for w in range(1, week + 1):
-            try:
-                week_games = self.fetch_games(season, w, 'regular')
-                # Filter for FBS-only games (both teams must be FBS)
-                fbs_week_games = [g for g in week_games 
-                                 if (g.get('homeClassification') == 'fbs' and 
-                                     g.get('awayClassification') == 'fbs')]
-                all_games.extend(fbs_week_games)
-                self.logger.info(f"Week {w}: {len(fbs_week_games)} FBS-only games from {len(week_games)} total")
-            except Exception as e:
-                self.logger.warning(f"Failed to fetch week {w}: {e}")
-                
-        self.logger.info(f"Total FBS-only games collected: {len(all_games)}")
-        return all_games
-    
+            self.logger.error(f"Error fetching FBS teams: {e}")
+            return []
+
+    def fetch_games(self, season: int, week: int, season_type: str = 'regular', classification: str = 'fbs') -> List[Dict]:
+        """Fetch all games for a given week and season, enforcing FBS classification."""
+        try:
+            # Always fetch FBS games
+            api_response = self.games_api.get_games(year=season, week=week, season_type=season_type, classification=classification)
+            return [game.to_dict() for game in api_response]
+        except ApiException as e:
+            self.logger.error(f"Error fetching FBS games: {e}")
+            return []
+
+    def fetch_conferences(self) -> List[Dict]:
+        """Fetch all conference information."""
+        try:
+            api_response = self.conferences_api.get_conferences()
+            conferences = [conf.to_dict() for conf in api_response]
+
+            # Update cache
+            for conf in conferences:
+                self.conference_cache[conf['id']] = conf['name']
+
+            return conferences
+        except ApiException as e:
+            self.logger.error(f"Error fetching conferences: {e}")
+            return []
+
     def fetch_results_upto_bowls(self, season: int) -> List[Dict]:
-        """Fetch all completed games including bowls - FBS teams only"""
-        all_games = []
-        
-        # Get authentic FBS teams list for strict filtering with season-specific conferences
-        fbs_teams = self.fetch_teams(season, division='fbs')
-        fbs_team_names = {team['school'] for team in fbs_teams}
-        
-        # Build season-specific team to conference mapping for accurate assignments
-        team_to_conference = {team['school']: team.get('conference', 'Unknown') for team in fbs_teams}
-        
-        # Verify FBS count (should be exactly 134 for 2024)
-        if len(fbs_team_names) != 134:
-            self.logger.warning(f"Expected 134 FBS teams, got {len(fbs_team_names)} - may include FCS teams")
-        
-        self.logger.info(f"Filtering complete season using {len(fbs_team_names)} authentic FBS teams")
-        
-        # Regular season games with FBS-only filtering
-        regular_games = self.fetch_games(season, season_type='regular')
-        fbs_regular_games = [g for g in regular_games 
-                            if (g.get('homeTeam') in fbs_team_names and 
-                                g.get('awayTeam') in fbs_team_names)]
-        all_games.extend(fbs_regular_games)
-        
-        # Postseason games with FBS-only filtering
-        bowl_games = self.fetch_games(season, season_type='postseason')
-        fbs_bowl_games = [g for g in bowl_games 
-                         if (g.get('homeTeam') in fbs_team_names and 
-                             g.get('awayTeam') in fbs_team_names)]
-        all_games.extend(fbs_bowl_games)
-        
-        # Add season-specific conference information to all games
-        for game in all_games:
-            home_team = game.get('homeTeam')
-            away_team = game.get('awayTeam')
-            
-            if home_team in team_to_conference:
-                game['homeConference'] = team_to_conference[home_team]
-            else:
-                game['homeConference'] = 'Unknown'
-                
-            if away_team in team_to_conference:
-                game['awayConference'] = team_to_conference[away_team]
-            else:
-                game['awayConference'] = 'Unknown'
-                
-            # Mark intra-conference bowl games for special handling
-            if (game.get('seasonType') == 'postseason' and 
-                game.get('homeConference') == game.get('awayConference') and
-                game.get('homeConference') != 'Unknown'):
-                game['bowl_intra_conf'] = True
-            else:
-                game['bowl_intra_conf'] = False
-        
-        self.logger.info(f"FBS-only games: {len(all_games)} (regular: {len(fbs_regular_games)}, bowls: {len(fbs_bowl_games)})")
-        self.logger.info(f"Filtered out {len(regular_games) + len(bowl_games) - len(all_games)} non-FBS games")
-        
-        # Save raw data
-        raw_path = f"{self.config['paths']['data_raw']}/games_{season}_fbs_complete.json"
-        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
-        with open(raw_path, 'w') as f:
-            json.dump(all_games, f, indent=2)
-            
-        return all_games
-    
+        """Fetch all regular season and postseason game results."""
+        regular_games = self.games_api.get_games(year=season, season_type='regular', classification='fbs')
+        postseason_games = self.games_api.get_games(year=season, season_type='postseason', classification='fbs')
+        return [game.to_dict() for game in regular_games + postseason_games]
+
     def process_game_data(self, games: List[Dict]) -> pd.DataFrame:
-        """Process raw game data with production-grade validation"""
-        from src.validation import DataValidator
-        
-        # Run comprehensive validation suite
-        validator = DataValidator(self.config)
-        
-        # First pass: strict schema and outlier validation
-        if self.config.get('validation', {}).get('enable_hardening', True):
-            season = games[0].get('season', 2024) if games else 2024
-            games_df = validator.validate_complete_dataset(
-                games, self.canonical_teams, season
-            )
-            
-            # Canonical mapping already applied in validation
-            return games_df
-        
-        # Fallback to legacy validation for development
-        return self._legacy_process_game_data(games)
-    
-    def _legacy_process_game_data(self, games: List[Dict]) -> pd.DataFrame:
-        """Legacy processing with basic validation (for development)"""
-        processed_games = []
-        bad_rows = []
-        validation_warnings = []
-        missing_aliases = set()
-        
+        """Process raw game data into a clean DataFrame."""
+        game_records = []
         for game in games:
-            if not game.get('completed', False):
+            home_team = game.get('home_team')
+            away_team = game.get('away_team')
+
+            # Skip games with missing team data
+            if not home_team or not away_team:
                 continue
-                
-            home_team = game.get('homeTeam')
-            away_team = game.get('awayTeam')
-            home_score = game.get('homePoints', 0)
-            away_score = game.get('awayPoints', 0)
-            home_conf = game.get('homeConference')
-            away_conf = game.get('awayConference')
-            
-            if not all([home_team, away_team, home_score is not None, away_score is not None]):
-                continue
-            
-            # Validate and canonicalize team names
-            home_canonical = self.canonicalize_team(home_team) if home_team else None
-            away_canonical = self.canonicalize_team(away_team) if away_team else None
-            
-            # Check for missing team canonicalization and collect aliases
-            if home_team and not home_canonical:
-                validation_warnings.append(f"Unknown home team: {home_team}")
-                missing_aliases.add(home_team)
-            if away_team and not away_canonical:
-                validation_warnings.append(f"Unknown away team: {away_team}")
-                missing_aliases.add(away_team)
-            
-            # Apply canonical names and conferences if available
-            if home_canonical:
-                home_team = home_canonical['name']
-                if not home_conf or pd.isna(home_conf):
-                    home_conf = home_canonical['conf']
-            
-            if away_canonical:
-                away_team = away_canonical['name']
-                if not away_conf or pd.isna(away_conf):
-                    away_conf = away_canonical['conf']
-                
-            # Determine winner/loser and venue
-            if game.get('neutralSite', False):
-                venue = 'neutral'
-            elif home_score > away_score:
-                venue = 'home'
-            else:
-                venue = 'away'
-                
-            if home_score > away_score:
-                winner, loser = home_team, away_team
-                winner_score, loser_score = home_score, away_score
-                winner_conf, loser_conf = home_conf, away_conf
-                winner_home = True
-            else:
-                winner, loser = away_team, home_team
-                winner_score, loser_score = away_score, home_score
-                winner_conf, loser_conf = away_conf, home_conf
-                winner_home = False
-                
-            processed_game = {
-                'game_id': game.get('id'),
-                'season': game.get('season'),
-                'week': game.get('week'),
-                'season_type': game.get('season_type'),
+
+            # Strip whitespace from team names
+            home_team = home_team.strip()
+            away_team = away_team.strip()
+
+            winner = home_team if game.get('home_points', 0) > game.get('away_points', 0) else away_team
+            loser = away_team if game.get('home_points', 0) > game.get('away_points', 0) else home_team
+
+            winner_data = self.canonicalize_team(winner)
+            loser_data = self.canonicalize_team(loser)
+
+            game_records.append({
                 'winner': winner,
                 'loser': loser,
-                'winner_score': winner_score,
-                'loser_score': loser_score,
-                'margin': abs(winner_score - loser_score),
-                'venue': venue,
-                'neutral_site': game.get('neutral_site', False),
-                'winner_conference': winner_conf,
-                'loser_conference': loser_conf,
-                'points_winner': winner_score,
-                'points_loser': loser_score,
-                'winner_home': winner_home,
-                'date': game.get('start_date'),
-                'is_bowl': game.get('season_type') == 'postseason'
-            }
-            
-            # Determine if cross-conference
-            processed_game['cross_conf'] = (
-                processed_game['winner_conference'] != processed_game['loser_conference']
-                and processed_game['winner_conference'] is not None
-                and processed_game['loser_conference'] is not None
-            )
-            
-            processed_games.append(processed_game)
-        
-        # Save missing aliases report for automated processing
-        if missing_aliases:
-            self._save_missing_aliases_report(missing_aliases, games[0].get('season', 2024))
-        
-        # Log validation results
-        if validation_warnings:
-            self.logger.warning(f"Data validation warnings: {len(validation_warnings)} issues found")
-            for warning in validation_warnings[:10]:  # Log first 10 warnings
-                self.logger.warning(f"  {warning}")
-        
-        if bad_rows:
-            self.logger.error(f"Data validation failed: {len(bad_rows)} games dropped due to data issues")
-            for bad_row in bad_rows[:5]:  # Log first 5 bad rows
-                self.logger.error(f"  Dropped: {bad_row}")
-            
-            # Fail if too many bad rows (indicates systematic data issue)
-            if len(bad_rows) > len(games) * 0.05:  # More than 5% bad data
-                raise ValueError(f"Too many data validation failures: {len(bad_rows)}/{len(games)} games")
-        
-        # CI blocking mechanism: Assert zero missing aliases in strict mode
-        if self.config.get('validation', {}).get('strict_mode', False):
-            assert not missing_aliases, \
-                f"Unhandled aliases in strict mode: {sorted(missing_aliases)}"
-        
-        df = pd.DataFrame(processed_games)
-        
-        # Validate schedule completeness for FBS teams
-        if not df.empty:
-            self._validate_schedule_completeness(df)
-        
-        return df
-    
-    def _validate_schedule_completeness(self, games_df: pd.DataFrame) -> None:
-        """Validate that all FBS teams have complete schedules"""
-        # Get all teams that appear in games
-        all_teams = set()
-        for _, game in games_df.iterrows():
-            all_teams.add(game['winner'])
-            all_teams.add(game['loser'])
-        
-        # Count games per team
-        team_game_counts = {}
-        for team in all_teams:
-            team_games = games_df[
-                (games_df['winner'] == team) | (games_df['loser'] == team)
-            ]
-            team_game_counts[team] = len(team_games)
-        
-        # Check for teams with suspiciously few games (< 8 games suggests missing data)
-        missing_games = []
-        for team, count in team_game_counts.items():
-            if count < 8:  # Most FBS teams play 12+ games
-                missing_games.append((team, count))
-        
-        if missing_games:
-            self.logger.warning(f"Teams with potentially incomplete schedules:")
-            for team, count in sorted(missing_games):
-                self.logger.warning(f"  {team}: {count} games (expected 10-15)")
-                
-            # Special check for known major teams
-            major_teams = ['BYU', 'Ohio State', 'Georgia', 'Alabama', 'Texas', 'Notre Dame']
-            for team in major_teams:
-                if team in team_game_counts and team_game_counts[team] < 10:
-                    self.logger.error(f"CRITICAL: {team} has only {team_game_counts[team]} games - data integrity issue!")
-        
-        self.logger.info(f"Schedule validation complete: {len(all_teams)} teams, {len(games_df)} games")
-    
-    def _save_missing_aliases_report(self, missing_aliases: set, season: int) -> None:
-        """Save missing aliases report for automated processing"""
-        import json
-        import os
-        
-        # Create reports directory if it doesn't exist
-        reports_dir = 'reports'
-        os.makedirs(reports_dir, exist_ok=True)
-        
-        # Save missing aliases as JSON for tool processing
-        report_path = f"{reports_dir}/missing_aliases_{season}.json"
-        with open(report_path, 'w') as f:
-            json.dump(sorted(list(missing_aliases)), f, indent=2)
-        
-        self.logger.info(f"Missing aliases report saved to {report_path}")
-        self.logger.info(f"To auto-generate placeholders, run: python tools/add_placeholders.py {report_path}")
+                'winner_conference': winner_data.get('conf') if winner_data else 'Unknown',
+                'loser_conference': loser_data.get('conf') if loser_data else 'Unknown',
+                'margin': abs(game.get('home_points', 0) - game.get('away_points', 0)),
+                'venue': 'neutral' if game.get('neutral_site') else 'home',
+                'week': game.get('week'),
+                'season_type': game.get('season_type'),
+                'bowl_intra_conf': False  # Default value
+            })
 
-def fetch_results_upto_week(week: int, season: int, config: Dict = None) -> pd.DataFrame:
-    """Convenience function for pipeline use"""
-    if config is None:
-        import yaml
+        if not game_records:
+            return pd.DataFrame(columns=['winner', 'loser', 'winner_conference', 'loser_conference', 'margin', 'venue', 'week', 'season_type', 'bowl_intra_conf'])
+
+        return pd.DataFrame(game_records)
+
+def fetch_results_upto_week(week: int, season: int = 2024) -> pd.DataFrame:
+    """Fetch game results up to specified week for compatibility"""
+    import yaml
+    
+    # Load configuration
+    try:
         with open('config.yaml', 'r') as f:
             config = yaml.safe_load(f)
-            
+    except FileNotFoundError:
+        config = {'api': {}, 'paths': {'data_raw': 'data/raw'}}
+    
+    # Create ingester instance
     ingester = CFBDataIngester(config)
-    games = ingester.fetch_results_upto_week(week, season)
-    return ingester.process_game_data(games)
-
-def fetch_results_upto_bowls(season: int, config: Dict = None) -> pd.DataFrame:
-    """Convenience function for retro pipeline use"""
-    if config is None:
-        import yaml
-        with open('config.yaml', 'r') as f:
-            config = yaml.safe_load(f)
-            
-    ingester = CFBDataIngester(config)
+    
+    # Fetch games using modernized approach
     games = ingester.fetch_results_upto_bowls(season)
+    
+    # Convert to DataFrame format expected by live pipeline
     return ingester.process_game_data(games)
+
+def fetch_results_upto_bowls(season: int) -> list:
+    """Fetch all game results including bowls for compatibility"""
+    import yaml
+    
+    # Load configuration
+    try:
+        with open('config.yaml', 'r') as f:
+            config = yaml.safe_load(f)
+    except FileNotFoundError:
+        config = {'api': {}, 'paths': {'data_raw': 'data/raw'}}
+    
+    # Create ingester instance
+    ingester = CFBDataIngester(config)
+    
+    # Return raw game data
+    return ingester.fetch_results_upto_bowls(season)

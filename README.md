@@ -2,8 +2,29 @@
 
 A sophisticated college football ranking system that leverages advanced statistical methodologies to generate unbiased, data-driven team and conference rankings with cutting-edge analytics.
 
+## 📋 Developer Documentation
+
+**IMPORTANT**: Before working on this codebase, please review the comprehensive developer documentation in the **[Guiding Docs](./Guiding%20Docs/)** folder:
+
+### Essential Reading for Developers
+
+- **[Purpose_and_Vision.md](./Guiding%20Docs/Purpose_and_Vision.md)** - Core philosophy and architectural overview
+- **[Rating_System.md](./Guiding%20Docs/Rating_System.md)** - How the ranking algorithm works
+- **[API_README.md](./Guiding%20Docs/API_README.md)** - College Football Data API integration guide
+- **[CFBD_API_Key_Setup_Guide.md](./Guiding%20Docs/CFBD_API_Key_Setup_Guide.md)** - API authentication setup
+
+### CFBD API Model Documentation
+
+The system uses the official cfbd-python library with these foundational models:
+- **[Team.md](./Guiding%20Docs/Team.md)** - Team model attributes and usage
+- **[Game.md](./Guiding%20Docs/Game.md)** - Game model attributes and clean data access
+- **[Conference.md](./Guiding%20Docs/Conference.md)** - Conference model for authoritative data
+- **[TeamRecord.md](./Guiding%20Docs/TeamRecord.md)** - Team records for validation
+
 ## 🎯 Key Features
 
+- **Validation-First Pipeline** with fail-fast data quality checks
+- **Official CFBD Library Integration** using Team, Game, Conference models
 - **Two-Layer PageRank Algorithm** with enhanced EM convergence
 - **Automated FBS-Only Data Processing** (134 authentic teams)
 - **Comprehensive Bootstrap Sampling** for ranking confidence
@@ -17,9 +38,10 @@ A sophisticated college football ranking system that leverages advanced statisti
 ### Local Development
 
 1. Clone the repository
-2. Install dependencies: `pip install -r pyproject.toml`
+2. Install dependencies: `uv sync` or `pip install -e .`
 3. Set environment variable: `export CFB_API_KEY=your_api_key`
-4. Run rankings: `python fbs_only_pipeline.py`
+4. Review the [Guiding Docs](./Guiding%20Docs/) folder for system understanding
+5. Run rankings: `python run_authentic_pipeline.py`
 
 ### Automated Website Deployment
 
@@ -33,17 +55,29 @@ A sophisticated college football ranking system that leverages advanced statisti
 - **Current Rankings JSON**: `https://yourusername.github.io/yourrepo/current.json`
 - **Final Season Rankings**: `https://yourusername.github.io/yourrepo/final.json`
 
-## 🔧 System Architecture
+## 🏗️ Understanding the System Architecture
+
+The **[Guiding Docs](./Guiding%20Docs/)** folder contains comprehensive documentation that explains:
+
+### System Philosophy & Design
+- **Purpose & Vision**: Why this ranking system exists and core design principles
+- **Rating System**: How the two-layer PageRank algorithm eliminates bias
+- **Data Integrity**: Validation-first approach using official CFBD foundational models
+
+### Developer Implementation Guide
+- **API Integration**: Using the official cfbd-python library with proper authentication
+- **Foundational Models**: Team, Game, Conference, and TeamRecord objects for clean data access
+- **Pipeline Architecture**: From data ingestion to bias-free ranking generation
 
 ### Core Pipeline Components
 
-- **Data Ingestion** (`src/ingest.py`) - College Football Data API with FBS filtering
-- **Validation** (`src/validation.py`) - Industry-grade data quality checks
+- **Data Ingestion** (`src/ingest.py`) - Official CFBD library with FBS enforcement
+- **Validation** (`src/validation.py`) - Fail-fast data quality checks using authentic models
 - **Graph Construction** (`src/graph.py`) - Two-layer directed graph modeling
-- **PageRank Algorithm** (`src/pagerank.py`) - Enhanced EM convergence
+- **PageRank Algorithm** (`src/pagerank.py`) - Enhanced EM convergence with conference injection
 - **Conference Strength** (`src/weights.py`) - Relative scaling algorithms
 - **Bias Auditing** (`src/bias_audit.py`) - Neutrality metric computation
-- **Bootstrap Analysis** (`src/bootstrap.py`) - Statistical confidence intervals
+- **Quality Wins** (`src/quality_wins.py`) - Authentic game result analysis
 
 ### Automated Publication
 

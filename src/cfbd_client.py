@@ -218,50 +218,81 @@ class ModernCFBDClient:
             self.logger.error(f"Failed to fetch conferences: {e}")
             raise
     
-    def fetch_team_records(self, season: int, team: Optional[str] = None) -> List[Dict]:
-        """Fetch team records using TeamRecord model for validation"""
+    def validate_data_integrity(self, games: List[Dict], teams: List[Dict]) -> Dict[str, bool]:
+        """Validate data integrity using available foundational models"""
         try:
-            self.logger.info(f"Fetching team records for {season} season for validation")
+            self.logger.info("Validating data integrity using Team and Game models")
             
-            # Use official API to get team records
-            if team:
-                records = self.records_api.get_records(year=season, team=team)
+            # Build team lookup from authoritative Team model data
+            team_lookup = {team['school']: team for team in teams}
+            fbs_teams = {team['school'] for team in teams if team['classification'] == 'fbs'}
+            
+            # Validate game data against authoritative team data
+            validation_results = {
+                'fbs_teams_valid': True,
+                'conference_assignments_valid': True,
+                'game_teams_valid': True,
+                'missing_teams': [],
+                'invalid_conferences': []
+            }
+            
+            # Check each game against authoritative team data
+            for game in games:
+                home_team = game['homeTeam']
+                away_team = game['awayTeam']
+                home_conf = game.get('homeConference', '')
+                away_conf = game.get('awayConference', '')
+                
+                # Validate teams exist in FBS
+                if home_team not in fbs_teams:
+                    validation_results['missing_teams'].append(home_team)
+                    validation_results['fbs_teams_valid'] = False
+                
+                if away_team not in fbs_teams:
+                    validation_results['missing_teams'].append(away_team)
+                    validation_results['fbs_teams_valid'] = False
+                
+                # Validate conference assignments
+                if home_team in team_lookup:
+                    official_conf = team_lookup[home_team]['conference']
+                    if home_conf != official_conf:
+                        validation_results['invalid_conferences'].append({
+                            'team': home_team,
+                            'game_conference': home_conf,
+                            'official_conference': official_conf
+                        })
+                        validation_results['conference_assignments_valid'] = False
+                
+                if away_team in team_lookup:
+                    official_conf = team_lookup[away_team]['conference']
+                    if away_conf != official_conf:
+                        validation_results['invalid_conferences'].append({
+                            'team': away_team,
+                            'game_conference': away_conf,
+                            'official_conference': official_conf
+                        })
+                        validation_results['conference_assignments_valid'] = False
+            
+            # Log validation results
+            if all(validation_results.values()):
+                self.logger.info("✓ Data integrity validation PASSED using foundational models")
             else:
-                records = self.records_api.get_records(year=season)
+                self.logger.warning("✗ Data integrity validation found issues")
+                if validation_results['missing_teams']:
+                    self.logger.warning(f"  Missing FBS teams: {len(set(validation_results['missing_teams']))}")
+                if validation_results['invalid_conferences']:
+                    self.logger.warning(f"  Conference assignment errors: {len(validation_results['invalid_conferences'])}")
             
-            # Convert TeamRecord objects to dictionary format
-            records_data = []
-            for record in records:
-                record_dict = {
-                    'team': record.team if hasattr(record, 'team') else None,
-                    'conference': record.conference if hasattr(record, 'conference') else None,
-                    'classification': record.classification if hasattr(record, 'classification') else None,
-                    'games': record.total.games if hasattr(record, 'total') and record.total else 0,
-                    'wins': record.total.wins if hasattr(record, 'total') and record.total else 0,
-                    'losses': record.total.losses if hasattr(record, 'total') and record.total else 0,
-                    'ties': record.total.ties if hasattr(record, 'total') and record.total else 0,
-                    'conference_games': record.conference_games.games if hasattr(record, 'conference_games') and record.conference_games else 0,
-                    'conference_wins': record.conference_games.wins if hasattr(record, 'conference_games') and record.conference_games else 0,
-                    'conference_losses': record.conference_games.losses if hasattr(record, 'conference_games') and record.conference_games else 0
-                }
-                records_data.append(record_dict)
+            return validation_results
             
-            self.logger.info(f"Fetched {len(records_data)} team records for validation")
-            
-            # Save raw data for caching
-            os.makedirs('data/raw', exist_ok=True)
-            team_suffix = f"_{team}" if team else ""
-            with open(f'data/raw/team_records_{season}{team_suffix}.json', 'w') as f:
-                json.dump(records_data, f, indent=2)
-            
-            return records_data
-            
-        except ApiException as e:
-            self.logger.error(f"CFBD API request failed: {e}")
-            raise
         except Exception as e:
-            self.logger.error(f"Failed to fetch team records: {e}")
-            raise
+            self.logger.error(f"Data integrity validation failed: {e}")
+            return {
+                'fbs_teams_valid': False,
+                'conference_assignments_valid': False,
+                'game_teams_valid': False,
+                'error': str(e)
+            }
 
 def create_cfbd_client(config: Dict = None) -> ModernCFBDClient:
     """Factory function for creating CFBD client"""
