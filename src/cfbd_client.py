@@ -33,8 +33,8 @@ class ModernCFBDClient:
             self.logger.error("CFB_API_KEY required for authentic data access")
             raise ValueError("CFB_API_KEY environment variable must be set")
         
-        configuration.api_key['Authorization'] = api_key
-        configuration.api_key_prefix['Authorization'] = 'Bearer'
+        # Set the access token directly as per cfbd library documentation
+        configuration.access_token = api_key
         
         # Create API client and specific API instances
         api_client = ApiClient(configuration)

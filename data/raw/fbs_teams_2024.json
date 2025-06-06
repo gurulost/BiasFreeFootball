@@ -1,0 +1,2036 @@
+[
+  {
+    "id": 2005,
+    "school": "Air Force",
+    "mascot": "Falcons",
+    "abbreviation": "AFA",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#004a7b",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "AFA",
+      "Air Force"
+    ]
+  },
+  {
+    "id": 2006,
+    "school": "Akron",
+    "mascot": "Zips",
+    "abbreviation": "AKR",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00285e",
+    "alternate_color": "#84754e",
+    "alternate_names": [
+      "AKR",
+      "Akron"
+    ]
+  },
+  {
+    "id": 333,
+    "school": "Alabama",
+    "mascot": "Crimson Tide",
+    "abbreviation": "ALA",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#9e1632",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "ALA",
+      "Alabama"
+    ]
+  },
+  {
+    "id": 2026,
+    "school": "App State",
+    "mascot": "Mountaineers",
+    "abbreviation": "APP",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#ffcc00",
+    "alternate_color": "#222222",
+    "alternate_names": [
+      "Appalachian State",
+      "APP",
+      "App State"
+    ]
+  },
+  {
+    "id": 12,
+    "school": "Arizona",
+    "mascot": "Wildcats",
+    "abbreviation": "ARIZ",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0c234b",
+    "alternate_color": "#ab0520",
+    "alternate_names": [
+      "ARIZ",
+      "Arizona"
+    ]
+  },
+  {
+    "id": 9,
+    "school": "Arizona State",
+    "mascot": "Sun Devils",
+    "abbreviation": "ASU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#8e0c3a",
+    "alternate_color": "#ffc72c",
+    "alternate_names": [
+      "ASU",
+      "Arizona St"
+    ]
+  },
+  {
+    "id": 8,
+    "school": "Arkansas",
+    "mascot": "Razorbacks",
+    "abbreviation": "ARK",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#a41f35",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "ARK",
+      "Arkansas"
+    ]
+  },
+  {
+    "id": 2032,
+    "school": "Arkansas State",
+    "mascot": "Red Wolves",
+    "abbreviation": "ARST",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#e81018",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "ARST",
+      "Arkansas St"
+    ]
+  },
+  {
+    "id": 349,
+    "school": "Army",
+    "mascot": "Black Knights",
+    "abbreviation": "ARMY",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ce9c00",
+    "alternate_color": "#231f20",
+    "alternate_names": [
+      "ARMY",
+      "Army"
+    ]
+  },
+  {
+    "id": 2,
+    "school": "Auburn",
+    "mascot": "Tigers",
+    "abbreviation": "AUB",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#002b5c",
+    "alternate_color": "#f26522",
+    "alternate_names": [
+      "AUB",
+      "Auburn"
+    ]
+  },
+  {
+    "id": 2050,
+    "school": "Ball State",
+    "mascot": "Cardinals",
+    "abbreviation": "BALL",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#DA0000",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "BALL",
+      "Ball State"
+    ]
+  },
+  {
+    "id": 239,
+    "school": "Baylor",
+    "mascot": "Bears",
+    "abbreviation": "BAY",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#154734",
+    "alternate_color": "#ffb81c",
+    "alternate_names": [
+      "BAY",
+      "Baylor"
+    ]
+  },
+  {
+    "id": 68,
+    "school": "Boise State",
+    "mascot": "Broncos",
+    "abbreviation": "BOIS",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0033a0",
+    "alternate_color": "#fa4616",
+    "alternate_names": [
+      "BOIS",
+      "Boise St"
+    ]
+  },
+  {
+    "id": 103,
+    "school": "Boston College",
+    "mascot": "Eagles",
+    "abbreviation": "BC",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#8c2232",
+    "alternate_color": "#dbcca6",
+    "alternate_names": [
+      "BC",
+      "Boston College"
+    ]
+  },
+  {
+    "id": 189,
+    "school": "Bowling Green",
+    "mascot": "Falcons",
+    "abbreviation": "BGSU",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#2b1000",
+    "alternate_color": "#492000",
+    "alternate_names": [
+      "Bowling Green State",
+      "BGSU",
+      "Bowling Green"
+    ]
+  },
+  {
+    "id": 2084,
+    "school": "Buffalo",
+    "mascot": "Bulls",
+    "abbreviation": "BUF",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#041A9B",
+    "alternate_color": "#ebebeb",
+    "alternate_names": [
+      "BUF",
+      "Buffalo"
+    ]
+  },
+  {
+    "id": 252,
+    "school": "BYU",
+    "mascot": "Cougars",
+    "abbreviation": "BYU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003da5",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "Brigham Young",
+      "BYU",
+      "BYU"
+    ]
+  },
+  {
+    "id": 25,
+    "school": "California",
+    "mascot": "Golden Bears",
+    "abbreviation": "CAL",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#031522",
+    "alternate_color": "#ffc423",
+    "alternate_names": [
+      "CAL",
+      "California"
+    ]
+  },
+  {
+    "id": 2117,
+    "school": "Central Michigan",
+    "mascot": "Chippewas",
+    "abbreviation": "CMU",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#6a0032",
+    "alternate_color": "#ffc82e",
+    "alternate_names": [
+      "CMU",
+      "C Michigan"
+    ]
+  },
+  {
+    "id": 2429,
+    "school": "Charlotte",
+    "mascot": "49ers",
+    "abbreviation": "CLT",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#046A38",
+    "alternate_color": "#B9975B",
+    "alternate_names": [
+      "CLT",
+      "Charlotte"
+    ]
+  },
+  {
+    "id": 2132,
+    "school": "Cincinnati",
+    "mascot": "Bearcats",
+    "abbreviation": "CIN",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#E00122",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "CIN",
+      "Cincinnati"
+    ]
+  },
+  {
+    "id": 228,
+    "school": "Clemson",
+    "mascot": "Tigers",
+    "abbreviation": "CLEM",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#f56600",
+    "alternate_color": "#522d80",
+    "alternate_names": [
+      "CLEM",
+      "Clemson"
+    ]
+  },
+  {
+    "id": 324,
+    "school": "Coastal Carolina",
+    "mascot": "Chanticleers",
+    "abbreviation": "CCU",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#007073",
+    "alternate_color": "#876447",
+    "alternate_names": [
+      "CCU",
+      "Coastal Car"
+    ]
+  },
+  {
+    "id": 38,
+    "school": "Colorado",
+    "mascot": "Buffaloes",
+    "abbreviation": "COLO",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#CFB87C",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "COLO",
+      "Colorado"
+    ]
+  },
+  {
+    "id": 36,
+    "school": "Colorado State",
+    "mascot": "Rams",
+    "abbreviation": "CSU",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#1e4d2b",
+    "alternate_color": "#c8c372",
+    "alternate_names": [
+      "CSU",
+      "Colorado St"
+    ]
+  },
+  {
+    "id": 150,
+    "school": "Duke",
+    "mascot": "Blue Devils",
+    "abbreviation": "DUKE",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#013088",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "DUKE",
+      "Duke"
+    ]
+  },
+  {
+    "id": 151,
+    "school": "East Carolina",
+    "mascot": "Pirates",
+    "abbreviation": "ECU",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#4b1869",
+    "alternate_color": "#f0907b",
+    "alternate_names": [
+      "ECU",
+      "East Carolina"
+    ]
+  },
+  {
+    "id": 2199,
+    "school": "Eastern Michigan",
+    "mascot": "Eagles",
+    "abbreviation": "EMU",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00331b",
+    "alternate_color": "#f0f0f0",
+    "alternate_names": [
+      "EMU",
+      "E Michigan"
+    ]
+  },
+  {
+    "id": 57,
+    "school": "Florida",
+    "mascot": "Gators",
+    "abbreviation": "FLA",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0021a5",
+    "alternate_color": "#fa4616",
+    "alternate_names": [
+      "FLA",
+      "Florida"
+    ]
+  },
+  {
+    "id": 2226,
+    "school": "Florida Atlantic",
+    "mascot": "Owls",
+    "abbreviation": "FAU",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00447c",
+    "alternate_color": "#d31245",
+    "alternate_names": [
+      "FAU",
+      "FAU"
+    ]
+  },
+  {
+    "id": 2229,
+    "school": "Florida International",
+    "mascot": "Panthers",
+    "abbreviation": "FIU",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#001538",
+    "alternate_color": "#c5960c",
+    "alternate_names": [
+      "Florida Intl",
+      "FIU",
+      "FIU"
+    ]
+  },
+  {
+    "id": 52,
+    "school": "Florida State",
+    "mascot": "Seminoles",
+    "abbreviation": "FSU",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#782f40",
+    "alternate_color": "#ceb888",
+    "alternate_names": [
+      "FSU",
+      "Florida St"
+    ]
+  },
+  {
+    "id": 278,
+    "school": "Fresno State",
+    "mascot": "Bulldogs",
+    "abbreviation": "FRES",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#db0032",
+    "alternate_color": "#002e6d",
+    "alternate_names": [
+      "FRES",
+      "Fresno St"
+    ]
+  },
+  {
+    "id": 61,
+    "school": "Georgia",
+    "mascot": "Bulldogs",
+    "abbreviation": "UGA",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ba0c2f",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "UGA",
+      "Georgia"
+    ]
+  },
+  {
+    "id": 290,
+    "school": "Georgia Southern",
+    "mascot": "Eagles",
+    "abbreviation": "GASO",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#003775",
+    "alternate_color": "#f0f0f0",
+    "alternate_names": [
+      "GASO",
+      "GA Southern"
+    ]
+  },
+  {
+    "id": 2247,
+    "school": "Georgia State",
+    "mascot": "Panthers",
+    "abbreviation": "GAST",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#1e539a",
+    "alternate_color": "#ebebeb",
+    "alternate_names": [
+      "GAST",
+      "Georgia St"
+    ]
+  },
+  {
+    "id": 59,
+    "school": "Georgia Tech",
+    "mascot": "Yellow Jackets",
+    "abbreviation": "GT",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003057",
+    "alternate_color": "#b3a369",
+    "alternate_names": [
+      "GT",
+      "Georgia Tech"
+    ]
+  },
+  {
+    "id": 62,
+    "school": "Hawai'i",
+    "mascot": "Rainbow Warriors",
+    "abbreviation": "HAW",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003420",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "HAW",
+      "Hawai'i"
+    ]
+  },
+  {
+    "id": 248,
+    "school": "Houston",
+    "mascot": "Cougars",
+    "abbreviation": "HOU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#c92a39",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "HOU",
+      "Houston"
+    ]
+  },
+  {
+    "id": 356,
+    "school": "Illinois",
+    "mascot": "Fighting Illini",
+    "abbreviation": "ILL",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ff5f05",
+    "alternate_color": "#13294b",
+    "alternate_names": [
+      "ILL",
+      "Illinois"
+    ]
+  },
+  {
+    "id": 84,
+    "school": "Indiana",
+    "mascot": "Hoosiers",
+    "abbreviation": "IU",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#990000",
+    "alternate_color": "#edebeb",
+    "alternate_names": [
+      "IU",
+      "Indiana"
+    ]
+  },
+  {
+    "id": 2294,
+    "school": "Iowa",
+    "mascot": "Hawkeyes",
+    "abbreviation": "IOWA",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#000000",
+    "alternate_color": "#FFCD00",
+    "alternate_names": [
+      "IOWA",
+      "Iowa"
+    ]
+  },
+  {
+    "id": 66,
+    "school": "Iowa State",
+    "mascot": "Cyclones",
+    "abbreviation": "ISU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#822433",
+    "alternate_color": "#fdca2f",
+    "alternate_names": [
+      "ISU",
+      "Iowa State"
+    ]
+  },
+  {
+    "id": 55,
+    "school": "Jacksonville State",
+    "mascot": "Gamecocks",
+    "abbreviation": "JVST",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#b50500",
+    "alternate_color": "#b5b7ba",
+    "alternate_names": [
+      "JVST",
+      "Jax State"
+    ]
+  },
+  {
+    "id": 256,
+    "school": "James Madison",
+    "mascot": "Dukes",
+    "abbreviation": "JMU",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#450084",
+    "alternate_color": "#b5a068",
+    "alternate_names": [
+      "JMU",
+      "James Madison"
+    ]
+  },
+  {
+    "id": 2305,
+    "school": "Kansas",
+    "mascot": "Jayhawks",
+    "abbreviation": "KU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0051ba",
+    "alternate_color": "#e8000d",
+    "alternate_names": [
+      "KU",
+      "Kansas"
+    ]
+  },
+  {
+    "id": 2306,
+    "school": "Kansas State",
+    "mascot": "Wildcats",
+    "abbreviation": "KSU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#3c0969",
+    "alternate_color": "#e2e3e4",
+    "alternate_names": [
+      "KSU",
+      "Kansas St"
+    ]
+  },
+  {
+    "id": 338,
+    "school": "Kennesaw State",
+    "mascot": "Owls",
+    "abbreviation": "KENN",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#fdbb30",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "Kennesaw",
+      "KENN",
+      "Kennesaw St"
+    ]
+  },
+  {
+    "id": 2309,
+    "school": "Kent State",
+    "mascot": "Golden Flashes",
+    "abbreviation": "KENT",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003976",
+    "alternate_color": "#efab00",
+    "alternate_names": [
+      "KENT",
+      "Kent State"
+    ]
+  },
+  {
+    "id": 96,
+    "school": "Kentucky",
+    "mascot": "Wildcats",
+    "abbreviation": "UK",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0033a0",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "UK",
+      "Kentucky"
+    ]
+  },
+  {
+    "id": 2335,
+    "school": "Liberty",
+    "mascot": "Flames",
+    "abbreviation": "LIB",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#071740",
+    "alternate_color": "#a61f21",
+    "alternate_names": [
+      "LIB",
+      "Liberty"
+    ]
+  },
+  {
+    "id": 309,
+    "school": "Louisiana",
+    "mascot": "Ragin' Cajuns",
+    "abbreviation": "UL",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#ce181e",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "UL Lafayette",
+      "UL",
+      "Louisiana"
+    ]
+  },
+  {
+    "id": 2348,
+    "school": "Louisiana Tech",
+    "mascot": "Bulldogs",
+    "abbreviation": "LT",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#002d65",
+    "alternate_color": "#d3313a",
+    "alternate_names": [
+      "LT",
+      "Louisiana Tech"
+    ]
+  },
+  {
+    "id": 97,
+    "school": "Louisville",
+    "mascot": "Cardinals",
+    "abbreviation": "LOU",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#c9001f",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "LOU",
+      "Louisville"
+    ]
+  },
+  {
+    "id": 99,
+    "school": "LSU",
+    "mascot": "Tigers",
+    "abbreviation": "LSU",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#461d7c",
+    "alternate_color": "#fdd023",
+    "alternate_names": [
+      "Louisiana State",
+      "LSU",
+      "LSU"
+    ]
+  },
+  {
+    "id": 276,
+    "school": "Marshall",
+    "mascot": "Thundering Herd",
+    "abbreviation": "MRSH",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#00ae42",
+    "alternate_color": "#be854c",
+    "alternate_names": [
+      "MRSH",
+      "Marshall"
+    ]
+  },
+  {
+    "id": 120,
+    "school": "Maryland",
+    "mascot": "Terrapins",
+    "abbreviation": "MD",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#D5002B",
+    "alternate_color": "#ffcd00",
+    "alternate_names": [
+      "MD",
+      "Maryland"
+    ]
+  },
+  {
+    "id": 113,
+    "school": "Massachusetts",
+    "mascot": "Minutemen",
+    "abbreviation": "MASS",
+    "conference": "FBS Independents",
+    "division": null,
+    "classification": "fbs",
+    "color": "#971B2F",
+    "alternate_color": "#B1B3B3",
+    "alternate_names": [
+      "UMass",
+      "MASS",
+      "Massachusetts"
+    ]
+  },
+  {
+    "id": 235,
+    "school": "Memphis",
+    "mascot": "Tigers",
+    "abbreviation": "MEM",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#004991",
+    "alternate_color": "#8e908f",
+    "alternate_names": [
+      "MEM",
+      "Memphis"
+    ]
+  },
+  {
+    "id": 2390,
+    "school": "Miami",
+    "mascot": "Hurricanes",
+    "abbreviation": "MIA",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#005030",
+    "alternate_color": "#f47321",
+    "alternate_names": [
+      "Miami (FL)",
+      "MIA",
+      "Miami"
+    ]
+  },
+  {
+    "id": 193,
+    "school": "Miami (OH)",
+    "mascot": "RedHawks",
+    "abbreviation": "M-OH",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#a4000c",
+    "alternate_color": "#f0f0f0",
+    "alternate_names": [
+      "M-OH",
+      "Miami OH"
+    ]
+  },
+  {
+    "id": 130,
+    "school": "Michigan",
+    "mascot": "Wolverines",
+    "abbreviation": "MICH",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00274c",
+    "alternate_color": "#ffcb05",
+    "alternate_names": [
+      "MICH",
+      "Michigan"
+    ]
+  },
+  {
+    "id": 127,
+    "school": "Michigan State",
+    "mascot": "Spartans",
+    "abbreviation": "MSU",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#18453b",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "MSU",
+      "Michigan St"
+    ]
+  },
+  {
+    "id": 2393,
+    "school": "Middle Tennessee",
+    "mascot": "Blue Raiders",
+    "abbreviation": "MTSU",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#006db6",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "Middle Tennessee State",
+      "MTSU",
+      "MTSU"
+    ]
+  },
+  {
+    "id": 135,
+    "school": "Minnesota",
+    "mascot": "Golden Gophers",
+    "abbreviation": "MINN",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#5e0a2f",
+    "alternate_color": "#fab41c",
+    "alternate_names": [
+      "MINN",
+      "Minnesota"
+    ]
+  },
+  {
+    "id": 344,
+    "school": "Mississippi State",
+    "mascot": "Bulldogs",
+    "abbreviation": "MSST",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#5d1725",
+    "alternate_color": "#c1c6c8",
+    "alternate_names": [
+      "MSST",
+      "Mississippi St"
+    ]
+  },
+  {
+    "id": 142,
+    "school": "Missouri",
+    "mascot": "Tigers",
+    "abbreviation": "MIZ",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#f1b82d",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "MIZ",
+      "Missouri"
+    ]
+  },
+  {
+    "id": 2426,
+    "school": "Navy",
+    "mascot": "Midshipmen",
+    "abbreviation": "NAVY",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00225b",
+    "alternate_color": "#b5a67c",
+    "alternate_names": [
+      "NAVY",
+      "Navy"
+    ]
+  },
+  {
+    "id": 152,
+    "school": "NC State",
+    "mascot": "Wolfpack",
+    "abbreviation": "NCSU",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#cc0000",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "North Carolina St.",
+      "NCSU",
+      "NC State"
+    ]
+  },
+  {
+    "id": 158,
+    "school": "Nebraska",
+    "mascot": "Cornhuskers",
+    "abbreviation": "NEB",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#d00000",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "NEB",
+      "Nebraska"
+    ]
+  },
+  {
+    "id": 2440,
+    "school": "Nevada",
+    "mascot": "Wolf Pack",
+    "abbreviation": "NEV",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#002d62",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "NEV",
+      "Nevada"
+    ]
+  },
+  {
+    "id": 167,
+    "school": "New Mexico",
+    "mascot": "Lobos",
+    "abbreviation": "UNM",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#BA0C2F",
+    "alternate_color": "#a7a8aa",
+    "alternate_names": [
+      "UNM",
+      "New Mexico"
+    ]
+  },
+  {
+    "id": 166,
+    "school": "New Mexico State",
+    "mascot": "Aggies",
+    "abbreviation": "NMSU",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#891216",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "NMSU",
+      "New Mexico St"
+    ]
+  },
+  {
+    "id": 153,
+    "school": "North Carolina",
+    "mascot": "Tar Heels",
+    "abbreviation": "UNC",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#7bafd4",
+    "alternate_color": "#13294b",
+    "alternate_names": [
+      "UNC",
+      "North Carolina"
+    ]
+  },
+  {
+    "id": 2459,
+    "school": "Northern Illinois",
+    "mascot": "Huskies",
+    "abbreviation": "NIU",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#F1122C",
+    "alternate_color": "#cc0000",
+    "alternate_names": [
+      "NIU",
+      "N Illinois"
+    ]
+  },
+  {
+    "id": 249,
+    "school": "North Texas",
+    "mascot": "Mean Green",
+    "abbreviation": "UNT",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00853E",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "UNT",
+      "North Texas"
+    ]
+  },
+  {
+    "id": 77,
+    "school": "Northwestern",
+    "mascot": "Wildcats",
+    "abbreviation": "NU",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#582c83",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "NU",
+      "Northwestern"
+    ]
+  },
+  {
+    "id": 87,
+    "school": "Notre Dame",
+    "mascot": "Fighting Irish",
+    "abbreviation": "ND",
+    "conference": "FBS Independents",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0c2340",
+    "alternate_color": "#c99700",
+    "alternate_names": [
+      "ND",
+      "Notre Dame"
+    ]
+  },
+  {
+    "id": 195,
+    "school": "Ohio",
+    "mascot": "Bobcats",
+    "abbreviation": "OHIO",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#295A29",
+    "alternate_color": "#e4bb85",
+    "alternate_names": [
+      "OHIO",
+      "Ohio"
+    ]
+  },
+  {
+    "id": 194,
+    "school": "Ohio State",
+    "mascot": "Buckeyes",
+    "abbreviation": "OSU",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ce1141",
+    "alternate_color": "#505056",
+    "alternate_names": [
+      "OSU",
+      "Ohio State"
+    ]
+  },
+  {
+    "id": 201,
+    "school": "Oklahoma",
+    "mascot": "Sooners",
+    "abbreviation": "OU",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#a32036",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "OU",
+      "Oklahoma"
+    ]
+  },
+  {
+    "id": 197,
+    "school": "Oklahoma State",
+    "mascot": "Cowboys",
+    "abbreviation": "OKST",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#FF7300",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "OKST",
+      "Oklahoma St"
+    ]
+  },
+  {
+    "id": 295,
+    "school": "Old Dominion",
+    "mascot": "Monarchs",
+    "abbreviation": "ODU",
+    "conference": "Sun Belt",
+    "division": "East",
+    "classification": "fbs",
+    "color": "#00507d",
+    "alternate_color": "#a1d2f1",
+    "alternate_names": [
+      "ODU",
+      "Old Dominion"
+    ]
+  },
+  {
+    "id": 145,
+    "school": "Ole Miss",
+    "mascot": "Rebels",
+    "abbreviation": "MISS",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#13294b",
+    "alternate_color": "#c8102e",
+    "alternate_names": [
+      "MISS",
+      "Ole Miss"
+    ]
+  },
+  {
+    "id": 2483,
+    "school": "Oregon",
+    "mascot": "Ducks",
+    "abbreviation": "ORE",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#007030",
+    "alternate_color": "#fee11a",
+    "alternate_names": [
+      "ORE",
+      "Oregon"
+    ]
+  },
+  {
+    "id": 204,
+    "school": "Oregon State",
+    "mascot": "Beavers",
+    "abbreviation": "ORST",
+    "conference": "Pac-12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#231f20",
+    "alternate_color": "#d73f09",
+    "alternate_names": [
+      "ORST",
+      "Oregon St"
+    ]
+  },
+  {
+    "id": 213,
+    "school": "Penn State",
+    "mascot": "Nittany Lions",
+    "abbreviation": "PSU",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#041E42",
+    "alternate_color": "#FFFFFF",
+    "alternate_names": [
+      "PSU",
+      "Penn State"
+    ]
+  },
+  {
+    "id": 221,
+    "school": "Pittsburgh",
+    "mascot": "Panthers",
+    "abbreviation": "PITT",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003263",
+    "alternate_color": "#231f20",
+    "alternate_names": [
+      "Pitt",
+      "PITT",
+      "Pitt"
+    ]
+  },
+  {
+    "id": 2509,
+    "school": "Purdue",
+    "mascot": "Boilermakers",
+    "abbreviation": "PUR",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#000000",
+    "alternate_color": "#ceb888",
+    "alternate_names": [
+      "PUR",
+      "Purdue"
+    ]
+  },
+  {
+    "id": 242,
+    "school": "Rice",
+    "mascot": "Owls",
+    "abbreviation": "RICE",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#d1d5d8",
+    "alternate_color": "#003d7d",
+    "alternate_names": [
+      "RICE",
+      "Rice"
+    ]
+  },
+  {
+    "id": 164,
+    "school": "Rutgers",
+    "mascot": "Scarlet Knights",
+    "abbreviation": "RUTG",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#d21034",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "RUTG",
+      "Rutgers"
+    ]
+  },
+  {
+    "id": 2534,
+    "school": "Sam Houston",
+    "mascot": "Bearkats",
+    "abbreviation": "SHSU",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#fe5000",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "Sam Houston State",
+      "SHSU",
+      "Sam Houston"
+    ]
+  },
+  {
+    "id": 21,
+    "school": "San Diego State",
+    "mascot": "Aztecs",
+    "abbreviation": "SDSU",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#c41230",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "SDSU",
+      "San Diego St"
+    ]
+  },
+  {
+    "id": 23,
+    "school": "San Jos\u00e9 State",
+    "mascot": "Spartans",
+    "abbreviation": "SJSU",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#005893",
+    "alternate_color": "#fdba31",
+    "alternate_names": [
+      "San Jose St.",
+      "SJSU",
+      "San Jos\u00e9 St"
+    ]
+  },
+  {
+    "id": 2567,
+    "school": "SMU",
+    "mascot": "Mustangs",
+    "abbreviation": "SMU",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#354ca1",
+    "alternate_color": "#cc0035",
+    "alternate_names": [
+      "Southern Methodist",
+      "SMU",
+      "SMU"
+    ]
+  },
+  {
+    "id": 6,
+    "school": "South Alabama",
+    "mascot": "Jaguars",
+    "abbreviation": "USA",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#00205B",
+    "alternate_color": "#BF0D3E",
+    "alternate_names": [
+      "USA",
+      "South Alabama"
+    ]
+  },
+  {
+    "id": 2579,
+    "school": "South Carolina",
+    "mascot": "Gamecocks",
+    "abbreviation": "SC",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#73000a",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "SC",
+      "South Carolina"
+    ]
+  },
+  {
+    "id": 2572,
+    "school": "Southern Miss",
+    "mascot": "Golden Eagles",
+    "abbreviation": "USM",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#FFAA3C",
+    "alternate_color": "#ffc423",
+    "alternate_names": [
+      "Southern Mississippi",
+      "USM",
+      "Southern Miss"
+    ]
+  },
+  {
+    "id": 58,
+    "school": "South Florida",
+    "mascot": "Bulls",
+    "abbreviation": "USF",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#004A36",
+    "alternate_color": "#231f20",
+    "alternate_names": [
+      "USF",
+      "South Florida"
+    ]
+  },
+  {
+    "id": 24,
+    "school": "Stanford",
+    "mascot": "Cardinal",
+    "abbreviation": "STAN",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#8c1515",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "STAN",
+      "Stanford"
+    ]
+  },
+  {
+    "id": 183,
+    "school": "Syracuse",
+    "mascot": "Orange",
+    "abbreviation": "SYR",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ff6500",
+    "alternate_color": "#000e54",
+    "alternate_names": [
+      "SYR",
+      "Syracuse"
+    ]
+  },
+  {
+    "id": 2628,
+    "school": "TCU",
+    "mascot": "Horned Frogs",
+    "abbreviation": "TCU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#4d1979",
+    "alternate_color": "#f1f2f3",
+    "alternate_names": [
+      "Texas Christian",
+      "TCU",
+      "TCU"
+    ]
+  },
+  {
+    "id": 218,
+    "school": "Temple",
+    "mascot": "Owls",
+    "abbreviation": "TEM",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#A80532",
+    "alternate_color": "#a7a9ac",
+    "alternate_names": [
+      "TEM",
+      "Temple"
+    ]
+  },
+  {
+    "id": 2633,
+    "school": "Tennessee",
+    "mascot": "Volunteers",
+    "abbreviation": "TENN",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ff8200",
+    "alternate_color": "#58595b",
+    "alternate_names": [
+      "TENN",
+      "Tennessee"
+    ]
+  },
+  {
+    "id": 251,
+    "school": "Texas",
+    "mascot": "Longhorns",
+    "abbreviation": "TEX",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#c15d26",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "TEX",
+      "Texas"
+    ]
+  },
+  {
+    "id": 245,
+    "school": "Texas A&M",
+    "mascot": "Aggies",
+    "abbreviation": "TA&M",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#500000",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "TA&M",
+      "Texas A&M"
+    ]
+  },
+  {
+    "id": 326,
+    "school": "Texas State",
+    "mascot": "Bobcats",
+    "abbreviation": "TXST",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#4e1719",
+    "alternate_color": "#b4975a",
+    "alternate_names": [
+      "TXST",
+      "Texas St"
+    ]
+  },
+  {
+    "id": 2641,
+    "school": "Texas Tech",
+    "mascot": "Red Raiders",
+    "abbreviation": "TTU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#CC0000",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "TTU",
+      "Texas Tech"
+    ]
+  },
+  {
+    "id": 2649,
+    "school": "Toledo",
+    "mascot": "Rockets",
+    "abbreviation": "TOL",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0a2240",
+    "alternate_color": "#ffcd00",
+    "alternate_names": [
+      "TOL",
+      "Toledo"
+    ]
+  },
+  {
+    "id": 2653,
+    "school": "Troy",
+    "mascot": "Trojans",
+    "abbreviation": "TROY",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#AE0210",
+    "alternate_color": "#88898c",
+    "alternate_names": [
+      "TROY",
+      "Troy"
+    ]
+  },
+  {
+    "id": 2655,
+    "school": "Tulane",
+    "mascot": "Green Wave",
+    "abbreviation": "TULN",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#006547",
+    "alternate_color": "#468ac9",
+    "alternate_names": [
+      "TULN",
+      "Tulane"
+    ]
+  },
+  {
+    "id": 202,
+    "school": "Tulsa",
+    "mascot": "Golden Hurricane",
+    "abbreviation": "TLSA",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003595",
+    "alternate_color": "#d0b787",
+    "alternate_names": [
+      "TLSA",
+      "Tulsa"
+    ]
+  },
+  {
+    "id": 5,
+    "school": "UAB",
+    "mascot": "Blazers",
+    "abbreviation": "UAB",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#003b28",
+    "alternate_color": "#ffc845",
+    "alternate_names": [
+      "Alabama-Birmingham",
+      "UAB",
+      "UAB"
+    ]
+  },
+  {
+    "id": 2116,
+    "school": "UCF",
+    "mascot": "Knights",
+    "abbreviation": "UCF",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ba9b37",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "Central Florida",
+      "UCF",
+      "UCF"
+    ]
+  },
+  {
+    "id": 26,
+    "school": "UCLA",
+    "mascot": "Bruins",
+    "abbreviation": "UCLA",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#2774ae",
+    "alternate_color": "#f2a900",
+    "alternate_names": [
+      "UCLA",
+      "UCLA"
+    ]
+  },
+  {
+    "id": 41,
+    "school": "UConn",
+    "mascot": "Huskies",
+    "abbreviation": "CONN",
+    "conference": "FBS Independents",
+    "division": null,
+    "classification": "fbs",
+    "color": "#0c2340",
+    "alternate_color": "#f1f2f3",
+    "alternate_names": [
+      "Connecticut",
+      "CONN",
+      "UConn"
+    ]
+  },
+  {
+    "id": 2433,
+    "school": "UL Monroe",
+    "mascot": "Warhawks",
+    "abbreviation": "ULM",
+    "conference": "Sun Belt",
+    "division": "West",
+    "classification": "fbs",
+    "color": "#231F20",
+    "alternate_color": "#b18445",
+    "alternate_names": [
+      "La.-Monroe",
+      "ULM",
+      "UL Monroe"
+    ]
+  },
+  {
+    "id": 2439,
+    "school": "UNLV",
+    "mascot": "Rebels",
+    "abbreviation": "UNLV",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#b10202",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "Nevada-Las Vegas",
+      "UNLV",
+      "UNLV"
+    ]
+  },
+  {
+    "id": 30,
+    "school": "USC",
+    "mascot": "Trojans",
+    "abbreviation": "USC",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#9e2237",
+    "alternate_color": "#ffcc00",
+    "alternate_names": [
+      "USC",
+      "USC"
+    ]
+  },
+  {
+    "id": 254,
+    "school": "Utah",
+    "mascot": "Utes",
+    "abbreviation": "UTAH",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ea002a",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "UTAH",
+      "Utah"
+    ]
+  },
+  {
+    "id": 328,
+    "school": "Utah State",
+    "mascot": "Aggies",
+    "abbreviation": "USU",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#00263a",
+    "alternate_color": "#949ca1",
+    "alternate_names": [
+      "USU",
+      "Utah State"
+    ]
+  },
+  {
+    "id": 2638,
+    "school": "UTEP",
+    "mascot": "Miners",
+    "abbreviation": "UTEP",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#ff8200",
+    "alternate_color": "#041e42",
+    "alternate_names": [
+      "Texas-El Paso",
+      "UTEP",
+      "UTEP"
+    ]
+  },
+  {
+    "id": 2636,
+    "school": "UTSA",
+    "mascot": "Roadrunners",
+    "abbreviation": "UTSA",
+    "conference": "American Athletic",
+    "division": null,
+    "classification": "fbs",
+    "color": "#002A5C",
+    "alternate_color": "#f47321",
+    "alternate_names": [
+      "Texas-San Antonio",
+      "UTSA",
+      "UTSA"
+    ]
+  },
+  {
+    "id": 238,
+    "school": "Vanderbilt",
+    "mascot": "Commodores",
+    "abbreviation": "VAN",
+    "conference": "SEC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#866d4b",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "VAN",
+      "Vanderbilt"
+    ]
+  },
+  {
+    "id": 258,
+    "school": "Virginia",
+    "mascot": "Cavaliers",
+    "abbreviation": "UVA",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#232d4b",
+    "alternate_color": "#f84c1e",
+    "alternate_names": [
+      "UVA",
+      "Virginia"
+    ]
+  },
+  {
+    "id": 259,
+    "school": "Virginia Tech",
+    "mascot": "Hokies",
+    "abbreviation": "VT",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#630031",
+    "alternate_color": "#cf4520",
+    "alternate_names": [
+      "VT",
+      "Virginia Tech"
+    ]
+  },
+  {
+    "id": 154,
+    "school": "Wake Forest",
+    "mascot": "Demon Deacons",
+    "abbreviation": "WAKE",
+    "conference": "ACC",
+    "division": null,
+    "classification": "fbs",
+    "color": "#9E7E38",
+    "alternate_color": "#000000",
+    "alternate_names": [
+      "WAKE",
+      "Wake Forest"
+    ]
+  },
+  {
+    "id": 264,
+    "school": "Washington",
+    "mascot": "Huskies",
+    "abbreviation": "WASH",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#33006f",
+    "alternate_color": "#e8d3a2",
+    "alternate_names": [
+      "WASH",
+      "Washington"
+    ]
+  },
+  {
+    "id": 265,
+    "school": "Washington State",
+    "mascot": "Cougars",
+    "abbreviation": "WSU",
+    "conference": "Pac-12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#981e32",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "WSU",
+      "Washington St"
+    ]
+  },
+  {
+    "id": 98,
+    "school": "Western Kentucky",
+    "mascot": "Hilltoppers",
+    "abbreviation": "WKU",
+    "conference": "Conference USA",
+    "division": null,
+    "classification": "fbs",
+    "color": "#F32026",
+    "alternate_color": "#b3b5b8",
+    "alternate_names": [
+      "WKU",
+      "Western KY"
+    ]
+  },
+  {
+    "id": 2711,
+    "school": "Western Michigan",
+    "mascot": "Broncos",
+    "abbreviation": "WMU",
+    "conference": "Mid-American",
+    "division": null,
+    "classification": "fbs",
+    "color": "#532e1f",
+    "alternate_color": "#8b7f79",
+    "alternate_names": [
+      "WMU",
+      "W Michigan"
+    ]
+  },
+  {
+    "id": 277,
+    "school": "West Virginia",
+    "mascot": "Mountaineers",
+    "abbreviation": "WVU",
+    "conference": "Big 12",
+    "division": null,
+    "classification": "fbs",
+    "color": "#002855",
+    "alternate_color": "#eaaa00",
+    "alternate_names": [
+      "WVU",
+      "West Virginia"
+    ]
+  },
+  {
+    "id": 275,
+    "school": "Wisconsin",
+    "mascot": "Badgers",
+    "abbreviation": "WIS",
+    "conference": "Big Ten",
+    "division": null,
+    "classification": "fbs",
+    "color": "#c4012f",
+    "alternate_color": "#ffffff",
+    "alternate_names": [
+      "WIS",
+      "Wisconsin"
+    ]
+  },
+  {
+    "id": 2751,
+    "school": "Wyoming",
+    "mascot": "Cowboys",
+    "abbreviation": "WYO",
+    "conference": "Mountain West",
+    "division": null,
+    "classification": "fbs",
+    "color": "#492f24",
+    "alternate_color": "#ffc425",
+    "alternate_names": [
+      "WYO",
+      "Wyoming"
+    ]
+  }
+]
