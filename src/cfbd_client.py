@@ -6,6 +6,7 @@ Replaces brittle dictionary lookups with clean attribute access
 import os
 import logging
 import json
+import pandas as pd
 from typing import Dict, List, Optional
 from datetime import datetime
 import cfbd
@@ -218,6 +219,158 @@ class ModernCFBDClient:
             self.logger.error(f"Failed to fetch conferences: {e}")
             raise
     
+    def fetch_results_upto_bowls(self, season: int) -> List[Dict]:
+        """Fetch all regular season and postseason game results"""
+        try:
+            self.logger.info(f"Fetching all completed games for {season} season")
+            
+            # Fetch regular season games
+            regular_games = self.games_api.get_games(year=season, season_type='regular')
+            postseason_games = self.games_api.get_games(year=season, season_type='postseason')
+            
+            all_games = []
+            
+            # Process regular season games
+            for game in regular_games:
+                if game.completed:
+                    game_dict = {
+                        'id': game.id,
+                        'season': game.season,
+                        'week': game.week,
+                        'season_type': game.season_type,
+                        'start_date': game.start_date,
+                        'neutral_site': game.neutral_site,
+                        'conference_game': game.conference_game,
+                        'attendance': game.attendance,
+                        'venue_id': game.venue_id,
+                        'venue': game.venue,
+                        'home_id': game.home_id,
+                        'home_team': game.home_team,
+                        'home_conference': game.home_conference,
+                        'home_points': game.home_points,
+                        'home_line_scores': game.home_line_scores,
+                        'home_pregame_elo': getattr(game, 'home_pregame_elo', None),
+                        'home_postgame_elo': getattr(game, 'home_postgame_elo', None),
+                        'away_id': game.away_id,
+                        'away_team': game.away_team,
+                        'away_conference': game.away_conference,
+                        'away_points': game.away_points,
+                        'away_line_scores': game.away_line_scores,
+                        'away_pregame_elo': getattr(game, 'away_pregame_elo', None),
+                        'away_postgame_elo': getattr(game, 'away_postgame_elo', None),
+                        'excitement_index': getattr(game, 'excitement_index', None),
+                        'highlights': getattr(game, 'highlights', None),
+                        'notes': getattr(game, 'notes', None)
+                    }
+                    all_games.append(game_dict)
+            
+            # Process postseason games
+            for game in postseason_games:
+                if game.completed:
+                    game_dict = {
+                        'id': game.id,
+                        'season': game.season,
+                        'week': game.week,
+                        'season_type': game.season_type,
+                        'start_date': game.start_date,
+                        'neutral_site': game.neutral_site,
+                        'conference_game': game.conference_game,
+                        'attendance': game.attendance,
+                        'venue_id': game.venue_id,
+                        'venue': game.venue,
+                        'home_id': game.home_id,
+                        'home_team': game.home_team,
+                        'home_conference': game.home_conference,
+                        'home_points': game.home_points,
+                        'home_line_scores': game.home_line_scores,
+                        'home_pregame_elo': getattr(game, 'home_pregame_elo', None),
+                        'home_postgame_elo': getattr(game, 'home_postgame_elo', None),
+                        'away_id': game.away_id,
+                        'away_team': game.away_team,
+                        'away_conference': game.away_conference,
+                        'away_points': game.away_points,
+                        'away_line_scores': game.away_line_scores,
+                        'away_pregame_elo': getattr(game, 'away_pregame_elo', None),
+                        'away_postgame_elo': getattr(game, 'away_postgame_elo', None),
+                        'excitement_index': getattr(game, 'excitement_index', None),
+                        'highlights': getattr(game, 'highlights', None),
+                        'notes': getattr(game, 'notes', None)
+                    }
+                    all_games.append(game_dict)
+            
+            self.logger.info(f"Fetched {len(all_games)} completed games for {season}")
+            
+            # Save raw data
+            os.makedirs('data/raw', exist_ok=True)
+            with open(f'data/raw/games_{season}.json', 'w') as f:
+                json.dump(all_games, f, indent=2)
+            
+            return all_games
+            
+        except ApiException as e:
+            self.logger.error(f"CFBD API request failed: {e}")
+            raise
+        except Exception as e:
+            self.logger.error(f"Failed to fetch games: {e}")
+            raise
+
+    def process_game_data(self, games: List[Dict], teams: List[Dict]) -> 'pd.DataFrame':
+        """Process raw game data into a clean DataFrame with team validation"""
+        import pandas as pd
+        
+        # Build team lookup for conference validation
+        team_lookup = {team['school']: team for team in teams}
+        
+        game_records = []
+        for game in games:
+            home_team = game.get('home_team')
+            away_team = game.get('away_team')
+            
+            # Skip games with missing team data
+            if not home_team or not away_team:
+                continue
+            
+            # Strip whitespace from team names
+            home_team = home_team.strip()
+            away_team = away_team.strip()
+            
+            # Skip if teams not in FBS lookup
+            if home_team not in team_lookup or away_team not in team_lookup:
+                continue
+            
+            home_points = game.get('home_points', 0) or 0
+            away_points = game.get('away_points', 0) or 0
+            
+            winner = home_team if home_points > away_points else away_team
+            loser = away_team if home_points > away_points else home_team
+            
+            # Get conferences from authoritative team data
+            winner_conference = team_lookup[winner]['conference']
+            loser_conference = team_lookup[loser]['conference']
+            
+            game_records.append({
+                'winner': winner,
+                'loser': loser,
+                'winner_conference': winner_conference,
+                'loser_conference': loser_conference,
+                'margin': abs(home_points - away_points),
+                'venue': 'neutral' if game.get('neutral_site') else 'home',
+                'week': game.get('week'),
+                'season_type': game.get('season_type'),
+                'bowl_intra_conf': (
+                    winner_conference == loser_conference and 
+                    game.get('season_type') == 'postseason'
+                )
+            })
+        
+        if not game_records:
+            return pd.DataFrame(columns=[
+                'winner', 'loser', 'winner_conference', 'loser_conference', 
+                'margin', 'venue', 'week', 'season_type', 'bowl_intra_conf'
+            ])
+        
+        return pd.DataFrame(game_records)
+    
     def validate_data_integrity(self, games: List[Dict], teams: List[Dict]) -> Dict[str, bool]:
         """Validate data integrity using available foundational models"""
         try:
@@ -238,10 +391,13 @@ class ModernCFBDClient:
             
             # Check each game against authoritative team data
             for game in games:
-                home_team = game['homeTeam']
-                away_team = game['awayTeam']
-                home_conf = game.get('homeConference', '')
-                away_conf = game.get('awayConference', '')
+                home_team = game.get('home_team')
+                away_team = game.get('away_team')
+                home_conf = game.get('home_conference', '')
+                away_conf = game.get('away_conference', '')
+                
+                if not home_team or not away_team:
+                    continue
                 
                 # Validate teams exist in FBS
                 if home_team not in fbs_teams:
@@ -255,7 +411,7 @@ class ModernCFBDClient:
                 # Validate conference assignments
                 if home_team in team_lookup:
                     official_conf = team_lookup[home_team]['conference']
-                    if home_conf != official_conf:
+                    if home_conf and home_conf != official_conf:
                         validation_results['invalid_conferences'].append({
                             'team': home_team,
                             'game_conference': home_conf,
@@ -265,7 +421,7 @@ class ModernCFBDClient:
                 
                 if away_team in team_lookup:
                     official_conf = team_lookup[away_team]['conference']
-                    if away_conf != official_conf:
+                    if away_conf and away_conf != official_conf:
                         validation_results['invalid_conferences'].append({
                             'team': away_team,
                             'game_conference': away_conf,
@@ -275,9 +431,9 @@ class ModernCFBDClient:
             
             # Log validation results
             if all(validation_results.values()):
-                self.logger.info("✓ Data integrity validation PASSED using foundational models")
+                self.logger.info("Data integrity validation PASSED using foundational models")
             else:
-                self.logger.warning("✗ Data integrity validation found issues")
+                self.logger.warning("Data integrity validation found issues")
                 if validation_results['missing_teams']:
                     self.logger.warning(f"  Missing FBS teams: {len(set(validation_results['missing_teams']))}")
                 if validation_results['invalid_conferences']:

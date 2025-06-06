@@ -11,7 +11,7 @@ from datetime import datetime
 import pandas as pd
 
 # Import the necessary components from your project
-from src.ingest import CFBDataIngester
+from src.cfbd_client import create_cfbd_client
 from src.data_quality_validator import DataQualityValidator
 from src.graph import GraphBuilder
 from src.pagerank import PageRankCalculator
@@ -42,19 +42,19 @@ def run_pipeline(season=2024):
         # Load configuration
         config = load_config()
 
-        # Initialize ingester and validator
-        ingester = CFBDataIngester(config)
+        # Initialize modern client and validator
+        cfbd_client = create_cfbd_client(config)
         quality_validator = DataQualityValidator(config)
 
         # --- Step 1: Ingest and Clean Raw Data ---
         logger.info("Step 1: Fetching and cleaning authentic team and game data")
-        teams = ingester.fetch_teams(season)
+        teams = cfbd_client.fetch_fbs_teams(season)
         fbs_team_names = {team['school'].strip() for team in teams}
 
-        ingester.fetch_conferences()  # Populates conference cache
+        cfbd_client.fetch_conferences(season)  # Fetch conference data
 
-        all_games = ingester.fetch_results_upto_bowls(season)
-        all_games_df = ingester.process_game_data(all_games)
+        all_games = cfbd_client.fetch_results_upto_bowls(season)
+        all_games_df = cfbd_client.process_game_data(all_games, teams)
 
         if all_games_df.empty:
             logger.warning("No valid games found after processing. Exiting.")
