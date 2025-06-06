@@ -4,7 +4,7 @@ A sophisticated college football ranking system that leverages advanced statisti
 
 ## 📋 Developer Documentation
 
-**IMPORTANT**: Before working on this codebase, please review the comprehensive developer documentation in the **[Guiding Docs](./Guiding%20Docs/)** folder:
+**IMPORTANT**: Before working on this codebase, please review the comprehensive developer documentation in the **[Guiding Docs](./Guiding%20Docs/)** folder. Start with the **[Guiding Docs README](./Guiding%20Docs/README.md)** for a complete overview.
 
 ### Essential Reading for Developers
 

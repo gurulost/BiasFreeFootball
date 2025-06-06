@@ -2,6 +2,8 @@
 
 This system automatically publishes college football rankings every Monday during the season, providing a public website with current rankings that updates without manual intervention.
 
+**Developer Note**: For comprehensive understanding of the system architecture and implementation details, review the **[Guiding Docs](./Guiding%20Docs/README.md)** folder before deployment.
+
 ## System Overview
 
 The automated publication system consists of:
